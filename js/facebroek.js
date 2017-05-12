@@ -76,16 +76,12 @@ $(document).ready(function() {
       return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
   };
-
+  
+if(!isMobile.any()) {
   let drawBackgroundPattern = function() {
-    let width = 21;
-    let height = 21;
-    let fsize = 1.5;
-    if (isMobile.any()) {
-      width = 42;
-      height = 42;
-      fsize = 3;
-    }
+    const width = 21;
+    const height = 21;
+    const fsize = 1.5;
     const margin = 0;
     const viewportWidth = $(window).width();
     const viewportHeight = $(window).height();
@@ -105,18 +101,19 @@ $(document).ready(function() {
     drawBackgroundPattern();
   });
 
-  if(!isMobile.any()) {
-    $(".backgroundfill").mouseover(function(e) {
-      const target = e.target;
-      let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
-      // target.style.color = "red";
-      if (target.style.color != prettyColorIsABadVariableName) {
-        target.style.color = prettyColorIsABadVariableName;
-      } else {
-        target.style.color = "rgb(228, 228, 228)";
-      }
-    });
-  }
+
+  $(".backgroundfill").mouseover(function(e) {
+    const target = e.target;
+    let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+    // target.style.color = "red";
+    if (target.style.color != prettyColorIsABadVariableName) {
+      target.style.color = prettyColorIsABadVariableName;
+    } else {
+      target.style.color = "rgb(228, 228, 228)";
+    }
+  });
+}
+
   //mobile touch does not work properly
   // document.getElementById("backgroundfilll").addEventListener("touchmove", function(e) {
   //   const target = e.target;
