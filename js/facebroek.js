@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-    $(".centerpage").html("<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>");
+  $(".centerpage").html("<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>");
 
   const emptyCenterPage = function() {
     $(".centerpage").css("pointer-events", "visible");
@@ -81,17 +81,15 @@ $(document).ready(function() {
     let width = 21;
     let height = 21;
     let fsize = 1.5;
-    if(isMobile.any()) {
+    if (isMobile.any()) {
       width = 63;
       height = 63;
       fsize = 4.5;
-    } else {
-      console.log("not mobile");
     }
     const margin = 0;
     const viewportWidth = $(window).width();
     const viewportHeight = $(window).height();
-    const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin))  + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em'>♥</p></div>";
+    const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em'>♥</p></div>";
     let outputHTML = "";
     for (let i = 0; i < Math.floor(viewportWidth / width); i++) {
       for (let j = 0; j < Math.floor(viewportHeight / height); j++) {
@@ -112,18 +110,18 @@ $(document).ready(function() {
     const target = e.target;
     let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
     // target.style.color = "red";
-    if(target.style.color != prettyColorIsABadVariableName) {
+    if (target.style.color != prettyColorIsABadVariableName) {
       target.style.color = prettyColorIsABadVariableName;
     } else {
       target.style.color = "rgb(228, 228, 228)";
     }
   });
-  //mobile touch
-  document.getElementById("backgroundfilll").addEventListener("touchmove",function(e) {
+  //mobile touch does not work properly
+  document.getElementById("backgroundfilll").addEventListener("touchmove", function(e) {
     const target = e.target;
     let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
     // target.style.color = "red";
-    if(target.style.color != prettyColorIsABadVariableName) {
+    if (target.style.color != prettyColorIsABadVariableName) {
       target.style.color = prettyColorIsABadVariableName;
     } else {
       target.style.color = "rgb(228, 228, 228)";

@@ -181,7 +181,6 @@ z-index: 2;
 
 .bgfillobject {
   font-family: monospace;
-  /*font-size: 1.5em;*/
   position: relative;
   display: inline-block;
   color: rgb(228, 228, 228);
