@@ -154,7 +154,7 @@ z-index: 2;
 #foto {
   position: relative;
   /*centering*/
-  transform: translateY(1.5%);
+  transform: translateY(1.7%);
   width: 33vh;
   height: 33vh;
   max-width: 256px;
