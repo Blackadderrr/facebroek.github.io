@@ -60,6 +60,7 @@ $(document).ready(function() {
   let drawBackgroundPattern = function() {
     let width = 21;
     let height = 21;
+    //console.log(document.getElementById("checkmobile").style.display);
     if(document.getElementById("checkmobile").style.display === "none") {
       width = 63;
       height = 63;
@@ -86,7 +87,7 @@ $(document).ready(function() {
   //For some reason opacity of the parent gets changed too...
   $(".backgroundfill").mouseover(function(e) {
     const target = e.target;
-    const prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+    let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
     // target.style.color = "red";
     if(target.style.color != prettyColorIsABadVariableName) {
       target.style.color = prettyColorIsABadVariableName;
@@ -95,9 +96,9 @@ $(document).ready(function() {
     }
   });
   //mobile touch
-  $(".backgroundfill").touchmove(function(e) {
+  document.getElementById("backgroundfilll").addEventListener("touchmove",function(e) {
     const target = e.target;
-    const prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+    let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
     // target.style.color = "red";
     if(target.style.color != prettyColorIsABadVariableName) {
       target.style.color = prettyColorIsABadVariableName;
@@ -105,5 +106,4 @@ $(document).ready(function() {
       target.style.color = "rgb(228, 228, 228)";
     }
   });
-
 });
