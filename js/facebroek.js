@@ -61,8 +61,8 @@ $(document).ready(function() {
     let width = 21;
     let height = 21;
     if(document.getElementById("checkmobile").style.display === "none") {
-      width = 42;
-      height = 42;
+      width = 63;
+      height = 63;
     }
     const margin = 0;
     const viewportWidth = $(window).width();
@@ -85,6 +85,17 @@ $(document).ready(function() {
 
   //For some reason opacity of the parent gets changed too...
   $(".backgroundfill").mouseover(function(e) {
+    const target = e.target;
+    const prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+    // target.style.color = "red";
+    if(target.style.color != prettyColorIsABadVariableName) {
+      target.style.color = prettyColorIsABadVariableName;
+    } else {
+      target.style.color = "rgb(228, 228, 228)";
+    }
+  });
+  //mobile touch
+  $(".backgroundfill").touchmove(function(e) {
     const target = e.target;
     const prettyColorIsABadVariableName = "rgb(255, 185, 179)";
     // target.style.color = "red";

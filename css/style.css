@@ -251,7 +251,7 @@ li:hover {
 }
 
 /*MOBILE*/
-@media only screen and (max-device-width: 760px) {
+@media only screen and (max-width: 1px) {
   #checkmobile {
     display: none;
   }
