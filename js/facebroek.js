@@ -82,9 +82,9 @@ $(document).ready(function() {
     let height = 21;
     let fsize = 1.5;
     if (isMobile.any()) {
-      width = 63;
-      height = 63;
-      fsize = 4.5;
+      width = 42;
+      height = 42;
+      fsize = 3;
     }
     const margin = 0;
     const viewportWidth = $(window).width();
@@ -105,26 +105,27 @@ $(document).ready(function() {
     drawBackgroundPattern();
   });
 
-  //For some reason opacity of the parent gets changed too...
-  $(".backgroundfill").mouseover(function(e) {
-    const target = e.target;
-    let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
-    // target.style.color = "red";
-    if (target.style.color != prettyColorIsABadVariableName) {
-      target.style.color = prettyColorIsABadVariableName;
-    } else {
-      target.style.color = "rgb(228, 228, 228)";
-    }
-  });
+  if(!isMobile.any()) {
+    $(".backgroundfill").mouseover(function(e) {
+      const target = e.target;
+      let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+      // target.style.color = "red";
+      if (target.style.color != prettyColorIsABadVariableName) {
+        target.style.color = prettyColorIsABadVariableName;
+      } else {
+        target.style.color = "rgb(228, 228, 228)";
+      }
+    });
+  }
   //mobile touch does not work properly
-  document.getElementById("backgroundfilll").addEventListener("touchmove", function(e) {
-    const target = e.target;
-    let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
-    // target.style.color = "red";
-    if (target.style.color != prettyColorIsABadVariableName) {
-      target.style.color = prettyColorIsABadVariableName;
-    } else {
-      target.style.color = "rgb(228, 228, 228)";
-    }
-  });
+  // document.getElementById("backgroundfilll").addEventListener("touchmove", function(e) {
+  //   const target = e.target;
+  //   let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+  //   // target.style.color = "red";
+  //   if (target.style.color != prettyColorIsABadVariableName) {
+  //     target.style.color = prettyColorIsABadVariableName;
+  //   } else {
+  //     target.style.color = "rgb(228, 228, 228)";
+  //   }
+  // });
 });
