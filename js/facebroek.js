@@ -1,6 +1,8 @@
 //ugly ass non-DRY code, not so much doge
 
 $(document).ready(function() {
+  let isMobile = false;
+
     $(".centerpage").html("<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>");
 
   const emptyCenterPage = function() {
@@ -56,8 +58,12 @@ $(document).ready(function() {
   });
 
   let drawBackgroundPattern = function() {
-    const width = 21;
-    const height = 21;
+    let width = 21;
+    let height = 21;
+    if(document.getElementById("checkmobile").style.display === "none") {
+      width = 42;
+      height = 42;
+    }
     const margin = 0;
     const viewportWidth = $(window).width();
     const viewportHeight = $(window).height();

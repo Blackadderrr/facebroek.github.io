@@ -93,22 +93,30 @@ a {
 #stickfigures {
 position: absolute;
 bottom: 15px;
-margin-left: 90px;
-/*pointer-events: none;*/
+left: 50%;
+margin-left: -64px;
+z-index: 2;
 }
 
 .centerpage {
   display: inline-block;
-  margin-top: 1em;
-  height: 220px;
-  width: 400px;
   z-index: 1;
   pointer-events: none;
   /*background-color: rgba(100, 156, 119, 0.42);*/
 }
+#youtube {
+  width: 38vh;
+  height: 22vh;
+  max-width: 380px;
+  max-height: 220px;
+  /*background-color: rgba(187, 105, 105, 0.29);*/
+}
 
 #items {
+  display: inline-block;
   height: 60px;
+  width: 144px;
+  /*background-color: pink;*/
 }
 
 #items img {
@@ -123,26 +131,20 @@ margin-left: 90px;
   color: rgb(106, 106, 106);
 }
 
-#youtube {
-  width: 380px;
-  height: 220px;
-  /*background-color: rgba(187, 105, 105, 0.29);*/
-}
-
 .content {
   display: inline-block;
-  width: 300px;
+  width: 34vh;
+  /*background-color: rgba(45, 118, 122, 0.31);*/
 }
 
 .fotodiv {
-  position: relative;
   display: inline-block;
   background-color: white;
   border-radius: 3px;
-  width: 266px;
-  height: 266px;
-  padding: 4px 0px;
-  /*some screwing around to center, not pretty */
+  width: 35vh;
+  height: 35vh;
+  max-width: 266px;
+  max-height: 266px;
   border: solid 1px;
   border-color: rgb(101, 101, 101);
   margin-bottom: 3px;
@@ -150,8 +152,13 @@ margin-left: 90px;
 }
 
 #foto {
-  width: 256px;
-  height: 256px;
+  position: relative;
+  /*centering*/
+  transform: translateY(1.5%);
+  width: 33vh;
+  height: 33vh;
+  max-width: 256px;
+  max-height: 256px;
 }
 
 .backgroundfill {
@@ -241,4 +248,11 @@ li:hover {
 
 #blackmirror {
   font-size: 1.5em;
+}
+
+/*MOBILE*/
+@media only screen and (max-device-width: 760px) {
+  #checkmobile {
+    display: none;
+  }
 }
