@@ -181,7 +181,7 @@ z-index: 2;
 
 .bgfillobject {
   font-family: monospace;
-  font-size: 1.5em;
+  /*font-size: 1.5em;*/
   position: relative;
   display: inline-block;
   color: rgb(228, 228, 228);
@@ -249,3 +249,10 @@ li:hover {
 #blackmirror {
   font-size: 1.5em;
 }
+
+/*mobile*/
+/*@media only screen and (max-device-width: 9000px) {
+  .bgfillobject {
+    font-size: 5em;
+  }
+}*/

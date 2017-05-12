@@ -80,16 +80,18 @@ $(document).ready(function() {
   let drawBackgroundPattern = function() {
     let width = 21;
     let height = 21;
+    let fsize = 1.5;
     if(isMobile.any()) {
       width = 63;
       height = 63;
+      fsize = 4.5;
     } else {
       console.log("not mobile");
     }
     const margin = 0;
     const viewportWidth = $(window).width();
     const viewportHeight = $(window).height();
-    const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin))  + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p>♥</p></div>";
+    const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin))  + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em'>♥</p></div>";
     let outputHTML = "";
     for (let i = 0; i < Math.floor(viewportWidth / width); i++) {
       for (let j = 0; j < Math.floor(viewportHeight / height); j++) {
