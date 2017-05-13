@@ -256,7 +256,7 @@ body {
   width: 100vw;
   height: 38px; }
   .return p {
-    padding-left: 3px;
+    padding-left: 9px;
     display: table-cell;
     vertical-align: middle;
     color: white;
@@ -264,12 +264,6 @@ body {
 
 div.return {
   background-color: #3b5999; }
-
-.returncharacter {
-  display: table-cell;
-  vertical-align: top;
-  font-size: 24px;
-  margin-right: 3px; }
 
 #sourcesul {
   margin-top: 0.5em;
