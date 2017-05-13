@@ -74,10 +74,9 @@ a {
     width: 557px; }
 
   .quit {
-    font-size: 18px; } }
+    font-size: 16px; } }
 .content {
-  display: inline-block;
-  width: 34vh; }
+  display: inline-block; }
 
 .fotodiv {
   display: inline-block;
@@ -102,7 +101,8 @@ a {
 
   #items {
     width: 400px;
-    min-height: 78px; }
+    min-height: 78px;
+    background-color: pink; }
 
   #items img {
     width: 64px;
@@ -111,7 +111,8 @@ a {
   display: inline-block;
   min-height: 39px;
   width: 144px;
-  margin-bottom: 1vh; }
+  margin-bottom: 1vh;
+  background-color: pink; }
 
 #items img {
   display: inline-block;
