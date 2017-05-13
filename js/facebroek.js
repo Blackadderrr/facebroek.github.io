@@ -53,7 +53,7 @@ $(document).ready(function() {
 
   $("#bitcoin").on("click", function() {
     $(".centerpage").css("pointer-events", "visible");
-    $(".centerpage").html("<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m5<br>5HTtZEY3mtTuxySgb</p></div>");
+    $(".centerpage").html("<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' width='0' height='0' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m5<br>5HTtZEY3mtTuxySgb</p></div>");
   });
 
   var isMobile = {

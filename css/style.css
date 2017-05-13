@@ -141,7 +141,8 @@ body {
   width: 33vh;
   height: 33vh;
   max-width: 147px;
-  max-height: 147px; }
+  max-height: 147px;
+  border: solid 6px; }
 
 #bcaddress {
   font-family: sans-serif;
@@ -156,8 +157,10 @@ body {
 
 @media screen and (max-device-width: 480px) {
   #qrcode {
-    height: 500px;
-    width: 500px; } }
+    height: 1000px;
+    width: 1000px;
+    max-width: 10000px;
+    max-height: 10000px; } }
 @media screen and (max-width: 480px) {
   #bcaddress {
     font-size: 2vw; } }
