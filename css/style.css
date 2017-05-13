@@ -246,10 +246,8 @@ body {
   list-style-type: circle; }
 
 #sourcesul li {
-  margin-bottom: 1.5em;
-  color: #6a6a6a; }
-
-#sourcesul a {
+  color: #6a6a6a;
+  margin-bottom: 15px;
   font-size: 1em; }
 
 #sourcesul a:link {
@@ -262,7 +260,15 @@ body {
   list-style-type: disc;
   text-decoration: underline; }
 
-#blackmirror {
-  font-size: 1.5em; }
+#blackmirror p {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 2px 0;
+  vertical-align: top; }
+
+@media only screen and (max-device-width: 480px) {
+  #sourcesul li {
+    font-size: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
