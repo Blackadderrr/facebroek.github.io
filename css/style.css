@@ -71,6 +71,10 @@ body {
   #quitfacebook {
     height: 30px;
     width: 557px; } }
+.content {
+  width: 256px;
+  display: inline-block; }
+
 .fotodiv {
   margin-bottom: 3px;
   z-index: 1; }
@@ -118,10 +122,8 @@ body {
   /*background-color: rgba(100, 156, 119, 0.42);*/ }
 
 #youtube {
-  width: 38vh;
-  height: 22vh;
-  max-width: 380px;
-  max-height: 220px;
+  width: 60vh;
+  height: 32vh;
   /*background-color: rgba(187, 105, 105, 0.29);*/ }
 
 @media screen and (max-device-width: 480px) {
