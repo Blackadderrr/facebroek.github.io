@@ -11,6 +11,11 @@
   position: relative;
   /*border: solid 1px;*/ }
 
+a {
+  text-decoration: none;
+  outline: none;
+  font-family: monospace; }
+
 body, html {
   border-style: none; }
 
@@ -31,19 +36,12 @@ body {
   height: 38px;
   background-color: #3b5999;
   margin-bottom: 7px; }
-
-#header a {
-  color: white; }
+  #header a {
+    color: white;
+    font-size: 14px; }
 
 #header a:hover {
   color: #ec4848; }
-
-a {
-  text-decoration: none;
-  outline: none;
-  font-family: monospace;
-  font-weight: lighter;
-  font-size: 1em; }
 
 #ffacebook {
   margin-left: 7px;
@@ -55,8 +53,7 @@ a {
 
 .quit {
   margin-left: auto;
-  margin-right: 7px;
-  font-size: 14px; }
+  margin-right: 7px; }
 
 #delete {
   margin-left: 7px; }
@@ -64,6 +61,8 @@ a {
 @media screen and (max-device-width: 480px) {
   #header {
     height: 48px; }
+    #header a {
+      font-size: 18px; }
 
   #ffacebook {
     height: 30px;
@@ -151,8 +150,13 @@ a {
 #bcaddress {
   font-family: sans-serif;
   letter-spacing: 1px;
-  margin-top: 3%;
-  font-size: 9px; }
+  margin-top: 6%;
+  font-size: 12px;
+  background-color: #141414;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 6px;
+  line-height: 130%; }
 
 @media screen and (max-width: 480px) {
   #bcaddress {
@@ -227,10 +231,11 @@ a {
 #reasons {
   width: auto;
   display: inline-block; }
+  #reasons a {
+    font-size: 15px; }
 
 #reasons a {
-  color: #454545;
-  font-size: 15px; }
+  color: #454545; }
 
 @media screen and (max-device-width: 480px) {
   #reasons a {
@@ -244,16 +249,16 @@ a {
   margin-bottom: 1.5em;
   color: #6a6a6a; }
 
-a {
+#sourcesul a {
   font-size: 1em; }
 
-a:link {
+#sourcesul a:link {
   color: #0e0e0e; }
 
-a:visited {
+#sourcesul a:visited {
   color: #757575; }
 
-li:hover {
+#sourcesul li:hover {
   list-style-type: disc;
   text-decoration: underline; }
 
@@ -261,8 +266,8 @@ li:hover {
   font-size: 1.5em; }
 
 @media only screen and (max-device-width: 480px) {
-  a {
-    font-size: 2em; }
+  #sourcesul {
+    font-size: 1.5em; }
 
   #blackmirror {
     font-size: 2.5em; } }

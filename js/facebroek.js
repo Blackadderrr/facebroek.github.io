@@ -53,7 +53,7 @@ $(document).ready(function() {
 
   $("#bitcoin").on("click", function() {
     $(".centerpage").css("pointer-events", "visible");
-    $(".centerpage").html("<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m55HTtZEY3mtTuxySgb</p></div>");
+    $(".centerpage").html("<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m5<br>5HTtZEY3mtTuxySgb</p></div>");
   });
 
   var isMobile = {
@@ -113,16 +113,4 @@ if(!isMobile.any()) {
     }
   });
 }
-
-  //mobile touch does not work properly
-  // document.getElementById("backgroundfilll").addEventListener("touchmove", function(e) {
-  //   const target = e.target;
-  //   let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
-  //   // target.style.color = "red";
-  //   if (target.style.color != prettyColorIsABadVariableName) {
-  //     target.style.color = prettyColorIsABadVariableName;
-  //   } else {
-  //     target.style.color = "rgb(228, 228, 228)";
-  //   }
-  // });
 });
