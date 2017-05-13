@@ -101,7 +101,7 @@ a {
     min-height: calc(1.5* 256px); }
 
   #items {
-    width: 300px;
+    width: 400px;
     min-height: 78px; }
 
   #items img {
@@ -169,13 +169,13 @@ a {
     font-size: 2vw; } }
 #arrowheart {
   position: absolute;
-  top: 36px;
+  top: 42px;
   left: 0px;
   pointer-events: none; }
 
 #motivational {
   position: absolute;
-  top: 36px;
+  top: 42px;
   right: 0px;
   pointer-events: none; }
 
@@ -201,7 +201,7 @@ a {
 
   #stickfigures img {
     width: 256px;
-    height: 256px; } }
+    height: 140px; } }
 .backgroundfill {
   position: absolute;
   top: 0px;
@@ -242,7 +242,7 @@ a {
 
 @media screen and (max-device-width: 480px) {
   #reasons a {
-    font-size: 21px; } }
+    font-size: 30px; } }
 #sourcesul {
   margin-top: 1em;
   margin-left: 30px;
@@ -270,9 +270,9 @@ li:hover {
 
 @media only screen and (max-device-width: 480px) {
   a {
-    font-size: 1.5em; }
+    font-size: 2em; }
 
   #blackmirror {
-    font-size: 1.8em; } }
+    font-size: 2.5em; } }
 
 /*# sourceMappingURL=style.css.map */
