@@ -72,18 +72,14 @@ a {
   #quitfacebook {
     height: 30px;
     width: 557px; } }
-.content {
-  display: inline-block; }
-
 .fotodiv {
-  display: inline-block;
   margin-bottom: 3px;
   z-index: 1; }
 
 #foto {
-  position: relative;
   border: solid 1px;
-  padding: 1%;
+  background-color: white;
+  padding: 0.25%;
   width: 33vh;
   height: 33vh;
   max-width: 256px;
@@ -97,18 +93,15 @@ a {
     min-height: calc(1.5* 256px); }
 
   #items {
-    min-height: 78px;
-    background-color: pink; }
+    min-height: 78px; }
 
   #items img {
     width: 64px;
-    height: 64px;
-    background-color: green; } }
+    height: 64px; } }
 #items {
   display: inline-block;
   min-height: 39px;
-  margin-bottom: 1vh;
-  background-color: pink; }
+  margin-bottom: 1vh; }
 
 #items img {
   display: inline-block;
@@ -186,11 +179,13 @@ a {
 @media screen and (max-device-width: 480px) {
   #arrowheart {
     width: 256px;
-    height: 256px; }
+    height: 256px;
+    top: 50px; }
 
   #motivational {
     width: 256px;
-    height: 256px; }
+    height: 256px;
+    top: 50px; }
 
   #stickfigures {
     bottom: 30px;
