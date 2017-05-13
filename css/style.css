@@ -132,13 +132,7 @@ body {
     height: 33vh;
     max-width: 570px;
     max-height: 330px;
-    /*background-color: rgba(187, 105, 105, 0.29);*/ }
-
-  #qrcode {
-    width: 66vh;
-    height: 66vh;
-    max-width: 294px;
-    max-height: 294px; } }
+    /*background-color: rgba(187, 105, 105, 0.29);*/ } }
 .bitcoin {
   position: relative;
   z-index: 3; }
@@ -160,6 +154,10 @@ body {
   border-radius: 6px;
   line-height: 130%; }
 
+@media screen and (max-device-width: 480px) {
+  #qrcode {
+    height: 500px;
+    width: 500px; } }
 @media screen and (max-width: 480px) {
   #bcaddress {
     font-size: 2vw; } }
