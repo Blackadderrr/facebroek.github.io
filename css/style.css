@@ -157,10 +157,10 @@ body {
 
 @media screen and (max-device-width: 480px) {
   #qrcode {
-    height: 1000px;
-    width: 1000px;
-    max-width: 10000px;
-    max-height: 10000px; } }
+    width: 66vh;
+    height: 66vh;
+    max-width: 294px;
+    max-height: 294px; } }
 @media screen and (max-width: 480px) {
   #bcaddress {
     font-size: 2vw; } }
