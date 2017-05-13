@@ -74,7 +74,7 @@ a {
     width: 557px; }
 
   .quit {
-    font-size: 28px; } }
+    font-size: 18px; } }
 .content {
   display: inline-block;
   width: 34vh; }
@@ -95,13 +95,13 @@ a {
 
 @media screen and (max-device-width: 480px) {
   #foto {
-    width: calc(2* 33vh);
-    height: calc(2* 33vh);
-    min-width: calc(2* 256px);
-    min-height: calc(2* 256px); }
+    width: calc(1.5* 33vh);
+    height: calc(1.5* 33vh);
+    min-width: calc(1.5* 256px);
+    min-height: calc(1.5* 256px); }
 
   #items {
-    width: 288px;
+    width: 300px;
     min-height: 78px; }
 
   #items img {
@@ -196,11 +196,12 @@ a {
     height: 256px; }
 
   #stickfigures {
-    position: absolute;
-    width: 256px;
-    height: 256px;
     bottom: 30px;
-    margin-left: -128px; } }
+    margin-left: -128px; }
+
+  #stickfigures img {
+    width: 256px;
+    height: 256px; } }
 .backgroundfill {
   position: absolute;
   top: 0px;
@@ -239,13 +240,20 @@ a {
   color: #454545;
   font-size: 15px; }
 
+@media screen and (max-device-width: 480px) {
+  #reasons a {
+    font-size: 21px; } }
 #sourcesul {
-  margin: 1em 0 0 2em;
+  margin-top: 1em;
+  margin-left: 30px;
   list-style-type: circle; }
 
 #sourcesul li {
   margin-bottom: 1.5em;
   color: #6a6a6a; }
+
+a {
+  font-size: 1em; }
 
 a:link {
   color: #0e0e0e; }
@@ -262,6 +270,9 @@ li:hover {
 
 @media only screen and (max-device-width: 480px) {
   a {
-    font-size: 2em; } }
+    font-size: 1.5em; }
+
+  #blackmirror {
+    font-size: 1.8em; } }
 
 /*# sourceMappingURL=style.css.map */
