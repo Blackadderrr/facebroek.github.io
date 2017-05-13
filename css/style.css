@@ -71,10 +71,7 @@ a {
 
   #quitfacebook {
     height: 30px;
-    width: 557px; }
-
-  .quit {
-    font-size: 16px; } }
+    width: 557px; } }
 .content {
   display: inline-block; }
 
@@ -100,17 +97,16 @@ a {
     min-height: calc(1.5* 256px); }
 
   #items {
-    width: 400px;
     min-height: 78px;
     background-color: pink; }
 
   #items img {
     width: 64px;
-    height: 64px; } }
+    height: 64px;
+    background-color: green; } }
 #items {
   display: inline-block;
   min-height: 39px;
-  width: 144px;
   margin-bottom: 1vh;
   background-color: pink; }
 
