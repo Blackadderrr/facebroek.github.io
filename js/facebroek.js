@@ -53,7 +53,7 @@ $(document).ready(function() {
 
   $("#bitcoin").on("click", function() {
     $(".centerpage").css("pointer-events", "visible");
-    $(".centerpage").html("<div class='bitcoin'><img src='./img/bitcoinqr.png' alt='bitcoin qr code'><p style='font-size: 12px'>1AKLdrqC4mngw5m55HTtZEY3mtTuxySgb</p></div>");
+    $(".centerpage").html("<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m55HTtZEY3mtTuxySgb</p></div>");
   });
 
   var isMobile = {
@@ -76,7 +76,7 @@ $(document).ready(function() {
       return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
   };
-  
+
 if(!isMobile.any()) {
   let drawBackgroundPattern = function() {
     const width = 21;
