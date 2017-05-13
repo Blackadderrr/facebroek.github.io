@@ -64,7 +64,7 @@ $(document).ready(function() {
     $(".centerpage").html("<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' width='0' height='0' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m5<br>5HTtZEY3mtTuxySgb</p></div>");
   });
 
-  var isMobile = {
+  let isMobile = {
     Android: function() {
       return navigator.userAgent.match(/Android/i);
     },
