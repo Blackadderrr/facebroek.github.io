@@ -266,6 +266,8 @@ div.return {
   background-color: #3b5999; }
 
 .returncharacter {
+  display: table-cell;
+  vertical-align: top;
   font-size: 24px;
   margin-right: 3px; }
 
