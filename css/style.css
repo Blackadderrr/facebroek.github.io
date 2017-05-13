@@ -249,15 +249,21 @@ body {
   #reasons a {
     font-size: 30px; } }
 .return {
-  font-weight: bold;
-  margin-top: 0.5em;
-  font-size: 1em; }
+  font-weight: 500;
+  font-size: 15px; }
   .return p {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-left: 6px;
+    color: white; }
+
+div.return {
+  background-color: #3b5999; }
 
 .returncharacter {
-  font-size: 2em; }
+  font-size: 24px;
+  margin-right: 3px;
+  padding-bottom: 3px; }
 
 #sourcesul {
   margin-top: 0.5em;
@@ -293,6 +299,12 @@ li p {
 
 @media only screen and (max-device-width: 480px) {
   #sourcesul li {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+
+  .return {
+    font-size: 24px; }
+
+  .returncharacter {
+    font-size: 32px; } }
 
 /*# sourceMappingURL=style.css.map */
