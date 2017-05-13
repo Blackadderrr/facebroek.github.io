@@ -14,7 +14,8 @@
 a {
   text-decoration: none;
   outline: none;
-  font-family: monospace; }
+  font-family: monospace;
+  color: black; }
 
 body,
 html {
@@ -81,6 +82,8 @@ body {
   z-index: 1; }
 
 #foto {
+  pointer-events: visible;
+  cursor: pointer;
   border: solid 1px;
   background-color: white;
   padding: 0.25%;
@@ -245,8 +248,19 @@ body {
 @media screen and (max-device-width: 480px) {
   #reasons a {
     font-size: 30px; } }
+.return {
+  font-weight: bold;
+  margin-top: 0.5em;
+  font-size: 1em; }
+  .return p {
+    display: inline-block;
+    vertical-align: middle; }
+
+.returncharacter {
+  font-size: 2em; }
+
 #sourcesul {
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-left: 30px;
   list-style-type: circle; }
 
@@ -267,8 +281,8 @@ li p {
   color: #757575; }
 
 #sourcesul li:hover {
-  list-style-type: disc;
-  text-decoration: underline; }
+  text-decoration: underline;
+  list-style-type: disc; }
 
 #blackmirror p {
   display: inline-block;

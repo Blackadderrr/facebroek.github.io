@@ -19,9 +19,17 @@ $(document).ready(function() {
     }
   });
 
+  $("#foto").on("click", function() {
+    emptyCenterPage();
+    const source = "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0";
+    if ($("#youtube").attr("src") != source) {
+      $("#youtube").attr("src", source);
+    }
+  });
+
   $("#delete").on("mouseover", function() {
     emptyCenterPage();
-    const source = "https://www.youtube.com/embed/4wvpdBnfiZo?start=2&autoplay=1&rel=0&amp;showinfo=0";
+    const source = "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=1&rel=0&amp;showinfo=0";
     if ($("#youtube").attr("src") != source) {
       $("#youtube").attr("src", source);
     }
@@ -101,14 +109,18 @@ $(document).ready(function() {
       drawBackgroundPattern();
     });
 
-
     $(".backgroundfill").mouseover(function(e) {
       const target = e.target;
-      let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+      const prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+      const rareColor = "rgb(255, 0, 0)";
       // target.style.color = "red";
-      if (target.style.color != prettyColorIsABadVariableName) {
+      if (Math.floor(Math.random() * 1000000) === 42 && target.style.color != rareColor && target.style.color != prettyColorIsABadVariableName) {
+        target.style.color = rareColor;
+        alert("You found the one in a million heart.\nOne of the best songs in the world is yours.");
+        $("#youtube").attr("src", "https://www.youtube.com/embed/cW2bqBhP4AA?start=0&autoplay=1&rel=0&amp;showinfo=0");
+      } else if (target.style.color != prettyColorIsABadVariableName && target.style.color != rareColor) {
         target.style.color = prettyColorIsABadVariableName;
-      } else {
+      } else if (target.style.color != rareColor) {
         target.style.color = "rgb(228, 228, 228)";
       }
     });
