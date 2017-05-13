@@ -38,7 +38,7 @@ body {
   margin-bottom: 7px; }
   #header a {
     color: white;
-    font-size: 14px; }
+    font-size: 15px; }
 
 #header a:hover {
   color: #ec4848; }
@@ -62,7 +62,7 @@ body {
   #header {
     height: 48px; }
     #header a {
-      font-size: 28px; }
+      font-size: 24px; }
 
   #ffacebook {
     height: 30px;
@@ -265,7 +265,7 @@ body {
   background-color: black;
   color: white;
   padding: 2px 0;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 @media only screen and (max-device-width: 480px) {
   #sourcesul li {
