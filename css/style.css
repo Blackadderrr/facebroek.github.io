@@ -250,20 +250,24 @@ body {
     font-size: 30px; } }
 .return {
   font-weight: 500;
-  font-size: 15px; }
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 38px; }
   .return p {
-    display: inline-block;
+    padding-left: 3px;
+    display: table-cell;
     vertical-align: middle;
-    margin-left: 6px;
-    color: white; }
+    color: white;
+    height: 38px; }
 
 div.return {
   background-color: #3b5999; }
 
 .returncharacter {
   font-size: 24px;
-  margin-right: 3px;
-  padding-bottom: 3px; }
+  margin-right: 3px; }
 
 #sourcesul {
   margin-top: 0.5em;
