@@ -16,10 +16,12 @@ a {
   outline: none;
   font-family: monospace; }
 
-body, html {
+body,
+html {
   border-style: none; }
 
-input, select {
+input,
+select {
   vertical-align: middle; }
 
 body {
@@ -167,13 +169,13 @@ body {
 #arrowheart {
   position: absolute;
   top: 42px;
-  left: 0px;
+  left: 0;
   pointer-events: none; }
 
 #motivational {
   position: absolute;
   top: 42px;
-  right: 0px;
+  right: 0;
   pointer-events: none; }
 
 #stickfigures {
@@ -203,8 +205,8 @@ body {
     height: 140px; } }
 .backgroundfill {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   -webkit-user-select: none;

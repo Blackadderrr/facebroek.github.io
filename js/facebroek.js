@@ -77,40 +77,40 @@ $(document).ready(function() {
     }
   };
 
-if(!isMobile.any()) {
-  let drawBackgroundPattern = function() {
-    const width = 21;
-    const height = 21;
-    const fsize = 1.5;
-    const margin = 0;
-    const viewportWidth = $(window).width();
-    const viewportHeight = $(window).height();
-    const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em'>♥</p></div>";
-    let outputHTML = "";
-    for (let i = 0; i < Math.floor(viewportWidth / width); i++) {
-      for (let j = 0; j < Math.floor(viewportHeight / height); j++) {
-        outputHTML += bgObjectHTML;
+  if (!isMobile.any()) {
+    let drawBackgroundPattern = function() {
+      const width = 21;
+      const height = 21;
+      const fsize = 1.5;
+      const margin = 0;
+      const viewportWidth = $(window).width();
+      const viewportHeight = $(window).height();
+      const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em'>♥</p></div>";
+      let outputHTML = "";
+      for (let i = 0; i < Math.floor(viewportWidth / width); i++) {
+        for (let j = 0; j < Math.floor(viewportHeight / height); j++) {
+          outputHTML += bgObjectHTML;
+        }
       }
+      $(".backgroundfill").html(outputHTML);
     }
-    $(".backgroundfill").html(outputHTML);
-  }
 
-  drawBackgroundPattern();
-
-  $(window).resize(function() {
     drawBackgroundPattern();
-  });
+
+    $(window).resize(function() {
+      drawBackgroundPattern();
+    });
 
 
-  $(".backgroundfill").mouseover(function(e) {
-    const target = e.target;
-    let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
-    // target.style.color = "red";
-    if (target.style.color != prettyColorIsABadVariableName) {
-      target.style.color = prettyColorIsABadVariableName;
-    } else {
-      target.style.color = "rgb(228, 228, 228)";
-    }
-  });
-}
+    $(".backgroundfill").mouseover(function(e) {
+      const target = e.target;
+      let prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+      // target.style.color = "red";
+      if (target.style.color != prettyColorIsABadVariableName) {
+        target.style.color = prettyColorIsABadVariableName;
+      } else {
+        target.style.color = "rgb(228, 228, 228)";
+      }
+    });
+  }
 });
