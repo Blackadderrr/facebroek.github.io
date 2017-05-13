@@ -245,6 +245,11 @@ body {
   margin-left: 30px;
   list-style-type: circle; }
 
+li p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 4px; }
+
 #sourcesul li {
   color: #6a6a6a;
   margin-bottom: 15px;
