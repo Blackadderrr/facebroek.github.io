@@ -62,7 +62,7 @@ body {
   #header {
     height: 48px; }
     #header a {
-      font-size: 18px; }
+      font-size: 28px; }
 
   #ffacebook {
     height: 30px;
@@ -264,12 +264,5 @@ body {
 
 #blackmirror {
   font-size: 1.5em; }
-
-@media only screen and (max-device-width: 480px) {
-  #sourcesul {
-    font-size: 1.5em; }
-
-  #blackmirror {
-    font-size: 2.5em; } }
 
 /*# sourceMappingURL=style.css.map */
