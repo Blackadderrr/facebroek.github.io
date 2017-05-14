@@ -202,6 +202,7 @@ body {
   position: absolute;
   z-index: 3;
   bottom: 4px;
+  margin-left: -4px;
   pointer-events: visible;
   visibility: hidden; }
 
