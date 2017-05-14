@@ -1,8 +1,21 @@
 //ugly ass non-DRY code, not so much doge
 
 $(document).ready(function() {
-
   $(".centerpage").html("<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>");
+
+  document.onclick = function() {
+    if(document.getElementById("youtube").getAttribute("src") === "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0") {
+      document.getElementById("ladder").style.visibility = "visible";
+    } else {
+      //document.getElementById("ladder").style.visibility = "hidden";
+    }
+  }
+
+  if(document.getElementById("youtube").getAttribute("src") === "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0") {
+    document.getElementById("ladder").style.visibility = "visible";
+  } else {
+    document.getElementById("ladder").style.visibility = "hidden";
+  }
 
   const emptyCenterPage = function() {
     $(".centerpage").css("pointer-events", "visible");

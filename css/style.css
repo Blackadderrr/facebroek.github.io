@@ -121,15 +121,24 @@ body {
   border-bottom: solid 1px;
   color: #6a6a6a; }
 
+.placeholder {
+  right: 0;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  cursor: none;
+  pointer-events: none; }
+
+.centerpagecontainer {
+  pointer-events: none; }
+
 .centerpage {
   display: inline-block;
-  pointer-events: none;
-  /*background-color: rgba(100, 156, 119, 0.42);*/ }
+  pointer-events: none; }
 
 #youtube {
   width: 60vh;
-  height: 32vh;
-  /*background-color: rgba(187, 105, 105, 0.29);*/ }
+  height: 32vh; }
 
 @media screen and (max-device-width: 480px) {
   #youtube {
@@ -140,6 +149,7 @@ body {
     /*background-color: rgba(187, 105, 105, 0.29);*/ } }
 .bitcoin {
   position: relative;
+  display: inline-block;
   z-index: 3; }
 
 #qrcode {
@@ -188,6 +198,13 @@ body {
   margin-left: -64px;
   z-index: 1; }
 
+#ladder {
+  position: absolute;
+  z-index: 3;
+  bottom: 4px;
+  pointer-events: visible;
+  visibility: hidden; }
+
 @media screen and (max-device-width: 480px) {
   #arrowheart {
     width: 256px;
@@ -205,7 +222,11 @@ body {
 
   #stickfigures img {
     width: 256px;
-    height: 140px; } }
+    height: 140px; }
+
+  #ladder {
+    width: 256px;
+    height: 256px; } }
 .backgroundfill {
   position: absolute;
   top: 0;
