@@ -138,7 +138,8 @@ body {
 
 #youtube {
   width: 60vh;
-  height: 32vh; }
+  height: 32vh;
+  z-index: 4; }
 
 @media screen and (max-device-width: 480px) {
   #youtube {
