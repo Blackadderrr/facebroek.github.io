@@ -59,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   emptyCenterPage();
 
+  const drawBlackBgYt = () => {
+    //in chrome browsers youtube flickers when changing its source. This prevents you seeing the white background, and thus the flickering.
+    document.getElementById("youtube").style.backgroundColor = "black";
+  }
+
   //show ladder png that links to sources page
   document.onclick = function() {
     const yt = document.getElementById("youtube");
@@ -76,9 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       const yt = document.getElementById("youtube");
       visiblePointerEvents();
+      drawBlackBgYt();
       if (yt.src != link_Arr[i].source) {
-        //in chrome browsers youtube flickers when changing its source. This prevents you seeing the white background, and thus the flickering.
-        document.getElementById("youtube").style.backgroundColor = "black";
         yt.src = link_Arr[i].source;
       }
     });
