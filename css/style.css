@@ -160,7 +160,8 @@ body {
 
   #landingtext {
     line-height: 200%;
-    font-size: 18px; } }
+    font-size: 18px;
+    max-height: 480px; } }
 .bitcoin {
   position: relative;
   display: inline-block;
