@@ -61,7 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const drawBlackBgYt = () => {
     //in chrome browsers youtube flickers when changing its source. This prevents you seeing the white background, and thus the flickering.
-    document.getElementsByClassName("centerpage")[0].style.backgroundColor = "black";
+    if (document.getElementById("youtube")) {
+      document.getElementsByClassName("centerpage")[0].style.backgroundColor = "black";
+    } else {
+      document.getElementsByClassName("centerpage")[0].style.backgroundColor = "";
+    }
   }
 
   //show ladder png that links to sources page
@@ -91,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("bitcoin").addEventListener("click", () => {
     visiblePointerEvents();
     document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' width='0' height='0' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m5<br>5HTtZEY3mtTuxySgb</p></div>";
+    drawBlackBgYt();
   });
 
   if (!isMobile.any()) {
@@ -132,6 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (target.style.color != rareColor) {
         target.style.color = "rgb(228, 228, 228)";
       }
-    })
+    });
   }
 });
