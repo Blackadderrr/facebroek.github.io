@@ -70,14 +70,15 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   //show ladder png that links to sources page
-  document.onclick = function() {
-    const yt = document.getElementById("youtube");
-    if (yt && yt.src === link_Arr[0].source) {
-      document.getElementById("ladder").style.visibility = "visible";
-    } else {
-      //document.getElementById("ladder").style.visibility = "hidden";
-    }
-  }
+  // document.onclick = function() {
+  //   const yt = document.getElementById("youtube");
+  //   if (yt && yt.src === link_Arr[0].source) {
+  //     document.getElementById("ladder").style.visibility = "visible";
+  //   } else {
+  //     //document.getElementById("ladder").style.visibility = "hidden";
+  //   }
+  // }
+
   //iterates through the links that change yt video source
   for (let i = 0; i < link_Arr.length; i++) {
     document.getElementById(link_Arr[i].id).addEventListener(link_Arr[i].action, function() {
