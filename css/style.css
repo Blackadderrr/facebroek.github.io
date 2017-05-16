@@ -135,13 +135,15 @@ body {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  max-width: 60vh;
+  max-width: 480px;
   text-align: justify;
-  height: 201px;
+  max-height: 240px;
+  padding: 0 3px;
   overflow-y: auto;
   pointer-events: visible;
   line-height: 150%;
-  z-index: 3; }
+  z-index: 3;
+  background-color: #eeeff4; }
 
 #youtube {
   vertical-align: bottom;
