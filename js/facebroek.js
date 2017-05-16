@@ -54,10 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const emptyCenterPage = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>";
   };
+
   const visiblePointerEvents = () => {
     document.getElementsByClassName("centerpage")[0].style.pointerEvents = "visible"; //[0] because it returns elementS, plural
   }
-  emptyCenterPage();
+  //emptyCenterPage();
 
   const drawBlackBgYt = () => {
     //in chrome browsers youtube flickers when changing its source. This prevents you seeing the white background, and thus the flickering.

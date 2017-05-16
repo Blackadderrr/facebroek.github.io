@@ -21,6 +21,9 @@ body,
 html {
   border-style: none; }
 
+span {
+  font-style: italic; }
+
 input,
 select {
   vertical-align: middle; }
@@ -121,20 +124,25 @@ body {
   border-bottom: solid 1px;
   color: #6a6a6a; }
 
-.placeholder {
-  right: 0;
-  position: absolute;
-  width: 128px;
-  height: 128px;
-  cursor: none;
-  pointer-events: none; }
-
 .centerpagecontainer {
   pointer-events: none; }
 
 .centerpage {
   display: inline-block;
   pointer-events: none; }
+
+#landingtext {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 60vh;
+  text-align: justify;
+  height: 201px;
+  overflow-y: auto;
+  pointer-events: visible;
+  line-height: 150%;
+  background-color: #eeeff4;
+  z-index: 3; }
 
 #youtube {
   vertical-align: bottom;
