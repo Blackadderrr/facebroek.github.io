@@ -156,7 +156,11 @@ body {
     width: 57vh;
     height: 33vh;
     max-width: 570px;
-    max-height: 330px; } }
+    max-height: 330px; }
+
+  #landingtext {
+    line-height: 200%;
+    font-size: 18px; } }
 .bitcoin {
   position: relative;
   display: inline-block;
@@ -185,7 +189,10 @@ body {
     width: 66vh;
     height: 66vh;
     max-width: 294px;
-    max-height: 294px; } }
+    max-height: 294px; }
+
+  #bcaddress {
+    font-size: 3vw; } }
 @media screen and (max-width: 480px) {
   #bcaddress {
     font-size: 2vw; } }
