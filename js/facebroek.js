@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const drawBlackBgYt = () => {
     //in chrome browsers youtube flickers when changing its source. This prevents you seeing the white background, and thus the flickering.
-    document.getElementById("youtube").style.backgroundColor = "black";
+    document.getElementsByClassName("centerpage")[0].style.backgroundColor = "black";
   }
 
   //show ladder png that links to sources page
