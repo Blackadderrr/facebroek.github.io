@@ -163,7 +163,7 @@ body {
     line-height: 200%;
     font-size: 18px;
     max-height: 480px; } }
-.bitcoin {
+.cryptocurrency {
   position: relative;
   display: inline-block;
   z-index: 3; }
@@ -173,9 +173,12 @@ body {
   height: 33vh;
   max-width: 147px;
   max-height: 147px;
-  border: solid 6px; }
+  border: solid 6px;
+  border-radius: 6px; }
 
-#bcaddress {
+#litecoinaddress {
+  max-width: 147px;
+  word-wrap: break-word;
   font-family: sans-serif;
   letter-spacing: 1px;
   margin-top: 6%;
@@ -183,8 +186,8 @@ body {
   background-color: #141414;
   color: white;
   padding: 3px 5px;
-  border-radius: 6px;
-  line-height: 130%; }
+  line-height: 130%;
+  border-radius: 6px; }
 
 @media screen and (max-device-width: 480px) {
   #qrcode {
@@ -193,10 +196,10 @@ body {
     max-width: 294px;
     max-height: 294px; }
 
-  #bcaddress {
+  #litecoinaddress {
     font-size: 3vw; } }
 @media screen and (max-width: 480px) {
-  #bcaddress {
+  #litecoinaddress {
     font-size: 2vw; } }
 #arrowheart {
   position: absolute;

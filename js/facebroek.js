@@ -94,9 +94,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  document.getElementById("bitcoin").addEventListener("click", () => {
+  document.getElementById("cryptocurrency").addEventListener("click", () => {
     visiblePointerEvents();
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='bitcoin'><img id='qrcode' src='./img/bitcoinqr.png' width='0' height='0' alt='bitcoin qr code'><p id='bcaddress'>1AKLdrqC4mngw5m5<br>5HTtZEY3mtTuxySgb</p></div>";
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptocurrency'><img id='qrcode' src='./img/litecoinqr.png' width='0' height='0' alt='litecoin qr code'><p id='litecoinaddress'>LLdcuF1e4fCaa1HCKhH8jfhtiJRCLeHfpo</p></div>";
     drawBlackBgYt();
   });
 
