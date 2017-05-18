@@ -197,7 +197,8 @@ body {
     max-height: 294px; }
 
   #litecoinaddress {
-    font-size: 3vw; } }
+    font-size: 3vw;
+    max-width: 294px; } }
 @media screen and (max-width: 480px) {
   #litecoinaddress {
     font-size: 2vw; } }
