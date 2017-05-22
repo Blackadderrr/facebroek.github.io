@@ -196,11 +196,11 @@ body {
     max-width: 294px;
     max-height: 294px; }
 
-  #litecoinaddress {
+  #ccaddress {
     font-size: 2.7vw;
     max-width: 294px; } }
 @media screen and (max-width: 480px) {
-  #litecoinaddress {
+  #ccaddress {
     font-size: 2vw; } }
 #arrowheart {
   position: absolute;
