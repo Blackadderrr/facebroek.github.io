@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById("cryptocurrency").addEventListener("click", () => {
     visiblePointerEvents();
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptocurrency'><img id='qrcode' src='./img/litecoinqr.png' width='0' height='0' alt='litecoin qr code'><p id='litecoinaddress'>LLdcuF1e4fCaa1HCKhH8jfhtiJRCLeHfpo</p></div>";
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptocurrency'><img id='qrcode' src='./img/etherqr.png' width='0' height='0' alt='qr code'><p id='ccaddress'>0x764d113ccaD43D0C73E4576d3a12b467380343A9</p></div>";
     drawBlackBgYt();
   });
 
