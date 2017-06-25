@@ -226,7 +226,8 @@ body {
   z-index: 2;
   bottom: 4px;
   margin-left: -4px;
-  pointer-events: visible; }
+  pointer-events: visible;
+  visibility: hidden; }
 
 @media screen and (max-device-width: 480px) {
   #arrowheart {
