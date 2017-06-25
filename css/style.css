@@ -280,18 +280,6 @@ body {
   bottom: 3px;
   width: 100vw; }
 
-#reasons {
-  width: auto;
-  display: inline-block; }
-  #reasons a {
-    font-size: 15px; }
-
-#reasons a {
-  color: #454545; }
-
-@media screen and (max-device-width: 480px) {
-  #reasons a {
-    font-size: 30px; } }
 .return {
   font-weight: 500;
   font-size: 15px;
