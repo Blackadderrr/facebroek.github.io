@@ -160,7 +160,7 @@ body {
     max-height: 330px; }
 
   #landingtext {
-    line-height: 200%;
+    line-height: 150%;
     font-size: 18px;
     max-height: 480px; } }
 .cryptocurrency {
@@ -171,13 +171,13 @@ body {
 #qrcode {
   width: 33vh;
   height: 33vh;
-  max-width: 147px;
-  max-height: 147px;
+  max-width: 272px;
+  max-height: 272px;
   border: solid 6px;
   border-radius: 6px; }
 
 #ccaddress {
-  max-width: 147px;
+  max-width: 272px;
   word-wrap: break-word;
   font-family: sans-serif;
   letter-spacing: 1px;
