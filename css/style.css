@@ -277,7 +277,8 @@ body {
 #footer {
   position: absolute;
   bottom: 3px;
-  width: 100vw; }
+  width: 100vw;
+  font-size: 1px; }
 
 .return {
   font-weight: 500;
