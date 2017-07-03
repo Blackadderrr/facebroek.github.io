@@ -275,10 +275,11 @@ body {
   cursor: default; }
 
 #footer {
+  color: rgba(215, 240, 222, 0);
   position: absolute;
   bottom: 3px;
   width: 100vw;
-  font-size: 1px; }
+  font-size: 10px; }
 
 .return {
   font-weight: 500;
