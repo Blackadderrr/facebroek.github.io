@@ -84,6 +84,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+// Quick and dirty, changes some css in the footer
+  document.getElementById("questionmark").onmouseover = function() {
+    document.getElementById("myname").style.color = "rgb(0, 0, 0)";
+  }
+
+  document.getElementById("questionmark").onmouseout = function() {
+    document.getElementById("myname").style.color = "rgb(162, 162, 162)";
+  }
+
+
   //iterates through the links that change yt video source
   for (let i = 0; i < link_Arr.length; i++) {
     document.getElementById(link_Arr[i].id).addEventListener(link_Arr[i].action, function() {

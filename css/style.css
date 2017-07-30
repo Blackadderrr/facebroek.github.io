@@ -275,18 +275,19 @@ body {
   cursor: default; }
 
 #footer {
-  color: #f4b2b2;
+  color: #a2a2a2;
   position: absolute;
   bottom: 3px;
   width: 100vw;
-  font-size: 9px;
+  font-size: 10px;
   cursor: crosshair; }
   #footer p {
-    line-height: 114%; }
+    line-height: 114%;
+    display: inline; }
   #footer a {
-    color: #a2a2a2;
     cursor: pointer;
-    font-size: 7px; }
+    color: #a2a2a2;
+    font-size: 9px; }
 
 .return {
   font-weight: 500;
