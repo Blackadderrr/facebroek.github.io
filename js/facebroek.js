@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
       action: "click"
     },
     {
-      id: "advertising",
+      id: "subtractvertising",
       source: "https://www.youtube.com/embed/ouE-CcwE8Ls?start=0&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     }
