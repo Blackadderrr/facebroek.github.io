@@ -109,14 +109,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let drawBackgroundPattern = () => {
       const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      const width = 21;
-      const height = 21;
-      const fsize = 2;
+      const width = 25;
+      const height = 25;
+      const fsize = 3;
       const margin = 0;
-      const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em'>☺</p></div>";
+      const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em; bottom: 7px;'>☺</p></div>";
       let outputHTML = "";
       for (let i = 0; i < Math.floor(viewportWidth / width); i++) {
-        for (let j = 0; j < Math.floor(viewportHeight / height); j++) {
+        for (let j = 0; j < Math.floor(viewportHeight / height - 0.2); j++) {
           outputHTML += bgObjectHTML;
         }
       }
