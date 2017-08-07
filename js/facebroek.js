@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementsByClassName("backgroundfill")[0].addEventListener("mouseover", function(e) {
       const target = e.target;
-      const prettyColorIsABadVariableName = "rgb(255, 185, 179)";
+      const prettyColorIsABadVariableName = "rgba(255, 19, 0, 0.21)";
       const rareColor = "rgb(255, 0, 0)";
       if (Math.floor(Math.random() * 1000) === 42 && target.style.color != rareColor && target.style.color != prettyColorIsABadVariableName) {
         // target.style.color = rareColor;
