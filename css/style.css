@@ -284,7 +284,12 @@ body {
   bottom: 3px;
   width: 100vw;
   font-size: 9px;
-  color: rgba(255, 255, 255, 0); }
+  color: rgba(255, 0, 255, 0); }
+
+#myname {
+  cursor: crosshair;
+  text-align: center;
+  display: inline-block; }
 
 .return {
   font-weight: 500;
