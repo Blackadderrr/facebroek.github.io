@@ -16,31 +16,24 @@
     </a>
   </div>
   <div id="cryptolist">
-    <div>
-      <script type="text/javascript" src="https://www.cryptonator.com/ui/js/widget/calc_widget.js"></script>
+    <div class="coins">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+      <div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="EUR" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="EUR" data-statsticker="false"></div>
     </div>
-    <div>
-      <script type="text/javascript">
-        baseUrl = "https://widgets.cryptocompare.com/";
-        var scripts = document.getElementsByTagName("script");
-        var embedder = scripts[scripts.length - 1];
-        (function() {
-          var appName = encodeURIComponent(window.location.hostname);
-          if (appName == "") {
-            appName = "local";
-          }
-          var s = document.createElement("script");
-          s.type = "text/javascript";
-          s.async = true;
-          var theUrl = baseUrl + 'serve/v1/coin/multi?fsyms=ETH,GNT,BTC,LTC&tsyms=EUR,USD';
-          s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-          embedder.parentNode.appendChild(s);
-        })();
-      </script>
-
+    <div class="coins">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+      <div class="coinmarketcap-currency-widget" data-currency="golem-network-tokens" data-base="EUR" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
     </div>
 
+    <div class="coins">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+      <div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="EUR" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
+    </div>
 
+    <div class="coins">
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+      <div class="coinmarketcap-currency-widget" data-currency="litecoin" data-base="EUR" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-stats="USD" data-statsticker="false"></div>
+    </div>
     <div class="coins">
       <script type="text/javascript">
         baseUrl = "https://widgets.cryptocompare.com/";
