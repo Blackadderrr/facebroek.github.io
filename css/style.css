@@ -348,11 +348,9 @@ li p {
     font-size: 24px; } }
 #cryptolist {
   margin: auto;
-  width: 612px;
-  cursor: crosshair; }
+  width: 600px; }
 
 .coins {
-  width: 304px;
   display: inline-block;
   vertical-align: top; }
 
