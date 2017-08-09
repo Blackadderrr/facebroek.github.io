@@ -346,12 +346,23 @@ li p {
 
   .return {
     font-size: 24px; } }
+#autorefreshcounter {
+  text-align: center;
+  width: 123px;
+  margin: auto;
+  padding: 3px;
+  color: #676767;
+  font-size: 12px;
+  border: solid 1px #d2d2d2;
+  border-radius: 6px; }
+
 #cryptolist {
   margin: auto;
-  width: 600px; }
+  width: 576px; }
 
 .coins {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-bottom: 6px; }
 
 /*# sourceMappingURL=style.css.map */
