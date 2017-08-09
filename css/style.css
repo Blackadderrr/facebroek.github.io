@@ -350,6 +350,7 @@ li p {
   text-align: center;
   width: 123px;
   margin: auto;
+  margin-top: 6px;
   padding: 3px;
   color: #676767;
   font-size: 12px;
@@ -363,6 +364,6 @@ li p {
 .coins {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 6px; }
+  margin-top: 6px; }
 
 /*# sourceMappingURL=style.css.map */
