@@ -346,5 +346,8 @@ li p {
 
   .return {
     font-size: 24px; } }
+#cryptolist {
+  margin: auto;
+  width: 600px; }
 
 /*# sourceMappingURL=style.css.map */
