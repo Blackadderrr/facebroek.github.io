@@ -358,9 +358,10 @@ li p {
 
 #cryptolist {
   margin: auto;
-  width: 576px; }
+  width: 582px; }
 
 .coins {
+  width: 288px;
   display: inline-block;
   vertical-align: top;
   margin-top: 6px; }
