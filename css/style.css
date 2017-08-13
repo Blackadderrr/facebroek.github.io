@@ -165,12 +165,14 @@ body {
     font-size: 18px;
     max-height: 480px; } }
 .cryptopay {
+  width: auto;
   position: relative;
   display: inline-block;
   z-index: 3;
   outline: solid 1px red; }
 
 #qrcode {
+  margin: 0 auto;
   width: 33vh;
   height: 33vh;
   max-width: 272px;
@@ -178,11 +180,12 @@ body {
   border: solid 6px; }
 
 #ccaddress {
+  margin: 0 auto;
   width: 33vh;
   max-width: 272px;
   word-wrap: break-word;
   font-family: sans-serif;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.12em;
   margin-top: 6%;
   font-size: 18px;
   background-color: #fff;
@@ -190,9 +193,6 @@ body {
   padding: 3px 5px; }
 
 @media screen and (max-device-width: 480px) {
-  #ccaddress {
-    font-size: 2.7vw; }
-
   #qrcode {
     width: calc(1.5* 33vh);
     height: calc(1.5* 33vh);
@@ -200,6 +200,7 @@ body {
     min-height: calc(1.5* 274px); }
 
   #ccaddress {
+    font-size: 2.7vw;
     width: calc(1.5* 33vh);
     min-width: calc(1.5* 274px); } }
 #arrowheart {
