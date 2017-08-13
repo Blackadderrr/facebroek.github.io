@@ -199,10 +199,6 @@ body {
     font-size: 2.7vw;
     width: calc(1.5* 33vh);
     max-width: calc(1.5* 274px); } }
-@media screen and (orientation: landscape) {
-  #ccaddress {
-    width: 100%;
-    min-width: 100%; } }
 #arrowheart {
   position: absolute;
   top: 42px;
