@@ -7,8 +7,7 @@
 
 * {
   box-sizing: border-box;
-  position: relative;
-  /*border: solid 1px;*/ }
+  position: relative; }
 
 a {
   text-decoration: none;
@@ -166,8 +165,7 @@ body {
     max-height: 480px; } }
 .cryptopay {
   display: inline-block;
-  z-index: 3;
-  outline: solid 1px red; }
+  z-index: 3; }
 
 #qrcode {
   margin: 0 auto;
