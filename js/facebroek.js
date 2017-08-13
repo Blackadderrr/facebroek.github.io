@@ -109,25 +109,20 @@ document.addEventListener('DOMContentLoaded', function() {
     let drawBackgroundPattern = () => {
       const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      const width = 30;
-      const height = 30;
-      const fsize = 1;
-      const margin = 3;
-      const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em;'>☺</p></div>";
-
-      // const bgObjectHTML = "<div style='height:" + height + "px; width:" + width + "px' class='bgfillobject'><p>☺</p></div>";
-
+      const margin = 1;
+      const dimension = 32 ;
+      const bgObjectHTML = '<img class="bgfillobjects" src="./img/sad.gif" alt="sad face">';
 
       let outputHTML = "";
-      for (let i = 0; i < Math.floor(viewportWidth / width); i++) {
-        for (let j = 0; j < Math.floor(viewportHeight / height); j++) {
+      for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
+        for (let j = 0; j < Math.floor(viewportHeight  / (dimension+margin*2)); j++) {
           outputHTML += bgObjectHTML;
         }
       }
       document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
     }
 
-    // drawBackgroundPattern();
+    drawBackgroundPattern();
 
     window.onresize = () => {
       drawBackgroundPattern();
@@ -135,18 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementsByClassName("backgroundfill")[0].addEventListener("mouseover", function(e) {
       const target = e.target;
-      const prettyColorIsABadVariableName = "rgba(255, 19, 0, 0.21)";
       const rareColor = "rgb(255, 0, 0)";
-      if (Math.floor(Math.random() * 1000) === 42 && target.style.color != rareColor && target.style.color != prettyColorIsABadVariableName) {
-        // target.style.color = rareColor;
-        // alert("You found the one in a million heart.\nOne of the best songs in the world is yours.");
-        // visiblePointerEvents();
-        // const yt = document.getElementById("youtube");
-        // yt.src = "https://www.youtube.com/embed/cW2bqBhP4AA?start=0&autoplay=1&rel=0&amp;showinfo=0";
-      } else if (target.style.color != prettyColorIsABadVariableName && target.style.color != rareColor) {
-        target.style.color = prettyColorIsABadVariableName;
-      } else if (target.style.color != rareColor) {
-        target.style.color = "rgb(228, 228, 228)";
+      if (target.getAttribute("src") === "./img/sad.gif") {
+        target.src = "./img/happy.gif";
+      } else if (target.getAttribute("src") === "./img/happy.gif"){
+        target.src = "./img/sad.gif";
       }
     });
   }
