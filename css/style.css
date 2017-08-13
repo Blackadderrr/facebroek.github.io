@@ -192,13 +192,13 @@ body {
   #ccaddress {
     font-size: 2.7vw; }
 
-  #qrcode, #ccaddress {
+  #qrcode {
     width: calc(1.5* 33vh);
     height: calc(1.5* 33vh);
     min-width: calc(1.5* 274px);
     min-height: calc(1.5* 274px); }
 
-  #qrcode {
+  #ccaddress {
     width: calc(1.5* 33vh);
     min-width: calc(1.5* 274px); } }
 #arrowheart {
