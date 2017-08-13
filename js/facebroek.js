@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       let outputHTML = "";
       for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
-        for (let j = 0; j < Math.floor(viewportHeight  / (dimension+margin*2)); j++) {
+        for (let j = 0; j < Math.floor(viewportHeight  / dimension); j++) {
           outputHTML += bgObjectHTML;
         }
       }

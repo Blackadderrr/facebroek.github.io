@@ -1,10 +1,9 @@
 * {
+  font-family: "Roboto Slab", serif;
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: 100%;
-  font: sans-serif;
-  line-height: 100%; }
+  font-size: 100%; }
 
 * {
   box-sizing: border-box;
@@ -45,7 +44,8 @@ body {
   margin-bottom: 7px; }
   #header a {
     color: white;
-    font-size: 15px; }
+    font-size: 18px;
+    font-weight: 100; }
 
 #header a:hover {
   color: #ec4848; }
@@ -133,8 +133,10 @@ body {
   pointer-events: none; }
 
 #landingtext {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 15px;
   display: inline-block;
-  text-align: center;
   vertical-align: bottom;
   max-width: 560px;
   text-align: justify;
@@ -142,7 +144,6 @@ body {
   padding: 6px 12px;
   overflow-y: auto;
   pointer-events: visible;
-  line-height: 126%;
   z-index: 3;
   border: dotted 1px #cfcfcf;
   background-color: #eeeff4; }
@@ -187,7 +188,6 @@ body {
   background-color: #141414;
   color: white;
   padding: 3px 5px;
-  line-height: 126%;
   border-radius: 6px; }
 
 @media screen and (max-device-width: 480px) {
@@ -265,7 +265,7 @@ body {
 .bgfillobjects {
   width: 30px;
   height: 30px;
-  margin: 1px 1px -1px 1px;
+  margin: 1px 1px -3px 1px;
   opacity: 0.21;
   display: inline-block;
   z-index: 0;
@@ -289,8 +289,7 @@ body {
   display: inline-block; }
 
 .return {
-  font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   width: 100vw;
@@ -308,16 +307,15 @@ div.return {
 #sourcesul {
   margin-top: 0.5em;
   margin-left: 30px;
-  list-style-type: circle; }
+  list-style-type: decimal; }
 
 li p {
   display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 4px; }
+  vertical-align: middle; }
 
 #sourcesul li {
   color: #6a6a6a;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   font-size: 1em; }
 
 #sourcesul a:link {
@@ -326,9 +324,8 @@ li p {
 #sourcesul a:visited {
   color: #757575; }
 
-#sourcesul li:hover {
-  text-decoration: underline;
-  list-style-type: disc; }
+#sourcesul a:hover {
+  color: red; }
 
 #blackmirror p {
   display: inline-block;
@@ -336,6 +333,13 @@ li p {
   color: white;
   padding: 2px 0;
   vertical-align: middle; }
+
+#blackmirror p:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px;
+  padding: 0px;
+  margin: 0px; }
 
 @media only screen and (max-device-width: 480px) {
   #sourcesul li {
