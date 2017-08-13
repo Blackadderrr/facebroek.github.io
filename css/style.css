@@ -174,21 +174,19 @@ body {
   height: 33vh;
   max-width: 272px;
   max-height: 272px;
-  border: solid 6px;
-  border-radius: 6px; }
+  border: solid 6px; }
 
 #ccaddress {
   width: 33vh;
   max-width: 272px;
   word-wrap: break-word;
   font-family: sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.24em;
   margin-top: 6%;
-  font-size: 12px;
-  background-color: #141414;
-  color: white;
-  padding: 3px 5px;
-  border-radius: 6px; }
+  font-size: 18px;
+  background-color: #fff;
+  border: solid 6px;
+  padding: 3px 5px; }
 
 @media screen and (max-device-width: 480px) {
   #qrcode {
