@@ -130,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementsByClassName("backgroundfill")[0].addEventListener("mouseover", function(e) {
       const target = e.target;
-      const rareColor = "rgb(255, 0, 0)";
       if (target.getAttribute("src") === "./img/sad.gif") {
         target.src = "./img/happy.gif";
       } else if (target.getAttribute("src") === "./img/happy.gif"){

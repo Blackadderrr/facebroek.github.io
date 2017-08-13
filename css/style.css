@@ -250,7 +250,6 @@ body {
     width: 201px;
     height: 201px; } }
 .backgroundfill {
-  overflow: hidden;
   top: 42px;
   position: absolute;
   -webkit-user-select: none;
@@ -267,7 +266,7 @@ body {
   width: 30px;
   height: 30px;
   margin: 1px 1px -1px 1px;
-  opacity: 0.2;
+  opacity: 0.21;
   display: inline-block;
   z-index: 0;
   cursor: default; }
