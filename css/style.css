@@ -196,7 +196,11 @@ body {
     width: calc(1.5* 33vh);
     height: calc(1.5* 33vh);
     min-width: calc(1.5* 274px);
-    min-height: calc(1.5* 274px); } }
+    min-height: calc(1.5* 274px); }
+
+  #qrcode {
+    width: calc(1.5* 33vh);
+    min-width: calc(1.5* 274px); } }
 #arrowheart {
   position: absolute;
   top: 42px;
