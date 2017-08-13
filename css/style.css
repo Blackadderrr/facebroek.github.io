@@ -93,15 +93,15 @@ body {
   padding: 0.25%;
   width: 33vh;
   height: 33vh;
-  max-width: 256px;
-  max-height: 256px; }
+  max-width: 274px;
+  max-height: 274px; }
 
 @media screen and (max-device-width: 480px) {
   #foto {
     width: calc(1.5* 33vh);
     height: calc(1.5* 33vh);
-    min-width: calc(1.5* 256px);
-    min-height: calc(1.5* 256px); }
+    min-width: calc(1.5* 274px);
+    min-height: calc(1.5* 274px); }
 
   #items {
     min-height: 78px; }
