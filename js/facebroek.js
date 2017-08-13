@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById("cryptocurrency").addEventListener("click", () => {
     visiblePointerEvents();
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptocurrency'><img id='qrcode' src='./img/bitcoinqr.png' width='0' height='0' alt='qr code'><p id='ccaddress'>1AKLdrqC4mngw5m55HTtZEY3mtTuxySgb</p></div>";
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><img id='qrcode' src='./img/bitcoinqr.png' alt='qr code'><p id='ccaddress'>1AKLdrqC4mngw5m55HTtZEY3mtTuxySgb</p></div>";
     drawBlackBgYt();
   });
 

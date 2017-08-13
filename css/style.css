@@ -164,10 +164,11 @@ body {
   #landingtext {
     font-size: 18px;
     max-height: 480px; } }
-.cryptocurrency {
+.cryptopay {
   position: relative;
   display: inline-block;
-  z-index: 3; }
+  z-index: 3;
+  outline: solid 1px red; }
 
 #qrcode {
   width: 33vh;
