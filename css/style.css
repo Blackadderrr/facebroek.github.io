@@ -181,7 +181,7 @@ body {
   max-width: 272px;
   word-wrap: break-word;
   font-family: sans-serif;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.24em;
   margin-top: 6%;
   font-size: 18px;
   background-color: #fff;
@@ -197,8 +197,8 @@ body {
 
   #ccaddress {
     font-size: 2.7vw;
-    width: calc(1.5* 33vh);
-    max-width: calc(1.5* 274px); } }
+    width: calc(2 * 33vh);
+    max-width: calc(3 * 274px); } }
 #arrowheart {
   position: absolute;
   top: 42px;
