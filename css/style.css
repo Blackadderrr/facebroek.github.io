@@ -197,6 +197,10 @@ body {
 
   #ccaddress {
     font-size: 2.7vw;
+    width: calc(1.5* 33vh);
+    max-width: calc(1.5* 274px); } }
+@media screen and (orientation: landscape) {
+  #ccaddress {
     width: calc(2 * 33vh);
     max-width: calc(3 * 274px); } }
 #arrowheart {
