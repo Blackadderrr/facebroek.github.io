@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: "musicalnote",
-      source: "https://www.youtube.com/embed/oXUj4okEAZg?start=0&autoplay=1&rel=0&amp;showinfo=0",
+      source: "https://www.youtube.com/embed/uzgBD2wysuI?start=0&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     },
     {
