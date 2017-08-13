@@ -189,15 +189,14 @@ body {
   padding: 3px 5px; }
 
 @media screen and (max-device-width: 480px) {
-  #qrcode {
-    width: 66vh;
-    height: 66vh;
-    max-width: 294px;
-    max-height: 294px; }
-
   #ccaddress {
-    font-size: 2.7vw;
-    max-width: 294px; } }
+    font-size: 2.7vw; }
+
+  #qrcode, #ccaddress {
+    width: calc(1.5* 33vh);
+    height: calc(1.5* 33vh);
+    min-width: calc(1.5* 274px);
+    min-height: calc(1.5* 274px); } }
 #arrowheart {
   position: absolute;
   top: 42px;
