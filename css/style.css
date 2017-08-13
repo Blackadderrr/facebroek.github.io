@@ -141,12 +141,12 @@ body {
   max-width: 560px;
   text-align: justify;
   max-height: 280px;
-  padding: 6px 12px;
+  padding: 6px 12px 9px 12px;
   overflow-y: auto;
   pointer-events: visible;
   z-index: 3;
-  border: dotted 1px #cfcfcf;
-  background-color: #eeeff4; }
+  border: solid 1px #9a9a9a;
+  background-color: #f6f6f6; }
 
 #youtube {
   vertical-align: bottom;
