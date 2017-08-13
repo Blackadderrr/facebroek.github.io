@@ -14,7 +14,7 @@
 a {
   text-decoration: none;
   outline: none;
-  font-family: monospace;
+  font-family: sans-serif;
   color: black; }
 
 body,
@@ -250,10 +250,6 @@ body {
     height: 201px; } }
 .backgroundfill {
   position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
   -webkit-user-select: none;
   /* Chrome/Safari */
   -moz-user-select: none;
@@ -265,7 +261,8 @@ body {
   user-select: none; }
 
 .bgfillobject {
-  font-family: monospace;
+  background-color: rgba(159, 70, 226, 0.52);
+  font-family: sans-serif;
   position: relative;
   display: inline-block;
   color: #e4e4e4;

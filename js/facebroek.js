@@ -109,21 +109,25 @@ document.addEventListener('DOMContentLoaded', function() {
     let drawBackgroundPattern = () => {
       const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      const width = 25;
-      const height = 25;
-      const fsize = 3;
-      const margin = 0;
-      const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em; bottom: 7px;'>☺</p></div>";
+      const width = 30;
+      const height = 30;
+      const fsize = 1;
+      const margin = 3;
+      const bgObjectHTML = "<div style='margin:" + margin + "px; height:" + (height - (2 * margin)) + "px; width:" + (width - (2 * margin)) + "px' class='bgfillobject'><p style='font-size: " + fsize + "em;'>☺</p></div>";
+
+      // const bgObjectHTML = "<div style='height:" + height + "px; width:" + width + "px' class='bgfillobject'><p>☺</p></div>";
+
+
       let outputHTML = "";
       for (let i = 0; i < Math.floor(viewportWidth / width); i++) {
-        for (let j = 0; j < Math.floor(viewportHeight / height - 0.2); j++) {
+        for (let j = 0; j < Math.floor(viewportHeight / height); j++) {
           outputHTML += bgObjectHTML;
         }
       }
       document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
     }
 
-    drawBackgroundPattern();
+    // drawBackgroundPattern();
 
     window.onresize = () => {
       drawBackgroundPattern();
