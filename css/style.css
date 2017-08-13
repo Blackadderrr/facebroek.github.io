@@ -69,7 +69,7 @@ body {
   #header {
     height: 48px; }
     #header a {
-      font-size: 24px; }
+      font-size: 27px; }
 
   #ffacebook {
     height: 30px;
@@ -212,13 +212,6 @@ body {
   right: 0;
   pointer-events: none; }
 
-#stickfigures {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  margin-left: -64px;
-  z-index: 2; }
-
 #ladder {
   position: absolute;
   z-index: 2;
@@ -229,22 +222,14 @@ body {
 
 @media screen and (max-device-width: 480px) {
   #arrowheart {
-    width: 256px;
-    height: 256px;
+    width: 201px;
+    height: 201px;
     top: 50px; }
 
   #motivational {
-    width: 256px;
-    height: 256px;
+    width: 201px;
+    height: 201px;
     top: 50px; }
-
-  #stickfigures {
-    bottom: 30px;
-    margin-left: -128px; }
-
-  #stickfigures img {
-    width: 256px;
-    height: 140px; }
 
   #ladder {
     width: 201px;
@@ -306,7 +291,7 @@ div.return {
 
 #sourcesul {
   margin-top: 0.5em;
-  margin-left: 30px;
+  margin-left: 39px;
   list-style-type: decimal; }
 
 li p {
@@ -337,9 +322,7 @@ li p {
 #blackmirror p:hover {
   color: black;
   background-color: white;
-  border: solid 2px;
-  padding: 0px;
-  margin: 0px; }
+  outline: solid 1px; }
 
 @media only screen and (max-device-width: 480px) {
   #sourcesul li {
