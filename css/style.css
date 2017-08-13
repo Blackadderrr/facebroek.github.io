@@ -201,7 +201,7 @@ body {
     max-width: calc(1.5* 274px); } }
 @media screen and (orientation: landscape) {
   #ccaddress {
-    width: 75vw; } }
+    min-width: 900px; } }
 #arrowheart {
   position: absolute;
   top: 42px;
