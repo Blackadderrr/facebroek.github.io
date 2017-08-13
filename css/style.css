@@ -165,8 +165,6 @@ body {
     font-size: 18px;
     max-height: 480px; } }
 .cryptopay {
-  width: auto;
-  position: relative;
   display: inline-block;
   z-index: 3;
   outline: solid 1px red; }
@@ -196,13 +194,13 @@ body {
   #qrcode {
     width: calc(1.5* 33vh);
     height: calc(1.5* 33vh);
-    min-width: calc(1.5* 274px);
-    min-height: calc(1.5* 274px); }
+    max-width: calc(1.5* 274px);
+    max-height: calc(1.5* 274px); }
 
   #ccaddress {
     font-size: 2.7vw;
     width: calc(1.5* 33vh);
-    min-width: calc(1.5* 274px); } }
+    max-width: calc(1.5* 274px); } }
 #arrowheart {
   position: absolute;
   top: 42px;
