@@ -168,7 +168,6 @@ body {
   z-index: 3; }
 
 #qrcode {
-  margin: 0 auto;
   width: 33vh;
   height: 33vh;
   max-width: 272px;
@@ -176,14 +175,14 @@ body {
   border: solid 6px; }
 
 #ccaddress {
-  margin: 0 auto;
   width: 33vh;
+  font-weight: bolder;
+  min-width: 272px;
   max-width: 272px;
   word-wrap: break-word;
   font-family: sans-serif;
-  letter-spacing: 0.24em;
-  margin-top: 6%;
-  font-size: 18px;
+  margin-top: 3%;
+  font-size: 0.75em;
   background-color: #fff;
   border: solid 6px;
   padding: 3px 5px; }
