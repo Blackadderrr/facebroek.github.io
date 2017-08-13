@@ -175,6 +175,7 @@ body {
   border: solid 6px; }
 
 #ccaddress {
+  text-align: justify;
   width: 33vh;
   font-weight: bolder;
   min-width: 272px;
