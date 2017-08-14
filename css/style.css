@@ -331,6 +331,7 @@ li p {
 
 @media only screen and (max-device-width: 480px) {
   #sourceul {
+    text-indent: 0px;
     margin-left: 9em; }
 
   #sourcesul li {
