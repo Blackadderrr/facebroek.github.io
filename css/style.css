@@ -298,7 +298,8 @@ div.return {
 
 li p {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  word-wrap: break-word; }
 
 #sourcesul li {
   color: #6a6a6a;
@@ -330,11 +331,6 @@ li p {
   text-decoration: line-through; }
 
 @media only screen and (max-device-width: 480px) {
-  #sourceul {
-    text-indent: 0px;
-    margin-left: 9em;
-    list-style-position: inside; }
-
   #sourcesul li {
     font-size: 1.5em; }
 
