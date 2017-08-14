@@ -187,12 +187,12 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = e.target;
       if (target.getAttribute("src") === "./img/sad.gif") {
         target.src = "./img/happy.gif";
-        smileygame(1);
-        console.log("happy");
+        // smileygame(1);
+        // console.log("happy");
       } else if (target.getAttribute("src") === "./img/happy.gif"){
         target.src = "./img/sad.gif";
-        smileygame(-1);
-        console.log("sads");
+        // smileygame(-1);
+        // console.log("sads");
       }
     });
   }
