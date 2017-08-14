@@ -292,7 +292,7 @@ div.return {
 #sourcesul {
   margin-top: 0.5em;
   margin-left: 3em;
-  list-style-type: lower-roman; }
+  list-style-type: decimal; }
 
 li p {
   display: inline-block;
@@ -329,7 +329,7 @@ li p {
 
 @media only screen and (max-device-width: 480px) {
   #sourceul {
-    margin-left: 6em; }
+    margin-left: 9em; }
 
   #sourcesul li {
     font-size: 1.5em; }
