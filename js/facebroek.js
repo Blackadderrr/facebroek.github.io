@@ -148,20 +148,33 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   if (!isMobile.any()) {
+    let smileynumber = 0;
+    let happynumber = 0;
+    let sadnumber = 0;
     let drawBackgroundPattern = () => {
       const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      const margin = 1;
-      const dimension = 32 ;
+      const dimension = 32;
       const bgObjectHTML = '<img class="bgfillobjects" src="./img/sad.gif" alt="sad face">';
 
       let outputHTML = "";
       for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
         for (let j = 0; j < Math.floor(viewportHeight  / dimension); j++) {
           outputHTML += bgObjectHTML;
+          smileynumber+=1;
         }
       }
       document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
+    }
+
+    let smileygame = function(int) {
+      if (happynumber > 100) {
+        // alert("f yeah");
+      } else if (int > 0) {
+        happynumber+=int;
+      } else if (int < 0) {
+        happynumber+=int;
+      }
     }
 
     drawBackgroundPattern();
@@ -174,8 +187,12 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = e.target;
       if (target.getAttribute("src") === "./img/sad.gif") {
         target.src = "./img/happy.gif";
+        smileygame(1);
+        console.log("happy");
       } else if (target.getAttribute("src") === "./img/happy.gif"){
         target.src = "./img/sad.gif";
+        smileygame(-1);
+        console.log("sads");
       }
     });
   }
