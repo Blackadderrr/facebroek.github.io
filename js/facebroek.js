@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
       action: "click"
     },
     {
+        id: "landingtext",
+        source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
+        action: "click"
+    },
+    {
       id: "foto",
       source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
@@ -73,6 +78,42 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementsByClassName("centerpage")[0].style.backgroundColor = "";
     }
   }
+  //draw ticker
+  const ticker = function(cchandle,ccperiod) {
+    let cc = cchandle;
+    let period = ccperiod;
+    baseUrl = "https://widgets.cryptocompare.com/";
+    var scripts = document.getElementsByTagName("script");
+    var embedder = scripts[scripts.length - 1];
+    var cccTheme = {
+      "General": {
+        "background": "transparent"
+      },
+      "Header": {
+        "background": "transparent"
+      }
+    };
+    (function() {
+      var appName = encodeURIComponent(window.location.hostname);
+      if (appName == "") {
+        appName = "local";
+      }
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      var theUrl = baseUrl + 'serve/v2/coin/chart?fsym=' + cc +'&tsym=EUR&period=' + period + '';
+      s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+      embedder.parentNode.appendChild(s);
+    })();
+  }
+
+  //TEST---------------------------
+  // document.getElementsByClassName("centerpage")[0].innerHTML = "";
+  // document.getElementsByClassName("centerpage")[0].innerHTML = "<div id='tickertest'><script src='./js/facebroek.js' type='text/javascript'>ticker('ETH','1D')</script></div>";
+  // document.getElementsByClassName("centerpage")[0] = ticker("ETH","1W");
+  // ticker("ETH","1W");
+  // ticker("BTC","1W");
+  //TEST---------------------------
 
   //show ladder png that links to sources page
   document.onclick = function() {
