@@ -298,8 +298,7 @@ div.return {
 
 li p {
   display: inline-block;
-  vertical-align: middle;
-  word-wrap: break-word; }
+  vertical-align: middle; }
 
 #sourcesul li {
   color: #6a6a6a;
@@ -330,14 +329,7 @@ li p {
 .deadsource {
   text-decoration: line-through; }
 
-@media screen and (orientation: portrait) {
-  #sourceul {
-    text-indent: 0px;
-    list-style-position: inside; } }
 @media only screen and (max-device-width: 480px) {
-  #sourcesul li {
-    font-size: 1.5em; }
-
   .return {
     font-size: 24px; } }
 #autorefreshcounter {
