@@ -302,14 +302,13 @@ li p {
 
 #sourcesul li {
   color: #6a6a6a;
-  margin-bottom: 12px;
-  font-size: 1em; }
+  margin-bottom: 12px; }
 
 #sourcesul a:link {
   color: #0e0e0e; }
 
 #sourcesul a:visited {
-  color: #757575; }
+  color: #907575; }
 
 #sourcesul a:hover {
   color: red; }
