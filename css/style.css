@@ -330,6 +330,9 @@ li p {
   text-decoration: line-through; }
 
 @media only screen and (max-device-width: 480px) {
+  #sourceul li {
+    margin-bottom: 15px; }
+
   .return {
     font-size: 24px; } }
 #autorefreshcounter {
