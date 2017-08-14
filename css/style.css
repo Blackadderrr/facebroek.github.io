@@ -291,8 +291,10 @@ div.return {
 
 #sourcesul {
   margin-top: 0.5em;
-  margin-left: 3em;
-  list-style-type: decimal; }
+  margin-left: 2.1em;
+  list-style-type: decimal;
+  list-style-position: outside;
+  text-indent: 6px; }
 
 li p {
   display: inline-block;
