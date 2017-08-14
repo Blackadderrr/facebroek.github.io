@@ -291,8 +291,8 @@ div.return {
 
 #sourcesul {
   margin-top: 0.5em;
-  margin-left: 39px;
-  list-style-type: decimal; }
+  margin-left: 3em;
+  list-style-type: lower-roman; }
 
 li p {
   display: inline-block;
@@ -324,7 +324,13 @@ li p {
   background-color: white;
   outline: solid 1px; }
 
+.deadsource {
+  text-decoration: line-through; }
+
 @media only screen and (max-device-width: 480px) {
+  #sourceul {
+    margin-left: 6em; }
+
   #sourcesul li {
     font-size: 1.5em; }
 
