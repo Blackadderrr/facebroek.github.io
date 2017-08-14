@@ -65,10 +65,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>";
   };
 
-  const visiblePointerEvents = () => {
+  const visiblePointerEvents = () => { //enables clicking on videos
     document.getElementsByClassName("centerpage")[0].style.pointerEvents = "visible"; //[0] because it returns elementS, plural
   }
-  //emptyCenterPage();
+
+  //show ladder png that links to sources page
+  const showladder = function() {
+    const yt = document.getElementById("youtube");
+    if (yt && yt.src === link_Arr[0].source) {
+      document.getElementById("ladder").style.visibility = "visible";
+    } else {
+      document.getElementById("ladder").style.visibility = "hidden";
+    }
+  }
 
   const drawBlackBgYt = () => {
     //in chrome browsers youtube flickers when changing its source. This prevents you seeing the white background, and thus the flickering.
@@ -78,52 +87,42 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementsByClassName("centerpage")[0].style.backgroundColor = "";
     }
   }
-  //draw ticker
-  const ticker = function(cchandle,ccperiod) {
-    let cc = cchandle;
-    let period = ccperiod;
-    baseUrl = "https://widgets.cryptocompare.com/";
-    var scripts = document.getElementsByTagName("script");
-    var embedder = scripts[scripts.length - 1];
-    var cccTheme = {
-      "General": {
-        "background": "transparent"
-      },
-      "Header": {
-        "background": "transparent"
-      }
-    };
-    (function() {
-      var appName = encodeURIComponent(window.location.hostname);
-      if (appName == "") {
-        appName = "local";
-      }
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      var theUrl = baseUrl + 'serve/v2/coin/chart?fsym=' + cc +'&tsym=EUR&period=' + period + '';
-      s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-      embedder.parentNode.appendChild(s);
-    })();
-  }
 
+  //draw ticker
   //TEST---------------------------
+  // const ticker = function(cchandle,ccperiod) {
+  //   let cc = cchandle;
+  //   let period = ccperiod;
+  //   baseUrl = "https://widgets.cryptocompare.com/";
+  //   var scripts = document.getElementsByTagName("script");
+  //   var embedder = scripts[scripts.length - 1];
+  //   var cccTheme = {
+  //     "General": {
+  //       "background": "transparent"
+  //     },
+  //     "Header": {
+  //       "background": "transparent"
+  //     }
+  //   };
+  //   (function() {
+  //     var appName = encodeURIComponent(window.location.hostname);
+  //     if (appName == "") {
+  //       appName = "local";
+  //     }
+  //     var s = document.createElement("script");
+  //     s.type = "text/javascript";
+  //     s.async = true;
+  //     var theUrl = baseUrl + 'serve/v2/coin/chart?fsym=' + cc +'&tsym=EUR&period=' + period + '';
+  //     s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+  //     embedder.parentNode.appendChild(s);
+  //   })();
+  // }
   // document.getElementsByClassName("centerpage")[0].innerHTML = "";
   // document.getElementsByClassName("centerpage")[0].innerHTML = "<div id='tickertest'><script src='./js/facebroek.js' type='text/javascript'>ticker('ETH','1D')</script></div>";
   // document.getElementsByClassName("centerpage")[0] = ticker("ETH","1W");
   // ticker("ETH","1W");
   // ticker("BTC","1W");
   //TEST---------------------------
-
-  //show ladder png that links to sources page
-  document.onclick = function() {
-    const yt = document.getElementById("youtube");
-    if (yt && yt.src === link_Arr[0].source) {
-      document.getElementById("ladder").style.visibility = "visible";
-    } else {
-      document.getElementById("ladder").style.visibility = "hidden";
-    }
-  }
 
   //iterates through the links that change yt video source
   for (let i = 0; i < link_Arr.length; i++) {
@@ -136,14 +135,16 @@ document.addEventListener('DOMContentLoaded', function() {
       drawBlackBgYt();
       if (yt.src != link_Arr[i].source) {
         yt.src = link_Arr[i].source;
+        showladder();
       }
     });
   }
 
   document.getElementById("cryptocurrency").addEventListener("click", () => {
-    visiblePointerEvents();
     document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><img id='qrcode' src='./img/bitcoinqr.png' alt='qr code'><p id='ccaddress'>1AKLdrqC4mngw5m55HTtZEY3mtTuxySgb</p></div>";
+    visiblePointerEvents();
     drawBlackBgYt();
+    showladder(); //hides ladder because YT element is gone through changing innerhtml above
   });
 
   if (!isMobile.any()) {
