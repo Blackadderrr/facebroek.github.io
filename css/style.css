@@ -30,6 +30,17 @@ body {
   background-color: white;
   background-color: #eeeff4; }
 
+h1 {
+  margin-left: 6px;
+  margin-bottom: 9px;
+  color: grey;
+  font-size: 1.5em; }
+
+h2 {
+  margin-left: 6px;
+  color: grey;
+  font-size: 1.2em; }
+
 .metacontainer {
   height: 100vh;
   text-align: center;
@@ -289,7 +300,7 @@ body {
 div.return {
   background-color: #3b5999; }
 
-#sourcesul {
+.sourcesul {
   margin-top: 0.5em;
   margin-left: 2.1em;
   list-style-type: decimal;
@@ -300,17 +311,17 @@ li p {
   display: inline-block;
   vertical-align: middle; }
 
-#sourcesul li {
+.sourcesul li {
   color: #6a6a6a;
   margin-bottom: 12px; }
 
-#sourcesul a:link {
+.sourcesul a:link {
   color: #0e0e0e; }
 
-#sourcesul a:visited {
+.sourcesul a:visited {
   color: #907575; }
 
-#sourcesul a:hover {
+.sourcesul a:hover {
   color: red; }
 
 #blackmirror p {
@@ -344,7 +355,7 @@ li p {
 
 #cryptolist {
   text-align: center;
-  width: 915px;
+  width: 912px;
   margin: auto; }
 
 .coins {
@@ -353,5 +364,9 @@ li p {
   display: inline-block;
   vertical-align: top;
   margin-top: 6px; }
+
+.software {
+  text-indent: 0px;
+  list-style-position: inside; }
 
 /*# sourceMappingURL=style.css.map */
