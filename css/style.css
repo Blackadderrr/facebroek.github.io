@@ -313,7 +313,7 @@ li p {
 
 .sourcesul li {
   color: #6a6a6a;
-  margin-bottom: 12px; }
+  margin-bottom: 3px; }
 
 .sourcesul a:link {
   color: #0e0e0e; }
@@ -370,6 +370,9 @@ li p {
   list-style-position: inside; }
   .software a:link {
     color: grey; }
+
+.software li {
+  margin-bottom: 3px; }
 
 .software a:hover {
   color: red; }
