@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
       action: "click"
     },
     {
-        id: "landingtext",
-        source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
-        action: "click"
+      id: "landingtext",
+      source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
+      action: "click"
     },
     {
       id: "foto",
@@ -159,20 +159,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
       let outputHTML = "";
       for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
-        for (let j = 0; j < Math.floor(viewportHeight  / dimension); j++) {
+        for (let j = 0; j < Math.floor(viewportHeight / dimension); j++) {
           outputHTML += bgObjectHTML;
-          smileynumber+=1;
+          smileynumber += 1;
         }
       }
       document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
     }
 
     let smileygame = function(int) {
-      if (happynumber > 100) {
-      } else if (int > 0) {
-        happynumber+=int;
+      if (happynumber > 100) {} else if (int > 0) {
+        happynumber += int;
       } else if (int < 0) {
-        happynumber+=int;
+        happynumber += int;
       }
     }
 
@@ -188,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
         target.src = "./img/happy.gif";
         // smileygame(1);
         // console.log("happy");
-      } else if (target.getAttribute("src") === "./img/happy.gif"){
+      } else if (target.getAttribute("src") === "./img/happy.gif") {
         target.src = "./img/sad.gif";
         // smileygame(-1);
         // console.log("sads");
