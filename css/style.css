@@ -328,14 +328,14 @@ li p {
 .sources a:hover {
   color: red; }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 736px) {
   .sources {
     font-size: 0.5em;
     margin-left: 3.9em; }
 
   h1, h2 {
     font-size: 0.9em; } }
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-device-width: 736px) {
   .sources {
     font-size: 0.81em; } }
 #blackmirror p {
