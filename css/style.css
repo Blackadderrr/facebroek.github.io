@@ -23,6 +23,8 @@ span {
   font-style: italic; }
 
 .more {
+  margin-left: 3px;
+  margin-right: 3px;
   font-style: normal;
   font-size: 18px;
   line-height: 0; }
