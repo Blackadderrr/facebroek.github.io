@@ -22,6 +22,11 @@ html {
 span {
   font-style: italic; }
 
+.more {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 0px; }
+
 input,
 select {
   vertical-align: middle; }
@@ -300,30 +305,39 @@ h2 {
 div.return {
   background-color: #3b5999; }
 
-.sourcesul {
+.sources {
   margin-top: 0.5em;
-  margin-left: 2.1em;
+  margin-left: 2.4em;
   list-style-type: decimal;
-  list-style-position: outside;
-  text-indent: 6px; }
+  list-style-position: outside; }
 
 li p {
   display: inline-block;
   vertical-align: middle; }
 
-.sourcesul li {
+.sources li {
   color: #6a6a6a;
   margin-bottom: 3px; }
 
-.sourcesul a:link {
-  color: #0e0e0e; }
+.sources a:link {
+  color: grey; }
 
-.sourcesul a:visited {
+.sources a:visited {
   color: #907575; }
 
-.sourcesul a:hover {
+.sources a:hover {
   color: red; }
 
+@media only screen and (max-device-width: 480px) {
+  .sources {
+    font-size: 0.5em;
+    margin-left: 3.9em; }
+
+  h1, h2 {
+    font-size: 0.9em; } }
+@media only screen and (orientation: landscape) {
+  .sources {
+    font-size: 0.81em; } }
 #blackmirror p {
   display: inline-block;
   background-color: black;
@@ -364,24 +378,5 @@ li p {
   display: inline-block;
   vertical-align: top;
   margin-top: 6px; }
-
-.software {
-  text-indent: 0px;
-  list-style-position: inside; }
-  .software a:link {
-    color: grey; }
-
-.software li {
-  margin-bottom: 3px; }
-
-.software a:hover {
-  color: red; }
-
-@media only screen and (max-device-width: 480px) {
-  .software {
-    font-size: 0.5em; }
-
-  h1, h2 {
-    font-size: 0.9em; } }
 
 /*# sourceMappingURL=style.css.map */
