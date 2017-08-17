@@ -169,7 +169,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let smileygame = function(int) {
       if (happynumber > 100) {
-        // alert("f yeah");
       } else if (int > 0) {
         happynumber+=int;
       } else if (int < 0) {
