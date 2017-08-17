@@ -285,9 +285,13 @@ h2 {
   color: rgba(255, 0, 255, 0); }
 
 #myname {
-  cursor: crosshair;
+  cursor: pointer;
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 12px; }
+
+#myname:hover {
+  color: #6f6f6f; }
 
 .return {
   font-size: 18px;
@@ -370,7 +374,7 @@ li p {
 
 #cryptolist {
   text-align: center;
-  width: 915px;
+  width: 930px;
   margin: auto; }
 
 .coins {
