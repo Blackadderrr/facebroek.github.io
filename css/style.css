@@ -119,12 +119,9 @@ h2 {
     min-width: calc(1.5* 274px);
     min-height: calc(1.5* 274px); }
 
-  #items {
-    min-height: 78px; }
-
   #items img {
     width: 64px;
-    height: 64px; } }
+    height: 69px; } }
 #items {
   display: inline-block;
   min-height: 39px;
