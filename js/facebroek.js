@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.getElementById("cryptocurrency").addEventListener("click", () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><a href='https://www.coinbase.com/join/5908b561825c821463959076'><img id='qrcode' src='./img/mewqr.png' alt='qr code'></a><p id='ccaddress'>0xB69f0fF906Fbca8d000D6054699e2bC9321C7675</p></div>";
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><a href='https://www.coinbase.com/join/59a64c33a1fa56027997a66b'><img id='qrcode' src='./img/mewqr.png' alt='qr code'></a><p id='ccaddress'>0xB69f0fF906Fbca8d000D6054699e2bC9321C7675</p></div>";
     visiblePointerEvents();
     drawBlackBgYt();
     showladder(); //hides ladder because YT element is gone through changing innerhtml above
