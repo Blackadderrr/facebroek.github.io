@@ -34,7 +34,6 @@ select {
   vertical-align: middle; }
 
 body {
-  background-color: white;
   background-color: #eeeff4; }
 
 h1 {
@@ -59,13 +58,6 @@ h2 {
   height: 38px;
   background-color: #3b5999;
   margin-bottom: 7px; }
-  #header a {
-    color: white;
-    font-size: 18px;
-    font-weight: 100; }
-
-#header a:hover {
-  color: #ec4848; }
 
 #ffacebook {
   margin-left: 7px;
@@ -76,11 +68,7 @@ h2 {
   margin-left: 7px; }
 
 .quit {
-  margin-left: auto;
-  margin-right: 7px; }
-
-#delete {
-  margin-left: 7px; }
+  margin-left: auto; }
 
 @media screen and (max-device-width: 480px) {
   #header {
@@ -369,5 +357,59 @@ li p {
   display: inline-block;
   vertical-align: top;
   margin-top: 6px; }
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eeeff4;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content-right {
+  right: 0; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ee6161; }
+
+.dropdown-content-right a:hover {
+  background-color: lightgreen; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgba(255, 255, 255, 0); }
+
+.dropdown:hover #deactivate {
+  color: red; }
+
+.dropdown:hover #delete {
+  color: lightgreen; }
 
 /*# sourceMappingURL=style.css.map */
