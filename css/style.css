@@ -342,13 +342,6 @@ li p {
   .sources {
     font-size: 0.81em;
     margin-left: 48px; } }
-#blackmirror {
-  background-color: black;
-  color: white; }
-
-#blackmirror:hover {
-  color: red; }
-
 .deadsource {
   text-decoration: line-through; }
 
