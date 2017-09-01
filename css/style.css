@@ -415,4 +415,8 @@ button:focus {
 .dropdown:hover #delete {
   color: lightgreen; }
 
+@media screen and (max-device-width: 480px) {
+  .dropbtn {
+    font-size: 27px; } }
+
 /*# sourceMappingURL=style.css.map */
