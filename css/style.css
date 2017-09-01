@@ -406,6 +406,9 @@ li p {
 .dropdown:hover .dropbtn {
   background-color: rgba(255, 255, 255, 0); }
 
+button:focus {
+  outline: 0; }
+
 .dropdown:hover #deactivate {
   color: red; }
 
