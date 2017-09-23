@@ -325,11 +325,17 @@ li p {
 
   h1,
   h2 {
-    font-size: 0.9em; } }
+    font-size: 0.9em; }
+
+  .onccpage {
+    width: 1920px; } }
 @media only screen and (orientation: landscape) and (max-device-width: 736px) {
   .sources {
     font-size: 0.81em;
-    margin-left: 48px; } }
+    margin-left: 48px; }
+
+  .onccpage {
+    width: 1920px; } }
 .deadsource {
   text-decoration: line-through; }
 
