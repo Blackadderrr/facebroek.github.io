@@ -141,11 +141,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.getElementById("cryptocurrency").addEventListener("click", () => {
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><img id='qrcode' src='./img/bitcoin-segwit-qr.png' alt='qr code'><p id='ccaddress'>3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg</p></div>";
+    visiblePointerEvents();
+    drawBlackBgYt();
+    showladder(); //hides ladder because YT element is gone through changing innerhtml above
+  });
+
+/*
+  document.getElementById("cryptocurrency").addEventListener("click", () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><a href='https://www.coinbase.com/join/5908b561825c821463959076'><img id='qrcode' src='./img/bitcoin-segwit-qr.png' alt='qr code'></a><p id='ccaddress'>3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg</p></div>";
     visiblePointerEvents();
     drawBlackBgYt();
     showladder(); //hides ladder because YT element is gone through changing innerhtml above
   });
+*/
 
   if (!isMobile.any()) {
     let smileynumber = 0;
