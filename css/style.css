@@ -67,8 +67,17 @@ h2 {
   cursor: pointer;
   margin-left: 7px; }
 
+#triggersaliva {
+  /*margin-top: 9px;*/
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -27px;
+  cursor: pointer;
+}
+
 .quit {
-  margin-left: auto; }
+  margin-left: auto;
+ }
 
 @media screen and (max-device-width: 480px) {
   #header {

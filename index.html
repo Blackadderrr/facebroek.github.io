@@ -25,7 +25,10 @@
     <div id="header">
       <a href="/"><img id="ffacebook" src="./img/ffacebooklogo.png" alt="ff icon"></a>
       <img id="quitfacebook" src="./img/quitfacebook.gif" alt="why quit facebook search form">
+
       <div class="quit">
+        <!-- The img directly below shouldn't be in this class. This is a quick & dirty solution -->
+        <img id="triggersaliva" src="./img/saliva.png" alt="Facebook notification icon" title="You see?">
         <div class="dropdown">
           <button class="dropbtn" id="deactivate" title="Almost...">Deactivate</button>
           <div class="dropdown-content">
@@ -80,10 +83,10 @@
                   link += (key.charAt(ltr))
                 }
               }
-              document.write("<a href='mailto:" + link + "'><img src='./img/mail.png' alt='mail icon' title='Email'></a>")
+              document.write("<a href='mailto:" + link + "?subject=PGP: facebroek.com/publickey.asc" + "'><img src='./img/mail.png' alt='mail icon' title='Email (PGP: /publickey.asc)'></a>")
             }
             //-->
-          </script><noscript>Sorry, you need Javascript [enabled] to email me.</noscript>
+          </script><noscript>Sorry, you need Javascript enabled to email me.</noscript>
           <img id="musicalnote" src="./img/note.png" title="Faithless - Mass Destruction" alt="musical note">
           <img id="questionmark" class="triggerName" src="./img/questionmark.png" alt="question mark" title="The meaning of life²">
           <img id="cryptocurrency" src="./img/bitcoin.png" title="Bitcoin (SegWit)" alt="bitcoin cryptocurrency icon">
