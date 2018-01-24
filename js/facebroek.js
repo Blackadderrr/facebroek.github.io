@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: "foto",
-      source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
+      source: "https://www.youtube.com/embed/ITKQbv_4bKE?start=0&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     },
     {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: "questionmark",
-      source: "https://www.youtube.com/embed/ITKQbv_4bKE?start=0&autoplay=1&rel=0&amp;showinfo=0",
+      source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     },
     {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: "myname",
-      source: "https://www.youtube.com/embed/cW2bqBhP4AA?start=0&autoplay=1&rel=0&amp;showinfo=0",
+      source: "https://www.youtube.com/watch?v=HKTSaezB4p8?start=0&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     }
   ];
