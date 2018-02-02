@@ -88,42 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  //draw ticker
-  //TEST---------------------------
-  // const ticker = function(cchandle,ccperiod) {
-  //   let cc = cchandle;
-  //   let period = ccperiod;
-  //   baseUrl = "https://widgets.cryptocompare.com/";
-  //   var scripts = document.getElementsByTagName("script");
-  //   var embedder = scripts[scripts.length - 1];
-  //   var cccTheme = {
-  //     "General": {
-  //       "background": "transparent"
-  //     },
-  //     "Header": {
-  //       "background": "transparent"
-  //     }
-  //   };
-  //   (function() {
-  //     var appName = encodeURIComponent(window.location.hostname);
-  //     if (appName == "") {
-  //       appName = "local";
-  //     }
-  //     var s = document.createElement("script");
-  //     s.type = "text/javascript";
-  //     s.async = true;
-  //     var theUrl = baseUrl + 'serve/v2/coin/chart?fsym=' + cc +'&tsym=EUR&period=' + period + '';
-  //     s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-  //     embedder.parentNode.appendChild(s);
-  //   })();
-  // }
-  // document.getElementsByClassName("centerpage")[0].innerHTML = "";
-  // document.getElementsByClassName("centerpage")[0].innerHTML = "<div id='tickertest'><script src='./js/facebroek.js' type='text/javascript'>ticker('ETH','1D')</script></div>";
-  // document.getElementsByClassName("centerpage")[0] = ticker("ETH","1W");
-  // ticker("ETH","1W");
-  // ticker("BTC","1W");
-  //TEST---------------------------
-
   //iterates through the links that change yt video source
   for (let i = 0; i < link_Arr.length; i++) {
     document.getElementById(link_Arr[i].id).addEventListener(link_Arr[i].action, function() {
@@ -146,15 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
     drawBlackBgYt();
     showladder(); //hides ladder because YT element is gone through changing innerhtml above
   });
-
-/*
-  document.getElementById("cryptocurrency").addEventListener("click", () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><a href='https://www.coinbase.com/join/5908b561825c821463959076'><img id='qrcode' src='./img/bitcoin-segwit-qr.png' alt='qr code'></a><p id='ccaddress'>3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg</p></div>";
-    visiblePointerEvents();
-    drawBlackBgYt();
-    showladder(); //hides ladder because YT element is gone through changing innerhtml above
-  });
-*/
 
   if (!isMobile.any()) {
     let smileynumber = 0;
