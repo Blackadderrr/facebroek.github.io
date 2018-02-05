@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: "delete",
-      source: "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=1&rel=0&amp;showinfo=0",
+      source: "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=0&rel=0&amp;showinfo=0",
       action: "mouseover"
     },
     {
       id: "deactivate",
-      source: "https://www.youtube.com/embed/y9XTLC8KHwk?autoplay=1&rel=0&amp;showinfo=0",
+      source: "https://www.youtube.com/embed/y9XTLC8KHwk?autoplay=0&rel=0&amp;showinfo=0",
       action: "mouseover"
     },
     {

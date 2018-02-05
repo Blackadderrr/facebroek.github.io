@@ -338,17 +338,6 @@ li p {
 .sources a:hover {
   color: red; }
 
-/*classes to mark latest added sources, *not* the source's release date*/
-.new {
-  background-color: rgba(0, 255, 0, 0.06);
-}
-.newer {
-  background-color: rgba(0, 255, 0, 0.21);
-}
-.newest {
-  background-color: rgba(0, 255, 0, 0.42);
-
-}
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
   .sources {
     font-size: 0.5em;
