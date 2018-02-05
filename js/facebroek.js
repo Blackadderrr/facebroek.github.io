@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: "foto",
-      source: "https://www.youtube.com/embed/ITKQbv_4bKE?start=0&autoplay=1&rel=0&amp;showinfo=0",
+      source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     },
     {
@@ -44,11 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
       id: "deactivate",
       source: "https://www.youtube.com/embed/y9XTLC8KHwk?autoplay=0&rel=0&amp;showinfo=0",
       action: "mouseover"
-    },
-    {
-      id: "questionmark",
-      source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
     },
     {
       id: "musicalnote",
@@ -109,6 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
     visiblePointerEvents();
     drawBlackBgYt();
     showladder(); //hides ladder because YT element is gone through changing innerhtml above
+  });
+
+  document.getElementById("questionmark").addEventListener("click", () => {
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<div><p id='landingtext'>Social media cause <span>unhappiness</span>, <span>stupidity</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the detrimental effects outweigh the benefits. Quit harmful social media. Most of the content is rubbish anyway.<span class='more'>→</span>[...]</p></div>";
   });
 
   document.getElementById("triggersaliva").addEventListener("mouseover", () => {
