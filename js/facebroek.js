@@ -111,6 +111,14 @@ document.addEventListener('DOMContentLoaded', function() {
     showladder(); //hides ladder because YT element is gone through changing innerhtml above
   });
 
+  document.getElementById("triggersaliva").addEventListener("mouseover", () => {
+    document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
+  });
+
+  document.getElementById("triggersaliva").addEventListener("mouseout", () => {
+    document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
+  });
+
   if (!isMobile.any()) {
     let smileynumber = 0;
     let happynumber = 0;

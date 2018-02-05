@@ -22,6 +22,10 @@ html {
 span {
   font-style: italic; }
 
+.salivate {
+  font-style: normal;
+}
+
 .more {
   margin-left: 3px;
   margin-right: 3px;
