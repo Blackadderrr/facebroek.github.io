@@ -49,12 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
       id: "musicalnote",
       source: "https://www.youtube.com/embed/uzgBD2wysuI?start=0&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
-    },
-    {
-      id: "myname",
-      source: "https://www.youtube.com/embed/HKTSaezB4p8?start=0&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
     }
+    // {
+    //   id: "myname",
+    //   source: "https://www.youtube.com/embed/HKTSaezB4p8?start=0&autoplay=1&rel=0&amp;showinfo=0",
+    //   action: "click"
+    // }
   ];
   const emptyCenterPage = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>";
@@ -85,34 +85,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //iterates through the links that change yt video source
   for (let i = 0; i < link_Arr.length; i++) {
-    document.getElementById(link_Arr[i].id).addEventListener(link_Arr[i].action, function() {
-      if (!document.getElementById("youtube")) {
-        emptyCenterPage();
-      }
-      const yt = document.getElementById("youtube");
-      visiblePointerEvents();
-      drawBlackBgYt();
-      if (yt.src != link_Arr[i].source) {
-        yt.src = link_Arr[i].source;
-        showladder();
-      }
+    if (document.getElementById(link_Arr[i].id)) {
+      document.getElementById(link_Arr[i].id).addEventListener(link_Arr[i].action, function() {
+        if (!document.getElementById("youtube")) {
+          emptyCenterPage();
+        }
+        const yt = document.getElementById("youtube");
+        visiblePointerEvents();
+        drawBlackBgYt();
+        if (yt.src != link_Arr[i].source) {
+          yt.src = link_Arr[i].source;
+          showladder();
+        }
+      });
+    }
+  }
+  // const cryptocurrency = document.getElementById("cryptocurrency");
+  // if (cryptocurrency) {
+  //   cryptocurrency.addEventListener("click", () => {
+  //     document.getElementsByClassName("aboutcontent")[0].innerHTML = "<div class='cryptopay'><a href='https://blockchain.info/address/3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg'><img id='qrcode' src='./img/bitcoin-segwit-qr.png' alt='qr code'></a><p id='ccaddress'>3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg</p></div>";
+  //     visiblePointerEvents();
+  //     drawBlackBgYt();
+  //     showladder(); //hides ladder because YT element is gone through changing innerhtml above
+  //   });
+  // }
+
+  const notification = document.getElementById("triggersaliva");
+  if (notification) {
+    notification.addEventListener("mouseover", () => {
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
+    });
+
+    notification.addEventListener("mouseout", () => {
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
     });
   }
-
-  document.getElementById("cryptocurrency").addEventListener("click", () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<div class='cryptopay'><a href='https://blockchain.info/address/3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg'><img id='qrcode' src='./img/bitcoin-segwit-qr.png' alt='qr code'></a><a href='https://blockchain.info/address/3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg'><p id='ccaddress'>3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg</p></a></div>";
-    visiblePointerEvents();
-    drawBlackBgYt();
-    showladder(); //hides ladder because YT element is gone through changing innerhtml above
-  });
-
-  document.getElementById("triggersaliva").addEventListener("mouseover", () => {
-    document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
-  });
-
-  document.getElementById("triggersaliva").addEventListener("mouseout", () => {
-    document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
-  });
 
   if (!isMobile.any()) {
     let smileynumber = 0;

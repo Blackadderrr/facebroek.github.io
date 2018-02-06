@@ -294,7 +294,8 @@ h2 {
   cursor: pointer;
   text-align: center;
   display: inline-block;
-  font-size: 12px; }
+  font-size: 12px;
+  color: #a6a6a6; }
 
 #myname:hover {
   color: #6f6f6f; }
@@ -446,4 +447,14 @@ button:focus {
   .dropbtn {
     font-size: 27px; } }
 
+#about {
+  margin: 12px;
+}
+#about a {
+  color: #0000EE;
+  display: inline;
+}
+#about h3 {
+  margin-top: 6px;
+}
 /*# sourceMappingURL=style.css.map */
