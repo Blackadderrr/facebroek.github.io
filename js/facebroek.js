@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       action: "click"
     },
     {
-      id: "landingtext",
+      id: "questionmark",
       source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     },
@@ -104,10 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
     visiblePointerEvents();
     drawBlackBgYt();
     showladder(); //hides ladder because YT element is gone through changing innerhtml above
-  });
-
-  document.getElementById("questionmark").addEventListener("click", () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<div><p id='landingtext'>Social media cause <span>unhappiness</span>, <span>stupidity</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the detrimental effects outweigh the benefits. Quit harmful social media. Most of the content is rubbish anyway.<span class='more'>→</span>[...]</p></div>";
   });
 
   document.getElementById("triggersaliva").addEventListener("mouseover", () => {
