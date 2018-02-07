@@ -178,12 +178,14 @@ h2 {
 }
 
 .iframe {
+  padding: 1px;
   pointer-events: visible;
   height: 42vh;
   width: 66vw;
-  /*border: solid 1px #9a9a9a;*/
+  border: solid 1px #9a9a9a;
+  background-color: #f6f6f6;
   /*box-shadow: inset 0 0 0 20px rgba(255, 0, 0, 0.5);*/
-  box-shadow: 0px 0px 0 1px rgba(154, 154, 154, 0.7);
+  /*box-shadow: 0px 0px 0 1px rgba(154, 154, 154, 0.7);*/
 }
 
 #landingtext {
