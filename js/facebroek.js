@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
-    showladder();
+    // showladder();
   }
 
   drawIntroText();
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         drawBlackBgYt();
         if (yt.src != link_Arr[i].source) {
           yt.src = link_Arr[i].source;
-          showladder();
+          // showladder();
         }
       });
     }
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showSources.addEventListener("click", () => {
       document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' width='666' height='333' allowfullscreen scrolling='yes'></iframe>";
       drawBlackBgYt();
-      showladder();
+      // showladder();
     })
   }
 
