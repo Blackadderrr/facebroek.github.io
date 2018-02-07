@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const showSources = document.getElementById("scale");
   if (showSources) {
     showSources.addEventListener("click", () => {
-      document.getElementsByClassName("centerpage")[0].innerHTML = "<div id='sourcesiframe'><iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen scrolling='yes'></iframe><div>";
+      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
       drawBlackBgYt();
       // showladder();
       // width='666' height='333'
