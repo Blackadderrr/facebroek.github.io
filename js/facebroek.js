@@ -1,6 +1,6 @@
 //A little bit more DRY-code, still too much fuckery happening though.
 document.addEventListener('DOMContentLoaded', function() {
-  
+
   //show ladder png that links to sources page
   const showladder = function() {
     const yt = document.getElementById("youtube");
@@ -106,10 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
   if (triggersaliva) {
     triggersaliva.addEventListener("mouseover", () => {
       drawIntroText();
-
-      // visiblePointerEvents();
-      // drawBlackBgYt();
-      // showladder(); //hides ladder because YT element is gone through changing innerhtml above
     });
   }
 
