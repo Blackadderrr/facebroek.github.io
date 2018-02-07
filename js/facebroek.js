@@ -1,5 +1,22 @@
 //A little bit more DRY-code, still too much fuckery happening though.
 document.addEventListener('DOMContentLoaded', function() {
+  
+  //show ladder png that links to sources page
+  const showladder = function() {
+    const yt = document.getElementById("youtube");
+    if (yt && yt.src === link_Arr[0].source) {
+      document.getElementById("ladder").style.visibility = "visible";
+    } else {
+      document.getElementById("ladder").style.visibility = "hidden";
+    }
+  }
+  const drawIntroText = () => {
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>stupidity</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the detrimental effects outweigh the benefits. Quit harmful social media. Most of the content is rubbish anyway.</p>";
+    showladder();
+  }
+
+  drawIntroText();
+
   const isMobile = {
     Android: function() {
       return navigator.userAgent.match(/Android/i);
@@ -50,11 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
       source: "https://www.youtube.com/embed/uzgBD2wysuI?start=0&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     }
-    // {
-    //   id: "myname",
-    //   source: "https://www.youtube.com/embed/HKTSaezB4p8?start=0&autoplay=1&rel=0&amp;showinfo=0",
-    //   action: "click"
-    // }
   ];
   const emptyCenterPage = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>";
@@ -62,16 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const visiblePointerEvents = () => { //enables clicking on videos
     document.getElementsByClassName("centerpage")[0].style.pointerEvents = "visible"; //[0] because it returns elementS, plural
-  }
-
-  //show ladder png that links to sources page
-  const showladder = function() {
-    const yt = document.getElementById("youtube");
-    if (yt && yt.src === link_Arr[0].source) {
-      document.getElementById("ladder").style.visibility = "visible";
-    } else {
-      document.getElementById("ladder").style.visibility = "hidden";
-    }
   }
 
   const drawBlackBgYt = () => {
@@ -100,15 +102,16 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   }
-  // const cryptocurrency = document.getElementById("cryptocurrency");
-  // if (cryptocurrency) {
-  //   cryptocurrency.addEventListener("click", () => {
-  //     document.getElementsByClassName("aboutcontent")[0].innerHTML = "<div class='cryptopay'><a href='https://blockchain.info/address/3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg'><img id='qrcode' src='./img/bitcoin-segwit-qr.png' alt='qr code'></a><p id='ccaddress'>3Myn2pJdmqsDAuqvkGXNtAcmNLzKCkxeqg</p></div>";
-  //     visiblePointerEvents();
-  //     drawBlackBgYt();
-  //     showladder(); //hides ladder because YT element is gone through changing innerhtml above
-  //   });
-  // }
+  const triggersaliva = document.getElementById("triggersaliva");
+  if (triggersaliva) {
+    triggersaliva.addEventListener("mouseover", () => {
+      drawIntroText();
+
+      // visiblePointerEvents();
+      // drawBlackBgYt();
+      // showladder(); //hides ladder because YT element is gone through changing innerhtml above
+    });
+  }
 
   const notification = document.getElementById("triggersaliva");
   if (notification) {

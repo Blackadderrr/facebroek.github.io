@@ -20,10 +20,11 @@ html {
   border-style: none; }
 
 span {
-  font-style: italic; }
+  font-weight: bold;
+}
 
 .salivate {
-  font-style: normal;
+  font-weight: normal;
 }
 
 .more {
@@ -340,6 +341,10 @@ li p {
   color: red; }
 
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
+
+  #myname {
+    font-size: 24px;}
+
   .sources {
     font-size: 0.5em;
     margin-left: 48px; }
