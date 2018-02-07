@@ -102,6 +102,15 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   }
+  const showSources = document.getElementById("scale");
+  if (showSources) {
+    showSources.addEventListener("click", () => {
+      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' width='666' height='333' allowfullscreen scrolling='yes'></iframe>";
+      drawBlackBgYt();
+      showladder();
+    })
+  }
+
   const triggersaliva = document.getElementById("triggersaliva");
   if (triggersaliva) {
     triggersaliva.addEventListener("mouseover", () => {

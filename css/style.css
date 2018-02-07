@@ -154,6 +154,10 @@ h2 {
   display: inline-block;
   pointer-events: none; }
 
+.iframe {
+  pointer-events: visible;
+}
+
 #landingtext {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
@@ -348,6 +352,10 @@ li p {
   .sources {
     font-size: 0.5em;
     margin-left: 48px; }
+
+  .iframe {
+    height: 666px;
+  }
 
   h1,
   h2 {
