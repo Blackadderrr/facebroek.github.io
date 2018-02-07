@@ -156,6 +156,8 @@ h2 {
 
 .iframe {
   pointer-events: visible;
+  height: 42vh;
+  width: 666px;
 }
 
 #landingtext {
@@ -354,7 +356,7 @@ li p {
     margin-left: 48px; }
 
   .iframe {
-    height: 666px;
+    /*height: 666px;*/
   }
 
   h1,
@@ -368,7 +370,7 @@ li p {
     font-size: 0.81em;
     margin-left: 48px; }
   .iframe {
-    height: 231px;
+    /*height: 231px;*/
   }
   .onccpage {
     width: 1920px; } }
