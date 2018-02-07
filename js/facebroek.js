@@ -107,11 +107,19 @@ document.addEventListener('DOMContentLoaded', function() {
     triggersaliva.addEventListener("mouseover", () => {
       drawIntroText();
     });
+
+    triggersaliva.addEventListener("click", () => {
+      drawIntroText();
+    });
   }
 
   const notification = document.getElementById("triggersaliva");
   if (notification) {
     notification.addEventListener("mouseover", () => {
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
+    });
+
+    notification.addEventListener("click", () => {
       document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
     });
 
