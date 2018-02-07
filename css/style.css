@@ -448,11 +448,12 @@ button:focus {
     font-size: 27px; } }
 
 #about {
-  margin: 12px;
+  margin: 9px;
+  font-size: 1em;
 }
 #about a {
   color: #0000EE;
-  display: inline;
+  font-size: 0.93em;
 }
 #about h3 {
   margin-top: 6px;
