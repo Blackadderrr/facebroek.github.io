@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     return Math.floor((Math.random() * max) + min);
   }
 
-  const randColor = function(min,max){
-    return "rgb(" + randNumber(min, max) + "," + randNumber(min, max) + "," + randNumber(min, max) + ")";
+  const randColor = function(minr,maxr,ming,maxg,minb,maxb){
+    return "rgb(" + randNumber(minr, maxr) + "," + randNumber(ming, maxg) + "," + randNumber(minb, maxb) + ")";
   }
 
   const drawIntroText = () => {
@@ -118,21 +118,21 @@ document.addEventListener('DOMContentLoaded', function() {
   const notification = document.getElementById("triggersaliva");
   if (notification) {
     notification.addEventListener("click", () => {
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(1,30);
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,80,60,150,60,150);
       setTimeout(function () {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(30,60);
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,100,60,120,60,150);
       }, 50);
       setTimeout(function () {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,90);
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,120,60,150,60,150);
       }, 100);
       setTimeout(function () {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(90,120);
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,140,60,150,60,150);
       }, 150);
       setTimeout(function () {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(120,150);
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,160,60,150,60,150);
       }, 200);
       setTimeout(function () {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(150,180);
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,180,60,150,60,150);
       }, 250);
     });
 
