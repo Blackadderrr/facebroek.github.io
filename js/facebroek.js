@@ -2,14 +2,19 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   //show ladder png that links to sources page
-  const showladder = function() {
-    const yt = document.getElementById("youtube");
-    if (yt && yt.src === link_Arr[0].source) {
-      document.getElementById("ladder").style.visibility = "visible";
-    } else {
-      document.getElementById("ladder").style.visibility = "hidden";
-    }
+  // const showladder = function() {
+  //   const yt = document.getElementById("youtube");
+  //   if (yt && yt.src === link_Arr[0].source) {
+  //     document.getElementById("ladder").style.visibility = "visible";
+  //   } else {
+  //     document.getElementById("ladder").style.visibility = "hidden";
+  //   }
+  // }
+  const randNumber = function(min,max) {
+    return Math.floor((Math.random()*max)+min);
   }
+  console.log(""+randNumber(1,255));
+
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
     // showladder();
@@ -122,7 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const notification = document.getElementById("triggersaliva");
   if (notification) {
     notification.addEventListener("click", () => {
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
+      const randColor = "rgb(" + randNumber(84,180) + "," + randNumber(84,180) + "," + randNumber(84,180) + ")";
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor;
     });
 
     notification.addEventListener("mouseout", () => {
