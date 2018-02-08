@@ -1,23 +1,12 @@
 //A little bit more DRY-code, still too much fuckery happening though.
 document.addEventListener('DOMContentLoaded', function() {
 
-  //show ladder png that links to sources page
-  // const showladder = function() {
-  //   const yt = document.getElementById("youtube");
-  //   if (yt && yt.src === link_Arr[0].source) {
-  //     document.getElementById("ladder").style.visibility = "visible";
-  //   } else {
-  //     document.getElementById("ladder").style.visibility = "hidden";
-  //   }
-  // }
-  const randNumber = function(min,max) {
-    return Math.floor((Math.random()*max)+min);
+  const randNumber = function(min, max) {
+    return Math.floor((Math.random() * max) + min);
   }
-  console.log(""+randNumber(1,255));
 
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
-    // showladder();
   }
 
   drawIntroText();
@@ -102,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
         drawBlackBgYt();
         if (yt.src != link_Arr[i].source) {
           yt.src = link_Arr[i].source;
-          // showladder();
         }
       });
     }
@@ -112,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
     showSources.addEventListener("click", () => {
       document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
       drawBlackBgYt();
-      // showladder();
       // width='666' height='333'
     })
   }
@@ -127,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const notification = document.getElementById("triggersaliva");
   if (notification) {
     notification.addEventListener("click", () => {
-      const randColor = "rgb(" + randNumber(84,180) + "," + randNumber(84,180) + "," + randNumber(84,180) + ")";
+      const randColor = "rgb(" + randNumber(84, 180) + "," + randNumber(84, 180) + "," + randNumber(84, 180) + ")";
       document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor;
     });
 
@@ -156,14 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
     }
 
-    let smileygame = function(int) {
-      if (happynumber > 100) {} else if (int > 0) {
-        happynumber += int;
-      } else if (int < 0) {
-        happynumber += int;
-      }
-    }
-
     drawBackgroundPattern();
 
     window.onresize = () => {
@@ -174,12 +153,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = e.target;
       if (target.getAttribute("src") === "./img/sad.gif") {
         target.src = "./img/happy.gif";
-        // smileygame(1);
-        // console.log("happy");
+
       } else if (target.getAttribute("src") === "./img/happy.gif") {
         target.src = "./img/sad.gif";
-        // smileygame(-1);
-        // console.log("sads");
       }
     });
   }
