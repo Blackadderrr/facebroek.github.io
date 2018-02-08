@@ -132,13 +132,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,160,60,150,60,150);
       }, 200);
       setTimeout(function () {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(120,180,110,150,110,150);
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 1)";
       }, 250);
     });
 
-    // notification.addEventListener("mouseout", () => {
-    //   document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
-    // });
+    notification.addEventListener("mouseout", () => {
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
+    });
   }
 
   if (!isMobile.any()) {
