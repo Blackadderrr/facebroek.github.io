@@ -571,6 +571,7 @@ button:focus {
   color: #00bb3f;
   font-size: 0.93em;
 }
+
 #about a:visited {
   color: #095c25;
 }
@@ -583,6 +584,7 @@ button:focus {
 #about h3 {
   margin-top: 6px;
 }
+
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
   #about {
     font-size: 0.69em;

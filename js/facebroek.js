@@ -114,10 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const triggersaliva = document.getElementById("triggersaliva");
   if (triggersaliva) {
-    // triggersaliva.addEventListener("mouseover", () => {
-    //   drawIntroText();
-    // });
-
     triggersaliva.addEventListener("click", () => {
       drawIntroText();
     });
@@ -125,10 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const notification = document.getElementById("triggersaliva");
   if (notification) {
-    // notification.addEventListener("mouseover", () => {
-    //   document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
-    // });
-
     notification.addEventListener("click", () => {
       document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 45, 45, 0.64)";
     });
