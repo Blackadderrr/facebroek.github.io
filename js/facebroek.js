@@ -136,9 +136,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 250);
     });
 
-    notification.addEventListener("mouseout", () => {
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
-    });
+    // notification.addEventListener("mouseout", () => {
+    //   document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
+    // });
   }
 
   if (!isMobile.any()) {
