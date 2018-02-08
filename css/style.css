@@ -568,7 +568,7 @@ button:focus {
 
 #about a {
   /*color: #0000EE;*/
-  color: #019e36;
+  color: #00bb3f;
   font-size: 0.93em;
 }
 #about a:visited {
@@ -576,7 +576,7 @@ button:focus {
 }
 
 #about a:hover {
-  color: #019e36;
+  /*color: #019e36;*/
   text-decoration: underline;
 }
 
