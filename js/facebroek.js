@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,160,60,150,60,150);
       }, 200);
       setTimeout(function () {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,180,60,150,60,150);
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(120,180,110,150,110,150);
       }, 250);
     });
 
