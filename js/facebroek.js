@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     return Math.floor((Math.random() * max) + min);
   }
 
+  const randColor = function(min,max){
+    return "rgb(" + randNumber(min, max) + "," + randNumber(min, max) + "," + randNumber(min, max) + ")";
+  }
+
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
   }
@@ -114,8 +118,22 @@ document.addEventListener('DOMContentLoaded', function() {
   const notification = document.getElementById("triggersaliva");
   if (notification) {
     notification.addEventListener("click", () => {
-      const randColor = "rgb(" + randNumber(84, 180) + "," + randNumber(84, 180) + "," + randNumber(84, 180) + ")";
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor;
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(1,30);
+      setTimeout(function () {
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(30,60);
+      }, 50);
+      setTimeout(function () {
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60,90);
+      }, 100);
+      setTimeout(function () {
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(90,120);
+      }, 150);
+      setTimeout(function () {
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(120,150);
+      }, 200);
+      setTimeout(function () {
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(150,180);
+      }, 250);
     });
 
     notification.addEventListener("mouseout", () => {
