@@ -10,31 +10,31 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   //mucking about, no idea what I'm doing with the numbers, yet
 
-  // const cycleThreeColors = function(number, max, opacity) {
-  //   const clrNr = number*40;
-  //   const maxNr = max;
-  //   if (clrNr) {
-  //     // console.log(clrNr);
-  //     // console.log(Math.floor(Math.abs(Math.sin(clrNr/maxNr)*maxNr)));
-  //
-  //     const returnColor = "rgba(" +
-  //     Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr+1)*maxNr)) + "," +
-  //     Math.floor(Math.abs(Math.sin(2/3*clrNr/maxNr+2)*maxNr)) + "," + Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr-1)*maxNr)) + "," +
-  //     opacity + ")";
-  //
-  //     console.log(returnColor);
-  //     return returnColor;
-  //   }
-  // }
-
   const cycleThreeColors = function(number, max, opacity) {
-    const clrNr = number * 39;
+    const clrNr = number*15;
     const maxNr = max;
     if (clrNr) {
-      // console.log(Math.sin(number));
-      return "rgba(" + Math.floor(Math.sin(clrNr / maxNr + 10) * 201) + "," + Math.floor(Math.sin(clrNr / maxNr + 1) * 255) + "," + Math.floor(Math.sin(clrNr / maxNr + 2) * 255) + "," + opacity + ")";
+      // console.log(clrNr);
+      // console.log(Math.floor(Math.abs(Math.sin(clrNr/maxNr)*maxNr)));
+
+      const returnColor = "rgba(" +
+      Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr+1)*maxNr)) + "," +
+      Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr+3)*maxNr)) + "," + Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr-1)*maxNr)) + "," +
+      opacity + ")";
+
+      // console.log(returnColor);
+      return returnColor;
     }
   }
+
+  // const cycleThreeColors = function(number, max, opacity) {
+  //   const clrNr = number * 10;
+  //   const maxNr = max;
+  //   if (clrNr) {
+  //     // console.log(Math.sin(number));
+  //     return "rgba(" + Math.floor(Math.sin(clrNr / maxNr + 10) * 201) + "," + Math.floor(Math.sin(clrNr / maxNr + 1) * 255) + "," + Math.floor(Math.sin(clrNr / maxNr + 2) * 255) + "," + opacity + ")";
+  //   }
+  // }
 
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
@@ -164,7 +164,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.onmousemove = handleMouseMove;
     var colorCount = 255;
     var decrementor = -1;
-
+    var dotsize = 90;
+    var multiplier = 1.03;
     function handleMouseMove(event) {
       var dot, eventDoc, doc, body, pageX, pageY;
       const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -196,52 +197,61 @@ document.addEventListener('DOMContentLoaded', function() {
       colorCount += decrementor;
       //end
       // Add a dot to follow the cursor
+
+      if (dotsize > 900) {
+        multiplier = 0.96;
+      } else if (dotsize < 90) {
+        multiplier = 1.03;
+      }
+      dotsize *= multiplier;
+      // console.log(dotsize);
       dot = document.createElement('div');
       dot.className = "dot";
-      dot.style.left = event.pageX - 300 + "px";
-      dot.style.top = event.pageY - 300 + "px";
-      dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.03); //not from original source
+      dot.style.left = event.pageX - Math.floor(dotsize/2) + "px";
+      dot.style.top = event.pageY - Math.floor(dotsize/2) + "px";
+      dot.style.width = dotsize + "px";
+      dot.style.height = dotsize + "px";
+      dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
       document.body.appendChild(dot);
       var drawnDots = document.getElementsByClassName("dot");
-      console.log(drawnDots.length);
       if (drawnDots.length > 300) {
         drawnDots[0].parentNode.removeChild(drawnDots[0]);
       }
     }
 
     //Smiley background
-    // let smileynumber = 0;
-    // let happynumber = 0;
-    // let sadnumber = 0;
-    // let drawBackgroundPattern = () => {
-    //   const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    //   const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    //   const dimension = 32;
-    //   const bgObjectHTML = '<img class="bgfillobjects" src="./img/sad.gif" alt="sad face">';
-    //
-    //   let outputHTML = "";
-    //   for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
-    //     for (let j = 0; j < Math.floor(viewportHeight / dimension); j++) {
-    //       outputHTML += bgObjectHTML;
-    //       smileynumber += 1;
-    //     }
-    //   }
-    //   document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
-    // }
-    // // drawBackgroundPattern();
-    //
-    // window.onresize = () => {
-    //   // drawBackgroundPattern();
-    // }
-    //
-    // document.getElementsByClassName("backgroundfill")[0].addEventListener("mouseover", function(e) {
-    //   const target = e.target;
-    //   if (target.getAttribute("src") === "./img/sad.gif") {
-    //     target.src = "./img/happy.gif";
-    //
-    //   } else if (target.getAttribute("src") === "./img/happy.gif") {
-    //     target.src = "./img/sad.gif";
-    //   }
-    // });
+    let smileynumber = 0;
+    let happynumber = 0;
+    let sadnumber = 0;
+    let drawBackgroundPattern = () => {
+      const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+      const dimension = 32;
+      const bgObjectHTML = '<img class="bgfillobjects" src="./img/sad.gif" alt="sad face">';
+
+      let outputHTML = "";
+      for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
+        for (let j = 0; j < Math.floor(viewportHeight / dimension); j++) {
+          outputHTML += bgObjectHTML;
+          smileynumber += 1;
+        }
+      }
+      document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
+    }
+    drawBackgroundPattern();
+
+    window.onresize = () => {
+      drawBackgroundPattern();
+    }
+
+    document.getElementsByClassName("backgroundfill")[0].addEventListener("mouseover", function(e) {
+      const target = e.target;
+      if (target.getAttribute("src") === "./img/sad.gif") {
+        target.src = "./img/happy.gif";
+
+      } else if (target.getAttribute("src") === "./img/happy.gif") {
+        target.src = "./img/sad.gif";
+      }
+    });
   }
 });

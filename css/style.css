@@ -40,11 +40,11 @@ span {
 }
 
 .dot {
-  width: 600px;
-  height: 600px;
+  /*width: 600px;
+  height: 600px;*/
   /*background-color: black;*/
   position: absolute;
-  z-index: -9;
+  z-index: -1;
   border-radius: 600px;
 }
 
@@ -339,10 +339,10 @@ h2 {
   width: 30px;
   height: 30px;
   margin: 1px 1px -3px;
-  opacity: 0.21;
+  opacity: 0.12;
   display: inline-block;
   z-index: 0;
-  cursor: default;
+  cursor: crosshair;
 }
 
 #counter {
