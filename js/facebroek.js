@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
       dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
       document.body.appendChild(dot);
       var drawnDots = document.getElementsByClassName("dot");
-      if (drawnDots.length > 420) {
+      if (drawnDots.length > 300) {
         drawnDots[0].parentNode.removeChild(drawnDots[0]);
       }
     }
