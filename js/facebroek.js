@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // }
 
   const cycleThreeColors = function(number, max, opacity) {
-    const clrNr = number*39;
+    const clrNr = number * 39;
     const maxNr = max;
     if (clrNr) {
       // console.log(Math.sin(number));
-      return "rgba(" + Math.floor(Math.sin(clrNr/maxNr+10)*201) + "," + Math.floor(Math.sin(clrNr/maxNr+1)*255) + "," + Math.floor(Math.sin(clrNr/maxNr+2)*255) + "," + opacity + ")";
+      return "rgba(" + Math.floor(Math.sin(clrNr / maxNr + 10) * 201) + "," + Math.floor(Math.sin(clrNr / maxNr + 1) * 255) + "," + Math.floor(Math.sin(clrNr / maxNr + 2) * 255) + "," + opacity + ")";
     }
   }
 
@@ -145,22 +145,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const notification = document.getElementById("triggersaliva");
   if (notification) {
     notification.addEventListener("click", () => {
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60, 80, 60, 150, 60, 150);
-      setTimeout(function() {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60, 100, 60, 120, 60, 150);
-      }, 50);
-      setTimeout(function() {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60, 120, 60, 150, 60, 150);
-      }, 100);
-      setTimeout(function() {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60, 140, 60, 150, 60, 150);
-      }, 150);
-      setTimeout(function() {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(60, 160, 60, 150, 60, 150);
-      }, 200);
-      setTimeout(function() {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 0, 0, 0.51)";
-      }, 250);
+      var drawnDots = document.getElementsByClassName("dot");
+      while (drawnDots.length > 0) {
+        drawnDots[0].parentNode.removeChild(drawnDots[0]);
+      }
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 0, 0, 0.51)";
     });
 
     notification.addEventListener("mouseout", () => {
@@ -211,8 +200,13 @@ document.addEventListener('DOMContentLoaded', function() {
       dot.className = "dot";
       dot.style.left = event.pageX - 300 + "px";
       dot.style.top = event.pageY - 300 + "px";
-      dot.style.backgroundColor = cycleThreeColors(colorCount,255,0.03); //not from original source
+      dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.03); //not from original source
       document.body.appendChild(dot);
+      var drawnDots = document.getElementsByClassName("dot");
+      console.log(drawnDots.length);
+      if (drawnDots.length > 300) {
+        drawnDots[0].parentNode.removeChild(drawnDots[0]);
+      }
     }
 
     //Smiley background
