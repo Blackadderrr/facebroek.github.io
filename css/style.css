@@ -20,6 +20,7 @@ a {
 
 body, html {
   border-style: none;
+  cursor: crosshair;
 }
 
 span {
@@ -39,12 +40,12 @@ span {
 }
 
 .dot {
-  width: 30px;
-  height: 30px;
+  width: 120px;
+  height: 120px;
   /*background-color: black;*/
   position: absolute;
   z-index: -9;
-  border-radius: 15px;
+  border-radius: 120px;
 }
 
 input, select {
@@ -53,6 +54,7 @@ input, select {
 
 body {
   background-color: #eeeff4;
+  overflow: hidden;
 }
 
 h1 {
@@ -164,7 +166,7 @@ h2 {
   min-width: 120px;
   margin-bottom: 1vh;
   pointer-events: visible;
-  /*background-color: rgba(237, 238, 244, 0.9);*/
+  /*background-color: rgba(237, 238, 244, 0.6);*/
   border-radius: 10px;
 }
 
@@ -362,11 +364,11 @@ h2 {
   text-align: center;
   display: inline-block;
   font-size: 12px;
-  color: #7b8e98;
+  color: #41545e;
 }
 
 #myname:hover {
-  color: #446e85;
+  color: #3be637;
 }
 
 .return {
@@ -391,6 +393,7 @@ div.return {
 
 #sourcesbody {
   background-color: #f6f6f6;
+  overflow-y: scroll;
 }
 
 .sources {
