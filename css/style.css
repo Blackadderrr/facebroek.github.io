@@ -164,7 +164,7 @@ h2 {
   min-width: 120px;
   margin-bottom: 1vh;
   pointer-events: visible;
-  background-color: rgba(237, 238, 244, 0.9);
+  /*background-color: rgba(237, 238, 244, 0.9);*/
   border-radius: 10px;
 }
 
