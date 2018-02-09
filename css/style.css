@@ -40,12 +40,12 @@ span {
 }
 
 .dot {
-  width: 120px;
-  height: 120px;
+  width: 600px;
+  height: 600px;
   /*background-color: black;*/
   position: absolute;
   z-index: -9;
-  border-radius: 120px;
+  border-radius: 600px;
 }
 
 input, select {

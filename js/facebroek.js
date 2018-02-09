@@ -8,13 +8,31 @@ document.addEventListener('DOMContentLoaded', function() {
   const randColor = function(minr, maxr, ming, maxg, minb, maxb) {
     return "rgb(" + randNumber(minr, maxr) + "," + randNumber(ming, maxg) + "," + randNumber(minb, maxb) + ")";
   }
+  //mucking about, no idea what I'm doing with the numbers, yet
 
-  const cycleThreeColors = function(number, max) {
-    const clrNr = number*40;
+  // const cycleThreeColors = function(number, max, opacity) {
+  //   const clrNr = number*40;
+  //   const maxNr = max;
+  //   if (clrNr) {
+  //     // console.log(clrNr);
+  //     // console.log(Math.floor(Math.abs(Math.sin(clrNr/maxNr)*maxNr)));
+  //
+  //     const returnColor = "rgba(" +
+  //     Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr+1)*maxNr)) + "," +
+  //     Math.floor(Math.abs(Math.sin(2/3*clrNr/maxNr+2)*maxNr)) + "," + Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr-1)*maxNr)) + "," +
+  //     opacity + ")";
+  //
+  //     console.log(returnColor);
+  //     return returnColor;
+  //   }
+  // }
+
+  const cycleThreeColors = function(number, max, opacity) {
+    const clrNr = number*39;
     const maxNr = max;
     if (clrNr) {
       // console.log(Math.sin(number));
-      return "rgb(" + Math.floor(Math.sin(clrNr/maxNr+10)*180) + "," + Math.floor(Math.sin(clrNr/maxNr+1)*255) + "," + Math.floor(Math.sin(clrNr/maxNr+2)*255) + ")";
+      return "rgba(" + Math.floor(Math.sin(clrNr/maxNr+10)*201) + "," + Math.floor(Math.sin(clrNr/maxNr+1)*255) + "," + Math.floor(Math.sin(clrNr/maxNr+2)*255) + "," + opacity + ")";
     }
   }
 
@@ -191,9 +209,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add a dot to follow the cursor
       dot = document.createElement('div');
       dot.className = "dot";
-      dot.style.left = event.pageX - 60 + "px";
-      dot.style.top = event.pageY - 60 + "px";
-      dot.style.backgroundColor = cycleThreeColors(colorCount,255); //not from original source
+      dot.style.left = event.pageX - 300 + "px";
+      dot.style.top = event.pageY - 300 + "px";
+      dot.style.backgroundColor = cycleThreeColors(colorCount,255,0.03); //not from original source
       document.body.appendChild(dot);
     }
 
