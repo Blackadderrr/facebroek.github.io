@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // }
 
   const drawIntroText = () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So, if your brain lets you, quit.</p>";
   }
 
   drawIntroText();
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
       //end
       // Add a dot to follow the cursor
 
-      if (dotsize > 600) {
+      if (dotsize > 510) {
         multiplier = 0.96;
       } else if (dotsize < 90) {
         multiplier = 1.03;
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
       dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
       document.body.appendChild(dot);
       var drawnDots = document.getElementsByClassName("dot");
-      if (drawnDots.length > 300) {
+      if (drawnDots.length > 90) {
         drawnDots[0].parentNode.removeChild(drawnDots[0]);
       }
     }
