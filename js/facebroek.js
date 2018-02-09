@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //mucking about, no idea what I'm doing with the numbers, yet
 
   const cycleThreeColors = function(number, max, opacity) {
-    const clrNr = number*15;
+    const clrNr = number*39;
     const maxNr = max;
     if (clrNr) {
       // console.log(clrNr);
