@@ -11,16 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
   //mucking about, no idea what I'm doing with the numbers, yet
 
   const cycleThreeColors = function(number, max, opacity) {
-    const clrNr = number*39;
+    const clrNr = number * 39;
     const maxNr = max;
     if (clrNr) {
       // console.log(clrNr);
       // console.log(Math.floor(Math.abs(Math.sin(clrNr/maxNr)*maxNr)));
 
       const returnColor = "rgba(" +
-      Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr+1)*maxNr)) + "," +
-      Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr+3)*maxNr)) + "," + Math.floor(Math.abs(Math.sin(1/3*clrNr/maxNr-1)*maxNr)) + "," +
-      opacity + ")";
+        Math.floor(Math.abs(Math.sin(1 / 3 * clrNr / maxNr + 1) * maxNr)) + "," +
+        Math.floor(Math.abs(Math.sin(1 / 3 * clrNr / maxNr + 3) * maxNr)) + "," + Math.floor(Math.abs(Math.sin(1 / 3 * clrNr / maxNr - 1) * maxNr)) + "," +
+        opacity + ")";
 
       // console.log(returnColor);
       return returnColor;
@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var decrementor = -1;
     var dotsize = 90;
     var multiplier = 1.03;
+
     function handleMouseMove(event) {
       var dot, eventDoc, doc, body, pageX, pageY;
       const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -207,8 +208,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // console.log(dotsize);
       dot = document.createElement('div');
       dot.className = "dot";
-      dot.style.left = event.pageX - Math.floor(dotsize/2) + "px";
-      dot.style.top = event.pageY - Math.floor(dotsize/2) + "px";
+      dot.style.left = event.pageX - Math.floor(dotsize / 2) + "px";
+      dot.style.top = event.pageY - Math.floor(dotsize / 2) + "px";
       dot.style.width = dotsize + "px";
       dot.style.height = dotsize + "px";
       dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
