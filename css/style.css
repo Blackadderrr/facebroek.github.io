@@ -38,6 +38,15 @@ span {
   line-height: 0;
 }
 
+.dot {
+  width: 30px;
+  height: 30px;
+  /*background-color: black;*/
+  position: absolute;
+  z-index: -9;
+  border-radius: 15px;
+}
+
 input, select {
   vertical-align: middle;
 }
@@ -152,8 +161,11 @@ h2 {
 #items {
   display: inline-block;
   min-height: 39px;
+  min-width: 120px;
   margin-bottom: 1vh;
   pointer-events: visible;
+  background-color: rgba(237, 238, 244, 0.9);
+  border-radius: 10px;
 }
 
 #items img {
@@ -567,18 +579,18 @@ button:focus {
 }
 
 #about a {
-  /*color: #0000EE;*/
-  color: #00bb3f;
+  color: #00aeee;
+  /*color: #00bb3f;*/
   font-size: 0.93em;
 }
 
 #about a:visited {
-  color: #095c25;
+  /*color: #095c25;*/
+  color: #086587;
 }
 
 #about a:hover {
-  /*color: #019e36;*/
-  text-decoration: underline;
+  color: #00e2c0;
 }
 
 #about h3 {
