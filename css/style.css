@@ -396,11 +396,16 @@ div.return {
   overflow-y: scroll;
 }
 
-.smiley {
-  color: rgb(50, 194, 189);
+.smiley .coinlogo {
   width: 16px;
   height: 16px;
   margin-right: 3px;
+}
+
+.coinlogo {
+  /*width: 24px;
+  height: 24px;*/
+  /*margin-bottom: -3px;*/
 }
 
 .sources {
