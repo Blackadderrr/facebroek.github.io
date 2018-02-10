@@ -20,7 +20,6 @@ a {
 
 body, html {
   border-style: none;
-  cursor: crosshair;
 }
 
 span {
@@ -40,9 +39,6 @@ span {
 }
 
 .dot {
-  /*width: 600px;
-  height: 600px;*/
-  /*background-color: black;*/
   position: absolute;
   z-index: -1;
   border-radius: 600px;
@@ -55,6 +51,7 @@ input, select {
 body {
   background-color: #eeeff4;
   overflow: hidden;
+  cursor: crosshair;
 }
 
 h1 {
@@ -155,8 +152,8 @@ h2 {
     min-height: calc(1.5* 274px);
   }
   #items img {
-    width: 69px;
-    height: 69px;
+    width: 64px;
+    height: 69px; /*for some reason this looks better*/
   }
 }
 
@@ -168,6 +165,7 @@ h2 {
   pointer-events: visible;
   /*background-color: rgba(237, 238, 244, 0.6);*/
   border-radius: 10px;
+  cursor: default;
 }
 
 #items img {
@@ -189,6 +187,7 @@ h2 {
 .centerpage {
   display: inline-block;
   pointer-events: none;
+  cursor: default;
 }
 
 .iframe {
@@ -394,6 +393,7 @@ div.return {
 #sourcesbody {
   background-color: #f6f6f6;
   overflow-y: scroll;
+  cursor: default;
 }
 
 .smiley {
@@ -608,6 +608,7 @@ h6 {
   margin-top: 0px;
   font-size: 1em;
   overflow: scroll;
+  cursor: default;
 }
 
 #about a {
