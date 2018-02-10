@@ -576,8 +576,14 @@ button:focus {
   }
 }
 
+#aboutMyName {
+  font-size: 2.1em;
+  font-weight: normal;
+}
+
 #about {
   margin: 9px;
+  margin-top: 0px;
   font-size: 1em;
   overflow: scroll;
 }
