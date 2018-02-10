@@ -155,7 +155,7 @@ h2 {
     min-height: calc(1.5* 274px);
   }
   #items img {
-    width: 64px;
+    width: 69px;
     height: 69px;
   }
 }
@@ -396,16 +396,22 @@ div.return {
   overflow-y: scroll;
 }
 
-.smiley .coinlogo {
+.smiley {
   width: 16px;
   height: 16px;
   margin-right: 3px;
 }
 
 .coinlogo {
-  /*width: 24px;
-  height: 24px;*/
-  /*margin-bottom: -3px;*/
+  margin-bottom: -6px;
+}
+
+@media screen and (max-device-width: 480px) {
+  .coinlogo {
+    width: 54px;
+    height: 54px;
+    margin-bottom: -9px;
+  }
 }
 
 .sources {
