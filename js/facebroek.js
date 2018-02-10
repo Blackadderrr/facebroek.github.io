@@ -149,11 +149,14 @@ document.addEventListener('DOMContentLoaded', function() {
       while (drawnDots.length > 0) {
         drawnDots[0].parentNode.removeChild(drawnDots[0]);
       }
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 0, 0, 0.51)";
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(1,255,1,255,1,255,1);
+      setTimeout(function () {
+        document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 0, 0, 0.51)";
+      }, 50);
     });
 
     notification.addEventListener("mouseout", () => {
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(215, 90, 90, 0)";
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
     });
   }
 
