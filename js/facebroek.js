@@ -1,13 +1,17 @@
 //A little bit more DRY-code, still too much fuckery happening though.
 document.addEventListener('DOMContentLoaded', function() {
+  let isFirefox = 0;
+  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+    isFirefox = 1;
+  }
 
   const randNumber = function(min, max) {
     return Math.floor((Math.random() * max) + min);
-  }
+  };
 
   const randColor = function(minr, maxr, ming, maxg, minb, maxb) {
     return "rgb(" + randNumber(minr, maxr) + "," + randNumber(ming, maxg) + "," + randNumber(minb, maxb) + ")";
-  }
+  };
   //mucking about, no idea what I'm doing with the numbers, yet
 
   const cycleThreeColors = function(number, max, opacity) {
@@ -25,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // console.log(returnColor);
       return returnColor;
     }
-  }
+  };
 
   // const cycleThreeColors = function(number, max, opacity) {
   //   const clrNr = number * 10;
@@ -38,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
-  }
+  };
 
   drawIntroText();
 
@@ -99,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const visiblePointerEvents = () => { //enables clicking on videos
     document.getElementsByClassName("centerpage")[0].style.pointerEvents = "visible"; //[0] because it returns elementS, plural
-  }
+  };
 
   const drawBlackBgYt = () => {
     //in chrome browsers youtube flickers when changing its source. This prevents you seeing the white background, and thus the flickering.
@@ -108,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       document.getElementsByClassName("centerpage")[0].style.backgroundColor = "";
     }
-  }
+  };
 
   //iterates through the links that change yt video source
   for (let i = 0; i < link_Arr.length; i++) {
@@ -126,16 +130,18 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   }
+
   const showSources = document.getElementById("scale");
+
   if (showSources) {
     showSources.addEventListener("click", () => {
       document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
       drawBlackBgYt();
-      // width='666' height='333'
-    })
+    });
   }
 
   const triggersaliva = document.getElementById("triggersaliva");
+
   if (triggersaliva) {
     triggersaliva.addEventListener("click", () => {
       drawIntroText();
@@ -143,14 +149,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   const notification = document.getElementById("triggersaliva");
+
   if (notification) {
     notification.addEventListener("click", () => {
-      var drawnDots = document.getElementsByClassName("dot");
+      let drawnDots = document.getElementsByClassName("dot");
       while (drawnDots.length > 0) {
         drawnDots[0].parentNode.removeChild(drawnDots[0]);
       }
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(1,255,1,255,1,255,1);
-      setTimeout(function () {
+      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(1, 255, 1, 255, 1, 255, 1);
+
+      setTimeout(function() {
         document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 0, 0, 0.51)";
       }, 50);
     });
@@ -163,100 +171,103 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!isMobile.any()) {
     // Copied the core functionality from: https://stackoverflow.com/questions/7790725/javascript-track-mouse-position; http://output.jsbin.com/gejuz/1
     // The color part is mine, that's why it's shitty code.
+    if (isFirefox === 0) {
+      document.onmousemove = handleMouseMove;
+      let colorCount = 255;
+      let decrementor = -1;
+      let dotsize = 90;
+      let multiplier = 1.03;
 
-    document.onmousemove = handleMouseMove;
-    var colorCount = 255;
-    var decrementor = -1;
-    var dotsize = 90;
-    var multiplier = 1.03;
+      function handleMouseMove(event) {
+        let dot, eventDoc, doc, body, pageX, pageY;
+        const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        event = event || window.event; // IE-ism
 
-    function handleMouseMove(event) {
-      var dot, eventDoc, doc, body, pageX, pageY;
-      const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-      const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      event = event || window.event; // IE-ism
+        // If pageX/Y aren't available and clientX/Y
+        // are, calculate pageX/Y - logic taken from jQuery
+        // Calculate pageX/Y if missing and clientX/Y available
+        if (event.pageX == null && event.clientX != null) {
+          eventDoc = (event.target && event.target.ownerDocument) || document;
+          doc = eventDoc.documentElement;
+          body = eventDoc.body;
 
-      // If pageX/Y aren't available and clientX/Y
-      // are, calculate pageX/Y - logic taken from jQuery
-      // Calculate pageX/Y if missing and clientX/Y available
-      if (event.pageX == null && event.clientX != null) {
-        eventDoc = (event.target && event.target.ownerDocument) || document;
-        doc = eventDoc.documentElement;
-        body = eventDoc.body;
+          event.pageX = event.clientX +
+            (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+            (doc && doc.clientLeft || body && body.clientLeft || 0);
+          event.pageY = event.clientY +
+            (doc && doc.scrollTop || body && body.scrollTop || 0) -
+            (doc && doc.clientTop || body && body.clientTop || 0);
 
-        event.pageX = event.clientX +
-          (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
-          (doc && doc.clientLeft || body && body.clientLeft || 0);
-        event.pageY = event.clientY +
-          (doc && doc.scrollTop || body && body.scrollTop || 0) -
-          (doc && doc.clientTop || body && body.clientTop || 0);
+        }
+        //start: not from original source
+        if (colorCount == 255) {
+          decrementor = -1;
+        } else if (colorCount == 0) {
+          decrementor = 1;
+        }
+        colorCount += decrementor;
+        //end
+        // Add a dot to follow the cursor
 
-      }
-      //start: not from original source
-      if (colorCount == 255) {
-        decrementor = -1;
-      } else if (colorCount == 0) {
-        decrementor = 1;
-      }
-      colorCount += decrementor;
-      //end
-      // Add a dot to follow the cursor
-
-      if (dotsize > 510) {
-        multiplier = 0.96;
-      } else if (dotsize < 90) {
-        multiplier = 1.03;
-      }
-      dotsize *= multiplier;
-      // console.log(dotsize);
-      dot = document.createElement('div');
-      dot.className = "dot";
-      dot.style.left = event.pageX - Math.floor(dotsize / 2) + "px";
-      dot.style.top = event.pageY - Math.floor(dotsize / 2) + "px";
-      dot.style.width = dotsize + "px";
-      dot.style.height = dotsize + "px";
-      dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
-      document.body.appendChild(dot);
-      var drawnDots = document.getElementsByClassName("dot");
-      if (drawnDots.length > 90) {
-        drawnDots[0].parentNode.removeChild(drawnDots[0]);
-      }
+        if (dotsize > 510) {
+          multiplier = 0.96;
+        } else if (dotsize < 90) {
+          multiplier = 1.03;
+        }
+        dotsize *= multiplier;
+        // console.log(dotsize);
+        dot = document.createElement('div');
+        dot.className = "dot";
+        dot.style.left = event.pageX - Math.floor(dotsize / 2) + "px";
+        dot.style.top = event.pageY - Math.floor(dotsize / 2) + "px";
+        dot.style.width = dotsize + "px";
+        dot.style.height = dotsize + "px";
+        dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
+        document.body.appendChild(dot);
+        let drawnDots = document.getElementsByClassName("dot");
+        if (drawnDots.length > 90) {
+          drawnDots[0].parentNode.removeChild(drawnDots[0]);
+        }
+      } //end handle mouse
     }
 
-    //Smiley background
-    // let smileynumber = 0;
-    // let happynumber = 0;
-    // let sadnumber = 0;
-    // let drawBackgroundPattern = () => {
-    //   const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    //   const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    //   const dimension = 32;
-    //   const bgObjectHTML = '<img class="bgfillobjects" src="./img/sad.gif" alt="sad face">';
-    //
-    //   let outputHTML = "";
-    //   for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
-    //     for (let j = 0; j < Math.floor(viewportHeight / dimension); j++) {
-    //       outputHTML += bgObjectHTML;
-    //       smileynumber += 1;
-    //     }
-    //   }
-    //   document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
-    // }
-    //
-    // drawBackgroundPattern();
-    //
-    // window.onresize = () => {
-    //   drawBackgroundPattern();
-    // }
-    //
-    // document.getElementsByClassName("backgroundfill")[0].addEventListener("mouseover", function(e) {
-    //   const target = e.target;
-    //   if (target.getAttribute("src") === "./img/sad.gif") {
-    //     target.src = "./img/happy.gif";
-    //
-    //   } else if (target.getAttribute("src") === "./img/happy.gif") {
-    //     target.src = "./img/sad.gif";
-    //   }
-    // });
+    if (isFirefox === 1) {
+      //Smiley background
+      let smileynumber = 0;
+      let happynumber = 0;
+      let sadnumber = 0;
+      let drawBackgroundPattern = () => {
+        const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        const viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        const dimension = 32;
+        const bgObjectHTML = '<img class="bgfillobjects" src="./img/sad.gif" alt="sad face">';
+
+        let outputHTML = "";
+        for (let i = 0; i < Math.floor(viewportWidth / dimension); i++) {
+          for (let j = 0; j < Math.floor(viewportHeight / dimension); j++) {
+            outputHTML += bgObjectHTML;
+            smileynumber += 1;
+          }
+        }
+        document.getElementsByClassName("backgroundfill")[0].innerHTML = outputHTML;
+      };
+
+      drawBackgroundPattern();
+
+      window.onresize = () => {
+        drawBackgroundPattern();
+      };
+
+      document.getElementsByClassName("backgroundfill")[0].addEventListener("mouseover", function(e) {
+        const target = e.target;
+        if (target.getAttribute("src") === "./img/sad.gif") {
+          target.src = "./img/happy.gif";
+
+        } else if (target.getAttribute("src") === "./img/happy.gif") {
+          target.src = "./img/sad.gif";
+        }
+      });
+    }
   }
 });
