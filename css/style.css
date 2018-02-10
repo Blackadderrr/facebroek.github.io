@@ -581,6 +581,10 @@ button:focus {
   font-weight: normal;
 }
 
+h6 {
+  margin-top: 3px;
+}
+
 #about {
   margin: 9px;
   margin-top: 0px;
