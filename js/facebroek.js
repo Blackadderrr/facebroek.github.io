@@ -169,12 +169,12 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!isMobile.any()) {
     // Copied the core functionality from: https://stackoverflow.com/questions/7790725/javascript-track-mouse-position; http://output.jsbin.com/gejuz/1
     // The color part is mine, that's why it's shitty code.
-    if (isFirefox === 0 && !document.getElementById("foto")) {
+    if (document.getElementById("sandbox")) {
       document.onmousemove = handleMouseMove;
       let colorCount = 255;
       let decrementor = -1;
       let dotsize = 30;
-      let multiplier = 1.03;
+      let multiplier = 1.1;
 
       function handleMouseMove(event) {
         let dot, eventDoc, doc, body, pageX, pageY;
@@ -208,10 +208,10 @@ document.addEventListener('DOMContentLoaded', function() {
         //end
         // Add a dot to follow the cursor
 
-        if (dotsize > 90) {
+        if (dotsize > 120) {
           multiplier = 0.96;
-        } else if (dotsize < 21) {
-          multiplier = 1.03;
+        } else if (dotsize < 3) {
+          multiplier = 1.04;
         }
         dotsize *= multiplier;
         // console.log(dotsize);
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
         document.body.appendChild(dot);
         let drawnDots = document.getElementsByClassName("dot");
-        if (drawnDots.length > 60) {
+        if (drawnDots.length > 300) {
           drawnDots[0].parentNode.removeChild(drawnDots[0]);
         }
       } //end handle mouse

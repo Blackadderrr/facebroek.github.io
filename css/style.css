@@ -41,7 +41,7 @@ span {
 .dot {
   position: absolute;
   z-index: -1;
-  border-radius: 90px;
+  border-radius: 210px;
 }
 
 input, select {
@@ -51,7 +51,7 @@ input, select {
 body {
   background-color: #eeeff4;
   overflow: hidden;
-  cursor: crosshair;
+
 }
 
 h1 {
@@ -165,7 +165,7 @@ h2 {
   pointer-events: visible;
   /*background-color: rgba(237, 238, 244, 0.6);*/
   border-radius: 10px;
-  cursor: default;
+
 }
 
 #items img {
@@ -187,7 +187,7 @@ h2 {
 .centerpage {
   display: inline-block;
   pointer-events: none;
-  cursor: default;
+
 }
 
 .iframe {
@@ -341,7 +341,7 @@ h2 {
   opacity: 0.21;
   display: inline-block;
   z-index: 0;
-  cursor: crosshair;
+
 }
 
 #counter {
@@ -393,7 +393,7 @@ div.return {
 #sourcesbody {
   background-color: #f6f6f6;
   overflow-y: scroll;
-  cursor: default;
+
 }
 
 .smiley {
@@ -610,7 +610,7 @@ h6 {
 #about {
   font-size: 1em;
   overflow: scroll;
-  cursor: crosshair;
+
 }
 
 #about a {
@@ -636,6 +636,9 @@ h6 {
   #about {
     font-size: 0.69em;
   }
+}
+#sandbox {
+  cursor: none;
 }
 
 /*# sourceMappingURL=style.css.map */
