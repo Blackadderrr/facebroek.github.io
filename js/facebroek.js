@@ -1,4 +1,4 @@
-//A little bit more DRY-code, still too much fuckery happening though.
+//Messy code, bad practice for large projects (or any project actually)
 document.addEventListener('DOMContentLoaded', function() {
   let isFirefox = 0;
   if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
@@ -40,11 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
   //   }
   // }
 
-  const drawIntroText = () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
-  };
-
-  drawIntroText();
+  if (document.getElementsByClassName("centerpage")[0]) {
+    const drawIntroText = () => {
+      document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
+    };
+    drawIntroText();
+  }
 
   const isMobile = {
     Android: function() {
@@ -171,11 +172,11 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!isMobile.any()) {
     // Copied the core functionality from: https://stackoverflow.com/questions/7790725/javascript-track-mouse-position; http://output.jsbin.com/gejuz/1
     // The color part is mine, that's why it's shitty code.
-    if (isFirefox === 0) {
+    if (isFirefox === 0 && !document.getElementById("foto")) {
       document.onmousemove = handleMouseMove;
       let colorCount = 255;
       let decrementor = -1;
-      let dotsize = 90;
+      let dotsize = 30;
       let multiplier = 1.03;
 
       function handleMouseMove(event) {
@@ -210,29 +211,29 @@ document.addEventListener('DOMContentLoaded', function() {
         //end
         // Add a dot to follow the cursor
 
-        if (dotsize > 510) {
+        if (dotsize > 90) {
           multiplier = 0.96;
-        } else if (dotsize < 90) {
+        } else if (dotsize < 21) {
           multiplier = 1.03;
         }
         dotsize *= multiplier;
         // console.log(dotsize);
         dot = document.createElement('div');
         dot.className = "dot";
-        dot.style.left = event.pageX - Math.floor(dotsize / 2) + "px";
-        dot.style.top = event.pageY - Math.floor(dotsize / 2) + "px";
+        dot.style.left = event.pageX - Math.floor(dotsize/2) + "px";
+        dot.style.top = event.pageY - Math.floor(dotsize/2) + "px";
         dot.style.width = dotsize + "px";
         dot.style.height = dotsize + "px";
         dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
         document.body.appendChild(dot);
         let drawnDots = document.getElementsByClassName("dot");
-        if (drawnDots.length > 90) {
+        if (drawnDots.length > 60) {
           drawnDots[0].parentNode.removeChild(drawnDots[0]);
         }
       } //end handle mouse
     }
 
-    if (isFirefox === 1) {
+    if (!document.getElementById("about")) {
       //Smiley background
       let smileynumber = 0;
       let happynumber = 0;
@@ -267,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (target.getAttribute("src") === "./img/happy.gif") {
           target.src = "./img/sad.gif";
         }
-      });
+      }); //end smiley background
     }
   }
 });

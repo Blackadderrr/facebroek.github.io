@@ -41,7 +41,7 @@ span {
 .dot {
   position: absolute;
   z-index: -1;
-  border-radius: 600px;
+  border-radius: 90px;
 }
 
 input, select {
@@ -594,21 +594,23 @@ button:focus {
   }
 }
 
-#aboutMyName {
+h6 {
+  margin-top: -3px;
+}
+
+#wavingguy {
   font-size: 2.1em;
   font-weight: normal;
 }
 
-h6 {
-  margin-top: 3px;
+#aboutcontent {
+  padding: 9px;
 }
 
 #about {
-  margin: 9px;
-  margin-top: 0px;
   font-size: 1em;
   overflow: scroll;
-  cursor: default;
+  cursor: crosshair;
 }
 
 #about a {
