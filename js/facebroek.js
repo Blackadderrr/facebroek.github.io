@@ -39,11 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
   //     return "rgba(" + Math.floor(Math.sin(clrNr / maxNr + 10) * 201) + "," + Math.floor(Math.sin(clrNr / maxNr + 1) * 255) + "," + Math.floor(Math.sin(clrNr / maxNr + 2) * 255) + "," + opacity + ")";
   //   }
   // }
-
+  const notification = document.getElementById("triggersaliva");
+  const drawIntroText = () => {
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
+  };
+  if (notification) {
+    notification.addEventListener("click", () => {
+      drawIntroText();
+    });
+  }
   if (document.getElementsByClassName("centerpage")[0]) {
-    const drawIntroText = () => {
-      document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
-    };
     drawIntroText();
   }
 
@@ -140,16 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
       drawBlackBgYt();
     });
   }
-
-  const triggersaliva = document.getElementById("triggersaliva");
-
-  if (triggersaliva) {
-    triggersaliva.addEventListener("click", () => {
-      drawIntroText();
-    });
-  }
-
-  const notification = document.getElementById("triggersaliva");
 
   if (notification) {
     notification.addEventListener("click", () => {
