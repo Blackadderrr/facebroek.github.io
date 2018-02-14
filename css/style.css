@@ -453,6 +453,10 @@ div.return {
     height: 54px;
     margin-bottom: -9px;
   }
+  .specialsource {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .sources {
