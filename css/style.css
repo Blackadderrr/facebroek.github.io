@@ -115,7 +115,6 @@ h2 {
 }
 
 #triggersaliva {
-  /*margin-top: 9px;*/
   position: absolute;
   margin-top: 10px;
   margin-left: -62px;
@@ -156,11 +155,10 @@ h2 {
 
 .content {
   pointer-events: none;
-
+  /*background-color: red;*/
 }
 
 .fotodiv {
-  margin-bottom: 6px;
   z-index: 1;
 }
 
@@ -207,6 +205,7 @@ h2 {
   min-height: 42px;
   min-width: 120px;
   margin-bottom: 1vh;
+  margin-top: 1vh;
   pointer-events: visible;
 }
 
@@ -215,26 +214,24 @@ h2 {
   vertical-align: middle;
   min-width: 42px;
   margin: 3px 6px 3px 6px;
+  /*background-color: green;*/
 }
 
 .itemsImg:hover {
   cursor: pointer;
-  /*border-bottom: solid 1px black;*/
   border-left: solid 1px black;
   border-right: solid 1px black;
-  /*border: solid 1px rgb(115, 115, 115);*/
   color: #6a6a6a;
 }
 
 .centerpagecontainer {
-  margin-top: 3px;
   pointer-events: none;
+  /*background-color: green;*/
 }
 
 .centerpage {
   display: inline-block;
   pointer-events: none;
-
 }
 
 .iframe {
@@ -245,8 +242,6 @@ h2 {
   border: solid 1px #9a9a9a;
   background-color: #f6f6f6;
   opacity: 0.81;
-  /*box-shadow: inset 0 0 0 20px rgba(255, 0, 0, 0.5);*/
-  /*box-shadow: 0px 0px 0 1px rgba(154, 154, 154, 0.7);*/
 }
 
 #landingtext {
@@ -545,16 +540,6 @@ li p {
     font-size: 24px;
   }
 }
-
-/*#autorefreshcounter {
-  text-align: center;
-  width: 123px;
-  margin: 6px auto auto;
-  padding: 3px;
-  color: #676767;
-  font-size: 12px;
-  border: solid 1px #d2d2d2;
-  border-radius: 6px; }*/
 
 #cryptolist {
   text-align: center;
