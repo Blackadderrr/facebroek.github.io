@@ -235,7 +235,7 @@ const showSources = () => {
       } //end handle mouse
     }
 
-    if (!document.getElementById("about")) {
+    if (!document.getElementById("about") && false) {
       //Smiley background
       let smileynumber = 0;
       let happynumber = 0;
