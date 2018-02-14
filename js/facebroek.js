@@ -43,24 +43,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const showSources = () => {
   const showsourcesbutton = document.getElementsByClassName("showsourcesbutton");
-
-  for (let i = 0; i < showsourcesbutton.length; i++) {
-    showsourcesbutton[i].addEventListener("click", () => {
+    showsourcesbutton[0].addEventListener("click", () => {
       document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
       drawBlackBgYt();
     });
-  }
 }
 
   const drawIntroText = () => {
+    document.getElementsByClassName("centerpage")[0].style.backgroundColor = "rgba(0,0,0,0)"; //bg color was wrong due to transparency of introtext and black yt bg still being visible
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook employ engineers to make their platform as addictive as possible; you are Pavlov's dog. Unfortunately the harmful effects outweigh the benefits. If you think this is exaggerated,<span id='notifhighlight'> read the sources.</span></p>";
-    showSources();
+    showSources(); //so the showsources button works again after reloading the text
   };
 
 
   if (notification) {
     notification.addEventListener("click", () => {
       drawIntroText();
+
     });
   }
   if (document.getElementsByClassName("centerpage")[0]) {
