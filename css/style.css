@@ -62,7 +62,7 @@ input, select {
 
 body {
   background-color: #eeeff4;
-  overflow: visible;
+  overflow: auto;
 }
 
 #starman {
