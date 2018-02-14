@@ -489,11 +489,11 @@ li p {
     font-size: 24px;
   }
   .sources {
-    font-size: 0.69em;
+    font-size: 0.81em;
     margin-left: 48px;
   }
   .iframe {
-    /*height: 666px;*/
+    height: 60vh;
   }
   h1, h2 {
     font-size: 0.9em;
