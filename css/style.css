@@ -285,7 +285,7 @@ h2 {
     max-height: 480px;
   }
   .itemsImg {
-    width: 60px;
+    width: 72px;
   }
 }
 
@@ -529,6 +529,10 @@ li p {
   }
   .onccpage {
     width: 1920px;
+  }
+
+  #items {
+    min-height: 36px;
   }
 }
 
