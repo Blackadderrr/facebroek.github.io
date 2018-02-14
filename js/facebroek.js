@@ -41,9 +41,22 @@ document.addEventListener('DOMContentLoaded', function() {
   // }
   const notification = document.getElementById("triggersaliva");
 
+const showSources = () => {
+  const showsourcesbutton = document.getElementsByClassName("showsourcesbutton");
+
+  for (let i = 0; i < showsourcesbutton.length; i++) {
+    showsourcesbutton[i].addEventListener("click", () => {
+      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
+      drawBlackBgYt();
+    });
+  }
+}
+
   const drawIntroText = () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook hire engineers to make their platform as <span class='salivate'>addictive</span> as possible. If Pavlov's dog rings a bell, you are the dog. Unfortunately, the harmful effects outweigh the benefits. So if your brain lets you, quit.</p>";
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook employ engineers to make their platform as addictive as possible; you are Pavlov's dog. Unfortunately the harmful effects outweigh the benefits. If you think it's exaggerated,<span id='notifhighlight'> read the sources.</span>..</p>";
+    showSources();
   };
+
 
   if (notification) {
     notification.addEventListener("click", () => {
@@ -139,30 +152,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  const showSources = document.getElementById("scale");
-
-  if (showSources) {
-    showSources.addEventListener("click", () => {
-      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
-      drawBlackBgYt();
-    });
-  }
-
   if (notification) {
     notification.addEventListener("click", () => {
-      let drawnDots = document.getElementsByClassName("dot");
-      while (drawnDots.length > 0) {
-        drawnDots[0].parentNode.removeChild(drawnDots[0]);
-      }
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = randColor(1, 255, 1, 255, 1, 255, 1);
+
+      document.getElementById("notifhighlight").style.backgroundColor = randColor(1, 255, 1, 255, 1, 255, 1);
 
       setTimeout(function() {
-        document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(255, 0, 0, 0.51)";
+        document.getElementById("notifhighlight").style.backgroundColor = "rgba(255, 0, 0, 0.71)";
       }, 50);
     });
 
     notification.addEventListener("mouseout", () => {
-      document.getElementsByClassName("salivate")[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+      if (document.getElementById("notifhighlight")) {
+        document.getElementById("notifhighlight").style.backgroundColor = "rgba(0, 0, 0, 0)";
+      }
     });
   }
 
