@@ -53,7 +53,7 @@ const showSources = () => {
 }
 
   const drawIntroText = () => {
-    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook employ engineers to make their platform as addictive as possible; you are Pavlov's dog. Unfortunately the harmful effects outweigh the benefits. If you think it's exaggerated,<span id='notifhighlight'> read the sources.</span>..</p>";
+    document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook employ engineers to make their platform as addictive as possible; you are Pavlov's dog. Unfortunately the harmful effects outweigh the benefits. If you think this is exaggerated,<span id='notifhighlight'> read the sources.</span></p>";
     showSources();
   };
 
@@ -156,15 +156,17 @@ const showSources = () => {
     notification.addEventListener("click", () => {
 
       document.getElementById("notifhighlight").style.backgroundColor = randColor(1, 255, 1, 255, 1, 255, 1);
+      document.getElementById("notifhighlight").style.color = "white";
 
       setTimeout(function() {
-        document.getElementById("notifhighlight").style.backgroundColor = "rgba(255, 0, 0, 0.71)";
+        document.getElementById("notifhighlight").style.backgroundColor = "rgba(250, 62, 62, 1)";
       }, 50);
     });
 
     notification.addEventListener("mouseout", () => {
       if (document.getElementById("notifhighlight")) {
         document.getElementById("notifhighlight").style.backgroundColor = "rgba(0, 0, 0, 0)";
+        document.getElementById("notifhighlight").style.color = "black";
       }
     });
   }
