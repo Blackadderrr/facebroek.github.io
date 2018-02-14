@@ -33,6 +33,11 @@ span {
   border-radius: 6px;
 }
 
+::selection {
+    /*color: red;*/
+    background: rgb(188, 238, 235);
+}
+
 .salivate {
   font-weight: normal;
 }
