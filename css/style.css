@@ -566,6 +566,13 @@ li p {
   cursor: pointer;
 }
 
+#dropbtnleft:hover {
+  color: red;
+}
+#dropbtnright:hover {
+  color: rgb(51, 196, 114);
+}
+
 /* The container <div> - needed to position the dropdown content */
 
 .dropdown {
@@ -582,6 +589,7 @@ li p {
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 6px;
 }
 
 .dropdown-content-right {
@@ -598,6 +606,9 @@ li p {
 }
 
 /* Change color of dropdown links on hover */
+.dropdown-content :hover {
+  border-radius: 6px;
+}
 
 .dropdown-content a:hover {
   background-color: #ee6161;
