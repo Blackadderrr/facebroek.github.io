@@ -93,7 +93,7 @@ h2 {
 .metacontainer {
   height: 100vh;
   text-align: center;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 #header {
