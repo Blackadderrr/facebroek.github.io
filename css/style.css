@@ -62,6 +62,9 @@ input, select {
 
 body {
   background-color: #eeeff4;
+  overflow: hidden;
+}
+#software {
   overflow: scroll;
 }
 
@@ -93,7 +96,6 @@ h2 {
 .metacontainer {
   height: 100vh;
   text-align: center;
-  overflow: hidden;
 }
 
 #header {
