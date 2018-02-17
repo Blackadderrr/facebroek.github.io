@@ -272,4 +272,6 @@ const showSources = () => {
       }); //end smiley background
     }
   }
+  //flag counter
+  document.getElementById("flagcounterdiv").innerHTML = "<a id='counter' href='http://info.flagcounter.com/XH9W'><img src='//s07.flagcounter.com/mini/XH9W/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/' alt='visitor counter' border='0'></a>"
 });
