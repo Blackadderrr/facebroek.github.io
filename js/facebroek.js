@@ -103,13 +103,13 @@ const showSources = () => {
     },
     {
       id: "delete",
-      source: "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=0&rel=0&amp;showinfo=0",
-      action: "mouseover"
+      source: "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=1&rel=0&amp;showinfo=0",
+      action: "click"
     },
     {
       id: "deactivate",
-      source: "https://www.youtube.com/embed/y9XTLC8KHwk?autoplay=0&rel=0&amp;showinfo=0",
-      action: "mouseover"
+      source: "https://www.youtube.com/embed/y9XTLC8KHwk?autoplay=0&rel=1&amp;showinfo=0",
+      action: "click"
     },
     {
       id: "musicalnote",
