@@ -124,6 +124,7 @@ h2 {
 }
 
 #scale {
+  background-color: red;
 }
 
 #scaleInText {
@@ -216,7 +217,7 @@ h2 {
   vertical-align: middle;
   min-width: 42px;
   margin: 3px 6px 3px 6px;
-  /*background-color: green;*/
+  background-color: green;
 }
 
 .itemsImg:hover {

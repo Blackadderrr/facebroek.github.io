@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const notification = document.getElementById("triggersaliva");
 
 const showSources = () => {
-  const showsourcesbutton = document.getElementsByClassName("showsourcesbutton");
-    showsourcesbutton[0].addEventListener("click", () => {
+  const showsourcesbutton = document.getElementById("scale");
+    showsourcesbutton.addEventListener("click", () => {
       document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
       drawBlackBgYt();
     });
