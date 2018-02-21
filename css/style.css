@@ -65,7 +65,8 @@ body {
   overflow: hidden;
 }
 #software {
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #starman {
