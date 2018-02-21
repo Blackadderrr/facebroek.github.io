@@ -472,6 +472,7 @@ div.return {
   margin-left: 2.4em;
   list-style-type: decimal;
   list-style-position: outside;
+  font-size: 0.96em;
 }
 
 li p {
