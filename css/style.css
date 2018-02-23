@@ -497,6 +497,10 @@ li p {
   color: red;
 }
 
+#nonumberplease {
+  list-style: none;
+}
+
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
   #myname {
     font-size: 24px;
