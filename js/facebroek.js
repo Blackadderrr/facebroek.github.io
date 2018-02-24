@@ -52,7 +52,7 @@ const showSources = () => {
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].style.backgroundColor = "rgba(0,0,0,0)"; //bg color was wrong due to transparency of introtext and black yt bg still being visible
     const factIntroMessage = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook employ engineers to make their platform as addictive as possible; you are Pavlov's dog. Unfortunately the harmful effects outweigh the benefits. If you think this is exaggerated,<span class='notifhighlight'> read the sources.</span></p>";
-    const pathosIntroMessage = "<span>Unhappy</span>, <span>angry</span>, <span>distracted</span>, or <span>misled</span> by social media? Compelled to click the notification button? Feel unsatisfied?<span class='notifhighlight'> Read the sources!</span> Companies such as facebook employ engineers to make their platform as addictive as possible.<span class='notifhighlight'> It's not your fault!</span>";
+    const pathosIntroMessage = "<span>Unhappy</span>, <span>angry</span>, <span>distracted</span>, or <span>misled</span> by social media? Compelled to click the notification button or scroll the newsfeed? <span class='notifhighlight'> Read the sources!</span> Companies such as facebook employ engineers to make their platform as addictive as possible.<span class='notifhighlight'> It's not your fault!</span>";
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>" + pathosIntroMessage + "</p>";
     showSources(); //so the showsources button works again after reloading the text
   };
