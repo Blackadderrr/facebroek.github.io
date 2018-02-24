@@ -137,6 +137,10 @@ h2 {
   margin-left: auto;
 }
 
+#notyourfault {
+  /*cursor: pointer;*/
+}
+
 @media screen and (max-device-width: 480px) {
   #header {
     height: 48px;

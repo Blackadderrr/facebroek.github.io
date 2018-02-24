@@ -39,21 +39,78 @@ document.addEventListener('DOMContentLoaded', function() {
   //     return "rgba(" + Math.floor(Math.sin(clrNr / maxNr + 10) * 201) + "," + Math.floor(Math.sin(clrNr / maxNr + 1) * 255) + "," + Math.floor(Math.sin(clrNr / maxNr + 2) * 255) + "," + opacity + ")";
   //   }
   // }
+
+  const link_Arr = [{
+      id: "quitfacebook",
+      source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
+      action: "click"
+    },
+    {
+      id: "questionmark",
+      source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
+      action: "click"
+    },
+    {
+      id: "foto",
+      source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
+      action: "click"
+    },
+    {
+      id: "delete",
+      source: "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=1&rel=0&amp;showinfo=0",
+      action: "click"
+    },
+    {
+      id: "deactivate",
+      source: "https://www.youtube.com/embed/y9XTLC8KHwk?autoplay=0&rel=1&amp;showinfo=0",
+      action: "click"
+    },
+    {
+      id: "notyourfault",
+      source: "https://www.youtube.com/embed/GtkST5-ZFHw?start=24&autoplay=1&rel=1&amp;showinfo=0",
+      action: "click"
+    },
+    {
+      id: "musicalnote",
+      source: "https://www.youtube.com/embed/uzgBD2wysuI?start=0&autoplay=1&rel=0&amp;showinfo=0",
+      action: "click"
+    }
+  ];
+
+  const iterateLinks = () => {
+    for (let i = 0; i < link_Arr.length; i++) {
+      if (document.getElementById(link_Arr[i].id)) {
+        document.getElementById(link_Arr[i].id).addEventListener(link_Arr[i].action, function() {
+          if (!document.getElementById("youtube")) {
+            emptyCenterPage();
+          }
+          const yt = document.getElementById("youtube");
+          visiblePointerEvents();
+          drawBlackBgYt();
+          if (yt.src != link_Arr[i].source) {
+            yt.src = link_Arr[i].source;
+          }
+        });
+      }
+    }
+  }
+
   const notification = document.getElementById("triggersaliva");
 
-const showSources = () => {
-  const showsourcesbutton = document.getElementById("scale");
+  const showSources = () => {
+    const showsourcesbutton = document.getElementById("scale");
     showsourcesbutton.addEventListener("click", () => {
       document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./sources.html' frameborder='0' allowfullscreen></iframe>";
       drawBlackBgYt();
     });
-}
+  }
 
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].style.backgroundColor = "rgba(0,0,0,0)"; //bg color was wrong due to transparency of introtext and black yt bg still being visible
     const factIntroMessage = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook employ engineers to make their platform as addictive as possible; you are Pavlov's dog. Unfortunately the harmful effects outweigh the benefits. If you think this is exaggerated,<span class='notifhighlight'> read the sources.</span></p>";
-    const pathosIntroMessage = "<span>Unhappy</span>, <span>angry</span>, <span>distracted</span>, or <span>misled</span> by social media? Compelled to click the notification button or scroll the newsfeed? <span class='notifhighlight'> Read the sources!</span> Companies such as facebook employ engineers to make their platform as addictive as possible.<span class='notifhighlight'> It's not your fault!</span>";
+    const pathosIntroMessage = "<span>Unhappy</span>, <span>angry</span>, <span>distracted</span>, or <span>misled</span> by social media? Compelled to click the notification button or scroll the newsfeed? <span class='notifhighlight'> Read the sources!</span> Companies such as facebook employ engineers to make their platform as addictive as possible.<span class='notifhighlight' id='notyourfault'> It's not your fault!</span>";
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>" + pathosIntroMessage + "</p>";
+    iterateLinks(); //just for the easter egg.
     showSources(); //so the showsources button works again after reloading the text
   };
 
@@ -88,37 +145,7 @@ const showSources = () => {
       return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
   };
-  const link_Arr = [{
-      id: "quitfacebook",
-      source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
-    },
-    {
-      id: "questionmark",
-      source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
-    },
-    {
-      id: "foto",
-      source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
-    },
-    {
-      id: "delete",
-      source: "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
-    },
-    {
-      id: "deactivate",
-      source: "https://www.youtube.com/embed/y9XTLC8KHwk?autoplay=0&rel=1&amp;showinfo=0",
-      action: "click"
-    },
-    {
-      id: "musicalnote",
-      source: "https://www.youtube.com/embed/uzgBD2wysuI?start=0&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
-    }
-  ];
+
   const emptyCenterPage = () => {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='youtube' src='' frameborder='0' allowfullscreen></iframe>";
   };
@@ -137,21 +164,7 @@ const showSources = () => {
   };
 
   //iterates through the links that change yt video source
-  for (let i = 0; i < link_Arr.length; i++) {
-    if (document.getElementById(link_Arr[i].id)) {
-      document.getElementById(link_Arr[i].id).addEventListener(link_Arr[i].action, function() {
-        if (!document.getElementById("youtube")) {
-          emptyCenterPage();
-        }
-        const yt = document.getElementById("youtube");
-        visiblePointerEvents();
-        drawBlackBgYt();
-        if (yt.src != link_Arr[i].source) {
-          yt.src = link_Arr[i].source;
-        }
-      });
-    }
-  }
+  iterateLinks();
 
   if (notification) {
     notification.addEventListener("click", () => {
@@ -227,8 +240,8 @@ const showSources = () => {
         // console.log(dotsize);
         dot = document.createElement('div');
         dot.className = "dot";
-        dot.style.left = event.pageX - Math.floor(dotsize/2) + "px";
-        dot.style.top = event.pageY - Math.floor(dotsize/2) + "px";
+        dot.style.left = event.pageX - Math.floor(dotsize / 2) + "px";
+        dot.style.top = event.pageY - Math.floor(dotsize / 2) + "px";
         dot.style.width = dotsize + "px";
         dot.style.height = dotsize + "px";
         dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
