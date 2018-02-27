@@ -705,6 +705,12 @@ h6 {
     font-size: 0.69em;
   }
 }
+
+@media only screen and (orientation: landscape) and (max-device-width: 736px) {
+  #about {
+    font-size: 0.69em;
+  }
+}
 #sandbox {
   cursor: none;
 }
