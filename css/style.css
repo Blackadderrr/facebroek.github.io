@@ -697,7 +697,10 @@ h6 {
 }
 
 #about h3 {
-  margin-top: 3px;
+  margin-top: 1px;
+}
+#about p {
+  margin-left: 9px;
 }
 
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
