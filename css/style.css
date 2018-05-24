@@ -144,6 +144,7 @@ h2 {
 
 #notyourfault {
   /*cursor: pointer;*/
+  font-style: normal;
 }
 
 @media screen and (max-device-width: 480px) {
