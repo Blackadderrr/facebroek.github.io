@@ -27,6 +27,11 @@ span {
   font-style: italic;
 }
 
+#fuckads {
+  color: red;
+  font-size: 1.2em;
+}
+
 .notifhighlight {
   font-weight: normal;
   font-style: normal;
