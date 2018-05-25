@@ -64,8 +64,9 @@ span {
 
 body {
   background-color: #eeeff4;
-  /*overflow: auto;*/
+  overflow: visible;
 }
+
 #software {
   /*overflow-x: hidden;
   overflow-y: scroll;*/
