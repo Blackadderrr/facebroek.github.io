@@ -67,7 +67,7 @@ input, select {
 
 body {
   background-color: #eeeff4;
-  overflow: hidden;
+  overflow: auto;
 }
 #software {
   overflow-x: hidden;
@@ -528,7 +528,7 @@ li p {
   .onccpage {
     width: 1920px;
   }
-  #about {
+  .about {
     font-size: 1em;
   }
 }
@@ -677,46 +677,46 @@ h6 {
   font-style: normal;
 }
 
-#aboutcontent {
+.aboutcontent {
   padding: 9px;
 }
 
-#about {
+.about {
   font-size: 1em;
   overflow: scroll;
 
 }
 
-#about a {
+.about a {
   color: #00aeee;
   /*color: #00bb3f;*/
   font-size: 0.93em;
 }
 
-#about a:visited {
+.about a:visited {
   /*color: #095c25;*/
   color: #086587;
 }
 
-#about a:hover {
+.about a:hover {
   color: #00e2c0;
 }
 
-#about h3 {
+.about h3 {
   margin-top: 1px;
 }
-#about p {
+.about p {
   margin-left: 9px;
 }
 
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
-  #about {
+  .about {
     font-size: 0.69em;
   }
 }
 
 @media only screen and (orientation: landscape) and (max-device-width: 736px) {
-  #about {
+  .about {
     font-size: 0.69em;
   }
 }
