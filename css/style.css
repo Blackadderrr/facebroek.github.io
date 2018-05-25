@@ -64,11 +64,11 @@ input, select {
 
 body {
   background-color: #eeeff4;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 #software {
-  overflow-x: hidden;
-  overflow-y: scroll;
+  /*overflow-x: hidden;
+  overflow-y: scroll;*/
 }
 
 #starman {
