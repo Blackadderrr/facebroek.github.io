@@ -20,7 +20,6 @@ body, html {
 }
 
 span {
-  /*font-weight: bold;*/
   font-style: italic;
 }
 
@@ -36,7 +35,6 @@ span {
 }
 
 ::selection {
-    /*color: red;*/
     background: rgb(188, 238, 235);
 }
 
@@ -58,18 +56,12 @@ span {
   border-radius: 210px;
 }
 
-/*input, select {
+input, select {
   vertical-align: middle;
-}*/
+}
 
 body {
   background-color: #eeeff4;
-  overflow: visible;
-}
-
-#software {
-  /*overflow-x: hidden;
-  overflow-y: scroll;*/
 }
 
 #starman {
