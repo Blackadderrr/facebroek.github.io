@@ -669,12 +669,13 @@ h6 {
 
 .aboutcontent {
   padding: 9px;
+  margin-top: 6px;
+  text-align: center;
 }
 
 .about {
   font-size: 1em;
   overflow: scroll;
-
 }
 
 .about a {

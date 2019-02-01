@@ -50,11 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
       source: "https://www.youtube.com/embed/3E7hkPZ-HTk?start=11&autoplay=1&rel=0&amp;showinfo=0",
       action: "click"
     },
-    {
-      id: "foto",
-      source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
-      action: "click"
-    },
+    // {
+    //   id: "foto",
+    //   source: "https://www.youtube.com/embed/buqtdpuZxvk?start=1&autoplay=1&rel=0&amp;showinfo=0",
+    //   action: "click"
+    // },
     {
       id: "delete",
       source: "https://www.youtube.com/embed/iLR190ZidBY?start=144&autoplay=1&rel=0&amp;showinfo=0",
@@ -105,6 +105,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  const showProfile = () => {
+    const showprofilebutton = document.getElementById("foto");
+    showprofilebutton.addEventListener("click", () => {
+      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./about.html' frameborder='0' allowfullscreen></iframe>";
+      drawBlackBgYt();
+    });
+  }
+
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].style.backgroundColor = "rgba(0,0,0,0)"; //bg color was wrong due to transparency of introtext and black yt bg still being visible
     const factIntroMessage = "<p id='landingtext'>Social media cause <span>unhappiness</span>, <span>ignorance</span>, and <span>reduce concentration</span> in a surging amount of people. Companies such as Facebook employ engineers to make their platform as addictive as possible; you are Pavlov's dog. Unfortunately the harmful effects outweigh the benefits. If you think this is exaggerated,<span class='notifhighlight'> read the sources.</span></p>";
@@ -112,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>" + pathosIntroMessage + "</p>";
     iterateLinks(); //just for the easter egg.
     showSources(); //so the showsources button works again after reloading the text
+    showProfile();
   };
 
 
