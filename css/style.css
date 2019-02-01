@@ -409,16 +409,15 @@ h2 {
 }
 
 #myname {
-  cursor: pointer;
   text-align: center;
   display: inline-block;
   font-size: 12px;
   color: #41545e;
 }
 
-#myname:hover {
+/* #myname:hover {
   color: #16818c;
-}
+} */
 
 .return {
   font-size: 18px;
@@ -510,7 +509,7 @@ li p {
     margin-left: 48px;
   }
   .iframe {
-    height: 60vh;
+    height: 51vh;
   }
   h1, h2 {
     font-size: 0.9em;
@@ -529,7 +528,7 @@ li p {
     margin-left: 48px;
   }
   .iframe {
-    height: 42vh;
+    height: 39vh;
   }
   .onccpage {
     width: 1920px;
@@ -702,14 +701,22 @@ h6 {
 
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
   .about {
-    font-size: 0.69em;
+    font-size: 1.5em;
   }
+  .about a {
+    font-size: 1.2em;
+  }
+
 }
 
 @media only screen and (orientation: landscape) and (max-device-width: 736px) {
   .about {
-    font-size: 0.69em;
+    font-size: 1.05em;
   }
+  .about a {
+    font-size: 1.05em;
+  }
+
 }
 #sandbox {
   cursor: none;
