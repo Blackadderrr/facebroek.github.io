@@ -201,12 +201,15 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!isMobile.any()) {
     // Copied the core functionality from: https://stackoverflow.com/questions/7790725/javascript-track-mouse-position; http://output.jsbin.com/gejuz/1
     // The color part is mine, that's why it's shitty code.
-    if (document.getElementById("sandbox")) {
+    if (document.getElementById("derpytest")) {
       document.onmousemove = handleMouseMove;
       let colorCount = 255;
       let decrementor = -1;
       let dotsize = 30;
       let multiplier = 1.1;
+      let maxDots = 21;
+      let minDotSize = 12;
+      let maxDotSize = minDotSize * minDotSize;
 
       function handleMouseMove(event) {
         let dot, eventDoc, doc, body, pageX, pageY;
@@ -240,9 +243,9 @@ document.addEventListener('DOMContentLoaded', function() {
         //end
         // Add a dot to follow the cursor
 
-        if (dotsize > 120) {
-          multiplier = 0.96;
-        } else if (dotsize < 3) {
+        if (dotsize > maxDotSize) {
+          multiplier = 0.97;
+        } else if (dotsize < minDotSize) {
           multiplier = 1.04;
         }
         dotsize *= multiplier;
@@ -253,10 +256,10 @@ document.addEventListener('DOMContentLoaded', function() {
         dot.style.top = event.pageY - Math.floor(dotsize / 2) + "px";
         dot.style.width = dotsize + "px";
         dot.style.height = dotsize + "px";
-        dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.9); //not from original source
+        dot.style.backgroundColor = cycleThreeColors(colorCount, 255, 0.09); //not from original source
         document.body.appendChild(dot);
         let drawnDots = document.getElementsByClassName("dot");
-        if (drawnDots.length > 300) {
+        if (drawnDots.length > maxDots) {
           drawnDots[0].parentNode.removeChild(drawnDots[0]);
         }
       } //end handle mouse
