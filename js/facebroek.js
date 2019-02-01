@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!isMobile.any()) {
     // Copied the core functionality from: https://stackoverflow.com/questions/7790725/javascript-track-mouse-position; http://output.jsbin.com/gejuz/1
     // The color part is mine, that's why it's shitty code.
-    if (document.getElementById("derpytest")) {
+    if (document.getElementById("sandbox")) {
       document.onmousemove = handleMouseMove;
       let colorCount = 255;
       let decrementor = -1;
