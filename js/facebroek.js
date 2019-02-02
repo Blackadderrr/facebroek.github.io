@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const showProfile = () => {
     const showprofilebutton = document.getElementById("foto");
     showprofilebutton.addEventListener("click", () => {
-      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe class='iframe' src='./about.html' frameborder='0' allowfullscreen></iframe>";
+      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='iframeProfile' class='iframe' src='./about.html' frameborder='0' allowfullscreen></iframe>";
       drawBlackBgYt();
     });
   }

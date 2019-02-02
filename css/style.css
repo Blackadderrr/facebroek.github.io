@@ -247,6 +247,8 @@ h2 {
   background-color: #f6f6f6;
   opacity: 0.81;
 }
+#iframeProfile {
+}
 
 #landingtext {
   font-family: "Roboto Slab", serif;
@@ -675,6 +677,7 @@ h6 {
 .about {
   font-size: 1em;
   overflow: scroll;
+  background-color: rgb(246, 246, 246);
 }
 
 .about a {
