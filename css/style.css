@@ -173,7 +173,7 @@ h2 {
   height: 33vh;
   /* max-width: 90%;
   max-height: 90%; */
-  background-image: url('https://www.facebroek.com/img/profilepic.jpg');
+  background-image: url('../img/profilepic.jpg');
   background-size: contain;
   object-fit: fill;
   display: inline-block;
@@ -183,7 +183,7 @@ h2 {
 }
 
 .fotodiv:hover {
-  background: url('https://www.facebroek.com/img/ik.jpg');
+  background: url('../img/ik.jpg');
   background-size: contain;
 }
 
