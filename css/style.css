@@ -163,19 +163,28 @@ h2 {
 }
 
 .fotodiv {
-  z-index: 1;
-}
-
-#foto {
+  /* z-index: 1; */
   pointer-events: visible;
   cursor: pointer;
   border: solid 1px;
-  background-color: white;
-  padding: 0.25%;
+  /* background-color: white; */
+  margin-top: 1%;
   width: 33vh;
   height: 33vh;
-  max-width: 274px;
-  max-height: 274px;
+  /* max-width: 90%;
+  max-height: 90%; */
+  background-image: url("/img/profilepic.jpg");
+  background-size: contain;
+  object-fit: fill;
+  display: inline-block;
+}
+
+#foto {
+}
+
+.fotodiv:hover {
+  background: url("./img/ik.jpg");
+  background-size: contain;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -196,7 +205,7 @@ h2 {
 }
 
 @media only screen and (orientation: portrait) and (max-device-width: 480px) {
-  #foto {
+  .fotodiv {
     min-width: 400px;
     min-height: 400px;
   }

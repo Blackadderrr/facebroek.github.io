@@ -105,13 +105,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  const showProfile = () => {
-    const showprofilebutton = document.getElementById("foto");
-    showprofilebutton.addEventListener("click", () => {
-      document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='iframeProfile' class='iframe' src='./about.html' frameborder='0' scrolling='no' allowfullscreen></iframe>";
-      drawBlackBgYt();
-    });
-  }
+  // const showProfile = () => {
+  //   const showprofilebutton = document.getElementById("foto");
+  //   showprofilebutton.addEventListener("click", () => {
+  //     document.getElementsByClassName("centerpage")[0].innerHTML = "<iframe id='iframeProfile' class='iframe' src='./about.html' frameborder='0' scrolling='yes' allowfullscreen></iframe>";
+  //     drawBlackBgYt();
+  //   });
+  // }
 
   const drawIntroText = () => {
     document.getElementsByClassName("centerpage")[0].style.backgroundColor = "rgba(0,0,0,0)"; //bg color was wrong due to transparency of introtext and black yt bg still being visible
@@ -120,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementsByClassName("centerpage")[0].innerHTML = "<p id='landingtext'>" + pathosIntroMessage + "</p>";
     iterateLinks(); //just for the easter egg.
     showSources(); //so the showsources button works again after reloading the text
-    showProfile();
+
+    //Why is this here?
+    // showProfile();
   };
 
 
