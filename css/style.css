@@ -162,12 +162,19 @@ h2 {
   /*background-color: red;*/
 }
 
+#foto {
+  /* Cheap hack so the pic is already loaded */
+  /* display: none; */
+  visibility: hidden;
+  height: 120px;
+  width: 120px;
+}
+
 .fotodiv {
   /* z-index: 1; */
   pointer-events: visible;
   cursor: pointer;
   border: solid 1px;
-  /* background-color: white; */
   margin-top: 1%;
   width: 33vh;
   height: 33vh;
@@ -177,11 +184,6 @@ h2 {
   background-size: contain;
   object-fit: fill;
   display: inline-block;
-}
-
-#foto {
-  /* Cheap hack so the pic is already loaded */
-  display: none;
 }
 
 .fotodiv:hover {
