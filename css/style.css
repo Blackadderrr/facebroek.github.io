@@ -166,7 +166,7 @@ h2 {
   /* Cheap hack so the pic is already loaded */
   /* display: none; */
   visibility: hidden;
-  height: 275px;
+  height: 275px; /* Prevents glitchy switching from one to the other image.*/
   width: 275px;
 }
 
