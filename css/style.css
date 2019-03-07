@@ -180,6 +180,8 @@ h2 {
 }
 
 #foto {
+  /* Cheap hack so the pic is already loaded */
+  display: none;
 }
 
 .fotodiv:hover {
