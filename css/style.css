@@ -443,7 +443,8 @@ h2 {
 }
 
 .return p {
-  padding-left: 9px;
+  padding-left: 6px;
+  padding-top: 6px;
   display: table-cell;
   vertical-align: middle;
   color: white;
@@ -484,7 +485,7 @@ div.return {
 .sources {
   margin-top: 0.5em;
   margin-left: 2.4em;
-  list-style-type: decimal;
+  /* list-style-type: decimal; */
   list-style-position: outside;
   font-size: 0.9em;
 }
@@ -500,11 +501,11 @@ li p {
 }
 
 .sources a:link {
-  color: grey;
+  color: #0000EE;
 }
 
 .sources a:visited {
-  color: #bd8383;
+  color: #551A8B;
 }
 
 .sources a:hover {
