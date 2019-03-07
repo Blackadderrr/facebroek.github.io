@@ -166,8 +166,8 @@ h2 {
   /* Cheap hack so the pic is already loaded */
   /* display: none; */
   visibility: hidden;
-  height: 120px;
-  width: 120px;
+  height: 275px;
+  width: 275px;
 }
 
 .fotodiv {
