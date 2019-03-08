@@ -552,7 +552,7 @@ li p {
     width: 1920px;
   }
 
-  .about {
+  .profile {
     font-size: 1em;
   }
 }
@@ -693,63 +693,64 @@ h6 {
 }
 
 #wavingguy {
-  font-size: 2.1em;
+  font-size: 1.8em;
   font-weight: normal;
   font-style: normal;
+  line-height: 0;
 }
 
-.aboutcontent {
+.profilecontent {
   padding: 9px;
-  margin-top: 6px;
+  margin-top: 1.8em;
   text-align: center;
 }
 
-.about {
+.profile {
   font-size: 1em;
   overflow: scroll;
   background-color: rgb(246, 246, 246);
 }
 
-.about a {
+.profile a {
   color: #00aeee;
   /*color: #00bb3f;*/
   font-size: 0.93em;
 }
 
-.about a:visited {
+.profile a:visited {
   /*color: #095c25;*/
   color: #086587;
 }
 
-.about a:hover {
+.profile a:hover {
   color: #00e2c0;
 }
 
-.about h3 {
+.profile h3 {
   margin-top: 1px;
 }
 
-.about p {
+.profile p {
   margin-left: 9px;
 }
 
 @media only screen and (orientation: portrait) and (max-device-width: 414px) {
-  .about {
+  .profile {
     font-size: 1.5em;
   }
 
-  .about a {
-    font-size: 1.2em;
+  .profile a {
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (orientation: landscape) and (max-device-width: 736px) {
-  .about {
+  .profile {
     font-size: 1.05em;
   }
 
-  .about a {
-    font-size: 1.05em;
+  .profile a {
+    font-size: 1.2em;
   }
 }
 
