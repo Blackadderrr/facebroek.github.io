@@ -23,6 +23,10 @@ span {
   font-style: italic;
 }
 
+sup {
+  font-size: 0.75em;
+}
+
 #fuckads {
   color: red;
   font-size: 1.2em;
@@ -35,7 +39,7 @@ span {
 }
 
 ::selection {
-    background: rgb(188, 238, 235);
+  background: rgb(188, 238, 235);
 }
 
 .salivate {
@@ -70,7 +74,7 @@ body {
   width: 100%;
   height: 100%;
   background: url(./../img/starman.jpg);
-  background-position: 66% 100% ;
+  background-position: 66% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -10;
@@ -141,16 +145,20 @@ h2 {
   #header {
     height: 48px;
   }
+
   #header a {
     font-size: 27px;
   }
+
   #ffacebook {
     height: 30px;
     width: 30px;
   }
+
   #quitfacebook {
     height: 30px;
   }
+
   #triggersaliva {
     margin-top: 12px;
     height: 33px;
@@ -166,7 +174,8 @@ h2 {
   /* Cheap hack so the pic is already loaded */
   /* display: none; */
   visibility: hidden;
-  height: 275px; /* Prevents glitchy switching from one to the other image.*/
+  height: 275px;
+  /* Prevents glitchy switching from one to the other image.*/
   width: 275px;
 }
 
@@ -201,11 +210,11 @@ h2 {
     min-width: calc(1.5* 274px);
     min-height: calc(1.5* 274px);*/
   }
+
   #items img {
     width: 51px;
     height: 51px;
   }
-
 }
 
 @media only screen and (orientation: portrait) and (max-device-width: 480px) {
@@ -260,8 +269,8 @@ h2 {
   background-color: #f6f6f6;
   opacity: 0.81;
 }
-#iframeProfile {
-}
+
+#iframeProfile {}
 
 #landingtext {
   font-family: "Roboto Slab", serif;
@@ -294,10 +303,12 @@ h2 {
     max-width: 570px;
     max-height: 330px;
   }
+
   #landingtext {
     font-size: 18px;
     max-height: 480px;
   }
+
   .itemsImg {
     width: 63px;
   }
@@ -337,6 +348,7 @@ h2 {
     max-width: calc(1.5* 274px);
     max-height: calc(1.5* 274px);
   }
+
   #ccaddress {
     font-size: 2.7vw;
     width: calc(1.5* 33vh);
@@ -374,11 +386,13 @@ h2 {
     height: 201px;
     top: 50px;
   }
+
   #motivational {
     width: 201px;
     height: 201px;
     top: 50px;
   }
+
   #ladder {
     width: 201px;
     height: 201px;
@@ -406,7 +420,6 @@ h2 {
   opacity: 0.21;
   display: inline-block;
   z-index: 0;
-
 }
 
 #counter {
@@ -476,6 +489,7 @@ div.return {
     height: 54px;
     margin-bottom: -9px;
   }
+
   .specialsource {
     width: 24px;
     height: 24px;
@@ -520,19 +534,24 @@ li p {
   #myname {
     font-size: 24px;
   }
+
   .sources {
     font-size: 0.81em;
     margin-left: 48px;
   }
+
   .iframe {
     height: 51vh;
   }
+
   h1, h2 {
     font-size: 0.9em;
   }
+
   .onccpage {
     width: 1920px;
   }
+
   .about {
     font-size: 1em;
   }
@@ -543,9 +562,11 @@ li p {
     font-size: 0.81em;
     margin-left: 48px;
   }
+
   .iframe {
     height: 39vh;
   }
+
   .onccpage {
     width: 1920px;
   }
@@ -580,7 +601,6 @@ li p {
 }
 
 /* Style The Dropdown Button */
-
 .dropbtn {
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -593,19 +613,18 @@ li p {
 #dropbtnleft:hover {
   color: red;
 }
+
 #dropbtnright:hover {
   color: rgb(51, 196, 114);
 }
 
 /* The container <div> - needed to position the dropdown content */
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -621,7 +640,6 @@ li p {
 }
 
 /* Links inside the dropdown */
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -643,13 +661,11 @@ li p {
 }
 
 /* Show the dropdown menu on hover */
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-
 .dropdown:hover .dropbtn {
   background-color: rgba(255, 255, 255, 0);
 }
@@ -712,6 +728,7 @@ h6 {
 .about h3 {
   margin-top: 1px;
 }
+
 .about p {
   margin-left: 9px;
 }
@@ -720,21 +737,26 @@ h6 {
   .about {
     font-size: 1.5em;
   }
+
   .about a {
     font-size: 1.2em;
   }
-
 }
 
 @media only screen and (orientation: landscape) and (max-device-width: 736px) {
   .about {
     font-size: 1.05em;
   }
+
   .about a {
     font-size: 1.05em;
   }
-
 }
+
+#software {
+  padding-right: 15px;
+}
+
 #sandbox {
   cursor: none;
 }
