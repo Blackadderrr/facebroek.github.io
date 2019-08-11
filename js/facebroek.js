@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
     isFirefox = 1;
   }
-
+ 
   const randNumber = function(min, max) {
     return Math.floor((Math.random() * max) + min);
   };
