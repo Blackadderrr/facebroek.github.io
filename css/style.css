@@ -282,7 +282,7 @@ h2 {
   max-width: 560px;
   text-align: justify;
   max-height: 280px;
-  padding: 6px 12px 9px;
+  padding: 8px 12px 9px;
   overflow-y: auto;
   pointer-events: visible;
   z-index: 3;
