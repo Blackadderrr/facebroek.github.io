@@ -14,16 +14,29 @@
 
 <body>
   <style type="text/css">
-    /* body {background-color:rgb(255, 239, 209);} */
+    .menuTopLeft {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      box-shadow: 0px 0px 1px 4px hsla(0, 0%, 100%, 0.74);
+    }
+
     .navLink {
-      text-decoration:none;
-      color:black;
+      text-decoration: none;
+      color: black;
     }
 
     .avatarTopRight {
       width: 110px;
       text-align: right;
       color: grey;
+      position: absolute;
+      right: 6px;
+      top: 9px;
+    }
+
+    .menuMedia {
+      display: inline;
     }
 
     .sourcesTable {
@@ -56,16 +69,13 @@
       width: 12%;
       text-align: right;
     }
-  </style>
-  <table class="avatarTopRight" id="top" style="position:absolute; right: 6px; margin-top: 0px;">
-    <tr>
-      <td><a href="./profile.html"><img src="./img/profilepic.jpg" width="100"
-            alt="Guy with pants on head."></a><br><sup>"Facebroek isn't optimized because screens are limited and real
-          life has infinite responsive design."</sup></td>
-    </tr>
-  </table>
 
-  <table style="position:sticky; top:0; background-color: white; box-shadow: 0px 0px 1px 4px hsla(0, 0%, 100%, 0.64);">
+    #bitcoin {
+      text-align: center;
+    }
+  </style>
+
+  <table class="menuTopLeft">
     <tr>
       <td><a href="/"><img src="./img/favicon-blue-32x32.png" alt="antifbook" style="vertical-align: middle;"></a>
       </td>
@@ -84,31 +94,39 @@
           href="https://accounts.snapchat.com/accounts/delete_account">snapchat</a>, <a
           href="https://i1.wp.com/expresstricks.com/wp-content/uploads/2019/01/delete-tiktok-account-2.png?resize=998%2C596">tiktok</a>.
       </td>
-      
+
     </tr>
   </table>
-  <p style="display:inline;">
-    <table style="display:inline;">
-      <tr>
-        <td>Why quit social media?<br><iframe width="355" height="200"
-            src="https://www.youtube-nocookie.com/embed/3E7hkPZ-HTk" frameborder="0"
-            allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      </tr>
-    </table>
-    <table style="display:inline;">
-      <tr>
-        <td>"Misinformation is a weapon of mass destruction."<br><iframe width="355" height="200"
-            src="https://www.youtube-nocookie.com/embed/uzgBD2wysuI" frameborder="0"
-            allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-      </tr>
-    </table>
-    <table style="display:inline;">
-      <tr>
-        <td><a href="https://www.urbandictionary.com/define.php?term=Zucc">Zucc</a>.<br>
-          <a href="./img/zucc.jpg"><img src="./img/zucc.jpg" height="200" alt="Zuckerberg douche."></a></td>
-      </tr>
-    </table>
-  </p>
+
+  <table class="avatarTopRight" id="top">
+    <tr>
+      <td><a href="./profile.html"><img src="./img/profilepic.jpg" width="100"
+            alt="Guy with pants on head."></a><br><sup>Who am I?</sup></td>
+    </tr>
+  </table>
+
+
+  <table class="menuMedia">
+    <tr>
+      <td>Why quit social media?<br><iframe width="355" height="200"
+          src="https://www.youtube-nocookie.com/embed/3E7hkPZ-HTk" frameborder="0"
+          allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    </tr>
+  </table>
+  <table class="menuMedia">
+    <tr>
+      <td>"Misinformation is a weapon of mass destruction."<br><iframe width="355" height="200"
+          src="https://www.youtube-nocookie.com/embed/uzgBD2wysuI" frameborder="0"
+          allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    </tr>
+  </table>
+  <table class="menuMedia">
+    <tr>
+      <td><a href="https://www.urbandictionary.com/define.php?term=Zucc">Zucc</a>.<br>
+        <a href="./img/zucc.jpg"><img src="./img/zucc.jpg" height="200" alt="Zuckerberg douche."></a></td>
+    </tr>
+  </table><br>
+
   <table class="sourcesTable">
     Sources:
     <tr>
@@ -768,7 +786,9 @@
       <td>14 sep. 1993</td>
     </tr>
   </table>
-  <p style="text-align: center;"><sup id="bitcoin">Bitcoin: <a href="https://blockstream.info/address/bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj">bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj</a></sup></p>
+  <p id="bitcoin"><sup title="Bitcoin (Bech32 native SegWit address)">₿: <a
+        href="https://blockstream.info/address/bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj">bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj</a></sup>
+  </p>
 </body>
 
 </html>
