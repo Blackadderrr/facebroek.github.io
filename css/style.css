@@ -65,6 +65,10 @@
   border-collapse: collapse;
 }
 
+.contactTable td {
+  vertical-align: bottom;
+}
+
 .quotesTable td {
   border-style: dotted;
   border-width: 0px;
@@ -95,6 +99,7 @@
   word-break: normal;
   border-bottom-width: 1px;
   border-color: lightgray;
+  vertical-align: bottom;
 }
 
 .softwareTable td:first-child {
