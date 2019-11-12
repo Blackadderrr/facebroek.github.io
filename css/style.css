@@ -82,3 +82,31 @@
   width: 85%;
   text-align: left;
 }
+
+/* software */
+
+.softwareTable {
+  border-collapse: collapse;
+}
+
+.softwareTable td {
+  border-style: dotted;
+  border-width: 0px;
+  word-break: normal;
+  border-bottom-width: 1px;
+  border-color: lightgray;
+}
+
+.softwareTable td:first-child {
+  width: 200px;
+  text-align: left;
+}
+
+.softwareTable td:nth-child(2) {
+  text-align: left;
+}
+
+.softwareTable td:nth-child(3) {
+  text-align: left;
+  padding-left: 15px;
+}
