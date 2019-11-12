@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>facebroek.com</title>
+  <title>( ͡° ͜ʖ ͡°)</title>
   <link rel="icon" type="image/png" href="./img/favicon-blue-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="./img/favicon-blue-16x16.png" sizes="16x16" />
   <meta name="description" content="Social media manipulate you. Explore the sources to learn why.">
@@ -15,18 +15,22 @@
 <body>
   <style type="text/css">
     /* body {background-color:rgb(255, 239, 209);} */
+    .navLink {
+      text-decoration:none;
+    }
+
     .avatarTopRight {
       width: 110px;
       text-align: right;
       color: grey;
     }
 
-    .tg {
+    .sourcesTable {
       border-collapse: collapse;
       border-spacing: 0;
     }
 
-    .tg td {
+    .sourcesTable td {
       border-style: dotted;
       border-width: 0px;
       word-break: normal;
@@ -34,25 +38,25 @@
       border-color: lightgray;
     }
 
-    .tg td:first-child {
+    .sourcesTable td:first-child {
       width: 1%;
       text-align: center;
     }
 
-    .tg td:nth-child(2) {
+    .sourcesTable td:nth-child(2) {
       width: 27%;
     }
 
-    .tg td:nth-child(3) {
+    .sourcesTable td:nth-child(3) {
       width: 60%;
     }
 
-    .tg td:last-child {
+    .sourcesTable td:last-child {
       width: 12%;
       text-align: right;
     }
   </style>
-  <table class="avatarTopRight" style="position:absolute; right: 6px; margin-top: 0px;">
+  <table class="avatarTopRight" id="top" style="position:absolute; right: 6px; margin-top: 0px;">
     <tr>
       <td><a href="./profile.html"><img src="./img/profilepic.jpg" width="100"
             alt="Guy with pants on head."></a><br><sup>"Facebroek isn't optimized because screens are limited and real
@@ -60,9 +64,14 @@
     </tr>
   </table>
 
-  <table>
+  <table style="position:sticky; top:0; background-color: white; box-shadow: 0px 0px 1px 4px hsla(0, 0%, 100%, 0.64);">
     <tr>
-      <td><a href="/"><img src="./img/favicon-blue-32x32.png" alt="antifbook"></a>
+      <td><a href="/"><img src="./img/favicon-blue-32x32.png" alt="antifbook" style="vertical-align: middle;"></a>
+      </td>
+
+      <td>
+        <a class="navLink" href="./index.html#top">▲</a><br>
+        <a class="navLink" href="./index.html#bitcoin">▼</a>
       </td>
 
       <td>
@@ -74,6 +83,7 @@
           href="https://accounts.snapchat.com/accounts/delete_account">snapchat</a>, <a
           href="https://i1.wp.com/expresstricks.com/wp-content/uploads/2019/01/delete-tiktok-account-2.png?resize=998%2C596">tiktok</a>.
       </td>
+      
     </tr>
   </table>
   <p style="display:inline;">
@@ -98,7 +108,7 @@
       </tr>
     </table>
   </p>
-  <table class="tg">
+  <table class="sourcesTable">
     Sources:
     <tr>
       <td></td>
@@ -757,7 +767,7 @@
       <td>14 sep. 1993</td>
     </tr>
   </table>
-  <p style="text-align: center;"><sup>Bitcoin: <a href="https://blockstream.info/address/bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj">bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj</a></sup></p>
+  <p style="text-align: center;"><sup id="bitcoin">Bitcoin: <a href="https://blockstream.info/address/bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj">bc1qnq40jue94h0cd59y83dzk0hunz753frur5m4zj</a></sup></p>
 </body>
 
 </html>
