@@ -33,6 +33,10 @@ h2, h3 {
   display: inline;
 }
 
+.subMenuText {
+  width: 85%;
+}
+
 .sourcesTable {
   border-collapse: collapse;
 }
@@ -69,11 +73,21 @@ h2, h3 {
 
 /* profile*/
 
-.contactTable, .quotesTable {
+.containerTable, .quotesTable {
+  margin-bottom: 12px;
+}
+
+.contactTableContent, .quotesTable {
   border-collapse: collapse;
 }
 
-.contactTable td {
+#profilepic {
+  margin-right: 6px;
+  width: 86px;
+  vertical-align: bottom;
+}
+
+.contactTableContent td {
   vertical-align: bottom;
 }
 
