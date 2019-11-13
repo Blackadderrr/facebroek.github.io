@@ -21,12 +21,12 @@ h2, h3 {
 }
 
 .avatarTopRight {
-  width: 110px;
+  width: 54px;
   text-align: right;
   color: grey;
   position: absolute;
-  right: 6px;
-  top: 9px;
+  right: 10px;
+  top: 7px;
 }
 
 .menuMedia {
