@@ -17,8 +17,9 @@ table {
   top: 0;
   background-color: white;
   box-shadow: 0px 0px 1px 3px hsla(0, 0%, 100%, 0.69);
+  border-radius: 2px;
   z-index: 1;
-  margin-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 #antifbookIcon {
@@ -28,7 +29,8 @@ table {
 .navLink {
   text-decoration: none;
   color: black;
-  margin-right: -14px; /* No idea why this section suddenly shifted blank space to the right. */
+  margin-left: 3px;
+  margin-right: -12px; /* No idea why this section suddenly shifted blank space to the right. */
 }
 
 .avatarTopRight {
@@ -41,12 +43,16 @@ table {
 }
 
 .menuMedia {
+  margin-bottom: 9px;
+}
+
+.menuMediaContent {
   display: inline;
 }
 
 .subMenuText {
   width: 85%;
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 }
 
 .sourcesTable td {
