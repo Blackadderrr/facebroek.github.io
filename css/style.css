@@ -17,12 +17,11 @@ table {
   top: 0;
   background-color: white;
   box-shadow: 0px 0px 1px 3px hsla(0, 0%, 100%, 0.69);
-  z-index: 1;
   margin-bottom: 12px;
 }
 
 #antifbookIcon {
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 .navLink {
@@ -34,8 +33,6 @@ table {
 
 .avatarTopRight {
   width: 54px;
-  text-align: right;
-  color: grey;
   position: absolute;
   right: 6px;
   top: 7px;
