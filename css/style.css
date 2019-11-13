@@ -111,15 +111,10 @@ h2, h3 {
 }
 
 .softwareTable td:first-child {
-  width: 200px;
+  width: 190px;
   text-align: left;
 }
 
-.softwareTable td:nth-child(2) {
-  text-align: left;
-}
-
-.softwareTable td:nth-child(3) {
-  text-align: left;
+.softwareTable td:nth-child(2), td:nth-child(3), td:nth-child(4) {
   padding-left: 15px;
 }
