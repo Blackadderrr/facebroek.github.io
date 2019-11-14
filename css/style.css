@@ -17,7 +17,7 @@ h2 {
 }
 
 /* navbar & navbar content*/
-.navbar {
+.index-navbar, .profile-navbar {
   position: sticky;
   top: 8px; /* 8px Prevents scroll and navigate buttons from moving the container.  */
   display: inline-flex;
@@ -27,33 +27,33 @@ h2 {
   padding-bottom: 6px;
 }
 
-.menu-topleft-navlink a {
+.index-navbar-menu-navlink a {
   text-decoration: none;
   color: black;
 }
 
-.avatar-topright-container {
+.index-navbar-avatar {
   position: absolute;
   right: 0px;
   height: 36px;
 }
 
-.avatar-topright-container img {
+.index-navbar-avatar img {
   height: 100%;
 }
 
 /* media */
-.media-container iframe, .media-container img{
+.index-media iframe, .index-media img {
   height: 190px;  
 }
 
 /* description */
-.description {
+.index-description {
   width: 75%;
 }
 
 /* sources */
-.sources-table td {
+.index-table-sources td {
   border-style: dotted;
   border-width: 0px;
   word-break: normal;
@@ -61,20 +61,20 @@ h2 {
   border-color: lightgray;
 }
 
-.sources-table td:first-child {
+.index-table-sources td:first-child {
   width: 1%;
   text-align: center;
 }
 
-.sources-table td:nth-child(2) {
+.index-table-sources td:nth-child(2) {
   width: 27%;
 }
 
-.sources-table td:nth-child(3) {
+.index-table-sources td:nth-child(3) {
   width: 60%;
 }
 
-.sources-table td:last-child {
+.index-table-sources td:last-child {
   width: 12%;
   text-align: right;
 }
@@ -84,25 +84,23 @@ h2 {
   text-align: center;
 }
 
-/*————————— above = new———————————————— below = old——————————*/
-
 /* profile*/
 
-.containerTable, .quotesTable {
-  margin-bottom: 12px;
-}
-
 #profilepic {
-  margin-right: 6px;
-  width: 86px;
-  vertical-align: bottom;
+  width: 84px;
 }
 
-.contactTableContent td {
-  vertical-align: bottom;
+.profile-navbar {} /* See index-navbar */
+
+.profile-table-quotes {
+  border-collapse:collapse;
 }
 
-.quotesTable td {
+.profile-navbar-contact {
+  margin-left: 6px;
+}
+
+.profile-table-quotes td {
   border-style: dotted;
   border-width: 0px;
   word-break: normal;
@@ -110,16 +108,24 @@ h2 {
   border-color: lightgray;
 }
 
-.quotesTable td:first-child {
-  width: 15%;
+.profile-table-quotes td:first-child {
+  width: 220px;
   text-align: center;
 }
 
-.quotesTable td:last-child {
-  width: 85%;
+.profile-table-quotes td:last-child {
   text-align: left;
 }
 
+.profile-media iframe, .profile-media img {
+  height: 190px;  
+}
+
+.vimeo {
+  width: 337px;
+}
+
+/*————————— above = new———————————————— below = old——————————*/
 /* software */
 
 .softwareTable td {
