@@ -1,57 +1,71 @@
-h1, h2, h3 {
-  font-size:1em;
-  display: inline;
+/* general */
+h1, h2, p {
+  margin: 0px;
 }
 
-h2, h3 {
-  font-weight:normal;
+h2 {
+  font-weight: normal;
+  font-size: 1em;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-/* index */
-.menuTopLeft {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  box-shadow: 0px 0px 1px 3px hsla(0, 0%, 100%, 0.69);
-  margin-bottom: 12px;
-}
-
-#antifbookIcon {
-  vertical-align: bottom;
-}
-
-.navLink {
-  text-decoration: none;
-  color: black;
-  margin-left: 3px;
-  margin-right: -12px; /* No idea why this section suddenly shifted blank space to the right. */
-}
-
-.avatarTopRight {
-  width: 54px;
-  position: absolute;
-  right: 6px;
-  top: 7px;
-}
-
-.menuMedia {
+.section {
   margin-bottom: 9px;
 }
 
-.menuMediaContent {
-  display: inline;
+.inline-block {
+  display: inline-block;
 }
 
-.subMenuText {
-  width: 85%;
-  margin-bottom: 12px;
+/* navbar & navbar content*/
+.navbar {
+  position: sticky;
+  top: 8px; /* 8px Prevents scroll and navigate buttons from moving the container.  */
+  display: inline-flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px -9px 0px 0px #ffffff;
 }
 
-.sourcesTable td {
+.menu-topleft-container {
+  padding-bottom: 6px;
+
+  /* Vertically center */
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%); */
+}
+
+.menu-topleft-favicon, .menu-topleft-navlink, .menu-topleft-deletelinks {
+  /* vertical-align:top; */ /* Only apparent on all elements when the image is taller than the rest. Dont forget to add: .menu-favicon img, */
+}
+
+.menu-topleft-navlink a {
+  text-decoration: none;
+  color: black;
+}
+
+.avatar-topright-container {
+  position: absolute;
+  right: 0px;
+  height: 36px;
+}
+
+.avatar-topright-container img {
+  height: 100%;
+}
+
+/* media */
+.media-container iframe, .media-container img{
+  height: 190px;  
+}
+
+/* description */
+.description {
+  width: 75%;
+}
+
+/* sources */
+.sources-table td {
   border-style: dotted;
   border-width: 0px;
   word-break: normal;
@@ -59,27 +73,30 @@ table {
   border-color: lightgray;
 }
 
-.sourcesTable td:first-child {
+.sources-table td:first-child {
   width: 1%;
   text-align: center;
 }
 
-.sourcesTable td:nth-child(2) {
+.sources-table td:nth-child(2) {
   width: 27%;
 }
 
-.sourcesTable td:nth-child(3) {
+.sources-table td:nth-child(3) {
   width: 60%;
 }
 
-.sourcesTable td:last-child {
+.sources-table td:last-child {
   width: 12%;
   text-align: right;
 }
 
+/* bitcoin */
 #bitcoin {
   text-align: center;
 }
+
+/*————————— above = new———————————————— below = old——————————*/
 
 /* profile*/
 
