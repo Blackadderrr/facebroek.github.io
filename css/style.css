@@ -53,6 +53,7 @@ h2 {
 }
 
 /* sources */
+
 .index-table-sources td {
   border-style: dotted;
   border-width: 0px;
@@ -64,6 +65,7 @@ h2 {
 .index-table-sources td:first-child {
   width: 1%;
   text-align: center;
+  font-size: 1.2em;
 }
 
 .index-table-sources td:nth-child(2) {
