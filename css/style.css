@@ -107,7 +107,7 @@ h2 {
 /* .profile-table-quotes td {} */ /* Shared with index table */
 
 .profile-table-quotes td:first-child {
-  width: 220px;
+  width: 250px;
   text-align: center;
 }
 
