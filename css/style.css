@@ -9,6 +9,10 @@ h2 {
   font-size: 1em;
 }
 
+.important {
+  color:tomato;
+}
+
 .section {
   margin-bottom: 9px;
 }
@@ -92,6 +96,10 @@ h2 {
 
 #profilepic {
   width: 84px;
+}
+
+.profile-navbar-contact sup a {
+  text-decoration: none;
 }
 
 /* .profile-navbar {} */ /* Shared with index-navbar */
