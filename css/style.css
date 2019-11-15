@@ -1,3 +1,4 @@
+/* ———————————————————————————————————————————————————————————————————————————————— */
 /* general */
 h1, h2, p {
   margin: 0px;
@@ -16,6 +17,7 @@ h2 {
   display: inline-block;
 }
 
+/* ———————————————————————————————————————————————————————————————————————————————— */
 /* navbar & navbar content*/
 .index-navbar, .profile-navbar {
   position: sticky;
@@ -54,12 +56,11 @@ h2 {
 
 /* sources */
 
-.index-table-sources td {
-  border-style: dotted;
+.index-table-sources td, .profile-table-quotes td, .software-table td {
+  border-style: dashed;
   border-width: 0px;
-  word-break: normal;
   border-bottom-width: 1px;
-  border-color: lightgray;
+  border-color:lightgrey;
 }
 
 .index-table-sources td:first-child {
@@ -86,13 +87,14 @@ h2 {
   text-align: center;
 }
 
+/* ———————————————————————————————————————————————————————————————————————————————— */
 /* profile*/
 
 #profilepic {
   width: 84px;
 }
 
-/* .profile-navbar {} */ /* See index-navbar */
+/* .profile-navbar {} */ /* Shared with index-navbar */
 
 .profile-table-quotes {
   border-collapse:collapse;
@@ -102,13 +104,7 @@ h2 {
   margin-left: 6px;
 }
 
-.profile-table-quotes td {
-  border-style: dotted;
-  border-width: 0px;
-  word-break: normal;
-  border-bottom-width: 1px;
-  border-color: lightgray;
-}
+/* .profile-table-quotes td {} */ /* Shared with index table */
 
 .profile-table-quotes td:first-child {
   width: 220px;
@@ -127,23 +123,16 @@ h2 {
   width: 337px;
 }
 
-/*————————— above = new———————————————— below = old——————————*/
+/* ———————————————————————————————————————————————————————————————————————————————— */
 /* software */
 
-.softwareTable td {
-  border-style: dotted;
-  border-width: 0px;
-  word-break: normal;
-  border-bottom-width: 1px;
-  border-color: lightgray;
-  vertical-align: bottom;
-}
+/* .software-table td {} */ /* Shared with index table */
 
-.softwareTable td:first-child {
-  width: 190px;
+.software-table td:first-child {
+  width: 120px;
   text-align: left;
 }
 
-.softwareTable td:nth-child(2), td:nth-child(3), td:nth-child(4) {
-  padding-left: 15px;
+.software-table td:nth-child(3), .software-table td:nth-child(4) {
+  padding-left: 21px;
 }
