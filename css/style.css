@@ -111,10 +111,6 @@ h2 {
   text-align: center;
 }
 
-.profile-table-quotes td:last-child {
-  text-align: left;
-}
-
 .profile-media iframe, .profile-media img {
   height: 190px;  
 }
@@ -130,7 +126,6 @@ h2 {
 
 .software-table td:first-child {
   width: 120px;
-  text-align: left;
 }
 
 .software-table td:nth-child(3), .software-table td:nth-child(4) {
