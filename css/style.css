@@ -42,10 +42,15 @@ h2 {
   padding-bottom: 6px;
 }
 
+.index-navbar-menu-navlink {
+  text-align: center;
+}
+
 .index-navbar-menu-navlink a {
   text-decoration: none;
   color: black;
 }
+
 
 .index-navbar-avatar {
   position: absolute;
