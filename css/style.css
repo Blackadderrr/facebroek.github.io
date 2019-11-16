@@ -1,5 +1,14 @@
 /* ———————————————————————————————————————————————————————————————————————————————— */
 /* general */
+
+:root {
+  --bg-color: rgb(255, 246, 234);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
 h1, h2, p {
   margin: 0px;
 }
@@ -28,8 +37,8 @@ h2 {
   top: 8px; /* 8px Prevents scroll and navigate buttons from moving the container.  */
   display: inline-flex;
   width: 100%;
-  background-color: white;
-  box-shadow: 0px -9px 0px 0px #ffffff;
+  background-color: var(--bg-color);
+  box-shadow: 0px -9px 0px 0px var(--bg-color);
   padding-bottom: 6px;
 }
 
