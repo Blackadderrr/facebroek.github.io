@@ -22,7 +22,7 @@ h2 {
 }
 
 /* ———————————————————————————————————————————————————————————————————————————————— */
-/* navbar & navbar content*/
+/* index */
 .index-navbar, .profile-navbar {
   position: sticky;
   top: 8px; /* 8px Prevents scroll and navigate buttons from moving the container.  */
@@ -48,17 +48,13 @@ h2 {
   height: 100%;
 }
 
-/* media */
 .index-media iframe, .index-media img {
   height: 190px;  
 }
 
-/* description */
 .index-description {
   width: 75%;
 }
-
-/* sources */
 
 .index-table-sources td, .profile-table-quotes td, .software-table td {
   border-style: dashed;
@@ -86,7 +82,6 @@ h2 {
   text-align: right;
 }
 
-/* bitcoin */
 #bitcoin {
   text-align: center;
 }
