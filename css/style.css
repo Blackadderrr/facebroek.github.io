@@ -98,6 +98,10 @@ tr:hover {
   font-size: 1.2em;
 }
 
+.index-table-sources td:nth-child(5) {
+  text-align: center;
+}
+
 .index-table-sources td:last-child {
   text-align: right;
 }
