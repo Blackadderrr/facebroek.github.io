@@ -80,12 +80,6 @@ tr:hover {
   text-decoration: none;
 }
 
-.profile-table-quotes a {
-  font-size: 0.80em;
-  text-decoration: none;
-  vertical-align: text-top; /* So it looks more like <sup> */
-}
-
 .index-table-sources th:last-child {
   text-align: right;
 }
@@ -117,7 +111,7 @@ tr:hover {
 /* profile*/
 
 #profilepic {
-  width: 96px;
+  width: 90px;
 }
 
 .profile-navbar-contact {
@@ -142,7 +136,19 @@ tr:hover {
   border-collapse:collapse;
 }
 
-/* .profile-table-quotes a {} */ /* Shared with index table */
+.profile-navbar-contact a {
+  vertical-align: text-bottom;
+}
+
+#large-icon {
+  font-size: 1em;
+}
+
+.profile-table-quotes a {
+  font-size: 0.80em;
+  text-decoration: none;
+  /* vertical-align: text-top; */ /* So it looks more like <sup> */
+}
 
 /* .profile-table-quotes td {} */ /* Shared with index table */
 
