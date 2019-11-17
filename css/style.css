@@ -76,7 +76,11 @@ tr:hover {
   text-align: left;
 }
 
-.index-table-sources a, .profile-table-quotes a {
+.index-table-sources a {
+  text-decoration: none;
+}
+
+.profile-table-quotes a {
   font-size: 0.80em;
   text-decoration: none;
   vertical-align: text-top; /* So it looks more like <sup> */
@@ -98,16 +102,15 @@ tr:hover {
   font-size: 1.2em;
 }
 
-.index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
+.index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4),
+.index-table-sources th:nth-child(5), .index-table-sources td:nth-child(5),
+.index-table-sources th:nth-child(6), .index-table-sources td:nth-child(6),
+#bitcoin {
   text-align: center;
 }
 
 .index-table-sources td:last-child {
   text-align: right;
-}
-
-#bitcoin {
-  text-align: center;
 }
 
 /* ———————————————————————————————————————————————————————————————————————————————— */
