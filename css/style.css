@@ -29,6 +29,10 @@ h2 {
   display: inline-block;
 }
 
+tr:hover {
+  background-color: white;;
+}
+
 /* ———————————————————————————————————————————————————————————————————————————————— */
 /* index */
 .index-navbar, .profile-navbar {
