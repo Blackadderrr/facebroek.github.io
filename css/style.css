@@ -106,7 +106,7 @@ h2 {
   width: 84px;
 }
 
-.profile-navbar-contact sup a {
+.profile-navbar-contact a, .profile-table-quotes a {
   text-decoration: none;
 }
 
