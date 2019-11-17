@@ -14,7 +14,6 @@ h1, h2, p {
 }
 
 h2 {
-  font-weight: normal;
   font-size: 1em;
 }
 
@@ -39,7 +38,7 @@ h2 {
   width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0px -9px 0px 0px var(--bg-color);
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 .index-navbar-menu-navlink {
@@ -103,7 +102,19 @@ h2 {
 /* profile*/
 
 #profilepic {
-  width: 84px;
+  width: 90px;
+}
+
+.profile-navbar-contact {
+  margin-left: 6px;
+}
+
+.profile-navbar-contact td {
+  vertical-align: text-top;
+}
+
+.profile-navbar-contact td:first-child {
+  padding-right: 6px;
 }
 
 .profile-navbar-contact a, .profile-table-quotes a {
@@ -112,15 +123,16 @@ h2 {
 
 /* .profile-navbar {} */ /* Shared with index-navbar */
 
-.profile-table-quotes {
+.profile-navbar-contact, .profile-table-quotes {
   border-collapse:collapse;
 }
 
-.profile-navbar-contact {
-  margin-left: 6px;
-}
-
 /* .profile-table-quotes td {} */ /* Shared with index table */
+
+.profile-table-quotes a {
+  font-size: 0.80em;
+  vertical-align: text-top; /* So it looks more like <sup> */
+}
 
 .profile-table-quotes td:first-child {
   width: 250px;
