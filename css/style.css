@@ -65,7 +65,21 @@ h2 {
 }
 
 .index-description {
-  width: 75%;
+  width: 69%;
+}
+
+.index-table-sources th {
+  text-align: left;
+}
+
+.index-table-sources a, .profile-table-quotes a {
+  font-size: 0.80em;
+  text-decoration: none;
+  vertical-align: text-top; /* So it looks more like <sup> */
+}
+
+.index-table-sources th:last-child {
+  text-align: right;
 }
 
 .index-table-sources td, .profile-table-quotes td, .software-table td {
@@ -76,21 +90,11 @@ h2 {
 }
 
 .index-table-sources td:first-child {
-  width: 1%;
   text-align: center;
   font-size: 1.2em;
 }
 
-.index-table-sources td:nth-child(2) {
-  width: 27%;
-}
-
-.index-table-sources td:nth-child(3) {
-  width: 60%;
-}
-
 .index-table-sources td:last-child {
-  width: 12%;
   text-align: right;
 }
 
@@ -127,12 +131,9 @@ h2 {
   border-collapse:collapse;
 }
 
-/* .profile-table-quotes td {} */ /* Shared with index table */
+/* .profile-table-quotes a {} */ /* Shared with index table */
 
-.profile-table-quotes a {
-  font-size: 0.80em;
-  vertical-align: text-top; /* So it looks more like <sup> */
-}
+/* .profile-table-quotes td {} */ /* Shared with index table */
 
 .profile-table-quotes td:first-child {
   width: 250px;
