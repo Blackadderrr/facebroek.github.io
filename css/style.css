@@ -98,7 +98,7 @@ tr:hover {
   font-size: 1.2em;
 }
 
-.index-table-sources td:nth-child(5) {
+.index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
   text-align: center;
 }
 
