@@ -22,7 +22,7 @@ h2 {
 }
 
 .section {
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .inline-block {
@@ -116,7 +116,7 @@ tr:hover {
 /* profile*/
 
 #profilepic {
-  width: 90px;
+  width: 96px;
 }
 
 .profile-navbar-contact {
@@ -136,10 +136,6 @@ tr:hover {
 }
 
 /* .profile-navbar {} */ /* Shared with index-navbar */
-
-.profile-navbar-contact, .profile-table-quotes {
-  border-collapse:collapse;
-}
 
 .profile-navbar-contact a {
   vertical-align: bottom;
