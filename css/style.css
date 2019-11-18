@@ -74,6 +74,7 @@ tr:hover {
 
 .index-table-sources th {
   text-align: left;
+  font-weight: normal;  
 }
 
 .index-table-sources a {
@@ -81,7 +82,6 @@ tr:hover {
 }
 
 .index-table-sources th:first-child {
-  font-weight: normal;
   text-align: center;
 }
 
@@ -94,7 +94,7 @@ tr:hover {
   font-size: 1.2em;
 }
 
-.index-table-sources td, .profile-table-quotes td, .software-table td {
+.index-table-sources th, .index-table-sources td, .profile-table-quotes td, .software-table td {
   border-style: dashed;
   border-width: 0px;
   border-bottom-width: 1px;
