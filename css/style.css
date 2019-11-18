@@ -127,6 +127,10 @@ tr:hover {
   margin-left: 6px;
 }
 
+.profile-navbar-contact td:first-child {
+  padding-right: 4px;
+}
+
 .profile-navbar-contact tr {
   vertical-align: text-top;
 }
