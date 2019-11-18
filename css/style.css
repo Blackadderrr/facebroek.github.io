@@ -149,8 +149,8 @@ tr:hover {
 }
 
 .profile-table-quotes sup, .profile-table-quotes a {
-  vertical-align: text-top; /* Makes table rows a lot thinner. */
-  font-size: 0.75em;;
+  vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
+  font-size: 0.75em;
 }
 
 .profile-media iframe, .profile-media img {
