@@ -116,7 +116,7 @@ tr:hover {
 /* profile*/
 
 #profilepic {
-  width: 96px;
+  width: 99px;
 }
 
 .profile-navbar-contact {
@@ -127,8 +127,13 @@ tr:hover {
   vertical-align: text-top;
 }
 
-.profile-navbar-contact td:first-child {
+.profile-navbar-contact tr:first-child td:first-child {
   padding-right: 6px;
+  vertical-align: middle;
+}
+
+.profile-navbar-contact tr:first-child a {
+  font-size: 1.3em;
 }
 
 .profile-navbar-contact a, .profile-table-quotes a {
