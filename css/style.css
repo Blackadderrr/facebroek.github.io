@@ -33,10 +33,6 @@ tr:hover {
   background-color: white;;
 }
 
-.weblink-icon {
-  font-size: 0.93em;
-}
-
 /* ———————————————————————————————————————————————————————————————————————————————— */
 /* index */
 .index-navbar, .profile-navbar {
@@ -153,8 +149,8 @@ tr:hover {
   font-size: 1em;
 }
 
-.profile-table-quotes a {
-  text-decoration: none;
+.profile-table-quotes sup {
+ vertical-align: text-top;
 }
 
 /* .profile-table-quotes td {} */ /* Shared with index table */
