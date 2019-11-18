@@ -33,6 +33,10 @@ tr:hover {
   background-color: white;;
 }
 
+.weblink-icon {
+  font-size: 0.93em;
+}
+
 /* ———————————————————————————————————————————————————————————————————————————————— */
 /* index */
 .index-navbar, .profile-navbar {
