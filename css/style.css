@@ -123,17 +123,12 @@ tr:hover {
   margin-left: 6px;
 }
 
-.profile-navbar-contact td {
+.profile-navbar-contact tr {
   vertical-align: text-top;
 }
 
-.profile-navbar-contact tr:first-child td:first-child {
-  padding-right: 6px;
-  vertical-align: middle;
-}
-
 .profile-navbar-contact tr:first-child a {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .profile-navbar-contact a, .profile-table-quotes a {
@@ -141,14 +136,6 @@ tr:hover {
 }
 
 /* .profile-navbar {} */ /* Shared with index-navbar */
-
-.profile-navbar-contact sup a{
- vertical-align: text-top;
-}
-
-.profile-table-quotes sup {
- vertical-align: text-top;
-}
 
 /* .profile-table-quotes td {} */ /* Shared with index table */
 
