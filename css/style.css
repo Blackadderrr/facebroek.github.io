@@ -142,7 +142,7 @@ tr:hover {
 }
 
 .profile-navbar-contact a {
-  vertical-align: text-bottom;
+  vertical-align: bottom;
 }
 
 #large-icon {
@@ -150,9 +150,7 @@ tr:hover {
 }
 
 .profile-table-quotes a {
-  font-size: 0.80em;
   text-decoration: none;
-  /* vertical-align: text-top; */ /* So it looks more like <sup> */
 }
 
 /* .profile-table-quotes td {} */ /* Shared with index table */
