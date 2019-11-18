@@ -137,12 +137,8 @@ tr:hover {
 
 /* .profile-navbar {} */ /* Shared with index-navbar */
 
-.profile-navbar-contact a {
-  vertical-align: bottom;
-}
-
-#large-icon {
-  font-size: 1em;
+.profile-navbar-contact sup a{
+ vertical-align: text-top;
 }
 
 .profile-table-quotes sup {
