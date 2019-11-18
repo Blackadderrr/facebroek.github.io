@@ -116,7 +116,11 @@ tr:hover {
 /* profile*/
 
 #profilepic {
-  width: 99px;
+  width: 90px;
+}
+
+.profile-navbar-contact {
+  border-collapse:collapse;
 }
 
 .profile-navbar-contact {
@@ -142,6 +146,11 @@ tr:hover {
 .profile-table-quotes td:first-child {
   width: 250px;
   text-align: center;
+}
+
+.profile-table-quotes sup, .profile-table-quotes a {
+  vertical-align: text-top; /* Makes table rows a lot thinner. */
+  font-size: 0.75em;;
 }
 
 .profile-media iframe, .profile-media img {
