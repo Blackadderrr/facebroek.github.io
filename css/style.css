@@ -130,7 +130,11 @@ tr:hover {
 }
 
 #profilepic {
-  width: 90px;
+  width: 84px;
+}
+
+.profile-navbar-profilepic {
+  vertical-align: text-bottom;
 }
 
 .profile-navbar-contact {
@@ -138,7 +142,7 @@ tr:hover {
 }
 
 .profile-navbar-contact {
-  margin-left: 6px;
+  margin-left: 3px;
 }
 
 .profile-navbar-contact td:first-child {
