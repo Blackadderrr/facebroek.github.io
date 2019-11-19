@@ -85,6 +85,10 @@ tr:hover {
   font-weight: normal; 
 }
 
+.index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
+  text-align: center;
+}
+
 .index-table-sources th:last-child {
   text-align: right;
 }
