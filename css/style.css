@@ -73,16 +73,16 @@ tr:hover {
 }
 
 .index-table-sources th {
-  text-align: left;
-  font-weight: normal;  
+  text-align: left; 
 }
 
 .index-table-sources a {
   text-decoration: none;
 }
 
-.index-table-sources th:first-child {
+.index-table-sources th:first-child, .index-table-sources th:nth-child(5) {
   text-align: center;
+  font-weight: normal; 
 }
 
 .index-table-sources th:last-child {
