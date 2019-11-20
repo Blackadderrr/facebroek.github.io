@@ -122,46 +122,29 @@ tr:hover {
 .profile-navbar {
   position: sticky;
   top: 8px; 
-  display: inline-flex;
-  width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0px -9px 0px 0px var(--bg-color);
-  padding-bottom: 3px;
 }
 
 #profilepic {
   height: 90px;
 }
 
-.profile-navbar-profilepic {
-  vertical-align: text-bottom;
+.profile-navbar-menu {
+  width: 100%;
 }
 
-.profile-navbar-contact {
-  border-collapse:collapse;
+.profile-navbar td {
+  vertical-align: top;
 }
 
-.profile-navbar-contact {
-  margin-left: 3px;
+.profile-navbar-menu-contact a {
+  font-size: 1.1em;
 }
 
-.profile-navbar-contact td:first-child {
-  padding-right: 4px;
-}
-
-.profile-navbar-contact tr {
-  vertical-align: text-top;
-}
-
-.profile-navbar-contact tr:first-child a {
-  font-size: 1.2em;
-}
-
-.profile-navbar-contact a, .profile-table-quotes a {
+.profile-navbar-menu a, .profile-table-quotes a {
   text-decoration: none;
 }
-
-/* .profile-navbar {} */ /* Shared with index-navbar */
 
 /* .profile-table-quotes td {} */ /* Shared with index table */
 
@@ -170,7 +153,7 @@ tr:hover {
   text-align: center;
 }
 
-.profile-table-quotes sup, .profile-table-quotes a {
+.profile-table-quotes sup, .profile-navbar-menu-supports a, .profile-table-quotes a {
   vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
   font-size: 0.75em;
 }
