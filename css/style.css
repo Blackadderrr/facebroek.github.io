@@ -12,10 +12,6 @@ body {
   background-color: var(--bg-color);
 }
 
-body, td {
-  font-size: 1em;
-}
-
 h1, h2, p {
   margin: 0px;
 }
