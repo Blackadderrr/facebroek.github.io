@@ -1,4 +1,7 @@
-/* ———————————————————————————————————————————————————————————————————————————————— */
+/* Notes */
+/* quitfacebook.org is not optimized for mobile devices.*/
+/* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */
+/*————————————————————————————————————————————————————————————————*/
 /* general */
 
 :root {
@@ -37,7 +40,7 @@ tr:hover {
   background-color: white;;
 }
 
-/* ———————————————————————————————————————————————————————————————————————————————— */
+/*————————————————————————————————————————————————————————————————*/
 /* index */
 .index-navbar {
   position: sticky;
@@ -120,7 +123,7 @@ tr:hover {
   text-align: right;
 }
 
-/* ———————————————————————————————————————————————————————————————————————————————— */
+/*————————————————————————————————————————————————————————————————*/
 /* profile*/
 
 .profile-navbar {
@@ -128,21 +131,23 @@ tr:hover {
   top: 8px; 
   background-color: var(--bg-color);
   box-shadow: 0px -9px 0px 0px var(--bg-color);
+  width: 100%;
+  display: inline-flex; /* Prevents menu from being bumped down. */
+}
+
+.profile-navbar-pic {
+  margin-right: 4px;
 }
 
 #profilepic {
   height: 5.6em;
 }
 
-.profile-navbar-menu {
-  width: 100%;
-}
-
 .profile-navbar td {
   vertical-align: top;
 }
 
-.profile-navbar-menu a, .profile-table-quotes a {
+.profile-navbar-menu tr:nth-child(3) a, .profile-navbar-menu tr:last-child a, .profile-table-quotes a {
   text-decoration: none;
 }
 
@@ -166,7 +171,7 @@ tr:hover {
   width: 337px;
 }
 
-/* ———————————————————————————————————————————————————————————————————————————————— */
+/*————————————————————————————————————————————————————————————————*/
 /* software */
 
 /* .software-table td {} */ /* Shared with index table */
