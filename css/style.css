@@ -117,6 +117,7 @@ tr:hover {
 
 .index-table-sources td:last-child {
   text-align: right;
+  width: 78px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
