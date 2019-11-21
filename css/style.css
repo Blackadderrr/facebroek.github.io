@@ -24,6 +24,10 @@ h2 {
   font-size: 1.23em;
 }
 
+th {
+  font-weight: normal;
+}
+
 .important {
   color:tomato;
 }
@@ -79,21 +83,12 @@ tr:hover {
   width: 69%;
 }
 
-.index-table-sources th {
+.index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
   text-align: left; 
 }
 
 .index-table-sources a {
   text-decoration: none;
-}
-
-.index-table-sources th:first-child, .index-table-sources th:nth-child(5) {
-  text-align: center;
-  font-weight: normal; 
-}
-
-.index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
-  text-align: center;
 }
 
 .index-table-sources th:last-child {
@@ -112,10 +107,7 @@ tr:hover {
   border-color:lightgrey;
 }
 
-.index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4),
-.index-table-sources th:nth-child(5), .index-table-sources td:nth-child(5),
-.index-table-sources th:nth-child(6), .index-table-sources td:nth-child(6),
-#bitcoin {
+.index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bitcoin {
   text-align: center;
 }
 
@@ -191,4 +183,14 @@ tr:hover {
 
 .software-table td:nth-child(3), .software-table td:nth-child(4) {
   padding-left: 21px;
+}
+
+/*————————————————————————————————————————————————————————————————*/
+/* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+
+th:first-child::after, th:nth-child(6)::after {
+  display: none;
 }
