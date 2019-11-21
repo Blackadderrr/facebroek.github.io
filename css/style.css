@@ -1,11 +1,10 @@
 /* Notes */
-/* quitfacebook.org is not optimized for mobile devices.*/
-/* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */
+
 /*————————————————————————————————————————————————————————————————*/
 /* general */
 
 html * {
-  max-height:1000000px;
+  max-height:1000000px; /* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
 }
 
 :root {
