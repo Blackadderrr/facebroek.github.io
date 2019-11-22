@@ -90,7 +90,7 @@ tr:hover {
   text-decoration: none;
 }
 
-.index-table-sources th:last-child {
+.index-table-sources th:nth-child(8), .index-table-sources th:last-child, .index-table-sources td:last-child {
   text-align: right;
 }
 
@@ -110,9 +110,14 @@ tr:hover {
   text-align: center;
 }
 
-.index-table-sources td:last-child {
+.index-table-sources td:nth-child(8) {
   text-align: right;
   width: 78px;
+}
+
+.index-table-sources th:last-child, .index-table-sources td:last-child {
+  width: 27px;
+  font-size: 0.8em;
 }
 
 /*————————————————————————————————————————————————————————————————*/
