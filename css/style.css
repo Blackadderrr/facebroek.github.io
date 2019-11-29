@@ -44,7 +44,7 @@ tr:hover {
 }
 
 .article {
-  width: 35em;
+  max-width: 35em;
   text-align: justify;
 }
 
