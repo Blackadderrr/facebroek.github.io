@@ -15,7 +15,7 @@ body {
   background-color: var(--bg-color);
 }
 
-h1, h2, p {
+h1, h2 {
   margin: 0px;
 }
 
@@ -41,6 +41,15 @@ th {
 
 tr:hover {
   background-color: white;;
+}
+
+.article {
+  width: 35em;
+  text-align: justify;
+}
+
+.article-source {
+  text-align: right;
 }
 
 /*————————————————————————————————————————————————————————————————*/
@@ -79,7 +88,8 @@ tr:hover {
 }
 
 .index-description {
-  width: 69%;
+  max-width: 42em;
+  text-align: justify;
 }
 
 .index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
