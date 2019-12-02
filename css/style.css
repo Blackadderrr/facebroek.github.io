@@ -205,6 +205,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
     content: " \25B4\25BE" 
 }
 
-th:first-child::after, th:nth-child(6)::after {
+th:first-child::after, th:nth-child(6)::after, th:last-child::after {
   display: none;
 }
