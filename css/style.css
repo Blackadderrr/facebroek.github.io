@@ -159,6 +159,11 @@ tr:hover {
   border-collapse: collapse;
 }
 
+.profile-navbar-menu td:first-child {
+  padding-right: 0.5em;
+  text-align: right;
+}
+
 .profile-navbar-menu td {
   padding-bottom: 3px;
 }
