@@ -258,27 +258,28 @@ sorttable = {
   /* sort functions
      each sort function takes two parameters, a and b
      you are comparing a[0] and b[0] */
-  sort_numeric: function(a,b) {
+
+    /* Edited by Angelino for quitfacebook.org -> */
+    /* Changed: function(b,a) sorts descending. */
+  sort_numeric: function(b,a) {
     aa = parseFloat(a[0].replace(/[^0-9.-]/g,''));
     if (isNaN(aa)) aa = 0;
     bb = parseFloat(b[0].replace(/[^0-9.-]/g,''));
     if (isNaN(bb)) bb = 0;
     return aa-bb;
-  },
+  }, 
   sort_alpha: function(a,b) {
-    /* Edited by Angelino for quitfacebook.org -> */
-    /* Sorts empty strings last instead of first. */
+    /* Added: sorts empty strings last, not first; sorts smiley first, not last. */
     if (a[0]==""){
       a[0]="zzz";
     }
     if (b[0]==""){
       b[0]="zzz";
     }
-    /* <- End of edit. */
     if (a[0].toLowerCase()==b[0].toLowerCase()) return 0;
-    if (a[0].toLowerCase()<b[0].toLowerCase()) return -1;
+    if (a[0].toLowerCase()<b[0].toLowerCase() || a[0]=="☺") return -1;
     return 1;
-  },
+  }, /* <- End of edit. */
   sort_ddmm: function(a,b) {
     mtch = a[0].match(sorttable.DATE_RE);
     y = mtch[3]; m = mtch[2]; d = mtch[1];
