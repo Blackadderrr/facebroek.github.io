@@ -76,11 +76,6 @@ tr:hover {
 .index-navbar-avatar {
   position: absolute;
   right: 0px;
-  height: 36px;
-}
-
-.index-navbar-avatar img {
-  height: 100%;
 }
 
 .index-media iframe, .index-media img {
