@@ -269,17 +269,17 @@ sorttable = {
     return aa-bb;
   }, 
   sort_alpha: function(a,b) {
-    /* Added: sorts empty strings last, not first; sorts smiley first, not last. */
+    /* Added: sorts empty strings last, not first */
     if (a[0]==""){
       a[0]="zzz";
     }
     if (b[0]==""){
       b[0]="zzz";
-    }
+    } /* <- End of edit. */
     if (a[0].toLowerCase()==b[0].toLowerCase()) return 0;
-    if (a[0].toLowerCase()<b[0].toLowerCase() || a[0]=="☺") return -1;
+    if (a[0].toLowerCase()<b[0].toLowerCase()) return -1;
     return 1;
-  }, /* <- End of edit. */
+  },
   sort_ddmm: function(a,b) {
     mtch = a[0].match(sorttable.DATE_RE);
     y = mtch[3]; m = mtch[2]; d = mtch[1];

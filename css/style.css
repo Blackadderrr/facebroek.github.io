@@ -106,7 +106,11 @@ tr:hover {
 
 .index-table-sources td:first-child {
   text-align: center;
-  font-size: 1.2em;
+  width: 37px;
+}
+
+.index-table-sources td:first-child div {
+  transform: rotate(42deg);
 }
 
 .index-table-sources th, .index-table-sources td, .profile-table-quotes td, .software-table td {
