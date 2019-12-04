@@ -8,7 +8,7 @@ html * {
 }
 
 :root {
-  --bg-color: rgb(255, 234, 207);
+  --bg-color: antiquewhite;
 }
 
 body {
@@ -40,7 +40,7 @@ th {
 }
 
 tr:hover {
-  background-color: white;;
+  background-color: white;
 }
 
 .article {
