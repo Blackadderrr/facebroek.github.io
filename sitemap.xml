@@ -14,7 +14,7 @@
 </url>
 <url>
   <loc>https://www.quitfacebook.org/profile/1.html</loc>
-  <lastmod>2019-12-04T16:22:33+00:00</lastmod>
+  <lastmod>2019-12-04T21:13:33+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
@@ -28,6 +28,12 @@
   <loc>https://www.quitfacebook.org/file/software.html</loc>
   <lastmod>2019-12-04T16:22:33+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.quitfacebook.org/file/quora.html</loc>
+  <lastmod>2019-12-05T21:13:33+00:00</lastmod>
+  <changefreq>never</changefreq>
   <priority>0.64</priority>
 </url>
 
