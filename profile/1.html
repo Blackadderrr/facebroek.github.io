@@ -155,7 +155,7 @@
       <iframe src="" data-src="https://www.youtube-nocookie.com/embed/tHEOGrkhDp0" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="inline-block">
-      <a href="../img/EarthToScale.jpg" title="https://svs.gsfc.nasa.gov/11198#"><img src="../img/EarthToScale-240x180.png" alt="earth to sun scale"></a>
+      <a href="../img/earth-to-sun-scale.jpg" title="https://svs.gsfc.nasa.gov/11198#"><img src="../img/earth-to-sun-scale-240x180.png" alt="earth to sun scale"></a>
     </div>
     <div class="inline-block">
       <a href="../img/check-in-brecht-vandenbroucke.jpg"><img src="../img/check-in-brecht-vdb-180x180.png" title="https://www.flickr.com/photos/brecht_vandenbroucke/5781965075/."
@@ -173,16 +173,15 @@
     </div>
   </div>
 
-  <script>
-  function init() {
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
     var vidDefer = document.getElementsByTagName('iframe');
     for (var i = 0; i < vidDefer.length; i++) {
       if (vidDefer[i].getAttribute('data-src')) {
         vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
       }
     }
-  }
-  window.onload = init;
+  });
 </script> <!-- https://varvy.com/pagespeed/defer-videos.html --> <!-- Deferring recommended by https://gtmetrix.com/ -->
 
 </body>

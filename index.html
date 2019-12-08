@@ -1108,15 +1108,14 @@
 
 <script src="./js/sorttable.js"></script> <!-- By Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ --> <!-- Made minor sorting adjustments. -->
 <script>
-  function init() {
+  document.addEventListener("DOMContentLoaded", function () {
     var vidDefer = document.getElementsByTagName('iframe');
     for (var i = 0; i < vidDefer.length; i++) {
       if (vidDefer[i].getAttribute('data-src')) {
         vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
       }
     }
-  }
-  window.onload = init;
+  });
 </script> <!-- https://varvy.com/pagespeed/defer-videos.html --> <!-- Deferring recommended by https://gtmetrix.com/ -->
 </body>
 </html>
