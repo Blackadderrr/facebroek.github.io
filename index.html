@@ -57,13 +57,13 @@
   <div class="index-media section">
     <div class="inline-block">
       <h2>Why quit social media?</h2>
-      <iframe src="https://www.youtube-nocookie.com/embed/3E7hkPZ-HTk?" frameborder="0"
+      <iframe src="" data-src="https://www.youtube-nocookie.com/embed/3E7hkPZ-HTk?" frameborder="0"
         allow="encrypted-media; picture-in-picture" allowfullscreen>
       </iframe>
     </div>
     <div class="inline-block">
       <h2>"Misinformation is a weapon..."</h2>
-      <iframe src="https://www.youtube-nocookie.com/embed/uzgBD2wysuI" frameborder="0"
+      <iframe src="" data-src="https://www.youtube-nocookie.com/embed/uzgBD2wysuI" frameborder="0"
         allow="encrypted-media; picture-in-picture" allowfullscreen>
       </iframe>
     </div>
@@ -1106,5 +1106,18 @@
     <a href="https://paypal.me/blackadder" title="PayPal."><img src="./img/paypal-17x20.png" alt="Paypal logo."></a>
     <a href="https://liberapay.com/Priem19/" title="Liberapay."><img src="./img/liberapay-20x20.png"></a></p>
   </div>
+
+<script>
+  function init() {
+    var vidDefer = document.getElementsByTagName('iframe');
+    for (var i = 0; i < vidDefer.length; i++) {
+      if (vidDefer[i].getAttribute('data-src')) {
+        vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+      }
+    }
+  }
+  window.onload = init;
+</script> <!-- https://varvy.com/pagespeed/defer-videos.html -->
+
 </body>
 </html>
