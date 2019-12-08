@@ -151,38 +151,53 @@
 
   <!-- media -->
   <div class="profile-media section">
-    <div class="inline-block">
-      <iframe src="" data-src="https://www.youtube-nocookie.com/embed/tHEOGrkhDp0" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="youtube-player inline-block" data-id="tHEOGrkhDp0"></div>
     <div class="inline-block">
       <a href="../img/earth-to-sun-scale.jpg" title="https://svs.gsfc.nasa.gov/11198#"><img src="../img/earth-to-sun-scale-240x180.png" alt="earth to sun scale"></a>
     </div>
     <div class="inline-block">
       <a href="../img/check-in-brecht-vandenbroucke.jpg"><img src="../img/check-in-brecht-vdb-180x180.png" title="https://www.flickr.com/photos/brecht_vandenbroucke/5781965075/."
-              alt="Guy walking through airport zigzag waiting line demarcation cords, without fucks given."></a>
+              alt="Guy walking through airport zigzag waiting line demarcation cords."></a>
     </div><br>
-
+    <div class="youtube-player inline-block" data-id="G4osDOIFULE"></div>
     <div class="inline-block">
-      <iframe src="" data-src="https://www.youtube-nocookie.com/embed/G4osDOIFULE" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="vimeo" src="https://player.vimeo.com/video/156831605" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
     </div>
-    <div class="inline-block">
-      <iframe class="vimeo" src="" data-src="https://player.vimeo.com/video/156831605" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-    </div>
-    <div class="inline-block">
-      <iframe src="" data-src="https://www.youtube-nocookie.com/embed/LBQ2305fLeA" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="youtube-player inline-block" data-id="LBQ2305fLeA"></div>
   </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var vidDefer = document.getElementsByTagName('iframe');
-    for (var i = 0; i < vidDefer.length; i++) {
-      if (vidDefer[i].getAttribute('data-src')) {
-        vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+  /* Light YouTube Embeds by @labnol */
+  /* Web: http://labnol.org/?p=27941 */
+  document.addEventListener("DOMContentLoaded",
+    function () {
+      var div, n,
+        v = document.getElementsByClassName("youtube-player");
+      for (n = 0; n < v.length; n++) {
+        div = document.createElement("div");
+        div.setAttribute("data-id", v[n].dataset.id);
+        div.innerHTML = labnolThumb(v[n].dataset.id);
+        div.onclick = labnolIframe;
+        v[n].appendChild(div);
       }
-    }
-  });
-</script> <!-- https://varvy.com/pagespeed/defer-videos.html --> <!-- Deferring recommended by https://gtmetrix.com/ -->
+    });
+
+  function labnolThumb(id) {
+    var thumb = '<img src="https://i.ytimg.com/vi/ID/3.jpg">',
+      play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+  }
+
+  function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    var embed = "https://www.youtube-nocookie.com/embed/ID?autoplay=1";
+    iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    iframe.setAttribute("allow", "encrypted-media; picture-in-picture");
+    this.parentNode.replaceChild(iframe, this);
+  }
+</script> <!-- Deferring recommended by https://gtmetrix.com/ -->
 
 </body>
 
