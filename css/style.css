@@ -269,13 +269,13 @@ th:nth-child(6)::after {
 }
 
 .youtube-player .play {
-  height: 72px;
-  width: 72px;
+  height: 42px;
+  width: 42px;
   left: 50%;
   top: 50%;
-  margin-left: -36px;
-  margin-top: -36px;
+  margin-left: -21px;
+  margin-top: -21px;
   position: absolute;
-  background: url("https://i.imgur.com/TxzC70f.png") no-repeat;
+  background: url("../img/playicon.png") no-repeat;
   cursor: pointer;
 }
