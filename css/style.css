@@ -264,10 +264,6 @@ th:nth-child(6)::after {
   transition: .4s all;
 }
 
-.youtube-player img:hover {
-  -webkit-filter: brightness(75%);
-}
-
 .youtube-player .play {
   height: 42px;
   width: 42px;
@@ -278,4 +274,8 @@ th:nth-child(6)::after {
   position: absolute;
   background: url("../img/playicon.png") no-repeat;
   cursor: pointer;
+}
+
+.youtube-player .play:hover {
+  transform: scale(0.9,0.9);
 }
