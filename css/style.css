@@ -56,6 +56,13 @@ tr:hover {
   cursor: zoom-in;
 }
 
+.link {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: url("../img/link.png") no-repeat; /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
+}
+
 /*————————————————————————————————————————————————————————————————*/
 /* index */
 
