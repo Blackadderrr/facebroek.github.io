@@ -75,9 +75,11 @@ tr:hover {
   color: rgb(42, 42, 42);
 }
 
-.index-navbar-avatar {
-  position: absolute;
+.index-visitor {
+  position: fixed;
+  top: 6px;
   right: 0px;
+  z-index: 2;
 }
 
 .index-media iframe, .index-media img {
