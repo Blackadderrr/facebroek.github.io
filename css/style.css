@@ -198,7 +198,7 @@ tr:hover {
   text-align: center;
 }
 
-.profile-table-quotes sup, .profile-navbar-menu-supports span, .profile-table-quotes a {
+.profile-table-quotes sup, .profile-navbar-menu-supports span {
   vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
   font-size: 0.75em;
 }
