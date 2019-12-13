@@ -64,6 +64,50 @@ tr:hover {
 }
 
 /*————————————————————————————————————————————————————————————————*/
+/* Sprites */
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.sprite-bitcoin-20x20 {
+  width: 20px;
+  height: 20px;
+  background-position: -5px -5px;
+}
+
+.sprite-favicon-blue-32x32 {
+  width: 32px;
+  height: 32px;
+  background-position: -35px -5px;
+}
+
+.sprite-liberapay-20x20 {
+  width: 20px;
+  height: 20px;
+  background-position: -77px -5px;
+}
+
+.sprite-link {
+  width: 12px;
+  height: 12px;
+  background-position: -107px -5px;
+}
+
+.sprite-paypal-17x20 {
+  width: 17px;
+  height: 20px;
+  background-position: -129px -5px;
+}
+
+.sprite-visitor {
+  width: 41px;
+  height: 52px;
+  background-position: -208px -5px;
+}
+
+/*————————————————————————————————————————————————————————————————*/
 /* index */
 
 .index-navbar {
@@ -286,7 +330,7 @@ th:nth-child(6)::after {
   margin-left: -21px;
   margin-top: -21px;
   position: absolute;
-  background: url("../img/playicon.png") no-repeat;
+  background: url("../img/spritesheet.png") -156px -5px no-repeat;
   cursor: pointer;
 }
 
