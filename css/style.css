@@ -64,7 +64,7 @@ tr:hover {
 }
 
 /*————————————————————————————————————————————————————————————————*/
-/* Sprites */
+/* Sprites */ /* https://spritegen.website-performance.org/ */
 .sprite {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
