@@ -23,10 +23,6 @@ h2 {
   font-size: 1.23em;
 }
 
-th {
-  font-weight: normal;
-}
-
 .important {
   color:tomato;
 }
@@ -156,6 +152,10 @@ tr:hover {
 
 .index-table-sources th:nth-child(8) {
   text-align: right;
+}
+
+.index-table-sources th:first-child {
+  font-weight: normal;
 }
 
 .index-table-sources td:first-child {
