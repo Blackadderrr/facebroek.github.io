@@ -167,7 +167,7 @@ tr:hover {
   transform: rotate(42deg);
 }
 
-.index-table-sources th, .index-table-sources td, .profile-table-quotes td, .software-table td {
+.index-table-sources th, .index-table-sources td, .profile-table-quotes td {
   border-style: dashed;
   border-width: 0px;
   border-bottom-width: 1px;
@@ -258,14 +258,14 @@ tr:hover {
 /*————————————————————————————————————————————————————————————————*/
 /* software */
 
-/* .software-table td {} */ /* Shared with index table */
-
-.software-table td:first-child {
-  width: 120px;
+.software-table td {
+  padding-right: 15px;
 }
 
-.software-table td:nth-child(3), .software-table td:nth-child(4) {
-  padding-left: 21px;
+.software-table td {
+  border-style: dashed;
+  border-width: 0px 0px 1px 0px;
+  border-color:lightgrey;
 }
 
 /*————————————————————————————————————————————————————————————————*/
