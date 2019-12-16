@@ -52,13 +52,6 @@ tr:hover {
   cursor: zoom-in;
 }
 
-.link {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  background: url("../img/link.png") no-repeat; /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
-}
-
 /*————————————————————————————————————————————————————————————————*/
 /* Sprites */ /* https://spritegen.website-performance.org/ */
 .sprite {
@@ -85,7 +78,7 @@ tr:hover {
   background-position: -77px -5px;
 }
 
-.sprite-link {
+.sprite-link { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
   width: 12px;
   height: 12px;
   background-position: -107px -5px;
