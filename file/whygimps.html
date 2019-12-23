@@ -34,22 +34,28 @@
     <p>More recently, the search has demanded new and faster ways of multiplying large integers. In 1968 Strassen discovered how to multiply quickly using Fast Fourier Transforms. He and Schönhage refined and published the method in 1971. GIMPS now uses an improved version of their algorithm developed by the long time Mersenne searcher Richard Crandall [see <a href="https://primes.utm.edu/references/refs.cgi/CF94">CF94</a>].</p>
     <p>The Mersenne search is also used by school teachers to involve their students in mathematical research, and perhaps to excite them into careers in science or engineering. And these are just a few of the by-products of the search.</p>
 
-    <p><strong>3. People collect rare and beautiful items.</strong><br>Mersenne primes, which are usually the largest known primes, are both rare and beautiful. Since Euclid initiated the search for and study of Mersennes approximately 300 BC, very few have been found. Less than fifty in all of human history—that is rare!</p>
+    <p><strong>3. People collect rare and beautiful items.</strong><br>
+    Mersenne primes, which are usually the largest known primes, are both rare and beautiful. Since Euclid initiated the search for and study of Mersennes approximately 300 BC, very few have been found. Less than fifty in all of human history—that is rare!</p>
+
     <p>But they are also beautiful. Mathematics, like all fields of study, has a definite notion of beauty. What qualities are perceived as beautiful in mathematics? We look for proofs that are short, concise, clear, and if possible that combine previous disparate concepts or teach you something new. Mersennes have one of the simplest possible forms for primes, 2<sup>n</sup>-1. The proof of their primality has an elegant simplicity. Mersennes are beautiful and have some surprising applications.</p>
+
     <p><strong>4. For the glory!</strong><br>
     Why do athletes try to run faster than anyone else, jump higher, throw a javelin further? Is it because they use the skills of javelin throwing in their jobs? Not likely. More probably it is the desire to compete (and to win!). This desire to compete is not always directed against other humans. Rock climbers may see a cliff as a challenge. Mountain climbers can not resist certain mountains.
     </p>
     <p>Look at the incredible size of these giant primes! Those who found them are like the athletes in that they outran their competition. They are like the mountain climbers in that they have scaled to new heights. Their greatest contribution to mankind is not merely pragmatic, it is to the curiosity and spirit of man. If we lose the desire to do better, will we still be complete?</p>
+
     <p><strong>5. To test the hardware.</strong><br>
     Since the dawn of electronic computing, programs for finding primes have been used as a test of the hardware. For example, software routines from the GIMPS project were used by Intel to test Pentium II and Pentium Pro chips before they were shipped. So a great many of the readers of this page have directly benefited from the search for Mersennes.</p>
 
     <p>Slowinski, who has help find more Mersennes than any other, works for Cray Research and they use his program as a hardware test. The infamous Pentium bug was found in a related effort as Thomas Nicely was calculating the <a href="https://primes.utm.edu/glossary/page.php?sort=TwinPrimeConstant">twin prime constant</a>.</p>
 
     <p>Why are prime programs used this way? They are intensely CPU and bus bound. They are relatively short, give an easily checked answer (when run on a known prime they should output true after their billions of calculations). They can easily be run in the background while other "more important" tasks run, and they are usually easy to stop and restart.</p>
+
     <p><strong>6. To learn more about their distribution.</strong><br>
     Though mathematics is not an experimental science, we often look for examples to test conjectures (which we hope to then prove). As the number of examples increase, so does (in a sense) our understanding of the distribution. The <a href="https://primes.utm.edu/glossary/page.php?sort=PrimeNumberThm">prime number theorem</a> was discovered by looking at tables of primes.</p>
 
     <p>Simple calculations have found patterns, such as the prime number races, which have led to significant amounts of research.</p>
+
     <p><strong>7. For the money?</strong><br>
     There are a few who seek primes just for the money. There are prizes for the first prover ten-million digit prime ($100000), the first hundred-million digit prime ($150000), and the first billion digit prime ($250000). [Update: <a href="https://www.mersenne.org/legal/#awards">awards</a>]</p>
   </div>
@@ -57,12 +63,13 @@
   <div class="article">
     <h1>Why donate your computer cycles to GIMPS?</h1>
     <p style="text-align: center;">—<em>Justin 'Lumly' Valcourt</em>; <a href="https://www.mersenneforum.org/showpost.php?p=15152&postcount=13">https://www.mersenneforum.org/...</a></p>
+
     <p>I could give you technical reasons for crunching for GIMPS, but I won't. Most people aren't interested in them, though they exist and are quite persuasive. I find the psychological reasons far more compelling because, in the end, these are the reasons you will stay with the project.</p>
 
-    <p><strong>Tell me something I don't know.</strong> <br>
+    <p><strong>Tell me something I don't know.</strong><br>
     There is something very gratifying about knowing the actual outcome of your work unit. A GIMPS client returns very definite results. If you trial factor an exponent successfully, it will not only tell you so but give you the factor that it found. If you Lucas-Lehmer test an exponent, you will know that it is, or isn't, prime because it actually tells you.</p>
 
-    <p><strong>Results are forever.</strong> <br>
+    <p><strong>Results are forever.</strong><br>
     You can always refer back to them at any time. Twenty years down the road you will be able to state with certainty that you proved that such-and-such a Mersenne number was composite. This is not the case of most other distributed computing projects. You will never have a screen that pops up and tells you that you just found E. T. You will endlessly process work unit after work unit and never will you be able to distinguish between the first one and the ten-thousandth.</p>
 
     <p><strong>Anthropomorphic personification.</strong><br>
@@ -73,11 +80,13 @@
     <p>All the while you watch it slowly mature. The exponent ceases to be a mathematical representation of an integer but instead takes on a life all its own. It is a life that you and your computer nourish with CPU cycles. Even though you know that only a tiny fraction of the Lucas-Lehmer test could possibly have been performed, you check on it several times a day just in case something goes wrong. You get to know it like a friend. You can recite it by number and you remember it long after the result of the test has been sent in to Prime Net.</p>
     <p>No other distributed computing project comes close to this level of emotional attachment for the cruncher. The time invested on each exponent is what makes GIMPS special. It teaches the user patience and perseverance. Devotion and loyalty soon follow.</p>
 
-    <p><strong>It’s quiet... too quiet.</strong> <br>
-    Another unique aspect of GIMPS is that you can use the client program to search for prime numbers completely on your own. You do not have to go through the server to get your assignments, nor do you have to use the manual web pages.</p> <p>You can, at any time, test any exponent that you wish. The results will be reported to you in the normal fashion, at which point you simply test another one at your leisure. This allows you to do your own search, testing your own range of exponents, building up your own data sheet of results with no one else the wiser. You can be like the mathematicians of old, working in solitude, hoping to find that one number that will put them in the history books. Should you find a one, you will be accredited, along with the project programmer who after all did write the application.</p>
+    <p><strong>It’s quiet... too quiet.</strong><br>
+    Another unique aspect of GIMPS is that you can use the client program to search for prime numbers completely on your own. You do not have to go through the server to get your assignments, nor do you have to use the manual web pages.</p>
+    
+    <p>You can, at any time, test any exponent that you wish. The results will be reported to you in the normal fashion, at which point you simply test another one at your leisure. This allows you to do your own search, testing your own range of exponents, building up your own data sheet of results with no one else the wiser. You can be like the mathematicians of old, working in solitude, hoping to find that one number that will put them in the history books. Should you find a one, you will be accredited, along with the project programmer who after all did write the application.</p>
 
     <p><strong>Alas, Horatio, I knew him well.</strong><br>
-    The greatness of a distributed computing project isn't dependant on the kind of work it researches, but rather the quality of its client program. This is in turn influenced solely by the competence of the programmer behind it. Some distributed computing projects have client programs that are rarely updated, or worse still, that are rewritten by the users because the programmer himself is not talented enough to handle the job. <br>
+    The greatness of a distributed computing project isn't dependant on the kind of work it researches, but rather the quality of its client program. This is in turn influenced solely by the competence of the programmer behind it. Some distributed computing projects have client programs that are rarely updated, or worse still, that are rewritten by the users because the programmer himself is not talented enough to handle the job.<br>
     GIMPS’ George Woltman is a singular man in this respect. Easily reachable by any and all who want to talk to him, he listens to the needs of his crunchers. He continually seeks to optimize the client’s code, often rewriting it completely for every new instruction set that is released. If a bug is found then it is fixed. If you have a suggestion then he will listen. He just plain takes the time and effort.</p> 
     
     <p>All of this is because he is passionate about prime numbers. It has forced him to learn his maths as well as his programming. It is this infectious zeal that spreads to those who crunch for GIMPS. You don't need to know just how it works. When you see the amount of energy he puts into it, you are hard pressed not to want to share in it.</p>
