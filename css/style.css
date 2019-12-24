@@ -63,37 +63,37 @@ tr:hover {
 .sprite-bitcoin-20x20 {
   width: 20px;
   height: 20px;
-  background-position: -5px -5px;
+  background-position: -1px -1px;
 }
 
 .sprite-favicon-blue-32x32 {
   width: 32px;
   height: 32px;
-  background-position: -35px -5px;
+  background-position: -23px -1px;
 }
 
 .sprite-liberapay-20x20 {
   width: 20px;
   height: 20px;
-  background-position: -77px -5px;
+  background-position: -57px -1px;
 }
 
 .sprite-link { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
   width: 12px;
   height: 12px;
-  background-position: -107px -5px;
+  background-position: -79px -1px;
 }
 
 .sprite-paypal-17x20 {
   width: 17px;
   height: 20px;
-  background-position: -129px -5px;
+  background-position: -93px -1px;
 }
 
 .sprite-visitor {
   width: 41px;
   height: 52px;
-  background-position: -208px -5px;
+  background-position: -112px -1px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
@@ -316,14 +316,14 @@ th:nth-child(6)::after {
 }
 
 .youtube-player .play {
+  width: 60px;
   height: 42px;
-  width: 42px;
   left: 50%;
   top: 50%;
-  margin-left: -21px;
+  margin-left: -30px;
   margin-top: -21px;
   position: absolute;
-  background: url("../img/spritesheet.png") -156px -5px no-repeat;
+  background: url("../img/spritesheet.png") -155px -1px no-repeat;
   cursor: pointer;
 }
 
