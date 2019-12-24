@@ -135,6 +135,10 @@ tr:hover {
   text-align: justify;
 }
 
+.index-media div {
+  display: inline-block;
+}
+
 .index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
   text-align: left; 
 }
@@ -171,7 +175,7 @@ tr:hover {
   max-width: 35em;
 }
 
-.index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bitcoin, .index-media-bottom {
+.index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bitcoin {
   text-align: center;
 }
 
