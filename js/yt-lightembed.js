@@ -14,7 +14,7 @@
     });
 
   function labnolThumb(id) {
-    var thumb = '<img src="https://i.ytimg.com/vi/ID/0.jpg">',
+    var thumb = '<img src="https://www.quitfacebook.org/img/ytimg-ID.jpg">',
       play = '<div class="play"></div>';
     return thumb.replace("ID", id) + play;
   }
