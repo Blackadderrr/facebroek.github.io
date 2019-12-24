@@ -190,21 +190,11 @@ tr:hover {
 /* profile*/
 
 .profile-navbar {
-  position: sticky;
-  top: 8px; 
-  background-color: var(--bg-color);
-  box-shadow: 0px -9px 0px 0px var(--bg-color);
-  width: 100%;
   display: inline-flex; /* Prevents menu from being bumped down. */
-  z-index: 1;
 }
 
 .profile-navbar-pic {
   margin-right: 6px;
-}
-
-#profilepic {
-  height: 5.6em;
 }
 
 .profile-navbar-menu  {
@@ -235,7 +225,7 @@ tr:hover {
   text-align: center;
 }
 
-.profile-table-quotes sup, .profile-navbar-menu-supports span {
+.profile-table-quotes sup, .profile-navbar-menu span {
   vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
   font-size: 0.75em;
 }
