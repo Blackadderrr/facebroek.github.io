@@ -99,6 +99,10 @@ tr:hover {
 /*————————————————————————————————————————————————————————————————*/
 /* index */
 
+.index-navbar-menu-favicon img {
+  vertical-align: text-bottom;
+}
+
 .index-navbar {
   position: sticky;
   top: 8px;
@@ -133,7 +137,7 @@ tr:hover {
 
 .index-visitor {
   position: fixed;
-  top: 3px;
+  top: 6px;
   right: 0px;
   z-index: 2;
 }
