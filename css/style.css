@@ -31,10 +31,6 @@ h2 {
   margin-bottom: 3px;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 tr:hover {
   background-color: white;
 }
@@ -110,6 +106,14 @@ tr:hover {
   z-index: 1;
 }
 
+.index-navbar-menu div, .index-media div, .profile-media div {
+  display: inline-block;
+}
+
+.index-navbar-menu-links div {
+  display: block;
+}
+
 .index-navbar-menu-navlink {
   text-align: center;
 }
@@ -133,10 +137,6 @@ tr:hover {
 .index-description {
   max-width: 42em;
   text-align: justify;
-}
-
-.index-media div {
-  display: inline-block;
 }
 
 .index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
@@ -253,6 +253,15 @@ tr:hover {
   border-style: dashed;
   border-width: 0px 0px 1px 0px;
   border-color:lightgrey;
+}
+
+.software, .hardware {
+  display:inline-block;
+  vertical-align: top;
+}
+
+#mypc {
+  height: 252px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
