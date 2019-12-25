@@ -15,6 +15,10 @@ body {
   background-color: var(--bg-color);
 }
 
+* {
+  font-family: Times, monospace, "Symbola";
+}
+
 h1, h2 {
   margin: 0px;
 }
@@ -28,7 +32,7 @@ h2 {
 }
 
 .section {
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 tr:hover {
@@ -110,6 +114,10 @@ tr:hover {
   display: inline-block;
 }
 
+.index-navbar-menu div {
+  vertical-align: middle;
+}
+
 .index-navbar-menu-links div {
   display: block;
 }
@@ -135,7 +143,7 @@ tr:hover {
 }
 
 .index-description {
-  max-width: 42em;
+  max-width: 51em;
   text-align: justify;
 }
 
@@ -160,6 +168,10 @@ tr:hover {
   width: 37px;
 }
 
+.index-table-sources td:nth-child(3) {
+  max-width: 15em;
+}
+
 .index-table-sources td:first-child div {
   transform: rotate(42deg);
 }
@@ -172,7 +184,7 @@ tr:hover {
 }
 
 .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
-  max-width: 35em;
+  max-width: 42em;
 }
 
 .index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bitcoin {
@@ -222,8 +234,6 @@ tr:hover {
   text-decoration: none;
 }
 
-/* .profile-table-quotes td {} */ /* Shared with index table */
-
 .profile-table-quotes td:first-child {
   width: 250px;
   text-align: center;
@@ -267,8 +277,10 @@ tr:hover {
 /*————————————————————————————————————————————————————————————————*/
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
 
-table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-    content: " \25B4\25BE" 
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+  content: " \25B4\25BE";
+  font-family: "Symbola";
+  font-size: 1.25em;
 }
 
 th:nth-child(6)::after {
