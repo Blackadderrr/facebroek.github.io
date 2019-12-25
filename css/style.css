@@ -138,13 +138,22 @@ tr:hover {
   z-index: 2;
 }
 
-.index-media iframe, .index-media img {
-  height: 180px;  
+.index-description div {
+  display: inline-block;
+  vertical-align: top;
 }
 
-.index-description {
-  max-width: 48em;
+.index-description-image {
+  margin-right: 9px;
+}
+
+.index-description-text {
+  max-width: 38em;
   text-align: justify;
+}
+
+.index-media iframe, .index-media img {
+  height: 180px;  
 }
 
 .index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
