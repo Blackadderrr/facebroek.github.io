@@ -143,7 +143,7 @@ tr:hover {
 }
 
 .index-description {
-  max-width: 51em;
+  max-width: 48em;
   text-align: justify;
 }
 
@@ -184,7 +184,8 @@ tr:hover {
 }
 
 .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
-  max-width: 42em;
+  max-width: 35em;
+  padding: 3px 21px 3px 21px;
 }
 
 .index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bitcoin {
@@ -211,6 +212,11 @@ tr:hover {
 
 .profile-navbar-pic {
   margin-right: 6px;
+  height: 100px;
+}
+
+.profile-navbar {
+  vertical-align: top;
 }
 
 .profile-navbar-menu  {
@@ -220,14 +226,6 @@ tr:hover {
 .profile-navbar-menu td:first-child {
   padding-right: 0.5em;
   text-align: right;
-}
-
-.profile-navbar-menu td {
-  padding-bottom: 3px;
-}
-
-.profile-navbar td {
-  vertical-align: top;
 }
 
 .profile-table-quotes a {
