@@ -242,12 +242,16 @@ tr:hover {
   text-align: right;
 }
 
+.profile-section-quotes {
+  margin-top: -9px;
+}
+
 .profile-table-quotes a {
   text-decoration: none;
 }
 
 .profile-table-quotes td:first-child {
-  width: 250px;
+  width: 210px;
   text-align: center;
 }
 
@@ -291,8 +295,8 @@ tr:hover {
 
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
   content: " \25B4\25BE";
-  font-family: "Symbola";
-  font-size: 1.25em;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.9em;
 }
 
 th:nth-child(6)::after {
