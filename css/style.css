@@ -216,7 +216,8 @@ tr:hover {
 }
 
 .index-table-sources th:nth-child(6) {
-  width: 46px;
+  width: 30px;
+  text-align: center;
 }
 
 .index-table-sources th:nth-child(8) {
