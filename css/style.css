@@ -294,9 +294,9 @@ tr:hover {
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
 
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
-  content: " \25B4\25BE";
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, 'Times New Roman', Times, serif;
   font-size: 0.9em;
+  content: " \25B4\25BE"
 }
 
 th:nth-child(6)::after {
