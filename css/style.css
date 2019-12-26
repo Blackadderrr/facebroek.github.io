@@ -52,6 +52,10 @@ tr:hover {
   cursor: zoom-in;
 }
 
+.hide {
+  display: none;
+}
+
 /*————————————————————————————————————————————————————————————————*/
 /* Sprites */ /* https://spritegen.website-performance.org/ */
 .sprite {
@@ -63,37 +67,79 @@ tr:hover {
 .sprite-bitcoin-20x20 {
   width: 20px;
   height: 20px;
-  background-position: -1px -1px;
+  background-position: -5px -5px;
+}
+
+.sprite-books {
+  width: 16px;
+  height: 16px;
+  background-position: -35px -5px;
+}
+
+.sprite-drama {
+  width: 16px;
+  height: 16px;
+  background-position: -61px -5px;
 }
 
 .sprite-favicon-blue-32x32 {
   width: 32px;
   height: 32px;
-  background-position: -23px -1px;
+  background-position: -87px -5px;
 }
 
 .sprite-liberapay-20x20 {
   width: 20px;
   height: 20px;
-  background-position: -57px -1px;
+  background-position: -5px -47px;
 }
 
 .sprite-link { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
   width: 12px;
   height: 12px;
-  background-position: -79px -1px;
+  background-position: -35px -47px;
+}
+
+.sprite-okhand {
+  width: 16px;
+  height: 16px;
+  background-position: -57px -47px;
 }
 
 .sprite-paypal-17x20 {
   width: 17px;
   height: 20px;
-  background-position: -93px -1px;
+  background-position: -83px -47px;
+}
+
+.sprite-picture {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -77px;
+}
+
+.sprite-speaker {
+  width: 16px;
+  height: 16px;
+  background-position: -31px -77px;
+}
+
+.sprite-tv {
+  width: 16px;
+  height: 16px;
+  background-position: -57px -77px;
 }
 
 .sprite-visitor {
   width: 41px;
   height: 52px;
-  background-position: -112px -1px;
+  background-position: -129px -5px;
+}
+
+.sprite-ytplayicon {
+  width: 60px;
+  height: 42px;
+  background-position: -110px -67px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
@@ -173,8 +219,8 @@ tr:hover {
   text-align: right;
 }
 
-.index-table-sources th:first-child {
-  font-weight: normal;
+.index-table-sources th:first-child img {
+  vertical-align: middle;
 }
 
 .index-table-sources td:first-child {
@@ -294,14 +340,13 @@ tr:hover {
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
 
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
-  font-family: Arial, 'Times New Roman', Times, serif;
-  font-size: 0.9em;
-  content: " \25B4\25BE"
+  /* font-family: Arial, 'Times New Roman', Times, serif; */
+  content: " \2195"
 }
 
-th:nth-child(6)::after {
+/* th:nth-child(6)::after {
   display: none;
-}
+} */
 
 /*————————————————————————————————————————————————————————————————*/
 /* Light YouTube Embeds by @labnol */
@@ -354,7 +399,7 @@ th:nth-child(6)::after {
   margin-left: -30px;
   margin-top: -21px;
   position: absolute;
-  background: url("../img/spritesheet.png") -155px -1px no-repeat;
+  background: url("../img/spritesheet.png") -110px -67px no-repeat;
   cursor: pointer;
 }
 
