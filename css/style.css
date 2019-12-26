@@ -215,6 +215,10 @@ tr:hover {
   text-decoration: none;
 }
 
+.index-table-sources th:nth-child(6) {
+  width: 46px;
+}
+
 .index-table-sources th:nth-child(8) {
   text-align: right;
 }
