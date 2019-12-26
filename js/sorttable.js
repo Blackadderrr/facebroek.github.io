@@ -271,10 +271,10 @@ sorttable = {
   sort_alpha: function(a,b) {
     /* Added: sorts empty strings last, not first */
     if (a[0]==""){
-      a[0]="zzz";
+      a[0]="zz";
     }
     if (b[0]==""){
-      b[0]="zzz";
+      b[0]="zz";
     } /* <- End of edit. */
     if (a[0].toLowerCase()==b[0].toLowerCase()) return 0;
     if (a[0].toLowerCase()<b[0].toLowerCase()) return -1;

@@ -52,7 +52,7 @@ tr:hover {
   cursor: zoom-in;
 }
 
-.hide {
+.hide { /* These hidden spans add a letter to configure sortability. */
   display: none;
 }
 
@@ -347,10 +347,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   /* font-family: Arial, 'Times New Roman', Times, serif; */
   content: " \2195"
 }
-
-/* th:nth-child(6)::after {
-  display: none;
-} */
 
 /*————————————————————————————————————————————————————————————————*/
 /* Light YouTube Embeds by @labnol */
