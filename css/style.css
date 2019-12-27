@@ -224,7 +224,7 @@ tr:hover {
   text-align: right;
 }
 
-.index-table-sources th:first-child img {
+.index-table-sources th img {
   vertical-align: middle;
 }
 
@@ -343,10 +343,10 @@ tr:hover {
 
 /*————————————————————————————————————————————————————————————————*/
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
-
+/* <img class="updownarrow" src="./img/updownarrow.png" alt="up down arrow"> */
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
-  /* font-family: Arial, 'Times New Roman', Times, serif; */
-  content: " \2195"
+  content: " \2195";
+  font-size: 18px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
