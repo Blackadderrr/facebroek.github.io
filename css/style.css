@@ -347,8 +347,8 @@ tr:hover {
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
   content: "\2195";
   font-family: monospace;
-  font-size: 18px;
-  margin-left: 2px;
+  font-size: 16px;
+  margin-left: 3px;
   font-weight: normal;
 }
 
