@@ -143,6 +143,10 @@ tr:hover {
   position: absolute;
   margin-left: 30px;
   margin-top: -42px;
+  font-size: 9px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
   transform: rotate(6deg);
 }
 
