@@ -48,12 +48,24 @@ tr:hover {
   text-align: right;
 }
 
+.article-part {
+  margin: 9px 0px 9px 0px;
+}
+
 .image {
   cursor: zoom-in;
 }
 
 .hide { /* These hidden spans add a letter to configure sortability. */
   display: none;
+}
+
+.meme {
+  width: 245px;
+}
+
+.dotx3 {
+  margin-left: 120px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
