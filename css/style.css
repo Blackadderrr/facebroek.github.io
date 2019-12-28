@@ -254,7 +254,7 @@ tr:hover {
   text-align: center;
 }
 
-.index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bitcoin {
+.index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #about {
   text-align: center;
 }
 
@@ -412,4 +412,11 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .youtube-player .play:hover {
   transform: scale(0.9,0.9);
+}
+
+/*————————————————————————————————————————————————————————————————*/
+
+.money {
+  vertical-align: middle;
+  display: inline;
 }
