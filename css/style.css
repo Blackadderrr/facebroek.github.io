@@ -136,14 +136,15 @@ tr:hover {
   background-position: -129px -5px;
 }
 
-.sprite-ytplayicon {
-  width: 60px;
-  height: 42px;
-  background-position: -110px -67px;
-}
-
 /*————————————————————————————————————————————————————————————————*/
 /* index */
+
+#butterfly {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -42px;
+  transform: rotate(6deg);
+}
 
 .index-navbar-menu-favicon img {
   vertical-align: text-bottom;
@@ -207,38 +208,12 @@ tr:hover {
   height: 180px;  
 }
 
-.index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
-  text-align: left; 
-}
-
 .index-table-sources a {
   text-decoration: none;
 }
 
-.index-table-sources th:nth-child(6) {
-  width: 30px;
-  text-align: center;
-}
-
-.index-table-sources th:nth-child(8) {
-  text-align: right;
-}
-
 .index-table-sources th img {
   vertical-align: middle;
-}
-
-.index-table-sources td:first-child {
-  text-align: center;
-  width: 37px;
-}
-
-.index-table-sources td:nth-child(3) {
-  max-width: 15em;
-}
-
-.index-table-sources td:first-child div {
-  transform: rotate(42deg);
 }
 
 .index-table-sources th, .index-table-sources td, .profile-table-quotes td {
@@ -248,16 +223,38 @@ tr:hover {
   border-color:lightgrey;
 }
 
+.index-table-sources td:first-child {
+  text-align: center;
+  width: 37px;
+}
+
+.index-table-sources td:first-child div {
+  transform: rotate(42deg);
+}
+
+.index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
+  text-align: left; 
+}
+
+.index-table-sources td:nth-child(3) {
+  max-width: 15em;
+}
+
 .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
   max-width: 35em;
   padding: 3px 21px 3px 21px;
+}
+
+.index-table-sources th:nth-child(6) {
+  width: 30px;
+  text-align: center;
 }
 
 .index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bitcoin {
   text-align: center;
 }
 
-.index-table-sources td:nth-child(8) {
+.index-table-sources th:nth-child(8), .index-table-sources td:nth-child(8) {
   text-align: right;
   width: 78px;
 }
