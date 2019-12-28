@@ -52,6 +52,16 @@ tr:hover {
   margin: 9px 0px 9px 0px;
 }
 
+.about-part {
+  max-width: 420px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-part:first-child {
+  margin-right: 15px;
+}
+
 .image {
   cursor: zoom-in;
 }
@@ -65,7 +75,7 @@ tr:hover {
 }
 
 .dotx3 {
-  margin-left: 120px;
+  margin-left: 110px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
