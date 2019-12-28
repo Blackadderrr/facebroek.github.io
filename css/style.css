@@ -322,23 +322,25 @@ tr:hover {
 /*————————————————————————————————————————————————————————————————*/
 /* software */
 
-.software-table td {
-  padding-right: 15px;
-}
-
-.software-table td {
+.software-table td, .hardware-table td {
+  padding-right: 9px;
   border-style: dashed;
   border-width: 0px 0px 1px 0px;
   border-color:lightgrey;
+  vertical-align: top;
+}
+
+.software-table td:nth-child(2) {
+  max-width: 10em;
 }
 
 .software, .hardware {
-  display:inline-block;
+  display: inline-block;
   vertical-align: top;
 }
 
 #mypc {
-  height: 252px;
+  width: 390px;
 }
 
 /*————————————————————————————————————————————————————————————————*/
