@@ -35,6 +35,11 @@ h2 {
   margin-bottom: 6px;
 }
 
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
 tr:hover {
   background-color: white;
 }
@@ -426,8 +431,15 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   transform: scale(0.9,0.9);
 }
 
-/*————————————————————————————————————————————————————————————————*/
+/*———————————————————————————————————————————————————————————————*/
 
 #donations img {
   vertical-align: middle;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+
+#taken-profiles, #donators {
+  margin-left: 15px;
+  text-align: right;
 }
