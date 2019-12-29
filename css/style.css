@@ -52,12 +52,6 @@ tr:hover {
   margin: 9px 0px 9px 0px;
 }
 
-.about-part {
-  max-width: 420px;
-  display: inline-block;
-  vertical-align: top;
-}
-
 .about-part:first-child {
   margin-right: 15px;
 }
@@ -71,7 +65,7 @@ tr:hover {
 }
 
 .meme {
-  width: 245px;
+  width: 200px;
 }
 
 .dotx3 {
