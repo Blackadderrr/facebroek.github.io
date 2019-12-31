@@ -73,6 +73,14 @@ tr:hover {
   margin-left: 110px;
 }
 
+.noscript {
+  position: fixed;
+  text-align: center;
+  font-size: 9px;
+  width: 100%;
+  z-index: 2;
+}
+
 /*————————————————————————————————————————————————————————————————*/
 /* Sprites */ /* https://spritegen.website-performance.org/ */
 .sprite {
