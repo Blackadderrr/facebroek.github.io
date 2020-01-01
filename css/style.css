@@ -188,6 +188,10 @@ tr:hover {
   color: rgb(42, 42, 42);
 }
 
+.index-navbar-menu-links {
+  margin-right: 36px;
+}
+
 .index-description {
   display: inline-flex;
   align-items: center;
