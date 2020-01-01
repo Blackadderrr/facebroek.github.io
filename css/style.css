@@ -165,7 +165,7 @@ tr:hover {
 /* index */
 .index-navbar-menu {
   position: sticky;
-  display:inline-flex;
+  display: inline-flex;
   align-items: center;
   top: 8px;
   width: 100%;
