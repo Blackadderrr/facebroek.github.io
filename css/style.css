@@ -163,26 +163,11 @@ tr:hover {
 
 /*————————————————————————————————————————————————————————————————*/
 /* index */
-
-#butterfly {
-  position: absolute;
-  margin-left: 42px;
-  margin-top: -33px;
-  font-size: 9px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  transform: rotate(6deg);
-}
-
-.index-navbar-menu-favicon img {
-  vertical-align: text-bottom;
-}
-
-.index-navbar {
+.index-navbar-menu {
   position: sticky;
+  display:inline-flex;
+  align-items: center;
   top: 8px;
-  display: inline-flex;
   width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0px -9px 0px 0px var(--bg-color);
@@ -190,25 +175,22 @@ tr:hover {
   z-index: 1;
 }
 
-.index-navbar-menu div, .index-media div, .profile-media div {
-  display: inline-block;
-}
-
-.index-navbar-menu div {
-  vertical-align: middle;
-}
-
-.index-navbar-menu-links div {
-  display: block;
+.index-navbar-menu-favicon img {
+  vertical-align: text-bottom; /* Otherwise image isn't centered. */
 }
 
 .index-navbar-menu-navlink {
-  text-align: center;
+  margin: 0px 3px 0px 3px;
 }
 
 .index-navbar-menu-navlink a {
   text-decoration: none;
   color: rgb(42, 42, 42);
+}
+
+.index-description {
+  display: inline-flex;
+  align-items: center;
 }
 
 .index-visitor {
@@ -218,19 +200,17 @@ tr:hover {
   z-index: 2;
 }
 
-.index-description div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .index-description-image {
   margin-right: 9px;
-  vertical-align: middle;
 }
 
 .index-description-text {
   max-width: 38em;
   text-align: justify;
+}
+
+.index-media div, .profile-media div {
+  display: inline-block;
 }
 
 .index-media iframe, .index-media img {
@@ -298,7 +278,7 @@ tr:hover {
 /* profile*/
 
 .profile-navbar {
-  display: inline-flex; /* Prevents menu from being bumped down. */
+  display: inline-flex; /* Prevents menu from being bumped down when resizing. */
 }
 
 .profile-navbar-pic {
@@ -317,6 +297,15 @@ tr:hover {
 .profile-navbar-menu td:first-child {
   padding-right: 0.5em;
   text-align: right;
+}
+
+#butterfly {
+  margin-left: 30px;
+  font-size: 9px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transform: rotate(6deg);
 }
 
 .profile-section-quotes {
