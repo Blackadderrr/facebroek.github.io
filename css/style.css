@@ -82,86 +82,6 @@ tr:hover {
 }
 
 /*————————————————————————————————————————————————————————————————*/
-/* Sprites */ /* https://spritegen.website-performance.org/ */
-.sprite {
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
-.sprite-bitcoin-20x20 {
-  width: 20px;
-  height: 20px;
-  background-position: -5px -5px;
-}
-
-.sprite-books {
-  width: 16px;
-  height: 16px;
-  background-position: -35px -5px;
-}
-
-.sprite-drama {
-  width: 16px;
-  height: 16px;
-  background-position: -61px -5px;
-}
-
-.sprite-favicon-blue-32x32 {
-  width: 32px;
-  height: 32px;
-  background-position: -87px -5px;
-}
-
-.sprite-liberapay-20x20 {
-  width: 20px;
-  height: 20px;
-  background-position: -5px -47px;
-}
-
-.sprite-link { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
-  width: 12px;
-  height: 12px;
-  background-position: -35px -47px;
-}
-
-.sprite-okhand {
-  width: 16px;
-  height: 16px;
-  background-position: -57px -47px;
-}
-
-.sprite-paypal-17x20 {
-  width: 17px;
-  height: 20px;
-  background-position: -83px -47px;
-}
-
-.sprite-picture {
-  width: 16px;
-  height: 16px;
-  background-position: -5px -77px;
-}
-
-.sprite-speaker {
-  width: 16px;
-  height: 16px;
-  background-position: -31px -77px;
-}
-
-.sprite-tv {
-  width: 16px;
-  height: 16px;
-  background-position: -57px -77px;
-}
-
-.sprite-visitor {
-  width: 41px;
-  height: 52px;
-  background-position: -129px -5px;
-}
-
-/*————————————————————————————————————————————————————————————————*/
 /* index */
 .index-navbar-menu {
   position: sticky;
@@ -279,6 +199,156 @@ tr:hover {
 }
 
 /*————————————————————————————————————————————————————————————————*/
+/* Sprites */ /* https://spritegen.website-performance.org/ */
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.sprite-bitcoin-20x20 {
+  width: 20px;
+  height: 20px;
+  background-position: -5px -5px;
+}
+
+.sprite-books {
+  width: 16px;
+  height: 16px;
+  background-position: -35px -5px;
+}
+
+.sprite-drama {
+  width: 16px;
+  height: 16px;
+  background-position: -61px -5px;
+}
+
+.sprite-favicon-blue-32x32 {
+  width: 32px;
+  height: 32px;
+  background-position: -87px -5px;
+}
+
+.sprite-liberapay-20x20 {
+  width: 20px;
+  height: 20px;
+  background-position: -5px -47px;
+}
+
+.sprite-link { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
+  width: 12px;
+  height: 12px;
+  background-position: -35px -47px;
+}
+
+.sprite-okhand {
+  width: 16px;
+  height: 16px;
+  background-position: -57px -47px;
+}
+
+.sprite-paypal-17x20 {
+  width: 17px;
+  height: 20px;
+  background-position: -83px -47px;
+}
+
+.sprite-picture {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -77px;
+}
+
+.sprite-speaker {
+  width: 16px;
+  height: 16px;
+  background-position: -31px -77px;
+}
+
+.sprite-tv {
+  width: 16px;
+  height: 16px;
+  background-position: -57px -77px;
+}
+
+.sprite-visitor {
+  width: 41px;
+  height: 52px;
+  background-position: -129px -5px;
+}
+
+/*————————————————————————————————————————————————————————————————*/
+/* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
+/* <img class="updownarrow" src="./img/updownarrow.png" alt="up down arrow"> */
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+  content: "\2195";
+  font-family: monospace;
+  font-size: 16px;
+  margin-left: 3px;
+  font-weight: normal;
+}
+
+/*————————————————————————————————————————————————————————————————*/
+/* Light YouTube Embeds by @labnol */
+/* Web: http://labnol.org/?p=27941 */
+
+.youtube-player {
+  position: relative;
+  /* padding-bottom: 56.23%; */
+  /* Use 75% for 4:3 videos */
+  height: 180px;
+  width: 300px;
+  overflow: hidden;
+  /* max-width: 100%; */
+  background: #000;
+  /* margin: 5px; */
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.youtube-player img {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  transition: .4s all;
+}
+
+.youtube-player .play {
+  width: 60px;
+  height: 42px;
+  left: 50%;
+  top: 50%;
+  margin-left: -30px;
+  margin-top: -21px;
+  position: absolute;
+  background: url("../img/spritesheet.png") -110px -67px no-repeat;
+  cursor: pointer;
+}
+
+.youtube-player .play:hover {
+  transform: scale(0.9,0.9);
+}
+
+/*————————————————————————————————————————————————————————————————*/
 /* profile*/
 
 .profile-navbar {
@@ -360,76 +430,6 @@ tr:hover {
 
 #mypc {
   width: 390px;
-}
-
-/*————————————————————————————————————————————————————————————————*/
-/* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
-/* <img class="updownarrow" src="./img/updownarrow.png" alt="up down arrow"> */
-table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
-  content: "\2195";
-  font-family: monospace;
-  font-size: 16px;
-  margin-left: 3px;
-  font-weight: normal;
-}
-
-/*————————————————————————————————————————————————————————————————*/
-/* Light YouTube Embeds by @labnol */
-/* Web: http://labnol.org/?p=27941 */
-
-.youtube-player {
-  position: relative;
-  /* padding-bottom: 56.23%; */
-  /* Use 75% for 4:3 videos */
-  height: 180px;
-  width: 300px;
-  overflow: hidden;
-  /* max-width: 100%; */
-  background: #000;
-  /* margin: 5px; */
-}
-
-.youtube-player iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-}
-
-.youtube-player img {
-  bottom: 0;
-  display: block;
-  left: 0;
-  margin: auto;
-  max-width: 100%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  height: auto;
-  cursor: pointer;
-  -webkit-transition: .4s all;
-  -moz-transition: .4s all;
-  transition: .4s all;
-}
-
-.youtube-player .play {
-  width: 60px;
-  height: 42px;
-  left: 50%;
-  top: 50%;
-  margin-left: -30px;
-  margin-top: -21px;
-  position: absolute;
-  background: url("../img/spritesheet.png") -110px -67px no-repeat;
-  cursor: pointer;
-}
-
-.youtube-player .play:hover {
-  transform: scale(0.9,0.9);
 }
 
 /*———————————————————————————————————————————————————————————————*/
