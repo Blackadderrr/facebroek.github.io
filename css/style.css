@@ -369,7 +369,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .profile-navbar-menu td:first-child {
-  padding-right: 0.5em;
+  padding-right: 0.25em;
   text-align: right;
 }
 
