@@ -76,6 +76,7 @@ tr:hover {
 .noscript {
   position: fixed;
   text-align: center;
+  font-family: monospace;
   font-size: 9px;
   width: 100%;
   z-index: 2;
@@ -355,9 +356,16 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   display: inline-flex; /* Prevents menu from being bumped down when resizing. */
 }
 
-.profile-navbar-pic {
+.profile-navbar-me {
   margin-right: 6px;
-  height: 100px;
+  margin-bottom: -4px;
+}
+
+.profile-navbar-me-name {
+  text-align: center;
+  font-size: 0.72em;
+  margin-top: 0.15em;
+  margin-bottom: 0.72em;
 }
 
 .profile-navbar td {
