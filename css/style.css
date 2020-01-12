@@ -393,7 +393,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .profile-table-quotes {
   margin-top: -6px;
-  font-size: 1em; /* Test -  Just for Kiwi Browser */
+  font-size: 0.9em;
 }
 
 .profile-table-quotes a {
