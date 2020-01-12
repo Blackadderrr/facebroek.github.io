@@ -116,6 +116,7 @@ tr:hover {
 .index-description {
   display: inline-flex;
   align-items: center;
+  font-size: 1em; /* Test -  Just for Kiwi Browser */
 }
 
 .index-visitor {
@@ -390,8 +391,9 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   transform: rotate(6deg);
 }
 
-.profile-section-quotes {
+.profile-table-quotes {
   margin-top: -6px;
+  font-size: 1em; /* Test -  Just for Kiwi Browser */
 }
 
 .profile-table-quotes a {
