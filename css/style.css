@@ -419,6 +419,14 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 /*————————————————————————————————————————————————————————————————*/
+/* gallery */
+
+.gallery img {
+  height: 180px;
+  display: inline-block;
+}
+
+/*————————————————————————————————————————————————————————————————*/
 /* software */
 
 .software-table td, .hardware-table td {
