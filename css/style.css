@@ -393,7 +393,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .profile-table-quotes {
   margin-top: -6px;
-  font-size: 0.9em;
+  font-size: 0.87em;
 }
 
 .profile-table-quotes a {
@@ -405,9 +405,13 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-align: center;
 }
 
-.profile-table-quotes sup, .profile-navbar-menu span {
+.profile-navbar-menu span {
   vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
   font-size: 0.75em;
+}
+
+.profile-table-quotes sup {
+  vertical-align: text-top;
 }
 
 .profile-media iframe, .profile-media img {
