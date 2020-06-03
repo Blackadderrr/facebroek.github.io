@@ -400,7 +400,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .profile-table-quotes td:first-child {
-  width: 222px;
+  width: 250px;
   text-align: center;
 }
 
