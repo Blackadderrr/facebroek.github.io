@@ -395,6 +395,23 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   margin-top: -9px;
 }
 
+@keyframes fontIncrease {
+  from {font-size: small; cursor: default;}
+  to {font-size: 1.25em; cursor: none;}
+}
+
+.profile-table-quotes tr {
+  font-size: small;
+}
+
+.profile-table-quotes tr:hover {
+  animation-name: fontIncrease;
+  animation-duration: 0.3s;
+  animation-delay: 0.2s;
+  /* animation-timing-function: ease-in; */
+  animation-fill-mode: forwards;
+}
+
 .profile-table-quotes a {
   text-decoration: none;
 }
@@ -402,6 +419,11 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 .profile-table-quotes td:first-child {
   width: 250px;
   text-align: center;
+}
+
+.profile-table-quotes td:last-child {
+  width: 42px;
+  text-align: end;
 }
 
 .profile-navbar-menu span {
