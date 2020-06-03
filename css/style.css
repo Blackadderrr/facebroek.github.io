@@ -397,7 +397,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 @keyframes fontIncrease {
   from {font-size: small; cursor: grab;}
-  to {font-size: 1.25em; cursor: grabbing;}
+  to {font-size: 1.25em; cursor: none;}
 }
 
 .profile-table-quotes tr {
