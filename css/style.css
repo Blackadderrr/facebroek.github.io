@@ -396,18 +396,18 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 @keyframes fontIncrease {
-  from {font-size: small; cursor: default;}
-  to {font-size: 1.25em; cursor: none;}
+  from {font-size: small; cursor: grab;}
+  to {font-size: 1.25em; cursor: grabbing;}
 }
 
 .profile-table-quotes tr {
   font-size: small;
+  cursor: grab;
 }
 
-.profile-table-quotes tr:hover {
+.profile-table-quotes tr:active {
   animation-name: fontIncrease;
-  animation-duration: 0.3s;
-  animation-delay: 0.2s;
+  animation-duration: 0.1s;
   /* animation-timing-function: ease-in; */
   animation-fill-mode: forwards;
 }
