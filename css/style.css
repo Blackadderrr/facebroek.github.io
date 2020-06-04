@@ -31,15 +31,6 @@ h2 {
   color:tomato;
 }
 
-@keyframes animEmphasis {
-  from {
-    color: black;
-  }
-  to {
-    color: red;
-  }
-}
-
 .section {
   margin-bottom: 6px;
 }
@@ -395,16 +386,24 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-align: right;
 }
 
-@keyframes animButterfly {
+@keyframes translateButterfly {
   from {
-    margin-top: -3px;
-    transform: rotate(-1deg);
+    margin-top: -4px;
   }
   to {
-    margin-top: 3px;
-    transform: rotate(5deg);
+    margin-top: 7px;
   }
 }
+
+@keyframes rotateButterfly {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(7deg);
+  }
+}
+
 
 #butterfly {
   margin-left: 30px;
@@ -413,11 +412,10 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-align: center;
   text-decoration: none;
   color: black;
-  animation-name: animButterfly;
+  animation: translateButterfly 0.42s, rotateButterfly 0.7s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-duration: 1s;
 }
 
 .profile-table-quotes a {
