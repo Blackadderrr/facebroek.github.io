@@ -355,6 +355,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .profile-navbar {
   display: inline-flex; /* Prevents menu from being bumped down when resizing. */
+  margin-right: 120px; 
 }
 
 .profile-navbar-me {
@@ -405,8 +406,8 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 #butterfly {
-  margin-left: 30px;
-  margin-bottom: -30px;
+  position: absolute;
+  right: 30px;
   font-size: 9px;
   text-align: center;
   text-decoration: none;
