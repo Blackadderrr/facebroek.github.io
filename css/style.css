@@ -151,7 +151,7 @@ tr:hover {
   vertical-align: middle;
 }
 
-.index-table-sources th, .index-table-sources td, .profile-table-quotes td {
+.index-table-sources th, .index-table-sources td {
   border-style: dashed;
   border-width: 0px;
   border-bottom-width: 1px;
@@ -359,7 +359,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .profile-navbar-me {
   margin-right: 6px;
-  margin-bottom: -4px;
+  margin-bottom: -6px;
 }
 
 .profile-navbar-me-pic img {
@@ -404,7 +404,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   }
 }
 
-
 #butterfly {
   margin-left: 30px;
   margin-bottom: -30px;
@@ -418,17 +417,22 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   animation-timing-function: ease-in-out;
 }
 
-.profile-table-quotes a {
+.quote:hover {
+  background-color: white;
+}
+
+.quote-year {
+  font-size: 0.84em;
+  display: inline;
+}
+
+.profile-quotes a {
   text-decoration: none;
 }
 
 .profile-navbar-menu span {
   vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
   font-size: 0.75em;
-}
-
-.profile-table-quotes sup {
-  vertical-align: text-top;
 }
 
 .profile-media iframe, .profile-media img {
