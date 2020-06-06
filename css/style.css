@@ -355,7 +355,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .profile-navbar {
   display: inline-flex; /* Prevents menu from being bumped down when resizing. */
-  margin-right: 120px; 
+  margin-right: 120px; /* Prevents Butterfly from flying above the text. */
 }
 
 .profile-navbar-me {
