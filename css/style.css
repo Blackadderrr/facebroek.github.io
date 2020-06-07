@@ -386,6 +386,11 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-align: right;
 }
 
+.profile-navbar-menu span {
+  vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
+  font-size: 0.75em;
+}
+
 @keyframes translateButterfly {
   from {
     margin-top: -4px;
@@ -427,11 +432,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .profile-quotes a {
   text-decoration: none;
-}
-
-.profile-navbar-menu span {
-  vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
-  font-size: 0.75em;
 }
 
 .profile-media iframe, .profile-media img {
