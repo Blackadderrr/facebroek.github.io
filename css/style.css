@@ -117,7 +117,6 @@ tr:hover {
 .index-description {
   display: inline-flex;
   align-items: center;
-  font-size: 1em; /* Test -  Just for Kiwi Browser */
 }
 
 .index-visitor {
@@ -178,7 +177,7 @@ tr:hover {
 
 .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
   max-width: 35em;
-  max-height: 1000000px; /* Kiwi Browser font bug, test fix */
+  font-size: 1em; /* kiwi */
   padding: 3px 21px 3px 21px;
 }
 
