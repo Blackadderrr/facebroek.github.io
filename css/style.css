@@ -13,7 +13,7 @@ html * {
 
 body {
   background-color: var(--bg-color);
-  font-size: 1em;
+  font-size: 1em; /* Kiwi Browser font bug, test fix */
 }
 
 * {
@@ -178,6 +178,7 @@ tr:hover {
 
 .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
   max-width: 35em;
+  max-height: 1000000px; /* Kiwi Browser font bug, test fix */
   padding: 3px 21px 3px 21px;
 }
 
