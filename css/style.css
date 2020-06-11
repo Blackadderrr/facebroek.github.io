@@ -487,3 +487,13 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   margin-left: 15px;
   text-align: right;
 }
+
+/*———————————————————————————————————————————————————————————————*/
+/* CV */
+
+.cv-table td {
+  vertical-align: top;
+}
+.cv-table td {
+  padding-right: 12px;
+}
