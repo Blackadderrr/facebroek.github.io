@@ -28,6 +28,11 @@ h2 {
   font-size: 1.23em;
 }
 
+sup {
+  vertical-align: text-top; /* Prevents pushing the text down. */
+  font-size: 0.75em;
+}
+
 .important {
   color:tomato;
 }
@@ -387,11 +392,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-align: right;
 }
 
-.profile-navbar-menu span {
-  vertical-align: text-top; /* Makes table rows a lot thinner. */ /* Don't forget there's a <sup> in the first column. */
-  font-size: 0.75em;
-}
-
 @keyframes translateButterfly {
   from {
     margin-top: -4px;
@@ -471,10 +471,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   vertical-align: top;
 }
 
-#mypc {
-  width: 390px;
-}
-
 /*———————————————————————————————————————————————————————————————*/
 
 #donations img {
@@ -496,4 +492,9 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 .cv-table td {
   padding-right: 12px;
+}
+
+.cv-paragraph {
+  margin-top: 0px;
+  margin-bottom: 0.3em;
 }
