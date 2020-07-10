@@ -422,6 +422,14 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   animation-timing-function: ease-in-out;
 }
 
+#lichess-puzzle {
+  margin-right: -4px;
+}
+
+#lichess-puzzle iframe {
+  width: 147px;
+}
+
 .quote:hover {
   background-color: white;
 }
