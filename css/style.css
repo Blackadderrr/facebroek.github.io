@@ -161,6 +161,10 @@ sup {
   height: 180px;  
 }
 
+.zucc {
+  text-align: center;
+}
+
 .index-table-sources tr:hover {
   background-color: white;
 }
