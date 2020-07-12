@@ -47,10 +47,6 @@ sup {
   vertical-align: top;
 }
 
-tr:hover {
-  background-color: white;
-}
-
 .article {
   max-width: 35em;
   text-align: justify;
@@ -125,13 +121,6 @@ tr:hover {
   align-items: center;
 }
 
-.index-visitor {
-  position: fixed;
-  top: 6px;
-  right: 0px;
-  z-index: 2;
-}
-
 .index-description-image {
   margin-right: 9px;
 }
@@ -141,12 +130,33 @@ tr:hover {
   text-align: justify;
 }
 
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  @media screen and (orientation: portrait) {
+    .index-description-text {
+      font-size: 3vw;
+      max-width: 28em;
+      margin: 6px 0px 6px 6px;
+    }
+  }
+}
+
+.index-visitor {
+  position: fixed;
+  top: 6px;
+  right: 0px;
+  z-index: 2;
+}
+
 .index-media div, .profile-media div {
   display: inline-block;
 }
 
 .index-media iframe, .index-media img {
   height: 180px;  
+}
+
+.index-table-sources tr:hover {
+  background-color: white;
 }
 
 .index-table-sources a {
@@ -448,14 +458,17 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   @media screen and (orientation: portrait) {
     .quote, .profile-navbar-me-name, .profile-navbar-menu {
-      font-size: 3.4vw;
+      font-size: 3vw;
+    }
+
+    .profile-quotes, .profile-media {
+      text-align: center;
     }
 
     #profilepic {
       height: 120px;
     }
   }
-  
 }
 
 .quote:hover {
