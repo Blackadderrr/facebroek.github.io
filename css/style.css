@@ -369,6 +369,10 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   margin-bottom: -6px;
 }
 
+#profilepic {
+  height: 42px;
+}
+
 .profile-navbar-me-name {
   text-align: center;
   font-size: 0.72em;
@@ -410,7 +414,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 #butterfly {
   position: absolute;
-  right: 12px;
+  right: 9px;
   animation: translateButterfly 0.42s, rotateButterfly 0.7s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -434,9 +438,9 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .quote {
   display: inline-table;
-  width: 27em;
+  width: 28em;
   margin-bottom: 6px;
-  margin-right: 12px;
+  margin-right: 9px;
   border-top: 1px dashed grey;
   text-align: justify;
 }
@@ -444,7 +448,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   @media screen and (orientation: portrait) {
     .quote, .profile-navbar-me-name, .profile-navbar-menu {
-      font-size: 3.5vw;
+      font-size: 3.4vw;
     }
 
     #profilepic {
