@@ -137,12 +137,13 @@ sup {
       max-width: 28em;
       margin: 6px 0px 6px 6px;
     }
-    .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
-      width: 100%;
-    }
-    .index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
-      max-width: 5em;
-    }
+  }
+
+  .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
+    width: 100%;
+  }
+  .index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
+    max-width: 5em;
   }
 }
 
