@@ -12,6 +12,7 @@ html * {
 }
 
 body {
+  -webkit-text-size-adjust: 100%;
   background-color: var(--bg-color);
   font-size: 1em; /* Kiwi Browser font bug, test fix */
 }
@@ -372,12 +373,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   height: 48px;
 }
 
-@media (pointer:none), (pointer:coarse) {
-  #profilepic {
-    height: 96px;
-  }
-}
-
 .profile-navbar-me-name {
   text-align: center;
   font-size: 0.72em;
@@ -429,12 +424,26 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   max-height: 69px;
 }
 
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  #butterfly img {
+    width: 32px;
+  }
+
+  #butterfly {
+    width: 120px;
+  }
+}
+
 #lichess-puzzle {
   margin-right: -4px;
 }
 
 #lichess-puzzle iframe {
   width: 147px;
+}
+
+.profile-quotes {
+  max-width: 100vw;
 }
 
 .quote {
