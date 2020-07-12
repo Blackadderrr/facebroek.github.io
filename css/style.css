@@ -383,38 +383,19 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /*————————————————————————————————————————————————————————————————*/
 /* profile*/
 
-.profile-navbar {
-  display: inline-flex; /* Prevents menu from being bumped down when resizing. */
-}
-
-.profile-navbar-me {
-  margin-right: 6px;
-  margin-bottom: -6px;
-}
-
 #profilepic {
-  height: 42px;
+  height: 52px;
 }
 
-.profile-navbar-me-name {
-  text-align: center;
-  font-size: 0.72em;
-  margin-top: 0.15em;
-  margin-bottom: 0.72em;
+.my-name {
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .profile-navbar td {
+  max-width: 60em;
+  padding-right: 12px;
   vertical-align: top;
-}
-
-.profile-navbar-menu  {
-  border-collapse: collapse;
-  margin-right: 84px;
-}
-
-.profile-navbar-menu td:first-child {
-  padding-right: 0.25em;
-  text-align: right;
 }
 
 @keyframes translateButterfly {
@@ -436,19 +417,22 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 #butterfly {
-  position: absolute;
-  right: 9px;
   animation: translateButterfly 0.42s, rotateButterfly 0.7s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   text-align: center;
   font-size: 9px;
+  max-height: 30px;
 }
 
 #butterfly a {
   text-decoration: none;
   color: black;
+}
+
+#butterfly img {
+  margin-top: -6px;
 }
 
 #lichess-puzzle {
@@ -461,16 +445,16 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .quote {
   display: inline-table;
-  width: 28em;
+  width: 26.9em;
   margin-bottom: 6px;
-  margin-right: 9px;
+  margin-right: 6px;
   border-top: 1px dashed grey;
   text-align: justify;
 }
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   @media screen and (orientation: portrait) {
-    .quote, .profile-navbar-me-name, .profile-navbar-menu {
+    .quote, .profile-navbar td{
       font-size: 3vw;
     }
 
