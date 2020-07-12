@@ -23,10 +23,12 @@ body {
 
 h1, h2 {
   margin: 0px;
+  text-align: left; /* Redo .article so this isn't necessary. */
 }
 
 h2 {
   font-size: 1.23em;
+  text-align: left;
 }
 
 sup {
