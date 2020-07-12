@@ -21,7 +21,7 @@ body {
   font-family: "Times New Roman", Times, serif, monospace;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0px;
   text-align: left; /* Redo .article so this isn't necessary. */
 }
