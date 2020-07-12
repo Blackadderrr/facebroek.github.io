@@ -12,7 +12,7 @@ html * {
 }
 
 body {
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-text-size-adjust: 100%; */
   background-color: var(--bg-color);
   font-size: 1em; /* Kiwi Browser font bug, test fix */
 }
@@ -369,10 +369,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   margin-bottom: -6px;
 }
 
-#profilepic {
-  height: 48px;
-}
-
 .profile-navbar-me-name {
   text-align: center;
   font-size: 0.72em;
@@ -386,6 +382,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .profile-navbar-menu  {
   border-collapse: collapse;
+  margin-right: 84px;
 }
 
 .profile-navbar-menu td:first-child {
@@ -412,12 +409,12 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 #butterfly {
-  width: 120px;
+  position: absolute;
+  right: 12px;
   animation: translateButterfly 0.42s, rotateButterfly 0.7s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  max-height: 69px;
   text-align: center;
   font-size: 9px;
 }
@@ -425,12 +422,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 #butterfly a {
   text-decoration: none;
   color: black;
-}
-
-@media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  #butterfly img {
-    width: 32px;
-  }
 }
 
 #lichess-puzzle {
@@ -443,19 +434,24 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .quote {
   display: inline-table;
-  width: 32em;
-  margin-bottom: 2px;
-  margin-right: 3px;
-}
-
-.quote:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.3);
+  width: 27em;
+  margin-bottom: 6px;
+  margin-right: 12px;
+  border-top: 1px dashed grey;
+  text-align: justify;
 }
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  .quote, .profile-navbar-me-name, .profile-navbar-menu {
-    font-size: 3vw;
+  @media screen and (orientation: portrait) {
+    .quote, .profile-navbar-me-name, .profile-navbar-menu {
+      font-size: 3.5vw;
+    }
+
+    #profilepic {
+      height: 120px;
+    }
   }
+  
 }
 
 .quote:hover {
