@@ -387,13 +387,13 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   height: 52px;
 }
 
-.my-name {
+.casual-h1 {
   font-size: 1em;
-  font-weight: normal;
+  display: inline;
 }
 
 .profile-navbar td {
-  max-width: 60em;
+  /* max-width: 60em; */
   padding-right: 12px;
   vertical-align: top;
 }
