@@ -137,6 +137,12 @@ sup {
       max-width: 28em;
       margin: 6px 0px 6px 6px;
     }
+    .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
+      width: 100%;
+    }
+    .index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
+      max-width: 5em;
+    }
   }
 }
 
@@ -171,7 +177,7 @@ sup {
   border-style: dashed;
   border-width: 0px;
   border-bottom-width: 1px;
-  border-color:lightgrey;
+  border-color:grey;
 }
 
 .index-table-sources td:first-child {
@@ -193,7 +199,6 @@ sup {
 
 .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
   max-width: 35em;
-  font-size: 1em; /* kiwi */
   padding: 3px 21px 3px 21px;
 }
 
