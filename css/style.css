@@ -94,9 +94,9 @@ sup {
 /* index */
 
 .index-navbar-menu-logo {
-  margin: 0px 9px 0px 0px;
-  /* vertical-align: text-top;  */
+  vertical-align: text-top; 
   /* Otherwise image isn't centered. */
+  margin: 0px 9px 0px 0px;
   transform: scale(1,-1);
 }
 
@@ -162,6 +162,15 @@ sup {
 }
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  
+  .index-navbar-menu-logo {
+    margin-top: -1px;
+  }
+
+  .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
+    width: 100%;
+  }
+
   @media screen and (orientation: portrait) {
 
     .index-navbar-menu {
@@ -188,10 +197,6 @@ sup {
       height: 16px;
       width: 16px;
     }
-  }
-
-  .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
-    width: 100%;
   }
 }
 
