@@ -564,10 +564,9 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .cv-table td {
   vertical-align: top;
-  padding-right: 12px;
 }
 .cv-table td:first-child {
-  min-width: 5.2em;
+  min-width: 5.5em;
 }
 
 .cv-paragraph {
