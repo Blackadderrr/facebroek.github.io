@@ -122,6 +122,11 @@ sup {
   margin-right: 36px;
 }
 
+.index-visitor img {
+  height: 69px;
+  margin-top: -3px;
+}
+
 #shtoyle {
   height: 160px;
 }
