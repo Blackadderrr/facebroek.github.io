@@ -122,6 +122,10 @@ sup {
   margin-right: 36px;
 }
 
+#shtoyle {
+  height: 160px;
+}
+
 .index-description {
   display: inline-flex;
   align-items: center;
