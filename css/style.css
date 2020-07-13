@@ -92,6 +92,14 @@ sup {
 
 /*————————————————————————————————————————————————————————————————*/
 /* index */
+
+.index-navbar-menu-logo img {
+  width: 14px;
+  height: 32px;
+  margin: 0px 9px 0px 0px;
+  vertical-align: text-bottom; /* Otherwise image isn't centered. */
+}
+
 .index-navbar-menu {
   position: sticky;
   display: inline-flex;
@@ -102,13 +110,6 @@ sup {
   box-shadow: 0px -9px 0px 0px var(--bg-color);
   padding-bottom: 3px;
   z-index: 1;
-}
-
-.index-navbar-menu-logo img {
-  width: 14px;
-  height: 32px;
-  margin: 0px 9px 0px 0px;
-  vertical-align: text-bottom; /* Otherwise image isn't centered. */
 }
 
 .index-navlink {
