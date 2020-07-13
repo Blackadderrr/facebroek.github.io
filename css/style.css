@@ -374,8 +374,8 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /*————————————————————————————————————————————————————————————————*/
 /* profile*/
 
-#profilepic {
-  height: 52px;
+#profilepic img {
+  height: 42px;
 }
 
 .casual-h1 {
@@ -386,6 +386,14 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 .profile-navbar td {
   padding-right: 12px;
   vertical-align: top;
+}
+
+.profile-navbar td:nth-child(2), .profile-navbar td:nth-child(3) {
+  min-width: 15%;
+}
+
+.profile-navbar td:nth-child(4) {
+  min-width: 70%;
 }
 
 @keyframes translateButterfly {
@@ -422,7 +430,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 #butterfly img {
-  margin-top: -6px;
+  margin-top: -3px;
 }
 
 #lichess-puzzle {
@@ -443,6 +451,12 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
+
+  #profilepic img {
+    height: 69px;
+    margin-top: 6px;
+  }
+
   @media screen and (orientation: portrait) {
     .quote, .profile-navbar td{
       font-size: 3vw;
@@ -452,12 +466,12 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
       text-align: center;
     }
 
-    #profilepic {
-      height: 120px;
-    }
-    
     .quote img { /* link icon */
       height: 16px;
+    }
+
+    #butterfly img {
+      height: 69px;
     }
   }
 }
