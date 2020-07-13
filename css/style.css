@@ -93,11 +93,19 @@ sup {
 /*————————————————————————————————————————————————————————————————*/
 /* index */
 
-.index-navbar-menu-logo img {
-  width: 14px;
-  height: 32px;
+.index-navbar-menu-logo {
   margin: 0px 9px 0px 0px;
-  vertical-align: text-bottom; /* Otherwise image isn't centered. */
+  /* vertical-align: text-top;  */
+  /* Otherwise image isn't centered. */
+  transform: scale(1,-1);
+}
+
+#antifb-logo {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: black;
+  font-family: Arial;
+  font-weight: bold;
 }
 
 .index-navbar-menu {
@@ -158,10 +166,6 @@ sup {
 
     .index-navbar-menu {
       font-size: 2vw;
-    }
-
-    .index-navbar-menu-logo img {
-      height: 38px;
     }
 
     #shtoyle {
