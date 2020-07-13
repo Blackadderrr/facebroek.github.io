@@ -101,7 +101,7 @@ sup {
   z-index: 1;
 }
 
-.index-navbar-menu-favicon img {
+.index-navbar-menu-logo img {
   vertical-align: text-bottom; /* Otherwise image isn't centered. */
   margin: 0px 9px 0px 0px;
 }
@@ -143,13 +143,26 @@ sup {
       font-size: 2vw;
     }
 
+    .index-navbar-menu-logo img {
+      height: 38px;
+    }
+
+    #shtoyle {
+      height: 300px;
+    }
+
     .index-description-text {
       font-size: 3vw;
-      max-width: 28em;
+      max-width: 25em;
       margin: 6px 0px 6px 6px;
     }
+
     .index-visitor img {
-      height: 90px;
+      height: 84px;
+    }
+
+    td a img { /* link icon */
+      height: 16px;
     }
   }
 
@@ -371,7 +384,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .profile-navbar td {
-  /* max-width: 60em; */
   padding-right: 12px;
   vertical-align: top;
 }
@@ -444,7 +456,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
       height: 120px;
     }
     
-    .quote img {
+    .quote img { /* link icon */
       height: 18px;
     }
   }
