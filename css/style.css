@@ -180,7 +180,7 @@ sup {
       height: 84px;
     }
 
-    .link-icon {
+    .index-table-sources .link-icon {
       height: 16px;
       width: 16px;
     }
@@ -481,6 +481,11 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
     .profile-quotes, .profile-media {
       text-align: center;
+    }
+
+    .quote .link-icon {
+      height: 16px;
+      width: 16px;
     }
   }
 }
