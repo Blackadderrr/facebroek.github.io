@@ -372,7 +372,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   margin-left: -30px;
   margin-top: -21px;
   position: absolute;
-  background: url("../img/spritesheet2.png") -69px -3px no-repeat;
+  background: url("../img/spritesheet.png") -69px -3px no-repeat;
   cursor: pointer;
 }
 
