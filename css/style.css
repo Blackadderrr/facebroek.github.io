@@ -12,9 +12,7 @@ html * {
 }
 
 body {
-  /* -webkit-text-size-adjust: 100%; */
   background-color: var(--bg-color);
-  font-size: 1em; /* Kiwi Browser font bug, test fix */
 }
 
 * {
@@ -401,6 +399,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /* profile*/
 
 #profilepic img {
+  width: 42px;
   height: 42px;
 }
 
@@ -456,6 +455,8 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 #butterfly img {
+  width: 73px;
+  height: 69px;
   margin-top: -3px;
 }
 
@@ -479,6 +480,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
 
   #profilepic img {
+    width: 69px;
     height: 69px;
     margin-top: 6px;
   }
@@ -490,14 +492,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
     .profile-quotes, .profile-media {
       text-align: center;
-    }
-
-    .quote img { /* link icon */
-      height: 16px;
-    }
-
-    #butterfly img {
-      height: 69px;
     }
   }
 }
