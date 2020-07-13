@@ -179,7 +179,7 @@ sup {
       height: 84px;
     }
 
-    .link-icon { /* link icon */
+    .link-icon {
       height: 16px;
       width: 16px;
     }
@@ -195,10 +195,6 @@ sup {
   top: 6px;
   right: 0px;
   z-index: 2;
-}
-
-.index-media div, .profile-media div {
-  display: inline-block;
 }
 
 .index-media iframe, .index-media img {
@@ -460,14 +456,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   margin-top: -3px;
 }
 
-#lichess-puzzle {
-  margin-right: -4px;
-}
-
-#lichess-puzzle iframe {
-  width: 147px;
-}
-
 .quote {
   display: inline-table;
   width: 26.9em;
@@ -509,8 +497,20 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-decoration: none;
 }
 
+.profile-media div {
+  display: inline-block;
+}
+
 .profile-media iframe, .profile-media img {
   height: 180px;  
+}
+
+#lichess-puzzle {
+  margin-right: -4px;
+}
+
+#lichess-puzzle iframe {
+  width: 147px;
 }
 
 .vimeo {
