@@ -40,6 +40,11 @@ sup {
   color:tomato;
 }
 
+.link-icon {
+  width: 12px;
+  height: 12px;
+}
+
 .section {
   margin-bottom: 6px;
 }
@@ -102,8 +107,10 @@ sup {
 }
 
 .index-navbar-menu-logo img {
-  vertical-align: text-bottom; /* Otherwise image isn't centered. */
+  width: 14px;
+  height: 32px;
   margin: 0px 9px 0px 0px;
+  vertical-align: text-bottom; /* Otherwise image isn't centered. */
 }
 
 .index-navlink {
@@ -123,11 +130,13 @@ sup {
 }
 
 .index-visitor img {
+  width: 53px;
   height: 69px;
   margin-top: -3px;
 }
 
 #shtoyle {
+  width: 100px;
   height: 160px;
 }
 
@@ -157,6 +166,7 @@ sup {
     }
 
     #shtoyle {
+      width: 187px;
       height: 300px;
     }
 
@@ -167,11 +177,13 @@ sup {
     }
 
     .index-visitor img {
+      width: 65px;
       height: 84px;
     }
 
-    td a img { /* link icon */
+    .link-icon { /* link icon */
       height: 16px;
+      width: 16px;
     }
   }
 
@@ -195,8 +207,13 @@ sup {
   height: 180px;  
 }
 
-.zucc {
+.zucc-bot {
   text-align: center;
+}
+
+.zucc-bot img {
+  width: 214px;
+  height: 180px;
 }
 
 .index-table-sources tr:hover {
