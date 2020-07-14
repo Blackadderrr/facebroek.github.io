@@ -172,7 +172,7 @@ sup {
 }
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  #index-menu-logo {
+  #antifb-logo-container {
     margin-top: -2px; /* Stupid 'fix' */
   }
 
@@ -182,7 +182,7 @@ sup {
 
   @media screen and (orientation: portrait) {
 
-    #index-navbar-menu {
+    #index-menu {
       font-size: 2vw;
     }
 
