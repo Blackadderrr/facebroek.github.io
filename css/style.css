@@ -238,49 +238,66 @@ sup {
   border-color:grey;
 }
 
-.index-table-sources td:first-child {
+/* Shared columns */
+.index-table-sources td:first-child, 
+.index-table-sources td:nth-child(4), 
+.index-table-sources td:nth-child(5), 
+.index-table-sources td:nth-child(6), 
+.index-table-sources td:nth-child(7),
+.index-table-sources td:last-child {
   text-align: center;
-  width: 37px;
+}
+
+/* Comedy / Drama column */
+.index-table-sources td:first-child {
+  min-width: 2em;
 }
 
 .index-table-sources td:first-child div {
   transform: rotate(42deg);
 }
 
+/* Author / Credentials */
 .index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
   text-align: left; 
 }
 
 .index-table-sources td:nth-child(3) {
-  max-width: 15em;
+  max-width: 11em;
 }
 
+/* Title */
 .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
   max-width: 42em;
   padding: 3px 21px 3px 21px;
 }
 
-.index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
-  max-width: 8em;
+/* URL */
+.index-table-sources th:nth-child(5) {
+  min-width: 1em;
 }
 
+/* Type of source */
 .index-table-sources th:nth-child(6) {
-  width: 30px;
-  text-align: center;
+  min-width: 2em;
 }
 
-.index-table-sources th:first-child, .index-table-sources td:nth-child(4), .index-table-sources td:nth-child(5), .index-table-sources td:nth-child(6), .index-table-sources td:nth-child(7), #bottom {
-  text-align: center;
+/* Source */
+.index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
+  max-width: 7em;
 }
 
+/* Date published */
 .index-table-sources th:nth-child(8), .index-table-sources td:nth-child(8) {
   text-align: right;
-  width: 78px;
 }
 
+/* Submission number (Date added) */
 .index-table-sources th:last-child, .index-table-sources td:last-child {
-  width: 48px;
   font-size: 0.8em;
+}
+
+#bottom {
   text-align: center;
 }
 
