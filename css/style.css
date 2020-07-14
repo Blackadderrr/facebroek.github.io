@@ -94,8 +94,7 @@ sup {
 /* index */
 
 .index-navbar-menu-logo {
-  vertical-align: text-top; 
-  /* Otherwise image isn't centered. */
+  /* vertical-align: text-top; */ /* Otherwise image isn't centered. */
   margin: 0px 9px 0px 0px;
   transform: scale(1,-1);
 }
@@ -164,7 +163,7 @@ sup {
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   
   .index-navbar-menu-logo {
-    margin-top: -2px;
+    margin-top: -2px; /* Stupid 'fix' */
   }
 
   .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
