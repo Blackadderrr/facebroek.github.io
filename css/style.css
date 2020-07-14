@@ -28,9 +28,15 @@ sup {
   color:tomato;
 }
 
+/*———————————————————————————————————————————————————————————————*/
+/* Readability */
+
+#about-page p, #gimps-page p, #antireligion-page p { 
+  text-align: justify;
+}
+
 #about-page, #gimps-page, #antireligion-page { /* Readability */
   max-width: 35em;
-  text-align: justify;
 }
 
 #index-page h1, #index-page h2, #index-page h3,
@@ -40,6 +46,9 @@ sup {
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
+/*———————————————————————————————————————————————————————————————*/
+
 
 .image {
   cursor: nesw-resize;
