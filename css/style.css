@@ -1,11 +1,4 @@
-/* Notes */
-
-/*————————————————————————————————————————————————————————————————*/
-/* general */
-
-html * {
-  max-height:1000000px; /* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
-}
+/* Variables */
 
 :root {
   --bg-color: antiquewhite;
@@ -15,18 +8,15 @@ body {
   background-color: var(--bg-color);
 }
 
+/*———————————————————————————————————————————————————————————————*/
+/* General */
+
+html * {
+  max-height:1000000px; /* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
+}
+
 * {
   font-family: "Times New Roman", Times, serif, monospace;
-}
-
-h1, h2, h3 {
-  margin: 0px;
-  text-align: left; /* Redo .article so this isn't necessary. */
-}
-
-h2 {
-  font-size: 1.23em;
-  text-align: left;
 }
 
 sup {
@@ -38,31 +28,17 @@ sup {
   color:tomato;
 }
 
-.link-icon {
-  width: 12px;
-  height: 12px;
-}
-
-.section {
-  margin-bottom: 6px;
-}
-
-.inline-block {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.article {
+#about-page, #gimps-page, #antireligion-page { /* Readability */
   max-width: 35em;
   text-align: justify;
 }
 
-.article-source {
-  text-align: right;
-}
-
-.article-part {
-  margin: 9px 0px 9px 0px;
+#index-page h1, #index-page h2, #index-page h3,
+#about-page h1, #about-page h2, #about-page h3,
+#gimps-page h1, #gimps-page h2, #gimps-page h3,
+#cv-page h1, #cv-page h2, #cv-page h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .image {
@@ -73,15 +49,7 @@ sup {
   display: none;
 }
 
-.meme {
-  width: 200px;
-}
-
-.dotx3 {
-  margin-left: 90px;
-}
-
-.noscript {
+.no-script-warning {
   position: fixed;
   text-align: center;
   font-family: monospace;
@@ -90,11 +58,70 @@ sup {
   z-index: 2;
 }
 
-/*————————————————————————————————————————————————————————————————*/
+/*———————————————————————————————————————————————————————————————*/
+/* Specify image sizes */
+
+.link-icon { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
+  width: 12px;
+  height: 12px;
+}
+
+#shtoyle {
+  width: 100px;
+  height: 160px;
+}
+
+#index-visitor img {
+  width: 53px;
+  height: 69px;
+  margin-top: -3px;
+}
+
+#profilepic img {
+  width: 42px;
+  height: 42px;
+}
+
+#zucc-bot img {
+  width: 214px;
+  height: 180px;
+}
+
+#butterfly img {
+  width: 73px;
+  height: 69px;
+  margin-top: -3px;
+}
+
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  #profilepic img {
+    width: 69px;
+    height: 69px;
+    margin-top: 6px;
+  }
+
+  @media screen and (orientation: portrait) {
+    #shtoyle {
+      width: 187px;
+      height: 300px;
+    }
+
+    #index-visitor img {
+      width: 65px;
+      height: 84px;
+    }
+
+    #index-table-sources .link-icon, .quote .link-icon {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+/*———————————————————————————————————————————————————————————————*/
 /* index */
 
-.index-navbar-menu-logo {
-  /* vertical-align: text-top; */ /* Otherwise image isn't centered. */
+#antifb-logo-container {
   margin: 0px 9px 0px 0px;
   transform: scale(1,-1);
 }
@@ -107,7 +134,7 @@ sup {
   font-weight: bold;
 }
 
-.index-navbar-menu {
+#index-menu {
   position: sticky;
   display: inline-flex;
   align-items: center;
@@ -119,190 +146,159 @@ sup {
   z-index: 1;
 }
 
-.index-navlink {
-  position: fixed;
-  top: 50vh;
-  right: 6px;
-  margin: 0px 3px 0px 3px;
-}
-
-.index-navlink a {
-  text-decoration: none;
-  color: rgba(42, 42, 42, 0.42);
-}
-
-.index-navbar-menu-links {
+#index-menu-links { /* Prevents floating behind visitor (alien) pic */
   margin-right: 36px;
 }
 
-.index-visitor img {
-  width: 53px;
-  height: 69px;
-  margin-top: -3px;
-}
-
-#shtoyle {
-  width: 100px;
-  height: 160px;
-}
-
-.index-description {
-  display: inline-flex;
-  align-items: center;
-}
-
-.index-description-image {
-  margin-right: 9px;
-}
-
-.index-description-text {
-  max-width: 38em;
-  text-align: justify;
-}
-
-@media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  
-  .index-navbar-menu-logo {
-    margin-top: -2px; /* Stupid 'fix' */
-  }
-
-  .index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
-    width: 100%;
-  }
-
-  @media screen and (orientation: portrait) {
-
-    .index-navbar-menu {
-      font-size: 2vw;
-    }
-
-    #shtoyle {
-      width: 187px;
-      height: 300px;
-    }
-
-    .index-description-text {
-      font-size: 3vw;
-      max-width: 25em;
-      margin: 6px 0px 6px 6px;
-    }
-
-    .index-visitor img {
-      width: 65px;
-      height: 84px;
-    }
-
-    .index-table-sources .link-icon {
-      height: 16px;
-      width: 16px;
-    }
-  }
-}
-
-.index-visitor {
+#index-visitor {
   position: fixed;
   top: 6px;
   right: 0px;
   z-index: 2;
 }
 
-.index-media iframe, .index-media img {
+#index-description-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+#index-description-image {
+  margin-right: 9px;
+}
+
+#index-description-text {
+  max-width: 38em;
+  text-align: justify;
+}
+
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  #index-menu-logo {
+    margin-top: -2px; /* Stupid 'fix' */
+  }
+
+  #index-table-sources th:nth-child(4), #index-table-sources td:nth-child(4) {
+    width: 100%;
+  }
+
+  @media screen and (orientation: portrait) {
+
+    #index-navbar-menu {
+      font-size: 2vw;
+    }
+
+    #index-description-text {
+      font-size: 3vw;
+      max-width: 25em;
+      margin: 6px 0px 6px 6px;
+    }
+  }
+}
+
+#index-media-container h2 { /* Prevents text exceeding image width */
+  font-size: 1.23em;
+}
+
+#index-media-container iframe, #index-media-container img {
   height: 180px;  
 }
 
-.zucc-bot {
-  text-align: center;
-}
-
-.zucc-bot img {
-  width: 214px;
-  height: 180px;
-}
-
-.index-table-sources tr:hover {
+#index-table-sources tr:hover {
   background-color: white;
 }
 
-.index-table-sources a {
+#index-table-sources a {
   text-decoration: none;
 }
 
-.index-table-sources th img {
+#index-table-sources th img {
   vertical-align: middle;
 }
 
-.index-table-sources th, .index-table-sources td {
+#index-table-sources th, #index-table-sources td {
   border-style: dashed;
   border-width: 0px;
   border-bottom-width: 1px;
   border-color:grey;
 }
 
-/* Shared columns */
-.index-table-sources td:first-child, 
-.index-table-sources td:nth-child(4), 
-.index-table-sources td:nth-child(5), 
-.index-table-sources td:nth-child(6), 
-.index-table-sources td:nth-child(7),
-.index-table-sources td:last-child {
+/* Sharing columns */
+#index-table-sources td:first-child, 
+#index-table-sources td:nth-child(4), 
+#index-table-sources td:nth-child(5), 
+#index-table-sources td:nth-child(6), 
+#index-table-sources td:nth-child(7),
+#index-table-sources td:last-child {
   text-align: center;
 }
 
-/* Comedy / Drama column */
-.index-table-sources td:first-child {
+/* Comedy / Important */
+#index-table-sources td:first-child {
   min-width: 2em;
 }
 
-.index-table-sources td:first-child div {
+#index-table-sources td:first-child div {
   transform: rotate(42deg);
 }
 
 /* Author / Credentials */
-.index-table-sources th:nth-child(2), .index-table-sources th:nth-child(3) {
+#index-table-sources th:nth-child(2), #index-table-sources th:nth-child(3) {
   text-align: left; 
 }
 
-.index-table-sources td:nth-child(3) {
+#index-table-sources td:nth-child(3) {
   max-width: 11em;
 }
 
 /* Title */
-.index-table-sources th:nth-child(4), .index-table-sources td:nth-child(4) {
+#index-table-sources th:nth-child(4), #index-table-sources td:nth-child(4) {
   max-width: 42em;
   padding: 3px 21px 3px 21px;
 }
 
 /* URL */
-.index-table-sources th:nth-child(5) {
+#index-table-sources th:nth-child(5) {
   min-width: 1em;
 }
 
 /* Type of source */
-.index-table-sources th:nth-child(6) {
+#index-table-sources th:nth-child(6) {
   min-width: 2em;
 }
 
 /* Source */
-.index-table-sources th:nth-child(7), .index-table-sources td:nth-child(7) {
+#index-table-sources th:nth-child(7), #index-table-sources td:nth-child(7) {
   max-width: 7em;
 }
 
 /* Date published */
-.index-table-sources th:nth-child(8), .index-table-sources td:nth-child(8) {
+#index-table-sources th:nth-child(8), #index-table-sources td:nth-child(8) {
   text-align: right;
 }
 
 /* Submission number (Date added) */
-.index-table-sources th:last-child, .index-table-sources td:last-child {
+#index-table-sources th:last-child, #index-table-sources td:last-child {
   font-size: 0.8em;
 }
 
-#bottom {
+#zucc-bot, #bottom {
   text-align: center;
 }
 
-/*————————————————————————————————————————————————————————————————*/
+#index-navbar {
+  position: fixed;
+  top: 50vh;
+  right: 6px;
+  margin: 0px 3px 0px 3px;
+}
+
+#index-navbar a {
+  text-decoration: none;
+  color: rgba(42, 42, 42, 0.42);
+}
+
+/*———————————————————————————————————————————————————————————————*/
 /* Sprites */ /* https://spritegen.website-performance.org/ */
+
 .sprite {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
@@ -320,8 +316,6 @@ sup {
   height: 16px;
   background-position: -25px -3px;
 }
-
-/* https://commons.wikimedia.org/wiki/Category:External_link_icons */
 
 .sprite-okhand {
   width: 16px;
@@ -347,31 +341,27 @@ sup {
   background-position: -47px -25px;
 }
 
-/*————————————————————————————————————————————————————————————————*/
+/*———————————————————————————————————————————————————————————————*/
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
-/* <img class="updownarrow" src="./img/updownarrow.png" alt="up down arrow"> */
+
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
   content: "\2195";
   font-family: monospace;
+  font-weight: normal;
   font-size: 16px;
   margin-left: 3px;
-  font-weight: normal;
 }
 
-/*————————————————————————————————————————————————————————————————*/
+/*———————————————————————————————————————————————————————————————*/
 /* Light YouTube Embeds by @labnol */
 /* Web: http://labnol.org/?p=27941 */
 
 .youtube-player {
   position: relative;
-  /* padding-bottom: 56.23%; */
-  /* Use 75% for 4:3 videos */
   height: 180px;
   width: 300px;
   overflow: hidden;
-  /* max-width: 100%; */
   background: #000;
-  /* margin: 5px; */
 }
 
 .youtube-player iframe {
@@ -384,13 +374,13 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .youtube-player img {
-  bottom: 0;
   display: block;
+  position: absolute;
+  bottom: 0;
   left: 0;
   margin: auto;
   max-width: 100%;
   width: 100%;
-  position: absolute;
   right: 0;
   top: 0;
   border: none;
@@ -402,13 +392,13 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .youtube-player .play {
+  position: absolute;
   width: 60px;
   height: 42px;
   left: 50%;
   top: 50%;
   margin-left: -30px;
   margin-top: -21px;
-  position: absolute;
   background: url("../img/spritesheet.png") -69px -3px no-repeat;
   cursor: pointer;
 }
@@ -417,29 +407,28 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   transform: scale(0.9,0.9);
 }
 
-/*————————————————————————————————————————————————————————————————*/
-/* profile*/
+/*———————————————————————————————————————————————————————————————*/
+/* profile */
 
-#profilepic img {
-  width: 42px;
-  height: 42px;
-}
-
-.casual-h1 {
+#profile-page h1 {
   font-size: 1em;
   display: inline;
 }
 
-.profile-navbar td {
+#profile-menu-table {
+  margin-bottom: 3px;
+}
+
+#profile-menu-table td {
   padding-right: 12px;
   vertical-align: top;
 }
 
-.profile-navbar td:nth-child(2), .profile-navbar td:nth-child(3) {
+#profile-menu-table td:nth-child(2), #profile-menu-table td:nth-child(3) {
   min-width: 15%;
 }
 
-.profile-navbar td:nth-child(4) {
+#profile-menu-table td:nth-child(4) {
   min-width: 70%;
 }
 
@@ -476,43 +465,14 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   color: black;
 }
 
-#butterfly img {
-  width: 73px;
-  height: 69px;
-  margin-top: -3px;
-}
-
 .quote {
   display: inline-table;
   width: 26.9em;
   margin-bottom: 6px;
   margin-right: 6px;
+  padding-top: 3px;
   border-top: 1px dashed grey;
   text-align: justify;
-}
-
-@media (pointer:none), (pointer:coarse) { /* Detects mobile */
-
-  #profilepic img {
-    width: 69px;
-    height: 69px;
-    margin-top: 6px;
-  }
-
-  @media screen and (orientation: portrait) {
-    .quote, .profile-navbar td{
-      font-size: 3vw;
-    }
-
-    .profile-quotes, .profile-media {
-      text-align: center;
-    }
-
-    .quote .link-icon {
-      height: 16px;
-      width: 16px;
-    }
-  }
 }
 
 .quote:hover {
@@ -524,15 +484,15 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   display: inline;
 }
 
-.profile-quotes a {
+#profile-quotes-container a {
   text-decoration: none;
 }
 
-.profile-media div {
+#profile-media-container div {
   display: inline-block;
 }
 
-.profile-media iframe, .profile-media img {
+#profile-media-container iframe, #profile-media-container img {
   height: 180px;  
 }
 
@@ -548,18 +508,22 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   width: 318px;
 }
 
-/*————————————————————————————————————————————————————————————————*/
-/* gallery */
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  @media screen and (orientation: portrait) {
+    .quote, #profile-menu-table td {
+      font-size: 3vw;
+    }
 
-.gallery img {
-  height: 180px;
-  display: inline-block;
+    #profile-quotes-container, #profile-media-container {
+      text-align: center;
+    }
+  }
 }
 
-/*————————————————————————————————————————————————————————————————*/
+/*———————————————————————————————————————————————————————————————*/
 /* software */
 
-.software-table td, .hardware-table td {
+#software-container td, #hardware-container td {
   padding-right: 9px;
   border-style: dashed;
   border-width: 0px 0px 1px 0px;
@@ -567,39 +531,30 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   vertical-align: top;
 }
 
-.software-table td:nth-child(2) {
+#software-container td:nth-child(2) {
   max-width: 10em;
 }
 
-.software, .hardware {
+#software-container, #hardware-container {
   display: inline-block;
   vertical-align: top;
 }
 
 /*———————————————————————————————————————————————————————————————*/
-
-#donations img {
-  vertical-align: middle;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-
-#taken-profiles, #donators {
-  margin-left: 15px;
-  text-align: right;
-}
-
-/*———————————————————————————————————————————————————————————————*/
 /* CV */
 
-.cv-table td {
+#cv-page p {
+  margin-top: 0px;
+  margin-bottom: 0.3em;
+}
+
+#cv-page td {
   vertical-align: top;
 }
-.cv-table td:first-child {
+#cv-page td:first-child {
   min-width: 6em;
 }
 
-.cv-paragraph {
-  margin-top: 0px;
-  margin-bottom: 0.3em;
+#cv-backtocoolness {
+  margin-top: 1em;
 }

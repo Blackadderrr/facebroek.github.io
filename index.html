@@ -19,27 +19,25 @@
   <meta name="author" content="Angelino Desmet">
 </head>
 
-<body id="top">
-  
-  <div class="noscript"><noscript>Table sorting and videos only work when JavaScript is enabled.</noscript></div>
+<body id="index-page" xml:id="top"> <!-- Multiple ids: https://stackoverflow.com/a/5685221 -->
+  <div class="no-script-warning"><noscript>Table sorting and videos only work when JavaScript is enabled.</noscript></div>
 
   <!-- 'navbar' -->
-  <div class="index-navbar-menu section">
-    <div class="index-navbar-menu-logo">
-      <!-- <a href="/"><img src="./img/antifb-x32.png"  alt="antifacebook icon: upside down f"></a> --> <!-- Made with Inkscape -->
+  <div id="index-menu">
+    <div id="antifb-logo-container">
       <a id="antifb-logo" href="/">f</a>
     </div>
     
-    <div class="index-navbar-menu-links">
-      <div class="index-navbar-menu-links-use">
+    <div id="index-menu-links">
+      <div id="index-menu-links-use">
         Use: 
         <a href="https://telegram.org" title="The best general purpose messenger. Secure, cross-platform, and user-friendly.">Telegram</a>,
         <a href="https://discord.com" title="The best messenger for large communities.">Discord</a>,
-        <a href="https://matrix.org" title="When you absolutely positively got to have the utmost privacy,
-accept no substitutes.">Matrix</a>,
+        <a href="https://matrix.org" title="When you absolutely positively got to have the utmost privacy, accept no substitutes.">Matrix</a>,
         <a href="https://www.goodreads.com" title="Talk less, read more.">Goodreads</a>.
       </div>
-      <div class="index-navbar-menu-links-delete">
+
+      <div id="index-menu-links-delete">
         Delete: 
         <a href="https://www.facebook.com/help/delete_account">facebook</a>,
         <a href="https://instagram.com/accounts/remove/request/permanent/">instagram</a>,
@@ -52,29 +50,34 @@ accept no substitutes.">Matrix</a>,
         <a href="https://vk.com/faq9426">vk</a>,
         <a href="./img/zucc-ads-smile-robot.gif">smile.exe</a>.
       </div>
+
     </div>
   </div>
-  <div class="index-navlink">
+
+  <div id="index-navbar">
     <a href="#top">▲</a><br>
     <a href="#bottom">▼</a>
   </div>
-  <div class="index-visitor">
+
+  <div id="index-visitor">
     <a href="./id/1.html"><img src="./img/visitor.png" alt="South Park visitor."></a>
   </div>
 
   <!-- description -->
-  <h1>The harmful effects of social media:</h1>
-  <div class="index-description section">
-    <div class="index-description-image">
+  <h1 id="index-heading">The harmful effects of social media:</h1>
+  <div id="index-description-container">
+
+    <div id="index-description-image">
       <a href="https://southpark.cc.com/full-episodes/s21e04-franchise-prequel"><img id="shtoyle" src="./img/shtoyle.png" alt="Zuckerberg shtoyle." title="What's your shtoyle?!"></a>
     </div>
-    <div class="index-description-text">
+
+    <div id="index-description-text">
       Social media are like medicine for an imaginary disease, but with real and likely side effects; e.g., <em>addiction</em>, <em>anxiety</em>, <em>anger</em>, <em>self-harm</em>, <em>misinformation</em>, <em>spying</em>, etc. Facebook, Inc., which owns Instagram and WhatsApp, exploits its uninformed users for profit. Their platform incentivizes misinformation and disinformation which manipulate people into unprecedented worldwide needless discord. Furthermore, social media are engineered to be highly addictive, and they cause anxiety because other people's looks and lives seem much better than they truly are. Sounds exaggerated? It barely scratches the surface… Check the sources below and stop being a slave to your screen. Choose life: quit facebook.
     </div>
   </div>
     
   <!-- media -->
-  <table class="index-media section">
+  <table id="index-media-container">
     <tr>
       <td><h2>Why quit social media?</h2>
         <div class="youtube-player" data-id="3E7hkPZ-HTk"></div></td>
@@ -86,9 +89,10 @@ accept no substitutes.">Matrix</a>,
   </table>
   
   <!--  sources  -->
-  <div class="section">
-    <table class="index-table-sources sortable">
+  <div>
+    <table id="index-table-sources" class="sortable">
     <thead>
+
       <!-- <tr>
         <td>flag</td>
         <td>author</td>
@@ -1258,16 +1262,13 @@ accept no substitutes.">Matrix</a>,
   </div>
 
   <!-- Zucc -->
-  <div class="index-media section zucc-bot">
-    <div>
-      <a href="./img/zucc.jpg"><img class="image" src="./img/zucc.png" alt="Zuckerberg douche."></a>
-    </div>
-  </div>
+  <p id="zucc-bot"><a href="./img/zucc.jpg"><img class="image" src="./img/zucc.png" alt="Zuckerberg douche."></a></p>
+  
 
   <!-- Bottom -->
-  <div id="bottom">
+  <p id="bottom">
     <a href="./about.html">About</a> quitfacebook.org.
-  </div>
+  </p>
   
 <script src="./js/sorttable.js"></script> <!-- By Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ --> <!-- Made minor sorting adjustments. -->
 <script src="./js/yt-lightembed.js"></script> <!-- Light YouTube Embeds by @labnol; Web: http://labnol.org/?p=27941 --> <!-- Deferring recommended by https://gtmetrix.com/ -->
