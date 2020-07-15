@@ -432,7 +432,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 @keyframes highlight {
   0% { background-color: rgba(0, 0, 0, 0); }
-  69% { background-color: rgb(120, 255, 69); }
+  75% { background-color: rgb(120, 255, 69); }
   100% { background-color: rgba(0, 0, 0, 0); }
 }
 
