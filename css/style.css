@@ -152,6 +152,7 @@ sup {
 
 #index-navbar {
   margin: 0px 6px 0px 6px;
+  margin-bottom: 2px; /* Because vertical align middle doesn't work? */
 }
 
 #index-navbar a {
@@ -190,12 +191,15 @@ sup {
 }
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  #antifb-logo-container {
+    margin-bottom: 2px; /* Because vertical align middle doesn't work? */
+  }
+
   #index-table-sources th:nth-child(4), #index-table-sources td:nth-child(4) {
     width: 100%;
   }
 
   @media screen and (orientation: portrait) {
-
     #index-menu, #bottom {
       font-size: 2vw;
     }
