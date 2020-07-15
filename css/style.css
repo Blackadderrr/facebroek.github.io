@@ -487,6 +487,11 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   color: black;
 }
 
+#commandments {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
 .quote {
   display: inline-table;
   width: 26.9em;
