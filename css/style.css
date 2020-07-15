@@ -226,7 +226,11 @@ sup {
 }
 
 #index-media-container iframe, #index-media-container img {
-  height: 180px;  
+  height: 180px;
+}
+
+#index-table-sources th:not(:nth-child(5)) {
+  cursor: ns-resize;
 }
 
 #index-table-sources tr:hover {
