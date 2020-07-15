@@ -28,6 +28,11 @@ sup {
   color:tomato;
 }
 
+.page-delimiter {
+  font-size: 42px;
+  text-align: center;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
@@ -84,11 +89,6 @@ sup {
 #profilepic img {
   width: 42px;
   height: 42px;
-}
-
-#zucc-bot img {
-  width: 214px;
-  height: 180px;
 }
 
 #butterfly img {
@@ -180,7 +180,7 @@ sup {
   z-index: 2;
 }
 
-#index-page h1, #index-page h2 {
+#index-heading, #index-media-container h2 {
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -209,13 +209,12 @@ sup {
   }
 
   @media screen and (orientation: portrait) {
-    #index-menu, #bottom {
+    #index-menu {
       font-size: 2vw;
     }
 
     #index-description-text {
       font-size: 3vw;
-      max-width: 25em;
       margin: 6px 0px 6px 6px;
     }
   }
@@ -309,10 +308,6 @@ sup {
 /* Submission number (Date added) */
 #index-table-sources th:last-child, #index-table-sources td:last-child {
   font-size: 0.8em;
-}
-
-#zucc-bot, #bottom {
-  text-align: center;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -597,6 +592,16 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /*———————————————————————————————————————————————————————————————*/
 /* About */
 
-#buy:target {
+#about:target h1:first-child {
   animation: highlight 3s normal;
 }
+
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  @media screen and (orientation: portrait) {
+    #about {
+      font-size: 4vw;
+    }
+  }
+}
+
+/*———————————————————————————————————————————————————————————————*/
