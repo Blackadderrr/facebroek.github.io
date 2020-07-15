@@ -28,12 +28,6 @@ sup {
   color:tomato;
 }
 
-.page-delimiter {
-  font-size: 42px;
-  text-align: center;
-  color: darkgrey;
-}
-
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
@@ -592,10 +586,6 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 /*———————————————————————————————————————————————————————————————*/
 /* About */
-
-#about:target h1:first-child {
-  animation: highlight 3s normal;
-}
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   @media screen and (orientation: portrait) {
