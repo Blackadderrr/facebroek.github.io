@@ -427,6 +427,9 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 #profile-page h1 {
   font-size: 1em;
+}
+
+#profile-menu-table h1 {
   display: inline;
 }
 
@@ -529,7 +532,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   @media screen and (orientation: portrait) {
-    .quote, #profile-menu-table td {
+    .quote, #profile-page h1, #profile-menu-table td {
       font-size: 3vw;
     }
 

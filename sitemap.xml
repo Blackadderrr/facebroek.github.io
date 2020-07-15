@@ -25,11 +25,17 @@
     <priority>0.80</priority>
   </url>
   <url>
-  <loc>https://www.quitfacebook.org/id/1/cv.html</loc>
-  <lastmod>2020-07-13T19:02:12+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
+    <loc>https://www.quitfacebook.org/id/1/cv.html</loc>
+    <lastmod>2020-07-13T19:02:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.quitfacebook.org/id/1000000.html</loc>
+    <lastmod>2020-07-13T19:02:12+00:00</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.64</priority>
+  </url>
   <url>
     <loc>https://www.quitfacebook.org/file/whygimps.html</loc>
     <lastmod>2020-07-13T19:02:12+00:00</lastmod>
@@ -43,10 +49,10 @@
     <priority>0.64</priority>
   </url>
   <url>
-  <loc>https://www.quitfacebook.org/file/antireligion.html</loc>
-  <lastmod>2020-07-13T19:02:12+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
+    <loc>https://www.quitfacebook.org/file/antireligion.html</loc>
+    <lastmod>2020-07-13T19:02:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
+  </url>
 
 </urlset>
