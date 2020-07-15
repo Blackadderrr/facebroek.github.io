@@ -160,8 +160,8 @@ sup {
   color: rgb(42, 42, 42);
 }
 
-#index-menu-links { /* Prevents floating behind visitor (alien) pic */
-  margin-right: 36px;
+#index-menu-links {
+  margin-right: 36px; /* Prevents floating behind visitor (alien) pic */
 }
 
 #index-visitor {
@@ -212,8 +212,8 @@ sup {
   }
 }
 
-#index-media-container h2 { /* Prevents text exceeding image width */
-  font-size: 1.23em;
+#index-media-container h2 {
+  font-size: 1.23em; /* Prevents text exceeding image width */
 }
 
 #index-media-container iframe, #index-media-container img {
@@ -428,6 +428,15 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 #profile-menu-table td {
   padding-right: 12px;
   vertical-align: top;
+}
+
+@keyframes highlight {
+  0% { background-color: rgba(0, 0, 0, 0); }
+  100% { background-color: rgb(120, 255, 69); }
+}
+
+#contact:target a:not(:nth-child(2)) {
+  animation: highlight 2s normal;
 }
 
 #profile-menu-table td:nth-child(2), #profile-menu-table td:nth-child(3) {
