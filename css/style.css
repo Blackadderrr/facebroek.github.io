@@ -49,7 +49,7 @@ sup {
   cursor: nesw-resize;
 }
 
-.hide { /* These hidden spans add a letter to configure sortability. */
+.hide, .google-analgetics {
   display: none;
 }
 
