@@ -123,6 +123,15 @@ sup {
 }
 
 /*———————————————————————————————————————————————————————————————*/
+/* Global animations */
+@keyframes highlight {
+  0% { text-decoration: underline 0px rgba(0, 0, 0, 0); }
+  20% { text-decoration: underline 6px greenyellow; }
+  80% { text-decoration: underline 6px greenyellow; }
+  100% { text-decoration: underline 0px rgba(0, 0, 0, 0); }
+}
+
+/*———————————————————————————————————————————————————————————————*/
 /* index */
 
 #index-menu {
@@ -430,16 +439,8 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   vertical-align: top;
 }
 
-@keyframes highlight {
-  0% { background-color: rgba(0, 0, 0, 0); }
-  25% { background-color: greenyellow; }
-  75% { background-color: greenyellow; }
-  100% { background-color: rgba(0, 0, 0, 0); }
-}
-
 #contact:target a:not(:nth-child(2)) {
   animation: highlight 3s normal;
-  border-radius: 3px;
 }
 
 #profile-menu-table td:nth-child(2), #profile-menu-table td:nth-child(3) {
@@ -579,4 +580,11 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 #cv-backtocoolness {
   margin-top: 1em;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* About */
+
+#buy:target {
+  animation: highlight 3s normal;
 }
