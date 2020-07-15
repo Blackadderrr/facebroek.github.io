@@ -587,6 +587,10 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /*———————————————————————————————————————————————————————————————*/
 /* About */
 
+#buy:target {
+  animation: highlight 3s normal;
+}
+
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   @media screen and (orientation: portrait) {
     #about {
