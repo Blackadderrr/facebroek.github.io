@@ -220,7 +220,15 @@ sup {
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
       #index-menu-links {
-      font-size: 0.69rem;
+        font-size: 0.6rem;
+      }
+
+      #index-description-text {
+        font-size: 0.8rem;
+      }
+
+      #index-heading {
+        font-size: 1.3rem;
       }
     }
   }
