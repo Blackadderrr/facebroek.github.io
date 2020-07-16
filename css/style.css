@@ -428,7 +428,7 @@ font-size: 0.8rem;
   top: 50%;
   margin-left: -30px;
   margin-top: -21px;
-  background: url("../img/spritesheet.png") -69px -3px no-repeat;
+  background: url("../img/play.png") no-repeat;
   cursor: pointer;
 }
 
