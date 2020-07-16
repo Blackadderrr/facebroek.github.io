@@ -515,6 +515,11 @@ font-size: 0.8rem;
   text-decoration: line-through;
 }
 
+#profile-quotes-container h1 {
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
 .quote {
   display: inline-table;
   width: 26.9em;
