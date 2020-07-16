@@ -129,6 +129,7 @@ sup {
   background-color: var(--bg-color);
   box-shadow: 0px -9px 0px 0px var(--bg-color);
   z-index: 1;
+  padding-bottom: 3px;
 }
 
 #index-menu-links {
@@ -137,26 +138,14 @@ sup {
   font-size: 1rem;
 }
 
-#antifb {
-  position: relative;
-  height: 30px;
-}
-
-#antifb-logo-container {
-  transform: scale(1,-1) translateY(0.5rem);
-  text-align: center;
-}
-
-#antifb-logo {
-  font-size: 2.5rem;
-  text-decoration: none;
-  color: black;
-  font-family: Arial;
-  font-weight: bold;
+#antifb-logo img {
+  height: 1.9rem;
+  width: 0.84rem;
+  vertical-align: middle;
 }
 
 #index-navbar {
-  margin: 0px 0.42rem 0px 0.42rem;
+  margin: 0px 0.42rem 0px 0.38rem;
 }
 
 #index-navbar a {
@@ -187,6 +176,7 @@ sup {
 #index-description-text {
   max-width: 42em;
   text-align: justify;
+  margin: 0.2rem 0 0.2rem 0;
 }
 
 .media-section  {
