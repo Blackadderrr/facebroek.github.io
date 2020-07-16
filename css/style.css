@@ -131,6 +131,12 @@ sup {
   z-index: 1;
 }
 
+#index-menu-links {
+  /* Prevents floating behind visitor (alien) pic */
+  margin-right: 3rem;
+  font-size: 1rem;
+}
+
 #antifb-logo-container {
   transform: scale(1,-1);
   text-align: center;
@@ -151,11 +157,6 @@ sup {
 #index-navbar a {
   text-decoration: none;
   color: rgb(42, 42, 42);
-}
-
-/* Prevents floating behind visitor (alien) pic */
-#index-menu-links {
-  margin-right: 3rem;  
 }
 
 #index-visitor {
@@ -211,11 +212,22 @@ sup {
   vertical-align: middle;
 }
 
-/* Responsive Table */
-/* https://www.cssscript.com/pure-css-mobile-friendly-responsive-table/ */
-/* https://css-tricks.com/responsive-data-tables/ */
-
 @media screen and (max-width: 645px) {
+  #index-navbar {
+    font-size: 1rem;
+  }
+
+  @media (pointer:none), (pointer:coarse) {
+    @media screen and (orientation: portrait) {
+      #index-menu-links {
+      font-size: 0.69rem;
+      }
+    }
+  }
+
+  /* Responsive Table */
+  /* https://www.cssscript.com/pure-css-mobile-friendly-responsive-table/ */
+  /* https://css-tricks.com/responsive-data-tables/ */
   #index-sources td, #index-sources tr { display: block; }
   
   #index-sources tr { 
