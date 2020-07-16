@@ -271,9 +271,9 @@ sup {
   #index-sources td:nth-of-type(3):before { content: "Cred.:"; }
   #index-sources td:nth-of-type(4):before { content: "Title:"; }
   #index-sources td:nth-of-type(5):before { content: "URL:"; }
-  #index-sources td:nth-of-type(7):before { content: "Source:"; }
-  #index-sources td:nth-of-type(8):before { content: "Date:"; }
-  #index-sources td:nth-of-type(9):before { content: "#:"; }
+  #index-sources td:nth-of-type(6):before { content: "Source:"; }
+  #index-sources td:nth-of-type(7):before { content: "Date:"; }
+  #index-sources td:nth-of-type(8):before { content: "#:"; }
 }
 
 /* End responsive table */
