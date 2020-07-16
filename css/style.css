@@ -525,10 +525,6 @@ font-size: 0.8rem;
   text-align: justify;
 }
 
-.quote a {
-  font-size: 0.9rem;
-}
-
 .quote:hover {
   background-color: white;
 }
