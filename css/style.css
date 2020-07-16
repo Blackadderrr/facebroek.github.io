@@ -609,17 +609,6 @@ font-size: 0.8rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
-/* About */
-
-#buy:target {
-  animation: underline 3s normal;
-}
-
-#anti-ads:target {
-  animation: backlight 3s normal;
-}
-
-/*———————————————————————————————————————————————————————————————*/
 /* Animations */
 @keyframes underline {
   0% { text-decoration: underline 0px rgba(0, 0, 0, 0); }
@@ -627,14 +616,9 @@ font-size: 0.8rem;
   100% { text-decoration: underline 0px rgba(0, 0, 0, 0); }
 }
 
-@keyframes bump {
-  0% { transform: scale(1);}
-  50% { transform: scale(1.25);}
-  100% { transform: scale(1);}
-}
+/*———————————————————————————————————————————————————————————————*/
+/* About */
 
-@keyframes backlight {
-  0% { background-color: rgba(0, 0, 0, 0);}
-  80% { background-color: greenyellow;}
-  100% { background-color: rgba(0, 0, 0, 0);}
+#buy:target {
+  animation: underline 3s normal;
 }
