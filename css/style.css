@@ -137,8 +137,13 @@ sup {
   font-size: 1rem;
 }
 
+#antifb {
+  position: relative;
+  height: 30px;
+}
+
 #antifb-logo-container {
-  transform: scale(1,-1);
+  transform: scale(1,-1) translateY(0.5rem);
   text-align: center;
 }
 
@@ -151,7 +156,7 @@ sup {
 }
 
 #index-navbar {
-  margin: 0 0.42rem 0 0.42rem;
+  margin: 0px 0.42rem 0px 0.42rem;
 }
 
 #index-navbar a {
@@ -162,12 +167,12 @@ sup {
 #index-visitor {
   position: fixed;
   top: 6px;
-  right: 0;
+  right: 0px;
   z-index: 2;
 }
 
 #index-heading {
-  margin: 0;
+  margin: 0px;
 }
 
 #index-description-container {
@@ -193,7 +198,7 @@ sup {
 #index-media h2 {
   /* Prevents text exceeding image width */
   font-size: 1.23rem; 
-  margin: 0;
+  margin: 0px;
 }
 
 #index-sources th:not(:nth-child(5)) {
@@ -229,6 +234,12 @@ sup {
 
       #index-heading {
         font-size: 1.3rem;
+      }
+
+      #index-visitor img {
+        width: 38px;
+        height: 50px;
+        margin-top: -3px;
       }
     }
   }
