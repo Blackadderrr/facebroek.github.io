@@ -206,7 +206,7 @@ sup {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 682px) {
   #index-navbar {
     font-size: 1rem;
   }
@@ -271,7 +271,6 @@ sup {
   #index-sources td:nth-of-type(3):before { content: "Cred.:"; }
   #index-sources td:nth-of-type(4):before { content: "Title:"; }
   #index-sources td:nth-of-type(5):before { content: "URL:"; }
-  #index-sources td:nth-of-type(6):before { content: "Type:"; }
   #index-sources td:nth-of-type(7):before { content: "Source:"; }
   #index-sources td:nth-of-type(8):before { content: "Date:"; }
   #index-sources td:nth-of-type(9):before { content: "#:"; }
@@ -279,7 +278,7 @@ sup {
 
 /* End responsive table */
 
-@media screen and (min-width: 645px) {
+@media screen and (min-width: 682px) {
   #index-sources th, #index-sources td {
     border-style: dashed;
     border-width: 0;
@@ -316,23 +315,13 @@ sup {
     max-width: 42rem;
   }
 
-  /* URL */
-  #index-sources th:nth-child(5) {
-    min-width: 1rem;
-  }
-
-  /* Type of source */
-  #index-sources th:nth-child(6) {
-    min-width: 2rem;
-  }
-
   /* Source */
-  #index-sources th:nth-child(7), #index-sources td:nth-child(7) {
+  #index-sources th:nth-child(6), #index-sources td:nth-child(6) {
     max-width: 7rem;
   }
 
   /* Date published */
-  #index-sources th:nth-child(8), #index-sources td:nth-child(8) {
+  #index-sources th:nth-child(7), #index-sources td:nth-child(7) {
     text-align: right;
   }
 }
@@ -534,6 +523,10 @@ font-size: 0.8rem;
   padding-top: 3px;
   border-top: 1px dashed grey;
   text-align: justify;
+}
+
+.quote a {
+  font-size: 0.9rem;
 }
 
 .quote:hover {
