@@ -21,7 +21,7 @@ html * {
 
 sup {
   vertical-align: text-top; /* Prevents pushing the text down. */
-  font-size: 0.75em;
+  font-size: 0.75rem;
 }
 
 .important {
@@ -32,7 +32,7 @@ sup {
 /* Readability */
 
 .readability {
-  max-width: 42em;
+  max-width: 42rem;
 }
 
 .readability p {
@@ -57,7 +57,8 @@ sup {
   position: fixed;
   text-align: center;
   font-family: monospace;
-  font-size: 9px;
+  font-size: 0.7rem;
+  margin-top: -0.5rem;
   width: 100%;
   z-index: 2;
 }
@@ -100,17 +101,7 @@ sup {
   }
 
   @media screen and (orientation: portrait) {
-    #shtoyle {
-      width: 187px;
-      height: 300px;
-    }
-
-    #index-visitor img {
-      width: 65px;
-      height: 84px;
-    }
-
-    #index-table-sources .link-icon, .quote .link-icon {
+    .quote .link-icon {
       height: 16px;
       width: 16px;
     }
@@ -137,7 +128,6 @@ sup {
   width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0px -9px 0px 0px var(--bg-color);
-  padding-bottom: 3px;
   z-index: 1;
 }
 
@@ -147,7 +137,7 @@ sup {
 }
 
 #antifb-logo {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-decoration: none;
   color: black;
   font-family: Arial;
@@ -155,8 +145,7 @@ sup {
 }
 
 #index-navbar {
-  margin: 0px 6px 0px 6px;
-  margin-bottom: 2px; /* Because vertical align middle doesn't work? */
+  margin: 0 0.42rem 0 0.42rem;
 }
 
 #index-navbar a {
@@ -164,20 +153,20 @@ sup {
   color: rgb(42, 42, 42);
 }
 
+/* Prevents floating behind visitor (alien) pic */
 #index-menu-links {
-  margin-right: 36px; /* Prevents floating behind visitor (alien) pic */
+  margin-right: 3rem;  
 }
 
 #index-visitor {
   position: fixed;
   top: 6px;
-  right: 0px;
+  right: 0;
   z-index: 2;
 }
 
-#index-heading, #index-media-container h2 {
-  margin-bottom: 0px;
-  margin-top: 0px;
+#index-heading {
+  margin: 0;
 }
 
 #index-description-container {
@@ -194,115 +183,143 @@ sup {
   text-align: justify;
 }
 
-@media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  #antifb-logo-container {
-    margin-bottom: 2px; /* Because vertical align middle doesn't work? */
-  }
-
-  #index-table-sources th:nth-child(4), #index-table-sources td:nth-child(4) {
-    width: 100%;
-  }
-
-  @media screen and (orientation: portrait) {
-    #index-menu {
-      font-size: 2vw;
-    }
-
-    #index-description-text {
-      font-size: 3vw;
-      margin: 6px 0px 6px 6px;
-    }
-  }
+.media-section  {
+  display: inline-block;
+  margin-right: 0.3rem;
+  margin-bottom: 1rem;
 }
 
-#index-media-container h2 {
-  font-size: 1.23em; /* Prevents text exceeding image width */
+#index-media h2 {
+  /* Prevents text exceeding image width */
+  font-size: 1.23rem; 
+  margin: 0;
 }
 
-#index-media-container iframe, #index-media-container img {
-  height: 180px;
-}
-
-#index-table-sources th:not(:nth-child(5)) {
+#index-sources th:not(:nth-child(5)) {
   cursor: ns-resize;
 }
 
-#index-table-sources tr:hover {
+#index-sources tr:hover {
   background-color: white;
 }
 
-#index-table-sources a {
+#index-sources a {
   text-decoration: none;
 }
 
-#index-table-sources th img {
+#index-sources th img {
   vertical-align: middle;
 }
 
-#index-table-sources th, #index-table-sources td {
-  border-style: dashed;
-  border-width: 0px;
-  border-bottom-width: 1px;
-  border-color:grey;
+/* Responsive Table */
+/* https://www.cssscript.com/pure-css-mobile-friendly-responsive-table/ */
+/* https://css-tricks.com/responsive-data-tables/ */
+
+@media screen and (max-width: 645px) {
+  #index-sources td, #index-sources tr { display: block; }
+  
+  #index-sources tr { 
+    border-style: dashed;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color:grey;
+    margin-bottom: 3px;
+  }
+
+  #index-sources tr + #index-sources tr { margin-top: 1.5em; }
+
+  #index-sources td {
+    /* make like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 4rem;
+    padding-right: 0.3rem;
+    text-align: justify;
+  }
+
+  #index-sources td:before {
+    content: attr(data-label);
+    display: inline-block;
+    line-height: 1.5;
+    margin-left: -3.8rem;
+    width: 3.8rem;
+    white-space: nowrap;
+  }
+
+  #index-sources td:nth-of-type(1):before { content: "Flag:"; }
+  #index-sources td:nth-of-type(2):before { content: "Author:"; }
+  #index-sources td:nth-of-type(3):before { content: "Cred.:"; }
+  #index-sources td:nth-of-type(4):before { content: "Title:"; }
+  #index-sources td:nth-of-type(5):before { content: "URL:"; }
+  #index-sources td:nth-of-type(6):before { content: "Type:"; }
+  #index-sources td:nth-of-type(7):before { content: "Source:"; }
+  #index-sources td:nth-of-type(8):before { content: "Date:"; }
+  #index-sources td:nth-of-type(9):before { content: "#:"; }
 }
 
-/* Sharing columns */
-#index-table-sources td:first-child, 
-#index-table-sources td:nth-child(4), 
-#index-table-sources td:nth-child(5), 
-#index-table-sources td:nth-child(6), 
-#index-table-sources td:nth-child(7),
-#index-table-sources td:last-child {
-  text-align: center;
-}
+/* End responsive table */
 
-/* Comedy / Important */
-#index-table-sources td:first-child {
-  min-width: 2em;
-}
+@media screen and (min-width: 645px) {
+  #index-sources th, #index-sources td {
+    border-style: dashed;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color:grey;
+  }
 
-#index-table-sources td:first-child div {
-  transform: rotate(42deg);
-}
+  /* Sharing columns */
+  #index-sources td:first-child, 
+  #index-sources td:nth-child(4), 
+  #index-sources td:nth-child(5), 
+  #index-sources td:nth-child(6), 
+  #index-sources td:nth-child(7),
+  #index-sources td:last-child {
+    text-align: center;
+  }
 
-/* Author / Credentials */
-#index-table-sources th:nth-child(2), #index-table-sources th:nth-child(3) {
-  text-align: left; 
-}
+  /* Comedy or Important */
+  #index-sources th:first-child {
+    min-width: 2rem;
+  }
 
-#index-table-sources td:nth-child(3) {
-  max-width: 11em;
-}
+  /* Author & Credentials */
+  #index-sources th:nth-child(2), #index-sources th:nth-child(3) {
+    text-align: left; 
+  }
 
-/* Title */
-#index-table-sources th:nth-child(4), #index-table-sources td:nth-child(4) {
-  max-width: 42em;
-  padding: 3px 21px 3px 21px;
-}
+  #index-sources td:nth-child(3) {
+    max-width: 11rem;
+  }
 
-/* URL */
-#index-table-sources th:nth-child(5) {
-  min-width: 1em;
-}
+  /* Title */
+  #index-sources th:nth-child(4), #index-sources td:nth-child(4) {
+    max-width: 42rem;
+  }
 
-/* Type of source */
-#index-table-sources th:nth-child(6) {
-  min-width: 2em;
-}
+  /* URL */
+  #index-sources th:nth-child(5) {
+    min-width: 1rem;
+  }
 
-/* Source */
-#index-table-sources th:nth-child(7), #index-table-sources td:nth-child(7) {
-  max-width: 7em;
-}
+  /* Type of source */
+  #index-sources th:nth-child(6) {
+    min-width: 2rem;
+  }
 
-/* Date published */
-#index-table-sources th:nth-child(8), #index-table-sources td:nth-child(8) {
-  text-align: right;
+  /* Source */
+  #index-sources th:nth-child(7), #index-sources td:nth-child(7) {
+    max-width: 7rem;
+  }
+
+  /* Date published */
+  #index-sources th:nth-child(8), #index-sources td:nth-child(8) {
+    text-align: right;
+  }
 }
 
 /* Submission number (Date added) */
-#index-table-sources th:last-child, #index-table-sources td:last-child {
-  font-size: 0.8em;
+#index-sources th:last-child, #index-sources td:last-child {
+font-size: 0.8rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -353,12 +370,15 @@ sup {
 /*———————————————————————————————————————————————————————————————*/
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
 
-table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
-  content: "\2195";
-  font-family: monospace;
-  font-weight: normal;
-  font-size: 16px;
-  margin-left: 3px;
+/* 420px Otherwise it screws with the responsive table's margins. */
+@media screen and (min-width: 480px) {
+  table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: "\2195";
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-left: 3px;
+  }
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -420,7 +440,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /* profile */
 
 #profile-page h1 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 #profile-menu-table h1 {
@@ -547,7 +567,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 #software-container td, #hardware-container td {
   padding-right: 9px;
   border-style: dashed;
-  border-width: 0px 0px 1px 0px;
+  border-width: 0 0 1px 0;
   border-color:lightgrey;
   vertical-align: top;
 }
@@ -564,13 +584,12 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 /*———————————————————————————————————————————————————————————————*/
 /* CV */
 #cv-page h1, #cv-page h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 #cv-page p {
-  margin-top: 0px;
   margin-bottom: 0.3em;
+  margin-top: 0;
 }
 
 #cv-page td {
@@ -589,12 +608,4 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 #buy:target {
   animation: highlight 3s normal;
-}
-
-@media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  @media screen and (orientation: portrait) {
-    #about {
-      font-size: 4vw;
-    }
-  }
 }
