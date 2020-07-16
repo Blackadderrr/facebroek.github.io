@@ -323,51 +323,6 @@ font-size: 0.8rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
-/* Sprites */ /* https://spritegen.website-performance.org/ */
-
-.sprite {
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
-.sprite-books {
-  width: 16px;
-  height: 16px;
-  background-position: -3px -3px;
-}
-
-.sprite-drama {
-  width: 16px;
-  height: 16px;
-  background-position: -25px -3px;
-}
-
-.sprite-okhand {
-  width: 16px;
-  height: 16px;
-  background-position: -47px -3px;
-}
-
-.sprite-picture {
-  width: 16px;
-  height: 16px;
-  background-position: -3px -25px;
-}
-
-.sprite-speaker {
-  width: 16px;
-  height: 16px;
-  background-position: -25px -25px;
-}
-
-.sprite-tv {
-  width: 16px;
-  height: 16px;
-  background-position: -47px -25px;
-}
-
-/*———————————————————————————————————————————————————————————————*/
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
 
 /* 420px Otherwise it screws with the responsive table's margins. */
