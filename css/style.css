@@ -21,7 +21,6 @@ html * {
 
 sup {
   vertical-align: text-top; /* Prevents pushing the text down. */
-  font-size: 0.75rem;
 }
 
 .important {
