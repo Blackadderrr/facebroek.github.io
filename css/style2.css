@@ -175,7 +175,7 @@ sup {
   z-index: 2;
 }
 
-#index-heading, #index-media h2 {
+#index-heading {
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -216,8 +216,15 @@ sup {
   }
 }
 
+.media-section  {
+  float: left;
+  margin-right: 0.3rem;
+}
+
 #index-media h2 {
-  font-size: 1.23em; /* Prevents text exceeding image width */
+  /* Prevents text exceeding image width */
+  font-size: 1.23rem; 
+  margin-bottom: 0px;
 }
 
 #index-media iframe, #index-media img {
@@ -248,10 +255,10 @@ sup {
   #index-sources td, #index-sources tr { display: block; }
   
   #index-sources tr { 
-    border-bottom: 1px solid black; 
+    border: 1px dotted black; 
     margin-bottom: 3px;
   }
-  
+
   #index-sources tr + #index-sources tr { margin-top: 1.5em; }
   
   #index-sources td {
