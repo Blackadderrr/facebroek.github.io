@@ -114,15 +114,17 @@ sup {
   position: fixed;
   display: inline-flex;
   align-items: center;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
+  left: 0.5rem;
+  bottom: 0;
+  right: 0.5rem;
   background-color: var(--bg-color);
   box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.15);
   z-index: 2;
   padding-top: 0.2rem;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  padding-bottom: 0.2rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 #index-menu-links {
@@ -132,12 +134,16 @@ sup {
 
 #antifb-logo img {
   height: 1.9rem;
-  width: 0.84rem;
+  width: 1.9rem; /* width: 0.84rem; */
   vertical-align: middle;
 }
 
-#index-topbot, #index-navbar, #index-menu-links, #antifb-logo-container {
+#index-topbot, #index-navbar, #index-menu-links {
   margin-left: 0.42rem;
+}
+
+#antifb-logo-container {
+  margin-left: 0.6rem;
 }
 
 #index-navbar a, #index-topbot a {
@@ -221,7 +227,7 @@ sup {
       }
 
       #index-heading {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
 
       #index-visitor img {
