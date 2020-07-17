@@ -189,11 +189,6 @@ sup {
   margin: 0px;
 }
 
-#click-to-sort {
-  visibility: hidden;
-  display: none;
-}
-
 #index-sources th {
   cursor: ns-resize;
 }
@@ -207,15 +202,6 @@ sup {
 }
 
 @media screen and (max-width: 682px) {
-
-  #index-sources-title h2 {
-    display: inline-block;
-  }
-
-  #click-to-sort {
-    display: inline;
-    visibility: visible;
-  }
 
   #index-sources tbody tr:hover {
     background-color: white;
@@ -604,22 +590,17 @@ font-size: 0.8rem;
 
 /*———————————————————————————————————————————————————————————————*/
 /* Animations */
-@keyframes underline {
-  0% { text-decoration: underline 0px rgba(0, 0, 0, 0); }
-  80% { text-decoration: underline 6px greenyellow; }
-  100% { text-decoration: underline 0px rgba(0, 0, 0, 0); }
-}
 
 @keyframes backlight {
-  0% { background-color: rgba(0, 0, 0, 0); }
+  0% { background-color: var(--bg-color); }
   80% { background-color: greenyellow; }
-  100% { background-color: rgba(0, 0, 0, 0); }
+  100% { background-color: var(--bg-color); }
 }
 
 /*———————————————————————————————————————————————————————————————*/
 /* About */
 
-#buy:target, #new:target {
+#buy:target, #new:target, #about:target {
   animation: backlight 3s normal;
   border-radius: 3px;
 }
