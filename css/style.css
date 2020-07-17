@@ -151,7 +151,7 @@ sup {
   position: fixed;
   bottom: 2.75rem;
   right: 0px;
-  z-index: 1;
+  z-index: 42;
 }
 
 #index-heading {
@@ -207,7 +207,7 @@ sup {
     position: sticky;
     top: 0;
     background-color: var(--bg-color);
-    z-index: 3;
+    z-index: 1;
   }
 
   @media (pointer:none), (pointer:coarse) {
