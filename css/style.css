@@ -30,7 +30,7 @@ sup {
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
-.readability {
+.readability, .readability img {
   max-width: 42rem;
 }
 
