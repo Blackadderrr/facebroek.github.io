@@ -338,13 +338,6 @@ sup {
 font-size: 0.8rem;
 }
 
-#bot {
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2.4rem;
-}
-
 /*———————————————————————————————————————————————————————————————*/
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
 
@@ -606,4 +599,11 @@ font-size: 0.8rem;
 #buy:target, #new:target {
   animation: backlight 3s normal;
   border-radius: 3px;
+}
+
+#bot {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2.2rem;
 }
