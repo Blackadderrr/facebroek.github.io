@@ -597,12 +597,22 @@ font-size: 0.8rem;
   100% { background-color: var(--bg-color); }
 }
 
+@keyframes bump {
+  0% { transform: translateY(0rem); }
+  80% { transform: translateY(2rem); }
+  100% { transform: translateY(0rem); }
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* About */
 
-#buy:target, #new:target, #about:target {
+#buy:target, #about:target {
   animation: backlight 3s normal;
   border-radius: 3px;
+}
+
+#new:target {
+  animation: bump 2s normal, backlight 3s normal;
 }
 
 #bot {
