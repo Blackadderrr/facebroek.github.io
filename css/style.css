@@ -189,10 +189,6 @@ sup {
   cursor: ns-resize;
 }
 
-#index-sources tr:hover {
-  background-color: white;
-}
-
 #index-sources a {
   text-decoration: none;
 }
@@ -201,23 +197,19 @@ sup {
   vertical-align: middle;
 }
 
-/* https://stackoverflow.com/questions/44001954/css-only-sticky-table-headers-in-chrome/44004100#44004100 */
-.sticky-head th {
-  position: sticky;
-  top: 0;
-  background-color: var(--bg-color);
-  padding-bottom: 6px;
-}
-
-/* Working on getting first th (tr) stickied on responsive table */
-/* #index-sources>td {
-  position: sticky;
-  top: 0;
-  background-color: red;
-} */
-
 @media screen and (max-width: 682px) {
- 
+
+  #index-sources tbody tr:hover {
+    background-color: white;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    z-index: 3;
+  }
+
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
       #index-menu-links {
@@ -286,11 +278,24 @@ sup {
 /* End responsive table */
 
 @media screen and (min-width: 682px) {
+
+  /* https://stackoverflow.com/questions/44001954/css-only-sticky-table-headers-in-chrome/44004100#44004100 */
+.sticky-head th {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  padding-bottom: 3px;
+}
+
   #index-sources th, #index-sources td {
     border-style: dashed;
     border-width: 0;
     border-color:grey;
     border-bottom-width: 1px;
+  }
+
+  #index-sources tr:hover {
+    background-color: white;
   }
 
   /* Sharing columns */
