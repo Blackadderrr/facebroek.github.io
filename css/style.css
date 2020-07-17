@@ -183,10 +183,15 @@ sup {
   margin-bottom: 1rem;
 }
 
-#index-media h2 {
+#index-media h2, #index-sources-title h2 {
   /* Prevents text exceeding image width */
   font-size: 1.23rem; 
   margin: 0px;
+}
+
+#click-to-sort {
+  visibility: hidden;
+  display: none;
 }
 
 #index-sources th {
@@ -202,6 +207,15 @@ sup {
 }
 
 @media screen and (max-width: 682px) {
+
+  #index-sources-title h2 {
+    display: inline-block;
+  }
+
+  #click-to-sort {
+    display: inline;
+    visibility: visible;
+  }
 
   #index-sources tbody tr:hover {
     background-color: white;
