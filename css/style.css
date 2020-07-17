@@ -211,7 +211,7 @@ sup {
     position: sticky;
     top: 0;
     background-color: var(--bg-color);
-    z-index: 1;
+    z-index: 2;
   }
 
   @media (pointer:none), (pointer:coarse) {
@@ -289,6 +289,7 @@ sup {
   top: 0;
   background-color: var(--bg-color);
   padding-bottom: 3px;
+  z-index: 2;
 }
 
   #index-sources th, #index-sources td {
@@ -613,6 +614,7 @@ font-size: 0.8rem;
 
 #new:target {
   animation: bump 2s normal, backlight 3s normal;
+  z-index: 1;
 }
 
 #bot {
