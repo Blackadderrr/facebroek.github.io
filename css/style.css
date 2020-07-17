@@ -42,6 +42,13 @@ sup {
   text-align: right;
 }
 
+.quote {
+  text-align: left;
+  border-left: 2px dashed grey;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 
 .image {
@@ -100,7 +107,7 @@ sup {
   }
 
   @media screen and (orientation: portrait) {
-    .quote .link-icon {
+    .profile-quote .link-icon {
       height: 16px;
       width: 16px;
     }
@@ -492,7 +499,7 @@ font-size: 0.8rem;
   margin-bottom: 3px;
 }
 
-.quote {
+.profile-quote {
   display: inline-table;
   width: 26.9em;
   margin-bottom: 6px;
@@ -502,7 +509,7 @@ font-size: 0.8rem;
   text-align: justify;
 }
 
-.quote:hover {
+.profile-quote:hover {
   background-color: white;
 }
 
@@ -537,7 +544,7 @@ font-size: 0.8rem;
 
 @media (pointer:none), (pointer:coarse) { /* Detects mobile */
   @media screen and (orientation: portrait) {
-    .quote, #profile-page h1, #profile-menu-table td {
+    .profile-quote, #profile-page h1, #profile-menu-table td {
       font-size: 3vw;
     }
 
