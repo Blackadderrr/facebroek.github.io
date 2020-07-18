@@ -26,7 +26,7 @@ html * {
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
-.readability, .readability img {
+.readability {
   max-width: 42rem;
 }
 
@@ -39,6 +39,11 @@ html * {
   border-left: 2px dashed grey;
   margin-left: 1.5rem;
   padding-left: 1rem;
+}
+
+.readability img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*———————————————————————————————————————————————————————————————*/
