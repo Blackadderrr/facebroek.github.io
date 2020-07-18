@@ -1,0 +1,628 @@
+/* Variables */
+
+:root {
+  --bg-color: antiquewhite;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* General */
+
+html * {
+  max-height:1000000px; /* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
+}
+
+* {
+  font-family: "Times New Roman", Times, serif, monospace;
+}
+
+.important {
+  color:tomato;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Readability */
+
+.readability {
+  max-width: 42rem;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.quote {
+  text-align: left;
+  border-left: 2px dashed grey;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.readability img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+
+.image {
+  cursor: nesw-resize;
+}
+
+.hide, .google-analgetics {
+  display: none;
+}
+
+.no-script-warning {
+  position: fixed;
+  text-align: center;
+  font-family: monospace;
+  font-size: 0.7rem;
+  margin-top: -0.5rem;
+  width: 100%;
+  z-index: 41;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Specify image sizes */
+
+.link-icon { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
+  width: 12px;
+  height: 12px;
+}
+
+#shtoyle {
+  width: 100px;
+  height: 160px;
+}
+
+#index-visitor img {
+  width: 53px;
+  height: 69px;
+  margin-top: -3px;
+}
+
+#profilepic img {
+  width: 42px;
+  height: 42px;
+}
+
+#butterfly img {
+  width: 73px;
+  height: 69px;
+  margin-top: -3px;
+}
+
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  #profilepic img {
+    width: 69px;
+    height: 69px;
+    margin-top: 6px;
+  }
+
+  @media screen and (orientation: portrait) {
+    .profile-quote .link-icon {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* index */
+
+#index-menu {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  left: 0rem;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+#index-menu-links {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+#antifb-logo img {
+  height: 1.9rem;
+  width: 1.9rem; /* width: 0.84rem; */
+  vertical-align: middle;
+}
+
+#index-topbot, #index-navbar, #index-menu-links {
+  margin-left: 0.42rem;
+}
+
+#antifb-logo-container {
+  margin-left: 0.6rem;
+}
+
+#index-navbar a, #index-topbot a {
+  display: block;
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+  text-align: center;
+}
+
+#index-visitor {
+  position: fixed;
+  bottom: 2.75rem;
+  right: 0px;
+  z-index: 42;
+}
+
+#index-heading {
+  margin: 0px;
+}
+
+#index-description-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+#index-description-image {
+  margin-right: 9px;
+}
+
+#index-description-text {
+  max-width: 42em;
+  text-align: justify;
+  hyphens: auto;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.media-section  {
+  display: inline-block;
+  margin-right: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+#index-media h2, #index-sources-title h2 {
+  /* Prevents text exceeding image width */
+  font-size: 1.23rem; 
+  margin: 0px;
+}
+
+#index-sources th {
+  cursor: ns-resize;
+}
+
+#index-sources a {
+  text-decoration: none;
+}
+
+#index-sources th img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 682px) {
+
+  #index-sources tbody tr:hover {
+    background-color: white;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    z-index: 2;
+  }
+
+  @media (pointer:none), (pointer:coarse) {
+    @media screen and (orientation: portrait) {
+      #index-menu-links {
+        font-size: 0.6rem;
+      }
+
+      #index-description-text {
+        font-size: 0.8rem;
+      }
+
+      #index-heading {
+        font-size: 1.5rem;
+      }
+
+      #index-visitor img {
+        width: 38px;
+        height: 50px;
+        margin-top: -3px;
+      }
+    }
+  }
+
+  /* Responsive Table */
+  /* https://www.cssscript.com/pure-css-mobile-friendly-responsive-table/ */
+  /* https://css-tricks.com/responsive-data-tables/ */
+  #index-sources td, #index-sources tr { display: block; }
+  
+  #index-sources tr { 
+    border-style: dashed;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color:grey;
+    margin-bottom: 3px;
+  }
+
+  #index-sources tr + #index-sources tr { margin-top: 1.5em; }
+
+  #index-sources td {
+    /* make like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 4rem;
+    padding-right: 0.3rem;
+  }
+
+  #index-sources td:before {
+    content: attr(data-label);
+    display: inline-block;
+    line-height: 1.5;
+    margin-left: -3.8rem;
+    width: 3.8rem;
+    white-space: nowrap;
+  }
+
+  #index-sources td:nth-of-type(1):before { content: "Flag:"; }
+  #index-sources td:nth-of-type(2):before { content: "Author:"; }
+  #index-sources td:nth-of-type(3):before { content: "Cred.:"; }
+  #index-sources td:nth-of-type(4):before { content: "Title:"; }
+  #index-sources td:nth-of-type(5):before { content: "URL:"; }
+  #index-sources td:nth-of-type(6):before { content: "Source:"; }
+  #index-sources td:nth-of-type(7):before { content: "Date:"; }
+  #index-sources td:nth-of-type(8):before { content: "#:"; }
+}
+
+/* End responsive table */
+
+@media screen and (min-width: 682px) {
+
+  /* https://stackoverflow.com/questions/44001954/css-only-sticky-table-headers-in-chrome/44004100#44004100 */
+.sticky-head th {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  padding-bottom: 3px;
+  z-index: 2;
+}
+
+  #index-sources th, #index-sources td {
+    border-style: dashed;
+    border-width: 0;
+    border-color:grey;
+    border-bottom-width: 1px;
+  }
+
+  #index-sources tr:hover {
+    background-color: white;
+  }
+
+  /* Sharing columns */
+  #index-sources td:first-child, 
+  #index-sources td:nth-child(4), 
+  #index-sources td:nth-child(5), 
+  #index-sources td:nth-child(6), 
+  #index-sources td:nth-child(7),
+  #index-sources td:last-child {
+    text-align: center;
+  }
+
+  /* Comedy or Important */
+  #index-sources th:first-child {
+    min-width: 2rem;
+  }
+
+  /* Author & Credentials */
+  #index-sources th:nth-child(2), #index-sources th:nth-child(3) {
+    text-align: left; 
+  }
+
+  #index-sources td:nth-child(3) {
+    max-width: 11rem;
+  }
+
+  /* Title */
+  #index-sources th:nth-child(4), #index-sources td:nth-child(4) {
+    max-width: 42rem;
+  }
+
+  /* Source */
+  #index-sources th:nth-child(6), #index-sources td:nth-child(6) {
+    max-width: 7rem;
+  }
+
+  /* Date published */
+  #index-sources th:nth-child(7), #index-sources td:nth-child(7) {
+    text-align: right;
+  }
+}
+
+/* Submission number (Date added) */
+#index-sources th:last-child, #index-sources td:last-child {
+font-size: 0.8rem;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
+
+/* 420px Otherwise it screws with the responsive table's margins. */
+@media screen and (min-width: 480px) {
+  table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: "\2195";
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-left: 3px;
+  }
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Light YouTube Embeds by @labnol */
+/* Web: http://labnol.org/?p=27941 */
+
+.youtube-player {
+  position: relative;
+  height: 180px;
+  width: 300px;
+  overflow: hidden;
+  background: #000;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.youtube-player img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  transition: .4s all;
+}
+
+.youtube-player .play {
+  position: absolute;
+  width: 60px;
+  height: 42px;
+  left: 50%;
+  top: 50%;
+  margin-left: -30px;
+  margin-top: -21px;
+  background: url("../img/play.png") no-repeat;
+  cursor: pointer;
+}
+
+.youtube-player .play:hover {
+  transform: scale(0.9,0.9);
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* profile */
+
+#profile-page h1 {
+  font-size: 1rem;
+}
+
+#profile-menu-table h1 {
+  display: inline;
+}
+
+#profile-menu-table {
+  margin-bottom: 3px;
+}
+
+#profile-menu-table td {
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+#contact:target a:not(:nth-child(2)) {
+  animation: highlight 3s normal;
+}
+
+#profile-menu-table td:nth-child(2), #profile-menu-table td:nth-child(3) {
+  min-width: 15%;
+}
+
+#profile-menu-table td:nth-child(4) {
+  min-width: 70%;
+}
+
+@keyframes translateButterfly {
+  from {
+    margin-top: -4px;
+  }
+  to {
+    margin-top: 7px;
+  }
+}
+
+@keyframes rotateButterfly {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(7deg);
+  }
+}
+
+#butterfly {
+  animation: translateButterfly 0.42s, rotateButterfly 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  text-align: center;
+  font-size: 9px;
+  max-height: 30px;
+}
+
+#butterfly a {
+  text-decoration: none;
+  color: black;
+}
+
+#commandments {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+#profile-quotes-container h1 {
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
+.profile-quote {
+  display: inline-table;
+  width: 26.9em;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  padding-top: 3px;
+  border-top: 1px dashed grey;
+}
+
+.profile-quote:hover {
+  background-color: white;
+}
+
+.quote-year {
+  font-size: 0.84em;
+  display: inline;
+}
+
+#profile-quotes-container a {
+  text-decoration: none;
+}
+
+#profile-media-container div {
+  display: inline-block;
+}
+
+#profile-media-container iframe, #profile-media-container img {
+  height: 180px;  
+}
+
+#lichess-puzzle {
+  margin-right: -4px;
+}
+
+#lichess-puzzle iframe {
+  width: 147px;
+}
+
+.vimeo {
+  width: 318px;
+}
+
+@media (pointer:none), (pointer:coarse) { /* Detects mobile */
+  @media screen and (orientation: portrait) {
+    .profile-quote, #profile-page h1, #profile-menu-table td {
+      font-size: 3vw;
+    }
+
+    #profile-quotes-container, #profile-media-container {
+      text-align: center;
+    }
+  }
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* software */
+
+#software-container td, #hardware-container td {
+  padding-right: 9px;
+  border-style: dashed;
+  border-width: 0 0 1px 0;
+  border-color:lightgrey;
+  vertical-align: top;
+}
+
+#software-container td:nth-child(2) {
+  max-width: 10em;
+}
+
+#software-container, #hardware-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* CV */
+#cv-page h1, #cv-page h2 {
+  margin: 0;
+}
+
+#cv-page p {
+  margin-bottom: 0.3em;
+  margin-top: 0;
+}
+
+#cv-page td {
+  vertical-align: top;
+}
+#cv-page td:first-child {
+  min-width: 6em;
+}
+
+#cv-backtocoolness {
+  margin-top: 1em;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Animations */
+
+@keyframes backlight {
+  0% { background-color: var(--bg-color); }
+  80% { background-color: greenyellow; }
+  100% { background-color: var(--bg-color); }
+}
+
+@keyframes bump {
+  0% { transform: translateY(0rem); }
+  80% { transform: translateY(2rem); }
+  100% { transform: translateY(0rem); }
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* About */
+
+#buy:target, #about:target {
+  animation: backlight 3s normal;
+  border-radius: 3px;
+}
+
+#new:target {
+  animation: bump 2s normal, backlight 3s normal;
+  z-index: 1;
+}
+
+#bot {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2.2rem;
+}
