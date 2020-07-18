@@ -19,10 +19,6 @@ html * {
   font-family: "Times New Roman", Times, serif, monospace;
 }
 
-sup {
-  vertical-align: text-top; /* Prevents pushing the text down. */
-}
-
 .important {
   color:tomato;
 }
@@ -32,10 +28,6 @@ sup {
 
 .readability, .readability img {
   max-width: 42rem;
-}
-
-.readability p {
-  text-align: justify;
 }
 
 .align-right {
@@ -181,6 +173,7 @@ sup {
 #index-description-text {
   max-width: 42em;
   text-align: justify;
+  hyphens: auto;
   margin: 0.2rem 0 0.2rem 0;
 }
 
@@ -264,7 +257,6 @@ sup {
     position: relative;
     padding-left: 4rem;
     padding-right: 0.3rem;
-    text-align: justify;
   }
 
   #index-sources td:before {
@@ -506,7 +498,6 @@ font-size: 0.8rem;
   margin-right: 6px;
   padding-top: 3px;
   border-top: 1px dashed grey;
-  text-align: justify;
 }
 
 .profile-quote:hover {
