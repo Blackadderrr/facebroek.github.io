@@ -499,9 +499,7 @@ font-size: 0.8rem;
 .profile-quote {
   display: inline-table;
   width: 26.9em;
-  margin-bottom: 6px;
-  margin-right: 6px;
-  padding-top: 3px;
+  padding: 0.25rem;
   border-top: 1px dashed grey;
 }
 
