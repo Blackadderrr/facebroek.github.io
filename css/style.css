@@ -1,6 +1,6 @@
-/* Update x+2 */
-/* Variables */
+/* Update x+3 */
 
+/* Variables */
 :root {
   --bg-color: antiquewhite;
   --border-color: rgba(0, 0, 0, 0.25);
@@ -523,6 +523,12 @@ font-size: 0.8rem;
   text-align: left;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+}
+
+@media screen and (max-width: 39rem) {
+  #profile-menu-text div, #profile-quotes-container {
+    margin-top: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 59.06rem) {
