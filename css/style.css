@@ -197,7 +197,7 @@ body {
   }
 
   thead {
-    display: inline-block;
+    display: table-cell;
     position: sticky;
     position: -webkit-sticky;
     position: -moz-sticky;
