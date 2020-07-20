@@ -206,7 +206,7 @@ body {
     top: 0;
     background-color: var(--bg-color);
     z-index: 2;
-    font-size: 1rem; /* Test; delete me. */
+    font-size: 1rem; /* Will zoom page on mobile if font is too large. */
   }
 
   @media (pointer:none), (pointer:coarse) {
