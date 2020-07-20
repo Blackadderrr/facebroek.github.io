@@ -212,7 +212,7 @@ body {
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
       #index-menu-links {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
       }
 
       #index-description-text {
@@ -230,6 +230,14 @@ body {
       #index-visitor img {
         width: 2.38rem;
         height: 3.13rem;
+      }
+    }
+
+    @media (pointer:none), (pointer:coarse) {
+      @media screen and (orientation: landscape) {
+        #index-menu-links {
+          font-size: 0.9rem;
+        }
       }
     }
   }
