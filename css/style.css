@@ -96,7 +96,7 @@ html * {
   position: fixed;
   display: inline-flex;
   align-items: center;
-  left: 0rem;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: var(--bg-color);
@@ -104,7 +104,7 @@ html * {
   z-index: 40;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.18);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.18);
 }
 
 #index-menu-links {
@@ -204,7 +204,7 @@ html * {
       }
 
       #index-description-text {
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
 
       #index-heading {
