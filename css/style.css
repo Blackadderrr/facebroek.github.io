@@ -100,7 +100,7 @@ body {
   align-items: center;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background-color: var(--bg-color);
   box-shadow: 0 0 1rem 0.125rem rgba(0, 0, 0, 0.15);
   z-index: 69;
