@@ -98,16 +98,15 @@ body {
   position: fixed;
   display: inline-flex;
   align-items: center;
-  left: 2.5%;
+  left: 0;
   bottom: 0;
-  width: 95%;
+  width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0 0 1rem 0.125rem rgba(0, 0, 0, 0.15);
   z-index: 69;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   border-top: 0.06rem solid rgba(0, 0, 0, 0.18);
-  border-radius: 0.25rem;
 }
 
 #index-menu-links {
@@ -198,6 +197,8 @@ body {
     top: 0;
     background-color: var(--bg-color);
     z-index: 2;
+
+    font-size: 0.85rem; /* Test; delete me. */
   }
 
   @media (pointer:none), (pointer:coarse) {
