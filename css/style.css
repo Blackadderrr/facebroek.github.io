@@ -76,6 +76,10 @@ body {
   height: 0.75rem;
 }
 
+.link-symbol {
+  font-size: 0.85rem;
+}
+
 #shtoyle {
   width: 6.25rem;
   height: 10rem;
@@ -197,8 +201,7 @@ body {
     top: 0;
     background-color: var(--bg-color);
     z-index: 2;
-
-    font-size: 0.85rem; /* Test; delete me. */
+    font-size: 1rem; /* Test; delete me. */
   }
 
   @media (pointer:none), (pointer:coarse) {
