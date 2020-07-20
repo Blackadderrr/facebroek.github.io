@@ -26,6 +26,12 @@ body {
   color:tomato;
 }
 
+#sort-hint {
+  font-size: 1rem;
+  font-weight: normal;
+  visibility: hidden;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
@@ -207,6 +213,10 @@ body {
 
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
+      #sort-hint {
+        visibility: visible;
+      }
+
       #index-menu-links {
         font-size: 0.75rem;
       }
