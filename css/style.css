@@ -405,9 +405,9 @@ font-size: 0.8rem;
 /*———————————————————————————————————————————————————————————————*/
 /* profile */
 
-#profile-page h1 { font-size: 1rem; }
+#profile-page h1, #profile-page h2 { font-size: 1.125rem; }
 
-#profile-menu h1 { display: inline; }
+#profile-menu h1, #profile-menu h2 { display: inline; }
 
 #profilepic {
   float: left;
@@ -466,13 +466,20 @@ font-size: 0.8rem;
   margin-top: 0;
 }
 
-#profile-quotes-container h1 {
+#profile-quotes-container {
   margin-top: 0.25rem;
-  margin-bottom: 0.2rem;
+}
+
+#profile-quotes-header h2, #commandments {
+  display: inline;
 }
 
 #commandments {
+  font-size: 0.85rem;
   font-weight: normal;
+}
+
+#commandments span {
   text-decoration: line-through;
 }
 
@@ -495,6 +502,35 @@ font-size: 0.8rem;
   .profile-quote {
     display: block;
   }
+
+  #profile-media-container {
+    text-align: center;
+  }
+}
+
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait) {
+    #profile-menu, .profile-quote {
+      font-size: 0.85rem;
+    }
+
+    #profilepic {
+      width: 4rem;
+    }
+
+    #butterfly-container img {
+      width: 3.56rem;
+      height: 3.36rem;
+    }
+
+    #butterfly {
+      font-size: 0.5rem;
+    }
+
+    #butterfly-container {
+      height: 6rem;
+    }
+  }
 }
 
 .profile-quote:hover {
@@ -502,12 +538,11 @@ font-size: 0.8rem;
 }
 
 .quote-year {
-  font-size: 0.875rem;
-  display: inline;
+  font-size: 0.75rem;
 }
 
-#profile-media-container, #profile-quotes-container {
-  text-align: center;
+.quote-year {
+  display: inline;
 }
 
 #profile-quotes-container a {
