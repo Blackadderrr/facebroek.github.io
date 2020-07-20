@@ -12,7 +12,7 @@ body {
 /* General */
 
 html * {
-  max-height:1000000px; /* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
+  max-height: 62500rem; /* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
 }
 
 * {
@@ -36,7 +36,7 @@ html * {
 
 .quote {
   text-align: left;
-  border-left: 2px dashed grey;
+  border-left: 0.125rem dashed grey;
   margin-left: 1.5rem;
   padding-left: 1rem;
 }
@@ -70,45 +70,23 @@ html * {
 /* Specify image sizes */
 
 .link-icon { /* https://commons.wikimedia.org/wiki/Category:External_link_icons */
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 #shtoyle {
-  width: 100px;
-  height: 160px;
+  width: 6.25rem;
+  height: 10rem;
 }
 
 #index-visitor img {
-  width: 53px;
-  height: 69px;
-  margin-top: -3px;
-}
-
-#profilepic img {
-  width: 42px;
-  height: 42px;
+  width: 3.25rem;
+  height: 4.25rem;
 }
 
 #butterfly img {
-  width: 73px;
-  height: 69px;
-  margin-top: -3px;
-}
-
-@media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  #profilepic img {
-    width: 69px;
-    height: 69px;
-    margin-top: 6px;
-  }
-
-  @media screen and (orientation: portrait) {
-    .profile-quote .link-icon {
-      height: 16px;
-      width: 16px;
-    }
-  }
+  width: 4.56rem;
+  height: 4.31rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -122,11 +100,11 @@ html * {
   bottom: 0;
   width: 100%;
   background-color: var(--bg-color);
-  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.15);
-  z-index: 3;
+  box-shadow: 0 0 1rem 0.125rem rgba(0, 0, 0, 0.15);
+  z-index: 40;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  border: 1px solid rgba(0, 0, 0, 0.18);
+  border: 0.1rem solid rgba(0, 0, 0, 0.18);
 }
 
 #index-menu-links {
@@ -158,12 +136,12 @@ html * {
 #index-visitor {
   position: fixed;
   bottom: 2.75rem;
-  right: 0px;
+  right: 0;
   z-index: 42;
 }
 
 #index-heading {
-  margin: 0px;
+  margin: 0;
 }
 
 #index-description-container {
@@ -172,7 +150,7 @@ html * {
 }
 
 #index-description-image {
-  margin-right: 9px;
+  margin-right: 0.75rem;
 }
 
 #index-description-text {
@@ -190,8 +168,8 @@ html * {
 
 #index-media h2, #index-sources-title h2 {
   /* Prevents text exceeding image width */
-  font-size: 1.23rem; 
-  margin: 0px;
+  font-size: 1.25rem; 
+  margin: 0;
 }
 
 #index-sources th {
@@ -206,7 +184,7 @@ html * {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 682px) {
+@media screen and (max-width: 42.63rem) {
 
   #index-sources tbody tr:hover {
     background-color: white;
@@ -226,17 +204,20 @@ html * {
       }
 
       #index-description-text {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       #index-heading {
         font-size: 1.5rem;
       }
 
+      #index-media h2, #index-sources-title h2 {
+        font-size: 1.125rem;
+      }
+
       #index-visitor img {
-        width: 38px;
-        height: 50px;
-        margin-top: -3px;
+        width: 2.38rem;
+        height: 3.13rem;
       }
     }
   }
@@ -249,12 +230,12 @@ html * {
   #index-sources tr { 
     border-style: dashed;
     border-width: 0;
-    border-bottom-width: 1px;
+    border-bottom-width: 0.1rem;
     border-color:grey;
-    margin-bottom: 3px;
+    margin-bottom: 0.125rem;
   }
 
-  #index-sources tr + #index-sources tr { margin-top: 1.5em; }
+  #index-sources tr + #index-sources tr { margin-top: 1.5rem; }
 
   #index-sources td {
     /* make like a "row" */
@@ -285,14 +266,14 @@ html * {
 
 /* End responsive table */
 
-@media screen and (min-width: 682px) {
+@media screen and (min-width: 42.63rem) {
 
   /* https://stackoverflow.com/questions/44001954/css-only-sticky-table-headers-in-chrome/44004100#44004100 */
 .sticky-head th {
   position: sticky;
   top: 0;
   background-color: var(--bg-color);
-  padding-bottom: 3px;
+  padding-bottom: 0.125rem;
   z-index: 2;
 }
 
@@ -300,7 +281,7 @@ html * {
     border-style: dashed;
     border-width: 0;
     border-color:grey;
-    border-bottom-width: 1px;
+    border-bottom-width: 0.1rem;
   }
 
   #index-sources tr:hover {
@@ -355,14 +336,14 @@ font-size: 0.8rem;
 /*———————————————————————————————————————————————————————————————*/
 /* Credits to -> */ /* Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/ */
 
-/* 420px Otherwise it screws with the responsive table's margins. */
-@media screen and (min-width: 480px) {
+/* 420px/30rem Otherwise it screws with the responsive table's margins. */
+@media screen and (min-width: 30rem) {
   table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
     content: "\2195";
     font-family: monospace;
     font-weight: normal;
     font-size: 1rem;
-    margin-left: 3px;
+    margin-left: 0.25rem;
   }
 }
 
@@ -372,8 +353,8 @@ font-size: 0.8rem;
 
 .youtube-player {
   position: relative;
-  height: 180px;
-  width: 300px;
+  height: 11.25rem;
+  width: 18.75rem;
   overflow: hidden;
   background: #000;
 }
@@ -407,12 +388,12 @@ font-size: 0.8rem;
 
 .youtube-player .play {
   position: absolute;
-  width: 60px;
-  height: 42px;
+  width: 3.75rem;
+  height: 2.63rem;
   left: 50%;
   top: 50%;
-  margin-left: -30px;
-  margin-top: -21px;
+  margin-left: -1.88rem;
+  margin-top: -1.31rem;
   background: url("../img/play.png") no-repeat;
   cursor: pointer;
 }
@@ -424,41 +405,38 @@ font-size: 0.8rem;
 /*———————————————————————————————————————————————————————————————*/
 /* profile */
 
-#profile-page h1 {
-  font-size: 1rem;
+#profile-page h1 { font-size: 1rem; }
+
+#profile-menu h1 { display: inline; }
+
+#profilepic {
+  float: left;
 }
 
-#profile-menu-table h1 {
-  display: inline;
+#profile-menu div {
+  display: block;
 }
 
-#profile-menu-table {
-  margin-bottom: 3px;
-}
-
-#profile-menu-table td {
-  padding-right: 12px;
-  vertical-align: top;
+#profile-menu {
+  max-width: 73rem;
+  min-height: 7rem; /* To fit butterfly. */
 }
 
 #contact:target a:not(:nth-child(2)) {
-  animation: highlight 3s normal;
+  animation: backlight 3s normal;
 }
 
-#profile-menu-table td:nth-child(2), #profile-menu-table td:nth-child(3) {
-  min-width: 15%;
-}
-
-#profile-menu-table td:nth-child(4) {
-  min-width: 70%;
+#butterfly-container {
+  height: 7rem; /* To provent it drawing above text. */
+  float: right;
 }
 
 @keyframes translateButterfly {
   from {
-    margin-top: -4px;
+    margin-top: -0.125rem;
   }
   to {
-    margin-top: 7px;
+    margin-top: 0.5rem;
   }
 }
 
@@ -477,13 +455,20 @@ font-size: 0.8rem;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   text-align: center;
-  font-size: 9px;
-  max-height: 30px;
-}
-
-#butterfly a {
+  font-size: 0.625rem;
+  float: right;
   text-decoration: none;
   color: black;
+}
+
+#profile-quotes-container {
+  display: block;
+  margin-top: 0;
+}
+
+#profile-quotes-container h1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 #commandments {
@@ -491,16 +476,25 @@ font-size: 0.8rem;
   text-decoration: line-through;
 }
 
-#profile-quotes-container h1 {
-  margin-top: 0px;
-  margin-bottom: 3px;
+.profile-quote {
+  border-top: 0.1rem dashed grey;
+  text-align: left;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
 }
 
-.profile-quote {
-  display: inline-table;
-  width: 26.9em;
-  padding: 0.25rem;
-  border-top: 1px dashed grey;
+@media screen and (min-width: 59.06rem) {
+  .profile-quote {
+    display: inline-block;
+    width: 28.5rem;
+    vertical-align: top;
+  }
+}
+
+@media screen and (max-width: 59.06rem) {
+  .profile-quote {
+    display: block;
+  }
 }
 
 .profile-quote:hover {
@@ -508,8 +502,12 @@ font-size: 0.8rem;
 }
 
 .quote-year {
-  font-size: 0.84em;
+  font-size: 0.875rem;
   display: inline;
+}
+
+#profile-media-container, #profile-quotes-container {
+  text-align: center;
 }
 
 #profile-quotes-container a {
@@ -521,46 +519,34 @@ font-size: 0.8rem;
 }
 
 #profile-media-container iframe, #profile-media-container img {
-  height: 180px;  
+  height: 11.25rem;  
 }
 
 #lichess-puzzle {
-  margin-right: -4px;
+  margin-right: -0.5rem;
 }
 
 #lichess-puzzle iframe {
-  width: 147px;
+  width: 9.125rem;
 }
 
 .vimeo {
-  width: 318px;
-}
-
-@media (pointer:none), (pointer:coarse) { /* Detects mobile */
-  @media screen and (orientation: portrait) {
-    .profile-quote, #profile-page h1, #profile-menu-table td {
-      font-size: 3vw;
-    }
-
-    #profile-quotes-container, #profile-media-container {
-      text-align: center;
-    }
-  }
+  width: 19.875rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
 /* software */
 
 #software-container td, #hardware-container td {
-  padding-right: 9px;
+  padding-right: 0.5rem;
   border-style: dashed;
-  border-width: 0 0 1px 0;
+  border-width: 0 0 0.1rem 0;
   border-color:lightgrey;
   vertical-align: top;
 }
 
 #software-container td:nth-child(2) {
-  max-width: 10em;
+  max-width: 10rem;
 }
 
 #software-container, #hardware-container {
@@ -575,7 +561,7 @@ font-size: 0.8rem;
 }
 
 #cv-page p {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.3rem;
   margin-top: 0;
 }
 
@@ -583,11 +569,11 @@ font-size: 0.8rem;
   vertical-align: top;
 }
 #cv-page td:first-child {
-  min-width: 6em;
+  min-width: 6rem;
 }
 
 #cv-backtocoolness {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -610,7 +596,7 @@ font-size: 0.8rem;
 
 #buy:target, #about:target {
   animation: backlight 3s normal;
-  border-radius: 3px;
+  border-radius: 0.125rem;
 }
 
 #new:target {
