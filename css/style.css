@@ -198,6 +198,10 @@ body {
 
   thead {
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     top: 0;
     background-color: var(--bg-color);
     z-index: 2;
@@ -278,6 +282,10 @@ body {
   /* https://stackoverflow.com/questions/44001954/css-only-sticky-table-headers-in-chrome/44004100#44004100 */
 .sticky-head th {
   position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
   top: 0;
   background-color: var(--bg-color);
   padding-bottom: 0.125rem;
@@ -635,6 +643,11 @@ font-size: 0.8rem;
   0% { transform: translateY(0rem); }
   80% { transform: translateY(2rem); }
   100% { transform: translateY(0rem); }
+}
+
+/* CV */
+#cv-page a {
+  text-decoration: none;
 }
 
 /*———————————————————————————————————————————————————————————————*/
