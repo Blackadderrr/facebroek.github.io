@@ -2,6 +2,7 @@
 
 :root {
   --bg-color: antiquewhite;
+  --border-color: rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -105,7 +106,7 @@ body {
   z-index: 40;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.18);
+  border-top: 0.06rem solid rgba(0, 0, 0, 0.18);
 }
 
 #index-menu-links {
@@ -231,8 +232,8 @@ body {
   #index-sources tr { 
     border-style: dashed;
     border-width: 0;
-    border-bottom-width: 0.1rem;
-    border-color:grey;
+    border-bottom-width: 0.06rem;
+    border-color: var(--border-color);
     margin-bottom: 0.125rem;
   }
 
@@ -281,8 +282,8 @@ body {
   #index-sources th, #index-sources td {
     border-style: dashed;
     border-width: 0;
-    border-color:grey;
-    border-bottom-width: 0.1rem;
+    border-color:var(--border-color);
+    border-bottom-width: 0.06rem;
   }
 
   #index-sources tr:hover {
@@ -487,7 +488,7 @@ font-size: 0.8rem;
 }
 
 .profile-quote {
-  border-top: 1px dashed rgba(0, 0, 0, 0.15);
+  border-top: 1px dashed var(--border-color);
   text-align: left;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
@@ -579,7 +580,7 @@ font-size: 0.8rem;
 #software-container td, #hardware-container td {
   padding-right: 0.5rem;
   border-style: dashed;
-  border-width: 0 0 0.1rem 0;
+  border-width: 0 0 0.06rem 0;
   border-color:lightgrey;
   vertical-align: top;
 }
