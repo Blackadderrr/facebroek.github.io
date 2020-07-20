@@ -489,7 +489,7 @@ font-size: 0.8rem;
 }
 
 .profile-quote {
-  border-top: 1px dashed var(--border-color);
+  border-top: 0.06rem dashed var(--border-color);
   text-align: left;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
