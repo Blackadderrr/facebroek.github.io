@@ -10,10 +10,11 @@ body {
 
 /*———————————————————————————————————————————————————————————————*/
 /* General */
+/* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
 
-html * {
-  max-height: 62500rem; /* Apparently in Chrome on mobile devices, whenever there are more than 240 characters in the body, it scales the text to a huge size. Even after specifying the font size in css. Okay then. Thanks. */ /* https://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font/12965146#12965146 */
-}
+/* html * {
+  max-height: 62500rem; 
+} */
 
 * {
   font-family: "Times New Roman", Times, serif, monospace;
@@ -411,6 +412,8 @@ font-size: 0.8rem;
 
 #profilepic {
   float: left;
+  width: 6.25rem;
+  height: 6.25rem;
 }
 
 #profile-menu div {
@@ -509,13 +512,14 @@ font-size: 0.8rem;
 }
 
 @media (pointer:none), (pointer:coarse) {
-  @media screen and (orientation: portrait) {
+  @media screen and (orientation: portrait), (orientation: landscape) {
     #profile-menu, .profile-quote {
       font-size: 0.85rem;
     }
 
     #profilepic {
-      width: 4rem;
+      width: 4.5rem;
+      height: 4.5rem;
     }
 
     #butterfly-container img {
