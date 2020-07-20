@@ -390,18 +390,19 @@ font-size: 0.8rem;
 
 .youtube-player .play {
   position: absolute;
-  width: 3.75rem;
-  height: 2.63rem;
+  width: 7.5rem;
+  height: 5.25rem;
   left: 50%;
   top: 50%;
-  margin-left: -1.88rem;
-  margin-top: -1.31rem;
+  margin-left: -3.75rem;
+  margin-top: -2.625rem;
   background: url("../img/play.png") no-repeat;
   cursor: pointer;
+  transform: scale(0.6,0.6);
 }
 
 .youtube-player .play:hover {
-  transform: scale(0.9,0.9);
+  transform: scale(0.55,0.55);
 }
 
 /*———————————————————————————————————————————————————————————————*/
