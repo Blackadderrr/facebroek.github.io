@@ -1,4 +1,4 @@
-/* Update x+3 */
+/* Update x+4 */
 
 /* Variables */
 :root {
@@ -72,7 +72,7 @@ body {
   font-size: 0.7rem;
   margin-top: -0.5rem;
   width: 100%;
-  z-index: 19;
+  z-index: 30;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -286,6 +286,11 @@ body {
   #index-sources td:nth-of-type(8):before { content: "#:"; }
 }
 
+#new:target td {
+  animation: bump 2s normal, backlight 3s normal;
+  z-index: 1;
+}
+
 /* End responsive table */
 
 @media screen and (min-width: 42.63rem) {
@@ -300,7 +305,7 @@ body {
   top: 0;
   background-color: var(--bg-color);
   padding-bottom: 0.125rem;
-  z-index: 2;
+  z-index: 3;
 }
 
   #index-sources th, #index-sources td {
@@ -679,11 +684,6 @@ font-size: 0.8rem;
 #buy:target, #about:target {
   animation: backlight 3s normal;
   border-radius: 0.125rem;
-}
-
-#new:target {
-  animation: bump 2s normal, backlight 3s normal;
-  z-index: 1;
 }
 
 #bot {
