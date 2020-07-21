@@ -1,4 +1,4 @@
-/* Update x+6 */
+/* Update x+7 21 jul 20 */
 
 /* Variables */
 :root {
@@ -625,22 +625,14 @@ font-size: 0.8rem;
 
 /*———————————————————————————————————————————————————————————————*/
 /* software */
-
-#software-container td, #hardware-container td {
-  padding-right: 0.5rem;
-  border-style: dashed;
-  border-width: 0 0 0.06rem 0;
-  border-color:lightgrey;
-  vertical-align: top;
-}
-
-#software-container td:nth-child(2) {
-  max-width: 10rem;
-}
-
-#software-container, #hardware-container {
+#software-page div {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: text-top;
+  margin-right: 0.5rem;
+}
+
+#software-page h2 {
+  border-bottom: 0.06rem dashed var(--border-color);
 }
 
 /*———————————————————————————————————————————————————————————————*/
