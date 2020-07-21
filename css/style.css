@@ -1,4 +1,4 @@
-/* Update x+12 21 jul 20 */
+/* Update x+13 21 jul 20 */
 
 /* Variables */
 :root {
@@ -342,6 +342,11 @@ body {
   }
 
   /* Author & Credentials */
+  #index-sources td:nth-child(2) {
+    max-width: 8rem;
+    padding-right: 0.5rem;
+  }
+
   #index-sources th:nth-child(2), #index-sources th:nth-child(3) {
     text-align: left; 
   }
