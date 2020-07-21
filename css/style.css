@@ -1,4 +1,4 @@
-/* Update x+13 21 jul 20 */
+/* Update x+14 21 jul 20 */
 
 /* Variables */
 :root {
@@ -548,21 +548,29 @@ font-size: 0.8rem;
   }
 }
 
-@media screen and (min-width: 59.06rem) {
-  .profile-quote {
-    display: inline-block;
-    width: 28.5rem;
-    vertical-align: top;
-  }
-}
-
-@media screen and (max-width: 59.06rem) {
+@media screen and (max-width: 59.063rem) {
   .profile-quote {
     display: block;
   }
 
   #profile-media-container {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 59.063rem) {
+  .profile-quote {
+    display: inline-block;
+    width: 25.5rem;
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width: 120rem) {
+  .profile-quote {
+    display: inline-block;
+    width: 29rem;
+    vertical-align: top;
   }
 }
 
