@@ -1,4 +1,4 @@
-/* Update x+7 21 jul 20 */
+/* Update x+8 21 jul 20 */
 
 /* Variables */
 :root {
@@ -625,13 +625,13 @@ font-size: 0.8rem;
 
 /*———————————————————————————————————————————————————————————————*/
 /* software */
-#software-page div {
+#setup-page div {
   display: inline-block;
   vertical-align: text-top;
   margin-right: 0.5rem;
 }
 
-#software-page h2 {
+#setup-page h2 {
   border-bottom: 0.06rem dashed var(--border-color);
 }
 
