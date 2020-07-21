@@ -1,4 +1,4 @@
-/* Update x+4 */
+/* Update x+5 */
 
 /* Variables */
 :root {
@@ -37,6 +37,8 @@ body {
 
 .readability {
   max-width: 42rem;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .align-right {
@@ -53,6 +55,13 @@ body {
 .readability img {
   max-width: 100%;
   height: auto;
+}
+
+.readability a {
+  /* https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 /*———————————————————————————————————————————————————————————————*/
