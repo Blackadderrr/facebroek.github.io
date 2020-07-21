@@ -1,4 +1,4 @@
-/* Update x+11 21 jul 20 */
+/* Update x+12 21 jul 20 */
 
 /* Variables */
 :root {
@@ -621,8 +621,8 @@ font-size: 0.8rem;
 }
 
 .vimeo {
-  /* width: 19.875rem; */
-  /* height: 11.25rem; */
+  width: 19.875rem;
+  height: 11.25rem;
 }
 
 @media (pointer:none), (pointer:coarse) {
