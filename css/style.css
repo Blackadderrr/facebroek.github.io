@@ -1,4 +1,4 @@
-/* Update x+5 */
+/* Update x+6 */
 
 /* Variables */
 :root {
@@ -37,8 +37,6 @@ body {
 
 .readability {
   max-width: 42rem;
-  text-align: justify;
-  hyphens: auto;
 }
 
 .align-right {
