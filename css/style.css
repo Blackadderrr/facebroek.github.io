@@ -1,4 +1,4 @@
-/* Update x+10 21 jul 20 */
+/* Update x+11 21 jul 20 */
 
 /* Variables */
 :root {
@@ -607,7 +607,7 @@ font-size: 0.8rem;
   display: inline-block;
 }
 
-#profile-media-container iframe, #profile-media-container img {
+#profile-media-container img {
   height: 11.25rem;  
 }
 
@@ -617,10 +617,12 @@ font-size: 0.8rem;
 
 #lichess-puzzle iframe {
   width: 9.125rem;
+  height: 11.25rem;  
 }
 
 .vimeo {
-  width: 19.875rem;
+  /* width: 19.875rem; */
+  /* height: 11.25rem; */
 }
 
 @media (pointer:none), (pointer:coarse) {
