@@ -643,6 +643,11 @@ font-size: 0.8rem;
       margin-left: -0.5rem;
       margin-bottom: -1.5rem;
     }
+
+    .vimeo-test {
+      width: 18.75rem;
+      height: 10.613rem;
+    }
   }
 }
 
