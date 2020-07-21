@@ -623,6 +623,33 @@ font-size: 0.8rem;
   width: 19.875rem;
 }
 
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait) {
+
+    #profile-media-container {
+      margin-top: 0.5rem;
+    }
+
+    #profile-media-container img {
+      width: 18.75rem;
+      height: auto;
+    }
+
+    #lichess-puzzle iframe {
+      height: 23.14rem;
+      width: 18.75rem;
+      margin-left: -0.5rem;
+      margin-bottom: -1.5rem;
+    }
+
+    .vimeo {
+      height: 10.61rem;
+      width: 18.75rem;
+      margin-top: -0.25rem;
+    }
+  }
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* software */
 #setup-page div {
@@ -691,3 +718,7 @@ font-size: 0.8rem;
   margin-top: 2rem;
   margin-bottom: 2.2rem;
 }
+
+/*———————————————————————————————————————————————————————————————*/
+/* Thanks */
+/* https://nekocalc.com/px-to-rem-converter */
