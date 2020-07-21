@@ -1,4 +1,4 @@
-/* Update x+8 21 jul 20 */
+/* Update x+9 21 jul 20 */
 
 /* Variables */
 :root {
@@ -640,6 +640,14 @@ font-size: 0.8rem;
       width: 18.75rem;
       margin-left: -0.5rem;
       margin-bottom: -1.5rem;
+    }
+
+    .vimeo {
+      height: 10.61rem;
+      width: 18.75rem;
+      margin-top: -0.25rem;
+      visibility: visible; /* Delete me; vimeo is invisible in Firefox mobile. */
+      z-index: 1;
     }
   }
 }
