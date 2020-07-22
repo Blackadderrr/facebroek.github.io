@@ -1,4 +1,4 @@
-/* Update x+15 21 jul 20 */
+/* Update x+16 22 jul 20 */
 
 /* Variables */
 :root {
@@ -474,7 +474,7 @@ font-size: 0.8rem;
   min-height: 7rem; /* To fit butterfly. */
 }
 
-#contact:target a:not(:nth-child(2)) {
+#contact:target a:not(:nth-of-type(1)) {
   animation: backlight 3s normal;
 }
 
