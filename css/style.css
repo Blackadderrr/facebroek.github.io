@@ -134,12 +134,12 @@ display: inline-block;
   margin-right: 1rem;
 }
 
-#dropdown-use {
+#dropdown-use, #dropdown-delete {
   position: relative;
   display: inline-block;
 }
 
-#dropdown-use-content {
+#dropdown-use-content, #dropdown-delete-content {
   display: none;
   position: absolute;
   background-color: var(--bg-color);
@@ -151,9 +151,14 @@ display: inline-block;
 }
 
 @media (pointer:fine) {
-  #dropdown-use:hover #dropdown-use-content, #dropdown-use:active #dropdown-use-content {
+  #dropdown-use:hover #dropdown-use-content {
     display: block;
     transform: translate(1rem, -4.5rem);
+  }
+
+  #dropdown-delete:hover #dropdown-delete-content {
+    display: block;
+    transform: translate(1rem, -2.5rem);
   }
 }
 
