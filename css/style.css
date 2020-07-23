@@ -31,12 +31,12 @@ body {
 }
 
 .atom-symbol {
-display: inline-block;
- font-size: 1.188rem;
- height: 1.188rem;
- width: 1rem;
- margin-top: -0.188rem;
- text-align: center;
+  display: inline-block;
+  font-size: 1.188rem;
+  height: 1.188rem;
+  width: 1rem;
+  margin-top: -0.188rem;
+  text-align: center;
 }
 
 /*———————————————————————————————————————————————————————————————*/
