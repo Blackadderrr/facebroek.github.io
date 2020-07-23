@@ -1,4 +1,4 @@
-/* Update x+18 23 jul 20 */
+/* Update x+19 23 jul 20 */
 
 /* Variables */
 :root {
@@ -33,11 +33,11 @@ body {
 }
 
 .atom-symbol {
- font-size: 1.25rem;
- margin-top: -0.25rem;
- display: inline-block;
- height: 1.25rem;
+display: inline-block;
+ font-size: 1.188rem;
+ height: 1.188rem;
  width: 1rem;
+ margin-top: -0.188rem;
  text-align: center;
 }
 
