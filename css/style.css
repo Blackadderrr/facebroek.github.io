@@ -134,7 +134,7 @@ display: inline-block;
   margin-right: 1rem;
 }
 
-@media (pointer:precise) {
+@media (pointer:fine) {
   #dropdown-use {
     position: relative;
     display: inline-block;
