@@ -253,6 +253,10 @@ body {
     font-size: 1rem; /* Will zoom page on mobile if font is too large. */
   }
 
+  #index-sources td:nth-child(4) {
+    font-weight: bold;
+  }
+
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
       #index-menu-links {
