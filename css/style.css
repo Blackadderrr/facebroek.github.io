@@ -342,17 +342,17 @@ body {
 @media screen and (min-width: 42.63rem) {
 
   /* https://stackoverflow.com/questions/44001954/css-only-sticky-table-headers-in-chrome/44004100#44004100 */
-.sticky-head th {
-  position: sticky;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  top: 0;
-  background-color: var(--bg-color);
-  padding-bottom: 0.125rem;
-  z-index: 3;
-}
+  .sticky-head th {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    padding-bottom: 0.125rem;
+    z-index: 3;
+  }
 
   #index-sources th, #index-sources td {
     border-style: dashed;
