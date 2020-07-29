@@ -97,6 +97,7 @@ body {
 #shtoyle {
   width: 6.25rem;
   height: 10rem;
+
 }
 
 #index-visitor img {
@@ -196,39 +197,22 @@ body {
   z-index: 42;
 }
 
+#shtoyle {
+  float: left;
+  margin-right: 0.75rem;
+}
+
 #index-description-container {
-  max-width: 49rem;
+  max-width: 47rem;
   margin: auto;
+  min-height: 11rem;
+  text-align: justify;
+  hyphens: auto;
 }
 
 #index-heading {
   margin: 0;
   text-align: center;
-}
-
-#index-description-title {
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0.5rem;
-}
-
-#index-description {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  margin-top: 0.25rem;
-}
-
-#index-description-image {
-  margin-right: 0.75rem;
-}
-
-#index-description-text {
-  max-width: 42em;
-  text-align: justify;
-  hyphens: auto;
-  /* margin: 0; */
-  margin-right: 0.5rem;
 }
 
 #index-media {
@@ -292,10 +276,6 @@ body {
     @media screen and (orientation: portrait) {
       #index-menu-links {
         font-size: 0.75rem;
-      }
-
-      #index-description-text {
-        font-size: 0.9rem;
       }
 
       #index-visitor img {
