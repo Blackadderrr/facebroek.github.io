@@ -17,7 +17,7 @@ body {
 } */
 
 * {
-  font-family: Georgia, serif, monospace;
+  font-family: Georgia, "Times New Roman", Times, serif, monospace;
 }
 
 .important {
@@ -382,8 +382,7 @@ body {
 
   /* Author & Credentials */
   #index-sources td:nth-child(2) {
-    max-width: 8rem;
-    padding-right: 0.5rem;
+    max-width: 7.25rem;
   }
 
   #index-sources th:nth-child(2), #index-sources th:nth-child(3) {
