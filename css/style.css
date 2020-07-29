@@ -103,7 +103,7 @@ body {
 #index-visitor img {
   width: 3.875rem;
   height: 3.875rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
 }
 
 #butterfly img {
@@ -282,7 +282,6 @@ body {
       #index-visitor img {
         width: 3rem;
         height: 3rem;
-        margin-bottom: 0.25rem;
       }
     }
 
