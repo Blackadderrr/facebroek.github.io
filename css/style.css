@@ -128,7 +128,7 @@ body {
 }
 
 #index-menu-content-container {
-  max-width: 43rem; /* 42+1 to compensate for the l.margin of the logo */
+  max-width: 43rem; /* 42+1 to compensate for the left margin of the logo; otherwise it's not aligned with the about text. */
   margin: auto;
 }
 
@@ -282,6 +282,7 @@ body {
       #index-visitor img {
         width: 3rem;
         height: 3rem;
+        margin-bottom: 0.25rem;
       }
     }
 
