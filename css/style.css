@@ -17,7 +17,7 @@ body {
 } */
 
 * {
-  font-family: "Times New Roman", Times, serif, monospace;
+  font-family: Georgia, serif, monospace;
 }
 
 .important {
@@ -35,7 +35,7 @@ body {
   font-size: 1.188rem;
   height: 1.188rem;
   width: 1rem;
-  margin-top: -0.188rem;
+  margin-top: -0.5rem;
   text-align: center;
 }
 
