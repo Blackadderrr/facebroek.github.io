@@ -17,7 +17,7 @@ body {
 } */
 
 * {
-  font-family: "Times New Roman", Times, serif, monospace;
+  font-family: Georgia, serif, monospace;
 }
 
 .important {
@@ -35,7 +35,7 @@ body {
   font-size: 1.188rem;
   height: 1.188rem;
   width: 1rem;
-  margin-top: -0.188rem;
+  margin-top: -0.5rem;
   text-align: center;
 }
 
@@ -342,17 +342,17 @@ body {
 @media screen and (min-width: 42.63rem) {
 
   /* https://stackoverflow.com/questions/44001954/css-only-sticky-table-headers-in-chrome/44004100#44004100 */
-.sticky-head th {
-  position: sticky;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  top: 0;
-  background-color: var(--bg-color);
-  padding-bottom: 0.125rem;
-  z-index: 3;
-}
+  .sticky-head th {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    padding-bottom: 0.125rem;
+    z-index: 3;
+  }
 
   #index-sources th, #index-sources td {
     border-style: dashed;
