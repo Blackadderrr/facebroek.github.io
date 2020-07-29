@@ -207,8 +207,8 @@ body {
 
 #index-description-container {
   max-width: 47rem;
+  min-height: 14rem;
   margin: auto;
-  min-height: 11rem;
   text-align: justify;
   hyphens: auto;
 }
@@ -219,8 +219,7 @@ body {
 }
 
 #index-media {
-  max-width: 58rem;
-  margin: auto;
+  text-align: center;
 }
 
 .media-section  {
