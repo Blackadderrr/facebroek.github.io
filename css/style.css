@@ -28,6 +28,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   visibility: hidden;
+  display: none;
 }
 
 .atom-symbol {
@@ -44,6 +45,7 @@ body {
 
 .readability {
   max-width: 42rem;
+  margin: auto;
 }
 
 .align-right {
@@ -92,10 +94,6 @@ body {
 /*———————————————————————————————————————————————————————————————*/
 /* Specify image sizes */
 
-.link-symbol {
-  font-size: 0.85rem;
-}
-
 #shtoyle {
   width: 6.25rem;
   height: 10rem;
@@ -114,19 +112,31 @@ body {
 /*———————————————————————————————————————————————————————————————*/
 /* index */
 
-#index-menu {
+#index-menu-container {
   position: fixed;
-  display: inline-flex;
-  align-items: center;
+  width: 100%;
   left: 0;
   bottom: 0;
-  width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0 0 1rem 0.125rem rgba(0, 0, 0, 0.15);
   z-index: 69;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   border-top: 0.06rem solid rgba(0, 0, 0, 0.18);
+}
+
+#index-menu-content-container {
+  max-width: 43rem; /* 42+1 to compensate for the l.margin of the logo */
+  margin: auto;
+}
+
+#index-menu-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+#antifb-logo-container {
+  margin-left: 0.5rem;
 }
 
 #index-menu-links {
@@ -172,10 +182,6 @@ body {
   margin-left: 0.42rem;
 }
 
-#antifb-logo-container {
-  margin-left: 0.6rem;
-}
-
 #index-navbar a, #index-topbot a {
   display: block;
   text-decoration: none;
@@ -190,13 +196,27 @@ body {
   z-index: 42;
 }
 
-#index-heading {
-  margin: 0;
+#index-description-container {
+  max-width: 49rem;
+  margin: auto;
 }
 
-#index-description-container {
+#index-heading {
+  margin: 0;
+  text-align: center;
+}
+
+#index-description-title {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+#index-description {
   display: inline-flex;
   align-items: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 #index-description-image {
@@ -207,7 +227,13 @@ body {
   max-width: 42em;
   text-align: justify;
   hyphens: auto;
-  margin: 0.2rem 0 0.2rem 0;
+  /* margin: 0; */
+  margin-right: 0.5rem;
+}
+
+#index-media {
+  max-width: 58rem;
+  margin: auto;
 }
 
 .media-section  {
@@ -220,6 +246,11 @@ body {
   /* Prevents text exceeding image width */
   font-size: 1.25rem; 
   margin: 0;
+}
+
+#index-sources-container {
+  max-width: 80.625rem;
+  margin: auto;
 }
 
 #index-sources th {
@@ -264,15 +295,7 @@ body {
       }
 
       #index-description-text {
-        font-size: 0.8rem;
-      }
-
-      #index-heading {
-        font-size: 1.5rem;
-      }
-
-      #index-media h2, #index-sources-title h2 {
-        font-size: 1.125rem;
+        font-size: 0.9rem;
       }
 
       #index-visitor img {
@@ -382,8 +405,7 @@ body {
 
   /* Author & Credentials */
   #index-sources td:nth-child(2) {
-    max-width: 8rem;
-    padding-right: 0.5rem;
+    max-width: 7.25rem;
   }
 
   #index-sources th:nth-child(2), #index-sources th:nth-child(3) {
@@ -432,6 +454,7 @@ font-size: 0.8rem;
 @media screen and (max-width: 30rem) {
   #sort-hint {
     visibility: visible;
+    display: block;
   }
 }
 
@@ -498,6 +521,12 @@ font-size: 0.8rem;
 
 #profile-menu h1, #profile-menu h2 { display: inline; }
 
+#profile-menu {
+  max-width: 73rem;
+  min-height: 7rem; /* To fit butterfly. */
+  margin: auto;
+}
+
 #profilepic {
   float: left;
   width: 6.25rem;
@@ -506,11 +535,6 @@ font-size: 0.8rem;
 
 #profile-menu div {
   display: block;
-}
-
-#profile-menu {
-  max-width: 73rem;
-  min-height: 7rem; /* To fit butterfly. */
 }
 
 #contact:target a:not(:nth-of-type(1)) {
@@ -553,12 +577,16 @@ font-size: 0.8rem;
 }
 
 #profile-quotes-container {
-  display: block;
-  margin-top: 0;
+  text-align: center;
 }
 
-#profile-quotes-container {
-  margin-top: 0.25rem;
+#profile-quotes-header {
+  margin-bottom: 0.5rem;
+}
+
+#profile-quotes-header h2 {
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
 }
 
 #profile-quotes-header h2, #commandments {
@@ -592,8 +620,13 @@ font-size: 0.8rem;
     display: block;
   }
 
+  #profile-quotes-header {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
   #profile-media-container {
-    text-align: center;
+    margin-top: 0.5rem;
   }
 }
 
@@ -653,6 +686,10 @@ font-size: 0.8rem;
 
 #profile-quotes-container a {
   text-decoration: none;
+}
+
+#profile-media-container {
+  text-align: center;
 }
 
 #profile-media-container div {
