@@ -25,10 +25,12 @@ body {
 }
 
 #sort-hint {
-  font-size: 1rem;
-  font-weight: normal;
   visibility: hidden;
   display: none;
+}
+
+#sort-hint h2 {
+  display: inline-block;
 }
 
 .atom-symbol {
@@ -276,7 +278,7 @@ body {
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
       #index-menu-links {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
       }
 
       #index-visitor img {
@@ -288,7 +290,7 @@ body {
     @media (pointer:none), (pointer:coarse) {
       @media screen and (orientation: landscape) {
         #index-menu-links {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
         }
       }
     }
