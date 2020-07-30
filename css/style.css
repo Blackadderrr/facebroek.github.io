@@ -692,13 +692,9 @@ font-size: 0.8rem;
   height: 11.25rem;  
 }
 
-#lichess-puzzle {
-  margin-right: -0.5rem;
-}
-
 #lichess-puzzle iframe {
-  width: 9.125rem;
-  height: 11.25rem;  
+  height: 11.263rem;  
+  width: 8.625rem;
 }
 
 .vimeo {
@@ -719,10 +715,8 @@ font-size: 0.8rem;
     }
 
     #lichess-puzzle iframe {
-      height: 23.14rem;
+      height: 21.388rem;
       width: 18.75rem;
-      margin-left: -0.5rem;
-      margin-bottom: -1.5rem;
     }
 
     .vimeo {
