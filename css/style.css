@@ -760,7 +760,8 @@ font-size: 0.8rem;
   margin: 0;
 }
 
-#cv-page p {
+/* The 'not' is to exclude the return button. */
+#cv-page p:not(:last-of-type) {
   margin-bottom: 0.3rem;
   margin-top: 0;
 }
