@@ -42,6 +42,16 @@ body {
   text-align: center;
 }
 
+.button-return {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.button-return a {
+  text-decoration: none;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
@@ -724,10 +734,20 @@ font-size: 0.8rem;
 
 /*———————————————————————————————————————————————————————————————*/
 /* software */
+
+#setup-page {
+  text-align: center;
+}
+
+#setup-page li {
+  text-align: left;
+}
+
 #setup-page div {
   display: inline-block;
   vertical-align: text-top;
   margin-right: 0.5rem;
+  max-width: 30rem;
 }
 
 #setup-page h2 {
@@ -752,8 +772,8 @@ font-size: 0.8rem;
   min-width: 6rem;
 }
 
-#cv-backtocoolness {
-  margin-top: 1rem;
+#cv-page a {
+  text-decoration: none;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -769,11 +789,6 @@ font-size: 0.8rem;
   0% { transform: translateY(0rem); }
   80% { transform: translateY(2rem); }
   100% { transform: translateY(0rem); }
-}
-
-/* CV */
-#cv-page a {
-  text-decoration: none;
 }
 
 /*———————————————————————————————————————————————————————————————*/
