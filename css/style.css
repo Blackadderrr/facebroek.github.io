@@ -347,7 +347,7 @@ body {
   #index-sources td:nth-of-type(8):before { content: "#:"; }
 }
 
-#new:target td {
+#new:target td, #fuckads:target td {
   animation: bump 2s normal, backlight 3s normal;
   z-index: 1;
 }
