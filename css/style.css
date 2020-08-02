@@ -718,6 +718,11 @@ font-size: 0.8rem;
   left: 0; bottom: 0;
 }
 
+#thrasher img {
+  width: 100%;
+  height: auto;
+}
+
 @media (pointer:none), (pointer:coarse) {
   @media screen and (max-width: 47rem) and (orientation: portrait) {
 
