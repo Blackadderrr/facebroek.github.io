@@ -456,8 +456,8 @@ font-size: 0.8rem;
 
 .youtube-player {
   position: relative;
-  height: 11.25rem;
   width: 18.75rem;
+  height: 11.25rem;
   overflow: hidden;
   background: #000;
 }
@@ -694,13 +694,28 @@ font-size: 0.8rem;
 }
 
 #lichess-puzzle iframe {
-  height: 11.263rem;  
-  width: 8.625rem;
+  height: 11.25rem;  
+  width: 8.615rem;
 }
 
-.vimeo {
+.vimeo iframe {
   width: 19.875rem;
   height: 11.25rem;
+}
+
+/* https://fettblog.eu/blog/2013/06/16/preserving-aspect-ratio-for-embedded-iframes/ */
+#thrasher {
+  position: relative;
+  width: 85%;
+  height: 0;
+  padding-bottom: 48%;
+}
+
+#thrasher iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; bottom: 0;
 }
 
 @media (pointer:none), (pointer:coarse) {
@@ -711,18 +726,50 @@ font-size: 0.8rem;
     }
 
     #profile-media-container img {
-      width: 18.75rem;
+      width: 100%;
       height: auto;
     }
 
-    #lichess-puzzle iframe {
-      height: 21.388rem;
-      width: 18.75rem;
+    #lichess-puzzle {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 111%;
+    }
+
+    .youtube-player {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 60%;
     }
 
     .vimeo {
-      width: 18.75rem;
-      height: 10.613rem;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.6%;
+    }
+
+    #lichess-puzzle iframe, .youtube-player iframe, .vimeo iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; top: 0;
+    }
+
+    #thrasher {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.22%;
+    }
+    
+    #thrasher iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; bottom: 0;
     }
   }
 }
