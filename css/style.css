@@ -742,7 +742,7 @@ font-size: 0.8rem;
       padding-bottom: 111%;
     }
 
-    .youtube-player {
+    #profile-page .youtube-player {
       position: relative;
       width: 100%;
       height: 0;
