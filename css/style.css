@@ -813,6 +813,10 @@ font-size: 0.8rem;
   margin-top: 0;
 }
 
+#cv-page .button-return {
+  margin-bottom: 0rem;
+}
+
 #cv-page td {
   vertical-align: top;
 }
