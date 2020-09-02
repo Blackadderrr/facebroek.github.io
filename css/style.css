@@ -52,6 +52,10 @@ body {
   text-decoration: none;
 }
 
+.comment {
+  font-style: italic;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
@@ -74,6 +78,7 @@ body {
 .readability img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .readability a {
