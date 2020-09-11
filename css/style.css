@@ -863,6 +863,11 @@ font-size: 0.8rem;
   margin-bottom: 2.2rem;
 }
 
+#footnote:target {
+  animation: backlight 3s normal;
+  z-index: 1;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* Thanks */
 /* https://nekocalc.com/px-to-rem-converter */
