@@ -187,7 +187,7 @@ body {
 
   #dropdown-delete:hover #dropdown-delete-content {
     display: block;
-    transform: translate(1rem, -10.5rem);
+    transform: translate(1rem, -11.5rem);
   }
 }
 
