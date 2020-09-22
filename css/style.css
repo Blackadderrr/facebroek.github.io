@@ -808,6 +808,10 @@ font-size: 0.8rem;
 
 /*———————————————————————————————————————————————————————————————*/
 /* CV */
+#cv-page {
+  background-color: white; /* Looks nicer when printed as .pdf on https://webtopdf.com */
+}
+
 #cv-page h1, #cv-page h2 {
   margin: 0;
 }
