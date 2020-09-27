@@ -353,7 +353,7 @@ body {
 }
 
 #new:target td, #fuckads:target td {
-  animation: bump 2s normal, backlight 3s normal;
+  animation: bump 2s normal, backlight 6s normal;
   z-index: 1;
 }
 
@@ -536,7 +536,7 @@ font-size: 0.8rem;
 
 /* Two :not selectors: https://stackoverflow.com/a/5684168 */
 #contact:target a:not(:nth-of-type(1)):not(:nth-of-type(8)) {
-  animation: backlight 3s normal;
+  animation: backlight 6s normal;
 }
 
 #butterfly-container {
@@ -856,7 +856,7 @@ font-size: 0.8rem;
 /* About */
 
 #buy:target, #about:target {
-  animation: backlight 3s normal;
+  animation: backlight 6s normal;
   border-radius: 0.125rem;
 }
 
@@ -868,7 +868,7 @@ font-size: 0.8rem;
 }
 
 #footnote:target {
-  animation: backlight 3s normal;
+  animation: backlight 6s normal;
   z-index: 1;
 }
 
