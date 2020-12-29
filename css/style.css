@@ -88,6 +88,10 @@ body {
   hyphens: auto;
 }
 
+.readability iframe {
+  display: block;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 
 .image {
