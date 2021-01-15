@@ -859,7 +859,7 @@ font-size: 0.8rem;
 /*———————————————————————————————————————————————————————————————*/
 /* About */
 
-#buy:target, #about:target {
+#about:target {
   animation: backlight 6s normal;
   border-radius: 0.125rem;
 }
