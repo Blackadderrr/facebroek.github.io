@@ -92,6 +92,11 @@ body {
   display: block;
 }
 
+.readability video {
+  max-width: 42rem;
+  width: 100%;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 
 .image {
