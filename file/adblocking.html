@@ -17,69 +17,82 @@
   <meta name="author" content="Angelino Desmet">
 </head>
 
-<body class="readability">
-  <h1>Ad blocking, or how to use the Web properly.</h1>
-  <h2>Why?</h2>
-  <p>The Web has become infested with tools for advertising. Let's just call it what it is: sheer manipulation—evil <sup>(1)</sup>. By means of your and everyone else's data, accurate predictions are made about human behavior. Armed with such data, agencies are able to make you want things that you don't need by applying the right personally tailored stimuli. The Web has also become downright unpleasant to use. Fortunately you can set up impenetrable defenses; right after the following anti-commercial break.</p>
-
-  <iframe src="https://www.youtube-nocookie.com/embed/tHEOGrkhDp0" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  <h2>It's not so bad, is it?</h2>
-  <p>Take a look at bigthink.com, a seemingly respectable website featuring a video with genuine advice from an astronaut: <a href="https://bigthink.com/videos/be-a-better-leader">https://bigthink.com/videos/be-a-better-leader</a>.</p>
+<body>
+  <div class="readability">
+    <h1>Ad blocking, or how to use the Web properly.</h1>
+    <h2>TL;DR.</h2>
+    <p>
+      At the very least use the ad blocker <a href="https://github.com/gorhill/uBlock#installation">uBlock Origin</a> on a PC. On Android you can use <a href="https://play.google.com/store/apps/details?id=com.frostnerd.dnschanger">dns pipe</a> to block ads in all your apps by changing your DNS. Once installed, select “Alternate” and insert the <a href="https://adguard.com/en/adguard-dns/overview.html">AdGuard DNS</a> IPs: 176.103.130.130 and 176.103.130.131. If you have an iPhone do <a href="https://www.youtube-nocookie.com/embed/QyG_UhmU1ng">this</a>, and use the same IPs as above.
+    </p>
   
-  <p>Tread carefully though, because it has 14 scripts from blacklisted sites executing code on your device by default. These scripts' sole purposes are tracking and consumer manipulation. Hence why these domains blacklisted by default and shown in dark red. They are completely unnecessary for the website to function properly. Moreover, they decrease speed, increase bandwidth usage, and use more power. Take notice that there are non-blacklisted domains that run scripts by default as well; 15 of them. Unless you're adamant on reading comments or seeing superfluous annoying elements on the site, these can also be left disabled. That's 29 good-for-nothing scripts; “Take it, take it all, you fools!” I got to give it to them though, the audacity is undeniable.</p>
-
-  <p>Conversely, shown in dark green are the only additional domains that need to be enabled in order for the video to play on an otherwise usable website with every other domain being blocked besides bigthink.com itself.</p>
+    <h2>Why?</h2>
+    <p>The Web has become infested with tools for advertising. Let's just call it what it is: sheer manipulation—evil <sup>(1)</sup>. By means of your and everyone else's data, accurate predictions are made about human behavior. Armed with such data, agencies are able to make you want things that you don't need by applying the right personally tailored stimuli. Websites have also become increasingly unpleasant to use: ads, cookie consent warnings, CPU intensive scripts, redundant content or visual effects, et cetera. All of this significantly decreases speed and increases bandwidth use. Fortunately you can set up impenetrable defenses; right after the break:</p>
   
-  <img src="./media/trackerexample.png" alt="uMatrix tracker log">
-   
-  <h2>So, what to use?</h2>
-  <p>Set <a href="https://duckduckgo.com/">DuckDuckGo</a> as your default search engine. Its search results are not politically nor commercially biased <sup>(2)</sup>, as opposed to Google. Granted, it's a drag to type the full address, but fortunately—now that the hostage situation by Google is resolved <sup>(3)</sup>—one can just “Duck it” with <a href="https://www.duck.com">duck.com</a>.</p>
-
-  <p>Additionally, the software and extensions below should enable every layman to reduce their intrusive and unpleasant web experiences to zero, provided a willingness to learn, and a pinch of experience (e.g. some websites' functionalities can be disabled without you realizing it).</p>
-
-  <p>On a PC.</p>
-  <ol>
-    <li><a href="https://www.mozilla.org">Firefox</a>: a free and open-source web browser. <br>
-    <li><a href="https://github.com/gorhill/uBlock#installation">uBlock Origin</a>: the only relevant ad blocker.</li>
-    <li><a href="https://github.com/gorhill/uMatrix">uMatrix</a>: a firewall: allow or block any request made by a website, as shown above. This video tutorial is advised.</li>
-    <li><a href="https://adguard.com/en/adguard-dns/overview.html">AdGuard DNS</a>: “a foolproof way to block Internet ads that does not require installing any applications.”</li>
-    <li><a href="https://noscript.net">NoScript</a>: blocks all scripts unless you allow them; largely redundant when already using uMatrix, however, uMatrix doesn't block scripts from 1st-party domains by default.</li>
-    <li>(<a href="https://xubuntu.org">Xubuntu</a>: Linux is superior to Windows for most use cases besides gaming. I still dual-boot Windows 7, but Windows 10 is astonishingly insidious.)</li>
-  </ol>
-
-  <p>On Android. <sup>(4)</sup></p>
-  <ol>
-    <li><a href="https://www.mozilla.org">Firefox</a>: a free and open-source web browser.</li>
-    <li><a href="https://blokada.org/">Blokada</a>: blocks ads in all your apps. Once installed, select AdGuard DNS.</li>
-    <li>(<a href="https://newpipe.schabi.org">NewPipe</a>: a privacy minded YouTube frontend. Enables background play, removes all nonsense.)</li>
-  </ol>
-
-  <h2>Isn't ad blocking akin to theft?</h2>
-  <p>No.</p>
-  <p class="quote">“About blocking ads:
-    It's important to note that blocking ads is NOT theft. Don't fall for this creepy idea, which is the criminalisation of the inalienable right to privacy.
-    Ads and trackers violate our privacy, make websites much slower, and deliver dangerous malware. We say no to them.
-    We have the right to decide what we download from the Internet, what we send to it, and what we display on our screen.
-    We have the right to refuse downloading source code that works against us. It's our bandwidth and computer, and no-one can decide for us what to use them for.
-    A service that has valuable features should be able to sell us a subscription, without blackmailing us with ominous ads.”</p>
+    <iframe src="https://www.youtube-nocookie.com/embed/tHEOGrkhDp0" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
-  <p>Quoted from <a href="https://lichess.org/ads">https://lichess.org/ads</a>; from which I got some of the recommendations above. By the way, lichess is completely free, devoid of any ads and trackers, financed by its users. A prime example of how the World Wide Web could be, and should be.</p>
+    <h2>It's not so bad, is it?</h2>
+    <p>Take a look at bigthink.com, a seemingly respectable website featuring a video with genuine advice from an astronaut: <a href="https://bigthink.com/videos/be-a-better-leader">https://bigthink.com/videos/be-a-better-leader</a>.</p>
+    
+    <p>Tread carefully though, because it has 14 scripts from blacklisted sites executing code on your device by default. These scripts' sole purposes are tracking and consumer manipulation. Hence why these domains blacklisted by default and shown in dark red. They are completely unnecessary for the website to function properly. Moreover, they decrease speed, increase bandwidth usage, and use more power. Take notice that there are non-blacklisted domains that run scripts by default as well; 15 of them. Unless you're adamant on reading comments or seeing superfluous annoying elements on the site, these can also be left disabled. That's 29 good-for-nothing scripts; “Take it, take it all, you fools!” I got to give it to them though, the audacity is undeniable.</p>
+  
+    <p>Conversely, shown in dark green are the only additional domains that need to be enabled in order for the video to play on an otherwise usable website with every other domain being blocked besides bigthink.com itself.</p>
+    
+    <img src="./media/trackerexample.png" alt="uMatrix tracker log">
+     
+    <h2>So, what to use?</h2>
+    <p>Set <a href="https://duckduckgo.com/">DuckDuckGo</a> as your default search engine. Its search results are not politically nor commercially biased <sup>(2)</sup>, as opposed to Google. Granted, it's a drag to type the full address, but fortunately—now that the hostage situation by Google is resolved <sup>(3)</sup>—one can just “Duck it” with <a href="https://www.duck.com">duck.com</a>.</p>
+  
+    <p>Additionally, the software and extensions below should enable every layman to reduce their intrusive and unpleasant web experiences to zero, provided a willingness to learn, and a pinch of experience (e.g. some websites' functionalities can be disabled without you realizing it).</p>
+  
+    <p>On a PC.</p>
+    <ul>
+      <li><a href="https://vivaldi.com">Vivaldi</a> browser: fast, private, highly customizable. <br>
+      <li><a href="https://github.com/gorhill/uBlock#installation">uBlock Origin</a>: the only relevant ad blocker.</li>
+      <li><a href="https://github.com/gorhill/uMatrix">uMatrix</a>: a firewall for your browser. Allow or block any request made by a website, as shown above. I recommend watching <a href="https://www.youtube-nocookie.com/embed/TVozpo3zUBk">this</a> video tutorial. [I block 1st-party scripts as well, to obviate the need for <a href="https://noscript.net/">NoScript</a>.]</li>
+      <li><a href="https://www.i-dont-care-about-cookies.eu/">I don't care about cookies</a>: “Get rid of cookie warnings from almost all websites!”</li>
+      <li><a href="https://adguard.com/en/adguard-dns/overview.html">AdGuard DNS</a>: “a foolproof way to block Internet ads that does not require installing any applications.”</li>
+      <li>(<a href="https://xubuntu.org">Xubuntu</a>: Linux is superior to Windows for most use cases besides gaming. I still dual-boot Windows 7, but Windows 10 is astonishingly insidious.)</li>
+    </ul>
+  
+    <p>On Android. <sup>(4)</sup></p>
+    <ul>
+      <li><a href="https://kiwibrowser.com/">Kiwi Browser</a>: supports all extensions.</li>
+      <li><a href="https://github.com/gorhill/uMatrix">uMatrix</a>: a firewall for your browser. Allow or block any request made by a website, as shown above. I recommend watching <a href="https://www.youtube-nocookie.com/embed/TVozpo3zUBk">this</a> video tutorial. [I block 1st-party scripts as well, to obviate the need for <a href="https://noscript.net/">NoScript</a>.]</li>
+      <li><a href="https://www.i-dont-care-about-cookies.eu/">I don't care about cookies</a>: “Get rid of cookie warnings from almost all websites!”</li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.frostnerd.dnschanger">dns pipe</a>: by changing your DNS you can block ads in all your apps. Once installed, select “Alternate” and insert the <a href="https://adguard.com/en/adguard-dns/overview.html">AdGuard DNS</a> IPs: 176.103.130.130 and 176.103.130.131.</li>
+      <li>(<a href="https://newpipe.schabi.org">NewPipe</a>: a privacy minded YouTube frontend. Enables background play, removes all nonsense.)</li>
+    </ul>
+  
+    <h2>Isn't ad blocking akin to theft?</h2>
+    <p>No.</p>
+    <p class="quote">“About blocking ads:
+      It's important to note that blocking ads is NOT theft. Don't fall for this creepy idea, which is the criminalisation of the inalienable right to privacy.
+      Ads and trackers violate our privacy, make websites much slower, and deliver dangerous malware. We say no to them.
+      We have the right to decide what we download from the Internet, what we send to it, and what we display on our screen.
+      We have the right to refuse downloading source code that works against us. It's our bandwidth and computer, and no-one can decide for us what to use them for.
+      A service that has valuable features should be able to sell us a subscription, without blackmailing us with ominous ads.”</p>
+    
+    <p>Quoted from <a href="https://lichess.org/ads">https://lichess.org/ads</a>; from which I got some of the recommendations above. By the way, lichess is completely free, devoid of any ads and trackers, financed by its users. A prime example of how the World Wide Web could be, and should be.</p>
+  
+    <p>There you have it: a list of proverbial Trojan condoms against literal Trojan horses. Have fun taking agency of your Web experience again.</p>
 
-  <p>There you have it: a list of proverbial Trojan condoms against literal Trojan horses. Have fun taking agency of your Web experience again.</p>
+    <div class="align-right">—Angelino Desmet; 2020.</div>
+  
+    <pre>---</pre>
+  
+    <h2>Sources:</h2>
+    <ol>
+      <li>A less provocative and perhaps more insightful take on advertising; by philosopher Alain de Botton: <a href="https://www.theschooloflife.com/thebookoflife/the-purpose-of-advertising">https://www.theschooloflife.com/thebookoflife/the-purpose-of-advertising</a>.</li>
+      <li>Google vs DuckDuckGo | Search engine manipulation, censorship and why you should switch: <a href="https://www.youtube-nocookie.com/embed/SrsCEbi5N7Y">https://www.youtube-nocookie.com/embed/SrsCEbi5N7Y</a>.</li>
+      <li><a href="https://fossbytes.com/google-duck-com-redirects-duckduckgo-complaint">https://fossbytes.com/google-duck-com-redirects-duckduckgo-complaint</a>.</li>
+      <li>Spending money on anything other than an edible apple strikes me as ridiculous. Don't support planned obsolescence: <a href="https://en.wikipedia.org/wiki/Planned_obsolescence">https://en.wikipedia.org/wiki/Planned_obsolescence</a>.</li>
+    </ol>
+  
+    <p>PS On <a href="./software.html">https://www.quitfacebook.org/file/software.html</a> you can see all the noteworthy software I use and recommend.</p>
 
-  <pre>---</pre>
-
-  <h2>Sources:</h2>
-  <ol>
-    <li>A less provocative and perhaps more insightful take on advertising; by philosopher Alain de Botton: <a href="https://www.theschooloflife.com/thebookoflife/the-purpose-of-advertising">https://www.theschooloflife.com/thebookoflife/the-purpose-of-advertising</a>.</li>
-    <li>Google vs DuckDuckGo | Search engine manipulation, censorship and why you should switch: <a href="https://www.youtube-nocookie.com/embed/SrsCEbi5N7Y">https://www.youtube-nocookie.com/embed/SrsCEbi5N7Y</a>.</li>
-    <li><a href="https://fossbytes.com/google-duck-com-redirects-duckduckgo-complaint">https://fossbytes.com/google-duck-com-redirects-duckduckgo-complaint</a>.</li>
-    <li>Spending money on anything other than an edible apple strikes me as ridiculous. Don't support planned obsolescence: <a href="https://en.wikipedia.org/wiki/Planned_obsolescence">https://en.wikipedia.org/wiki/Planned_obsolescence</a>.</li>
-  </ol>
-
-  <p>PS On <a href="./setup.html">https://www.quitfacebook.org/file/setup.html</a> you can see all the noteworthy software I use and recommend.</p>
-
+    <p class="button-return"><a href="../blog.html">⤶</a></p>
+  </div>
+  
 </body>
 
 </html>

@@ -25,9 +25,12 @@ body {
 }
 
 #sort-hint {
-  font-size: 1rem;
-  font-weight: normal;
   visibility: hidden;
+  display: none;
+}
+
+#sort-hint h2 {
+  display: inline-block;
 }
 
 .atom-symbol {
@@ -39,11 +42,26 @@ body {
   text-align: center;
 }
 
+.button-return {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.button-return a {
+  text-decoration: none;
+}
+
+.comment {
+  font-style: italic;
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
 .readability {
   max-width: 42rem;
+  margin: auto;
 }
 
 .align-right {
@@ -60,6 +78,7 @@ body {
 .readability img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .readability a {
@@ -67,6 +86,10 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+}
+
+.readability iframe {
+  display: block;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -92,18 +115,16 @@ body {
 /*———————————————————————————————————————————————————————————————*/
 /* Specify image sizes */
 
-.link-symbol {
-  font-size: 0.85rem;
-}
-
 #shtoyle {
   width: 6.25rem;
   height: 10rem;
+
 }
 
 #index-visitor img {
-  width: 3.25rem;
-  height: 4.25rem;
+  width: 3.875rem;
+  height: 3.875rem;
+  margin-bottom: 0.35rem;
 }
 
 #butterfly img {
@@ -114,19 +135,31 @@ body {
 /*———————————————————————————————————————————————————————————————*/
 /* index */
 
-#index-menu {
+#index-menu-container {
   position: fixed;
-  display: inline-flex;
-  align-items: center;
+  width: 100%;
   left: 0;
   bottom: 0;
-  width: 100%;
   background-color: var(--bg-color);
   box-shadow: 0 0 1rem 0.125rem rgba(0, 0, 0, 0.15);
   z-index: 69;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   border-top: 0.06rem solid rgba(0, 0, 0, 0.18);
+}
+
+#index-menu-content-container {
+  max-width: 43rem; /* 42+1 to compensate for the left margin of the logo; otherwise it's not aligned with the about text. */
+  margin: auto;
+}
+
+#index-menu-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+#antifb-logo-container {
+  margin-left: 0.5rem;
 }
 
 #index-menu-links {
@@ -158,7 +191,7 @@ body {
 
   #dropdown-delete:hover #dropdown-delete-content {
     display: block;
-    transform: translate(1rem, -2.5rem);
+    transform: translate(1rem, -11.5rem);
   }
 }
 
@@ -170,10 +203,6 @@ body {
 
 #index-topbot, #index-navbar, #index-menu-links {
   margin-left: 0.42rem;
-}
-
-#antifb-logo-container {
-  margin-left: 0.6rem;
 }
 
 #index-navbar a, #index-topbot a {
@@ -190,24 +219,26 @@ body {
   z-index: 42;
 }
 
-#index-heading {
-  margin: 0;
-}
-
-#index-description-container {
-  display: inline-flex;
-  align-items: center;
-}
-
-#index-description-image {
+#shtoyle {
+  float: left;
   margin-right: 0.75rem;
 }
 
-#index-description-text {
-  max-width: 42em;
+#index-description-container {
+  max-width: 47rem;
+  min-height: 14rem;
+  margin: auto;
   text-align: justify;
   hyphens: auto;
-  margin: 0.2rem 0 0.2rem 0;
+}
+
+#index-heading {
+  margin: 0;
+  text-align: center;
+}
+
+#index-media {
+  text-align: center;
 }
 
 .media-section  {
@@ -220,6 +251,11 @@ body {
   /* Prevents text exceeding image width */
   font-size: 1.25rem; 
   margin: 0;
+}
+
+#index-sources-container {
+  max-width: 80.625rem;
+  margin: auto;
 }
 
 #index-sources th {
@@ -260,31 +296,19 @@ body {
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
       #index-menu-links {
-        font-size: 0.75rem;
-      }
-
-      #index-description-text {
-        font-size: 0.8rem;
-      }
-
-      #index-heading {
-        font-size: 1.5rem;
-      }
-
-      #index-media h2, #index-sources-title h2 {
-        font-size: 1.125rem;
+        font-size: 0.65rem;
       }
 
       #index-visitor img {
-        width: 2.38rem;
-        height: 3.13rem;
+        width: 3rem;
+        height: 3rem;
       }
     }
 
     @media (pointer:none), (pointer:coarse) {
       @media screen and (orientation: landscape) {
         #index-menu-links {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -332,8 +356,8 @@ body {
   #index-sources td:nth-of-type(8):before { content: "#:"; }
 }
 
-#new:target td {
-  animation: bump 2s normal, backlight 3s normal;
+#new:target td, #fuckads:target td {
+  animation: bump 2s normal, backlight 6s normal;
   z-index: 1;
 }
 
@@ -431,6 +455,7 @@ font-size: 0.8rem;
 @media screen and (max-width: 30rem) {
   #sort-hint {
     visibility: visible;
+    display: block;
   }
 }
 
@@ -440,8 +465,8 @@ font-size: 0.8rem;
 
 .youtube-player {
   position: relative;
-  height: 11.25rem;
   width: 18.75rem;
+  height: 11.25rem;
   overflow: hidden;
   background: #000;
 }
@@ -497,6 +522,12 @@ font-size: 0.8rem;
 
 #profile-menu h1, #profile-menu h2 { display: inline; }
 
+#profile-menu {
+  max-width: 73rem;
+  min-height: 7rem; /* To fit butterfly. */
+  margin: auto;
+}
+
 #profilepic {
   float: left;
   width: 6.25rem;
@@ -507,13 +538,9 @@ font-size: 0.8rem;
   display: block;
 }
 
-#profile-menu {
-  max-width: 73rem;
-  min-height: 7rem; /* To fit butterfly. */
-}
-
-#contact:target a:not(:nth-of-type(1)) {
-  animation: backlight 3s normal;
+/* Two :not selectors: https://stackoverflow.com/a/5684168 */
+#contact:target a {
+  animation: backlight 6s normal;
 }
 
 #butterfly-container {
@@ -552,12 +579,16 @@ font-size: 0.8rem;
 }
 
 #profile-quotes-container {
-  display: block;
-  margin-top: 0;
+  text-align: center;
 }
 
-#profile-quotes-container {
-  margin-top: 0.25rem;
+#profile-quotes-header {
+  margin-bottom: 0.5rem;
+}
+
+#profile-quotes-header h2 {
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
 }
 
 #profile-quotes-header h2, #commandments {
@@ -591,8 +622,13 @@ font-size: 0.8rem;
     display: block;
   }
 
+  #profile-quotes-header {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
   #profile-media-container {
-    text-align: center;
+    margin-top: 0.5rem;
   }
 }
 
@@ -654,6 +690,10 @@ font-size: 0.8rem;
   text-decoration: none;
 }
 
+#profile-media-container {
+  text-align: center;
+}
+
 #profile-media-container div {
   display: inline-block;
 }
@@ -662,18 +702,34 @@ font-size: 0.8rem;
   height: 11.25rem;  
 }
 
-#lichess-puzzle {
-  margin-right: -0.5rem;
-}
-
 #lichess-puzzle iframe {
-  width: 9.125rem;
   height: 11.25rem;  
+  width: 8.615rem;
 }
 
-.vimeo {
+.vimeo iframe {
   width: 19.875rem;
   height: 11.25rem;
+}
+
+/* https://fettblog.eu/blog/2013/06/16/preserving-aspect-ratio-for-embedded-iframes/ */
+#khan {
+  position: relative;
+  width: 85%;
+  height: 0;
+  padding-bottom: 48%;
+}
+
+#khan iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; bottom: 0;
+}
+
+#khan img {
+  width: 100%;
+  height: auto;
 }
 
 @media (pointer:none), (pointer:coarse) {
@@ -684,30 +740,70 @@ font-size: 0.8rem;
     }
 
     #profile-media-container img {
-      width: 18.75rem;
+      width: 100%;
       height: auto;
     }
 
-    #lichess-puzzle iframe {
-      height: 23.14rem;
-      width: 18.75rem;
-      margin-left: -0.5rem;
-      margin-bottom: -1.5rem;
+    #lichess-puzzle {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 111%;
+    }
+
+    #profile-page .youtube-player {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 60%;
     }
 
     .vimeo {
-      width: 18.75rem;
-      height: 10.613rem;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.6%;
+    }
+
+    #lichess-puzzle iframe, .youtube-player iframe, .vimeo iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; top: 0;
+    }
+
+    #khan {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.22%;
+    }
+    
+    #khan iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; bottom: 0;
     }
   }
 }
 
 /*———————————————————————————————————————————————————————————————*/
 /* software */
+
+#setup-page {
+  text-align: center;
+}
+
+#setup-page li {
+  text-align: left;
+}
+
 #setup-page div {
   display: inline-block;
   vertical-align: text-top;
   margin-right: 0.5rem;
+  max-width: 29rem;
 }
 
 #setup-page h2 {
@@ -716,13 +812,22 @@ font-size: 0.8rem;
 
 /*———————————————————————————————————————————————————————————————*/
 /* CV */
+#cv-page {
+  background-color: white; /* Looks nicer when printed as .pdf on https://webtopdf.com */
+}
+
 #cv-page h1, #cv-page h2 {
   margin: 0;
 }
 
-#cv-page p {
+/* The 'not' is to exclude the return button. */
+#cv-page p:not(:last-of-type) {
   margin-bottom: 0.3rem;
   margin-top: 0;
+}
+
+#cv-page .button-return {
+  margin-bottom: 0rem;
 }
 
 #cv-page td {
@@ -732,8 +837,8 @@ font-size: 0.8rem;
   min-width: 6rem;
 }
 
-#cv-backtocoolness {
-  margin-top: 1rem;
+#cv-page a {
+  text-decoration: none;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -751,16 +856,11 @@ font-size: 0.8rem;
   100% { transform: translateY(0rem); }
 }
 
-/* CV */
-#cv-page a {
-  text-decoration: none;
-}
-
 /*———————————————————————————————————————————————————————————————*/
 /* About */
 
-#buy:target, #about:target {
-  animation: backlight 3s normal;
+#about:target {
+  animation: backlight 6s normal;
   border-radius: 0.125rem;
 }
 
@@ -769,6 +869,11 @@ font-size: 0.8rem;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2.2rem;
+}
+
+#footnote:target {
+  animation: backlight 6s normal;
+  z-index: 1;
 }
 
 /*———————————————————————————————————————————————————————————————*/
