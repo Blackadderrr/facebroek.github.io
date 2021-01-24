@@ -191,12 +191,12 @@ body {
 @media (pointer:fine) {
   #dropdown-use:hover #dropdown-use-content {
     display: block;
-    transform: translate(1rem, -4.5rem);
+    transform: translate(1rem, -6.5rem);
   }
 
   #dropdown-delete:hover #dropdown-delete-content {
     display: block;
-    transform: translate(1rem, -11.5rem);
+    transform: translate(1rem, -12.5rem);
   }
 }
 
