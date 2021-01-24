@@ -20,6 +20,13 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif, monospace;
 }
 
+hr {
+  border: 0;
+  border-top: dashed 0.063rem rgba(0, 0, 0, 0.42);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .important {
   color:tomato;
 }
