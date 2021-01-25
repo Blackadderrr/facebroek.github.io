@@ -30,6 +30,7 @@ hr {
 
 .important {
   color:tomato;
+  font-weight: bold;
 }
 
 #sort-hint {
