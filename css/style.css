@@ -226,6 +226,10 @@ hr {
   text-align: center;
 }
 
+#index-navbar a{
+  font-weight: bold;
+}
+
 #index-visitor {
   position: fixed;
   bottom: 2.75rem;
