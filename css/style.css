@@ -200,7 +200,7 @@ hr {
 @media (pointer:fine) {
   #dropdown-use:hover #dropdown-use-content {
     display: block;
-    transform: translate(1rem, -6.5rem);
+    transform: translate(1rem, -5.8rem);
   }
 
   #dropdown-delete:hover #dropdown-delete-content {
