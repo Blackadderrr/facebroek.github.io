@@ -91,6 +91,10 @@ hr {
   border-radius: 0.5rem;
 }
 
+.readability td {
+  vertical-align: top;
+}
+
 .readability a {
   /* https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
   overflow-wrap: break-word;
