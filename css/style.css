@@ -908,13 +908,36 @@ font-size: 0.8rem;
 /*———————————————————————————————————————————————————————————————*/
 /* Comment section */
 
+.mastodon-comment {
+  position: relative;
+  width: 100%;
+  min-height: 3.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .comment-avatar {
-  float: left;
-  margin-right: 0.5rem;
+  width: 4.313rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.comment-avatar img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.comment-content {
+  padding-left: 4.313rem;
 }
 
 .comment-author img {
   float: left;
+}
+
+.mastodon-comment-content p:first-of-type {
+  margin-top: 0.5rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
