@@ -120,6 +120,8 @@
       <li><a href="https://quoteinvestigator.com/2014/02/18/stand-fall/">https://quoteinvestigator.com/2014/02/18/stand-fall</a></li>
     </ol>
 
+    <hr>
+
     <!-- Comments -->
     <!-- https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/ -->
 
@@ -158,18 +160,15 @@
                     });
                     mastodonComment =
                       `<div class="mastodon-comment">
-                        <div class="avatar">
+                        <div class="comment-avatar">
                           <img src="${escapeHtml(reply.account.avatar_static)}" height=60 width=60 alt="">
                         </div>
-                        <div class="content">
-                          <div class="author">
-                            <a href="${reply.account.url}" rel="nofollow">
-                              <span>${reply.account.display_name}</span>
-                              <span class="disabled">${escapeHtml(reply.account.acct)}</span>
-                            </a>
+                        <div class="comment-content">
+                          <div class="comment-author">
+                            <span>${reply.account.display_name}</span>
+                            (<a href="${reply.account.url}" rel="nofollow"><span class="disabled">${escapeHtml(reply.account.acct)}</span></a>); 
                             <a class="date" href="${reply.uri}" rel="nofollow">
-                              ${reply.created_at.substr(0, 10)}
-                            </a>
+                              ${reply.created_at.substr(0, 10)}</a>.
                           </div>
                           <div class="mastodon-comment-content">${reply.content}</div> 
                         </div>

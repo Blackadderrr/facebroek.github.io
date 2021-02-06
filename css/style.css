@@ -906,5 +906,18 @@ font-size: 0.8rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
+/* Comment section */
+
+.comment-avatar {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.comment-author img {
+  float: left;
+}
+
+/*———————————————————————————————————————————————————————————————*/
 /* Thanks */
 /* https://nekocalc.com/px-to-rem-converter */
+
