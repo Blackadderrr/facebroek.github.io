@@ -140,7 +140,7 @@
 
         document.getElementById("load-comment").addEventListener("click", function() {
           document.getElementById("load-comment").innerHTML = "Loading";
-          fetch('https://{{ .host }}/api/v1/statuses/{{ .id }}/context')
+          fetch('https://fosstodon.org/api/v1/statuses/105684092262236408/context')
             .then(function(response) {
               return response.json();
             })
