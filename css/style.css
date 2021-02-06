@@ -940,6 +940,7 @@ font-size: 0.8rem;
 
 .comment-author img {
   float: left;
+  margin-right: 0.125rem;
 }
 
 .mastodon-comment-content p:first-of-type {
