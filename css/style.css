@@ -73,6 +73,12 @@ hr {
   margin: auto;
 }
 
+.sub-title {
+  font-weight: normal;
+  border-bottom: dashed 0.125rem rgba(0, 0, 0, 0.21);
+  padding-bottom: 1rem;
+}
+
 .align-right {
   text-align: right;
 }
