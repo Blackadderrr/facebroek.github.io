@@ -80,6 +80,10 @@ hr {
   padding-bottom: 1.37rem;
 }
 
+.asterisk {
+  text-decoration: none;
+}
+
 .align-right {
   text-align: right;
 }
