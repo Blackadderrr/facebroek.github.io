@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" href="../img/favicon-blue-64x64.png" sizes="64x64" />
   <link rel="icon" type="image/png" href="../img/favicon-blue-128x128.png" sizes="128x128" />
   <link rel="icon" type="image/png" href="../img/favicon-blue-256x256.png" sizes="256x256" />
+  <meta property="og:image" content="https://www.quitfacebook.org/img/favicon-blue-256x256.png">
   <link rel="canonical" href="https://www.quitfacebook.org/file/adblocking.html">
   <meta name="description" content="Ad blocking, or how to use the Web properly.">
   <meta name="keywords" content="internet, ad blocking, marketing, advertising, world wide web">
@@ -91,6 +92,67 @@
     </ol>
   
     <p>PS On <a href="./software.html">https://www.quitfacebook.org/file/software.html</a> you can see all the noteworthy software I use and recommend.</p>
+
+    <!-- Comments -->
+    <!-- https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/ -->
+
+    <!-- <div class="article-comments">
+      <h2>Comments.</h2>
+      <p>You can use your Mastodon account to <a class="button" href="https://fosstodon.org/interact/105684092262236408?type=reply">reply</a> to <a class="link" href="https://fosstodon.org/@stardust/105684092262236408">this post</a>.</p>
+      <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
+      <noscript><p>Enable JavaScript to view the comments.</p></noscript>
+      <script src="../js/purify.min.js"></script>
+      <script type="text/javascript">
+        function escapeHtml(unsafe) {
+          return unsafe
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")
+              .replace(/"/g, "&quot;")
+              .replace(/'/g, "&#039;");
+        }
+
+        document.getElementById("load-comment").addEventListener("click", function() {
+          document.getElementById("load-comment").innerHTML = "Loading";
+          fetch('https://fosstodon.org/api/v1/statuses/105684092262236408/context')
+            .then(function(response) {
+              return response.json();
+            })
+            .then(function(data) {
+              if(data['descendants'] &&
+                Array.isArray(data['descendants']) && 
+                data['descendants'].length > 0) {
+                  document.getElementById('mastodon-comments-list').innerHTML = "";
+                  data['descendants'].forEach(function(reply) {
+                    reply.account.display_name = escapeHtml(reply.account.display_name);
+                    reply.account.emojis.forEach(emoji => {
+                      reply.account.display_name = reply.account.display_name.replace(`:${emoji.shortcode}:`,
+                        `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
+                    });
+                    mastodonComment =
+                      `<div class="mastodon-comment">
+                        <div class="comment-avatar">
+                          <img src="${escapeHtml(reply.account.avatar_static)}" height=60 width=60 alt="">
+                        </div>
+                        <div class="comment-content">
+                          <div class="comment-author">
+                            <span>${reply.account.display_name}</span>
+                            (<a href="${reply.account.url}" rel="nofollow"><span class="disabled">${escapeHtml(reply.account.acct)}</span></a>); 
+                            <a class="date" href="${reply.uri}" rel="nofollow">
+                              ${reply.created_at.substr(0, 10)}</a>.
+                          </div>
+                          <div class="mastodon-comment-content">${reply.content}</div> 
+                        </div>
+                      </div>`;
+                    document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true}));
+                  });
+              } else {
+                document.getElementById('mastodon-comments-list').innerHTML = "<p>No comments found</p>";
+              }
+            });
+          });
+      </script>
+    </div> -->
 
     <p class="button-return"><a href="../blog.html">⤶</a></p>
   </div>
