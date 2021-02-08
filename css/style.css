@@ -179,8 +179,7 @@ hr {
 }
 
 #index-menu-content-container {
-  max-width: 43rem; /* 42+1 to compensate for the left margin of the logo; otherwise it's not aligned with the about text. */
-  margin: auto;
+  text-align: center;
 }
 
 #index-menu-content {
@@ -195,6 +194,7 @@ hr {
 #index-menu-links {
   font-size: 1rem;
   margin-right: 1rem;
+  text-align: left;
 }
 
 #dropdown-use, #dropdown-delete {
@@ -221,7 +221,7 @@ hr {
 
   #dropdown-delete:hover #dropdown-delete-content {
     display: block;
-    transform: translate(1rem, -12.5rem);
+    transform: translate(1rem, -15.8rem);
   }
 }
 
@@ -330,7 +330,7 @@ hr {
   @media (pointer:none), (pointer:coarse) {
     @media screen and (orientation: portrait) {
       #index-menu-links {
-        font-size: 0.65rem;
+        font-size: 0.85rem;
       }
 
       #index-visitor img {
@@ -339,13 +339,13 @@ hr {
       }
     }
 
-    @media (pointer:none), (pointer:coarse) {
+    /* @media (pointer:none), (pointer:coarse) {
       @media screen and (orientation: landscape) {
         #index-menu-links {
           font-size: 0.8rem;
         }
       }
-    }
+    } */
   }
 
   /* Responsive Table */
