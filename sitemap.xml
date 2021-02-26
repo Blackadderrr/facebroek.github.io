@@ -12,77 +12,12 @@
   <changefreq>always</changefreq>
   <priority>1.00</priority>
 </url>
-<url>
-  <loc>https://www.quitfacebook.org/id/1.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/id/1000000.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/id/1/cv.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/blog.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/file/prime.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/file/software.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/file/adblocking.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/file/antireligion.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.64</priority>
-</url>
+
 <url>
   <loc>https://www.quitfacebook.org/index.html</loc>
   <lastmod>2020-07-20T17:07:00+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/file/greed.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/file/play.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.quitfacebook.org/file/quora.html</loc>
-  <lastmod>2020-07-20T17:07:00+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.51</priority>
 </url>
 
 </urlset>
