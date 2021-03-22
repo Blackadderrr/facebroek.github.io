@@ -562,7 +562,7 @@ font-size: 0.8rem;
   margin: auto;
 }
 
-#profilepic {
+#avatar {
   float: left;
   width: 6.25rem;
   height: 6.25rem;
@@ -688,7 +688,7 @@ font-size: 0.8rem;
       font-size: 0.85rem;
     }
 
-    #profilepic {
+    #avatar {
       width: 4.5rem;
       height: 4.5rem;
     }
