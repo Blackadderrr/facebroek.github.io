@@ -209,19 +209,24 @@ hr {
   min-height: 1.25rem;
   border: 0.06rem solid rgba(0, 0, 0, 0.18);
   border-radius: 0.25rem;
-  padding: 0.5rem;
   z-index: 1;
+}
+
+#dropdown-use-content ul, #dropdown-delete-content ul {
+  margin: 0.5;
+  padding: 0.5;
+  padding-left: 1.5rem;
 }
 
 @media (pointer:fine) {
   #dropdown-use:hover #dropdown-use-content {
     display: block;
-    transform: translate(1rem, -5.8rem);
+    transform: translate(1rem, -10rem);
   }
 
   #dropdown-delete:hover #dropdown-delete-content {
     display: block;
-    transform: translate(1rem, -15.8rem);
+    transform: translate(1rem, -15rem);
   }
 }
 
